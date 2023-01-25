@@ -9,13 +9,43 @@ body {
 }
 
 .bannertop {
-    height: 40vh;
-    background-image: url(../img/jose-ignacio-pompe-s-Z-h0fEiBM-unsplash.jpg);
+    height: 70vh;
+    background-image: url(../img/iulian-aghei-q_xW-2ICvfA-unsplash.jpg);
     background-size: cover;
+    opacity: 0.9;
+}
+
+.subtitle {
+    font-family: Satisfy;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 300;
+    line-height: 30px;
+    color: #c9ab81;
+}
+
+.title {
+    font-family: Libre Baskerville;
+    text-align: center;
+    font-size: 35px;
+    font-weight: 300;
+    line-height: 45px;
+    letter-spacing: 10px;
+    color: #fff;
+}
+
+.text {
+    font-family: Source Sans Pro;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 100;
+    line-height: 20px;
+    letter-spacing: 0px;
+    color: #fff;
 }
 
 @media (max-width: 576px) {
     .topbar {
-        font-size: 8px;
+        font-size: 9px;
     }
 }
