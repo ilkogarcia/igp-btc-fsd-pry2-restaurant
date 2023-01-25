@@ -1,0 +1,21 @@
+body {
+    background-color: aqua;
+}
+
+.topbar {
+    height: 5vh;
+    color: #333333;
+    font-size: 12px;
+}
+
+.bannertop {
+    height: 40vh;
+    background-image: url(../img/jose-ignacio-pompe-s-Z-h0fEiBM-unsplash.jpg);
+    background-size: cover;
+}
+
+@media (max-width: 576px) {
+    .topbar {
+        font-size: 8px;
+    }
+}
