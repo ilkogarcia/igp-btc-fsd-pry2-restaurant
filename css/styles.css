@@ -1,51 +1,123 @@
-body {
-    background-color: aqua;
+/* Setup all variables used in this css */
+:root {
+    --darkes-bg-color: #404258;
+    --dark-bg-color: #474E68;
+    --light-bg-color: #50577A;
+    --lighter-bg-color: #6B728E;
+    --white-bg-color: #fff;
+    --white-color: #fff;
+    --almostwhite-color: #faf9f6;
+    --gold-color: #c9ab81;
 }
 
-.topbar {
+/* Body styles  */
+body {
+    margin: 0;
+}
+
+/* Header section on the page top */
+.header-section {
     height: 5vh;
-    color: #333333;
+    background-color: var(--darkes-bg-color);
+    color: var(--white-color);
     font-size: 12px;
 }
 
-.bannertop {
-    height: 70vh;
+/* Navigation bar section */
+.navbar-section {
+    background-color: var(--darkes-bg-color);
+    color:var(--white-color)
+}
+
+/* Footer section on the page bottom */
+.footer-section {
+    height: 40vh;
+    color: var(--white-color);
+    font-size: 12px;
+    background-color: var(--darkes-bg-color);
+}
+
+/* Content section - 100% width and background image */
+.banner-top-section {
+    height: 60vh;
     background-image: url(../img/iulian-aghei-q_xW-2ICvfA-unsplash.jpg);
     background-size: cover;
+    background-repeat: no-repeat;
+    background-color: var(--dark-bg-color);
     opacity: 0.9;
 }
 
-.subtitle {
+.content-section-dark {
+    height: 60vh;
+    background-color: var(--dark-bg-color);
+}
+
+.content-section-light {
+    height: 40vh;
+    background-color: var(--light-bg-color);
+}
+
+.content-section-lighter {
+    height: 40vh;
+    background-color: var(--lighter-bg-color);
+}
+
+/* Subtitle heading for any content section  */
+.page-subtitle {
     font-family: Satisfy;
     text-align: center;
     font-size: 25px;
     font-weight: 300;
     line-height: 30px;
-    color: #c9ab81;
+    color: var(--gold-color);
 }
 
-.title {
+/* Title heading for any content section */
+.page-title {
     font-family: Libre Baskerville;
     text-align: center;
     font-size: 35px;
     font-weight: 300;
     line-height: 45px;
     letter-spacing: 10px;
-    color: #fff;
+    color: var(--almostwhite-color);
 }
 
-.text {
-    font-family: Source Sans Pro;
+/* Subtitle heading for any content section  */
+.section-subtitle {
+    font-family: Satisfy;
     text-align: center;
     font-size: 18px;
-    font-weight: 100;
-    line-height: 20px;
-    letter-spacing: 0px;
-    color: #fff;
+    font-weight: 300;
+    line-height: 22px;
+    color: var(--gold-color);
 }
 
+/* Title heading for any content section */
+.section-title {
+    font-family: Libre Baskerville;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 300;
+    line-height: 35px;
+    letter-spacing: 5px;
+    color: var(--almostwhite-color);
+}
+
+/* Paragraph text for any content section */
+.text-content {
+    font-family: Roboto Slab;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 100;
+    line-height: 18px;
+    letter-spacing: 0px;
+    color: var(--almostwhite-color);
+}
+
+/* Media queries that adapt the page elements size */
 @media (max-width: 576px) {
-    .topbar {
+    .header-section {
         font-size: 9px;
     }
 }
