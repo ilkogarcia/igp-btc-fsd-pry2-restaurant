@@ -47,16 +47,25 @@ body {
     opacity: 0.9;
 }
 
-.content-section-dark {
-    height: 60vh;
+/* Content section - 100% width and background image */
+.carousel-section {
     background-color: var(--dark-bg-color);
 }
 
-.content-section-light {
-    height: 40vh;
-    background-color: var(--light-bg-color);
+/* Section background dark */
+.content-section-dark {
+    background-color: var(--dark-bg-color);
+    padding: 80px 40px 80px 40px;
 }
 
+/* Section background light */
+.content-section-light {
+    background-color: var(--light-bg-color);
+    padding: 80px 40px 80px 40px;
+
+}
+
+/* Section with background lighter */
 .content-section-lighter {
     height: 40vh;
     background-color: var(--lighter-bg-color);
@@ -114,6 +123,79 @@ body {
     letter-spacing: 0px;
     color: var(--almostwhite-color);
 }
+
+/* Review section title */
+.review-section-title {
+    font-family: Satisfy;
+    text-align: center;
+    font-size: 45px;
+    font-weight: 300;
+    line-height: 55px;
+    color: var(--gold-color);
+}
+
+/* Review text */
+.review-section-text {
+    font-family: Roboto Slab;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 100;
+    line-height: 22px;
+    letter-spacing: 0px;
+    color: var(--almostwhite-color);
+}
+
+/* Review author */
+.review-section-author {
+    font-family: Roboto Slab;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 200;
+    line-height: 20px;
+    letter-spacing: 0px;
+    color: var(--gold-color);
+}
+
+/* Review date */
+.review-section-date {
+    font-family: Roboto Slab;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 100;
+    line-height: 14px;
+    letter-spacing: 0px;
+    color: var(--almostwhite-color);
+}
+
+/* Product name */
+.product-name {
+    font-family: Roboto Slab;
+    font-size: 16px;
+    font-weight: 100;
+    letter-spacing: 2px;
+    color: var(--gold-color);
+}
+
+/* Product description */
+.product-description {
+    font-family: Roboto Slab;
+    font-size: 12px;
+    font-weight: 100;
+    letter-spacing: 0px;
+    color: var(--almostwhite-color);
+}
+
+/* Product price */
+.product-price {
+    font-family: Roboto Slab;
+    font-size: 12px;
+    font-weight: 200;
+    letter-spacing: 1px;
+    color: var(--white-color);
+}
+
+
+
 
 /* Media queries that adapt the page elements size */
 @media (max-width: 576px) {
