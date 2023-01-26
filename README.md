@@ -7,6 +7,7 @@ URL: https://ilkogarcia.github.io/igp-btc-fsd-pry2-restaurant/
 1. [General info](#info)
 2. [Technologies](#tech)
 3. [Installation](#install)
+4. [Credits & Acknowledgements](#credits)
 
 ## <a name="info"></a>General info
 To pass the test it is necessary to create a restaurant website that correctly adapts to the size of different devices. For which, we are expected to use the following technologies: HTML5, CSS3, CSS Layout (Flexbox & Grid) and the Bootstrap framework.
@@ -18,6 +19,7 @@ Technologies used in the development of the application:
 
 * [HTML5](https://developer.mozilla.org/en-US/docs/Glossary/HTML5)
 * [CSS3](https://developer.mozilla.org/en-US/docs/Web/CSS)
+* [Bootstrap](https://getbootstrap.com/docs/5.3/getting-started/introduction/)
 
 ## <a name="install"></a>Installation
 To download the project and open it in your development environment follow the instructions below:
@@ -34,3 +36,18 @@ $ cd igp-btc-fsd-pry2-restaurant
 $code .
 ```
 4. Happy coding!!!
+
+## <a name="credits"></a>Credits and Acknowledgements
+The third-party assets used in this project and their license terms are credited below. 
+
+1. We use photos from <a href="https://unsplash.com/@nwarigb?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Nwar Igbariah</a> in <a href="https://unsplash.com/es/fotos/tHbWtMFzZZs?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+
+2. We use photos from <a href="https://unsplash.com/@joseignaciopompe?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">José Ignacio Pompé</a> in <a href="https://unsplash.com/es/fotos/s-Z-h0fEiBM?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+
+3. We use photos from <a href="https://unsplash.com/@deby07?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">DEBY RODRIGUEZ</a> in <a href="https://unsplash.com/es/fotos/B6kciNEJgN8?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+
+4. We use photos from Vidal Balielo Jr.: https://www.pexels.com/es-es/foto/comida-chef-cocinando-carne-14515097/
+
+5. We use photos from Los Muertos Crew: https://www.pexels.com/es-es/foto/fotografia-de-comida-argentina-empanadas-de-cerca-8279711/
+
+Additionally I take this opportunity to thank everyone who helped me develop the content found in this repository.
