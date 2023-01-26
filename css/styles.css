@@ -17,7 +17,7 @@ body {
 
 /* Header section on the page top */
 .header-section {
-    height: 5vh;
+    padding: 10px 10px 10px 10px;
     background-color: var(--darkes-bg-color);
     color: var(--white-color);
     font-size: 12px;
@@ -31,15 +31,15 @@ body {
 
 /* Footer section on the page bottom */
 .footer-section {
-    height: 40vh;
-    color: var(--white-color);
-    font-size: 12px;
+    padding: 20px 10px 20px 10px;
     background-color: var(--darkes-bg-color);
+    color: var(--almostwhite-color);
+    font-size: 10px;
 }
 
 /* Content section - 100% width and background image */
 .banner-top-section {
-    height: 60vh;
+    padding: 140px 40px 140px 40px;
     background-image: url(../img/iulian-aghei-q_xW-2ICvfA-unsplash.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -75,9 +75,9 @@ body {
 .page-subtitle {
     font-family: Satisfy;
     text-align: center;
-    font-size: 25px;
+    font-size: 35px;
     font-weight: 300;
-    line-height: 30px;
+    line-height: 45px;
     color: var(--gold-color);
 }
 
@@ -85,9 +85,10 @@ body {
 .page-title {
     font-family: Libre Baskerville;
     text-align: center;
-    font-size: 35px;
+    text-shadow: -1px -1px 1px rgba(255,255,255,.1), 1px 1px 1px rgba(0,0,0,.5);
+    font-size: 45px;
     font-weight: 300;
-    line-height: 45px;
+    line-height: 55px;
     letter-spacing: 10px;
     color: var(--almostwhite-color);
 }
@@ -111,6 +112,17 @@ body {
     line-height: 35px;
     letter-spacing: 5px;
     color: var(--almostwhite-color);
+}
+
+/* Paragraph text for any content section */
+.decorator-line {
+    font-family: Libre Baskerville;
+    text-align: center;
+    font-size: 10px;
+    font-weight: 300;
+    line-height: 20px;
+    letter-spacing: 5px;
+    color: var(--gold-color);
 }
 
 /* Paragraph text for any content section */
@@ -193,9 +205,6 @@ body {
     letter-spacing: 1px;
     color: var(--white-color);
 }
-
-
-
 
 /* Media queries that adapt the page elements size */
 @media (max-width: 576px) {
