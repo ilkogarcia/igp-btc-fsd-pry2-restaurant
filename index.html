@@ -19,13 +19,13 @@
 </head>
 <body>
     <!-- Page Header -->
-    <div class="container-fluid" id="header-section">
-        <div class="row d-flex align-items-center justify-content-end header-section">
-            <div class="col-9 col-xl-3">
-                <span><i class="bi bi-geo-alt"></i>&nbsp;Rdo. Rafael Tramoyeres 5, Benimaclet. Valencia</span>
+    <div class="container-fluid header-section" id="header-section">
+        <div class="row d-flex align-items-center justify-content-center">
+            <div class="col-9 col-xl-12 p-2">
+                <span class="align-middle"><i class="bi bi-geo-alt"></i>&nbsp;Rdo. Rafael Tramoyeres 5, Benimaclet. Valencia</span>
             </div>
-            <div class="col-3 col-xl-1">
-                <span><i class="bi bi-telephone-outbound"></i>&nbsp;664 406 771</span>
+            <div class="col-3 col-xl-12 p-2">
+                <span class="align-middle"><i class="bi bi-telephone-outbound"></i>&nbsp;664 406 771</span>
             </div>
         </div>
     </div>
@@ -42,8 +42,8 @@
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
                     <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
-                    <a class="nav-link" href="./pages/menu.html">Carta</a>
-                    <a class="nav-link" href="./pages/contact.html">Contacto</a>
+                    <a class="nav-link" href="./pages/menu.html">La Carta</a>
+                    <a class="nav-link" href="./pages/contact.html">Contáctanos</a>
                 </div>
             </div>
         </div>
@@ -67,7 +67,7 @@
                     <p class="section-subtitle">nuestra historia</p>
                     <p class="section-title">SOBRE NOSOTROS</p>
                     <p class="text-content">Llevamos 20 años cuidado cada detalle para ofrecerte una velada acogedora con los mejores vinos, cortes de carne y especialidades de la gastronomía argentina.</p>
-                    <p class="decorator-line"><i class="bi bi-asterisk"></i>&nbsp;<i class="bi bi-asterisk"></i>&nbsp;<i class="bi bi-asterisk"></i></p>
+                    <p class="decorator-line mt-4 mb-4"><i class="bi bi-asterisk"></i>&nbsp;<i class="bi bi-asterisk"></i>&nbsp;<i class="bi bi-asterisk"></i></p>
                     <img src="./img/nwar-igbariah-tHbWtMFzZZs-unsplash-640x480.jpg" class="img-fluid border border-2" alt="Salón del restaurante Viejo Barrio">
                 </div>
             </div>
@@ -75,72 +75,108 @@
     </div>
 
     <!-- Section Home: REVIEWS -->
-    <div class="container-fluid content-section-light" id="content-section-light">
+    <div class="container-fluid text-center content-section-light" id="content-section-light">
         <div class="row d-flex align-items-center justify-content-center">
             <div class="col col-xl-12">
-                <p class="review-section-title"><i class="bi bi-quote"></i></p>
-                <p class="review-section-text">Comida de calidad, servicio rápido y agradable y relación calidad-precio excelente, a mi pareja y a mi nos ha encantado y repetiremos, seguro.</p>
-                <p class="review-section-author">CARLOS B.</p>
-                <p class="review-section-date">9 de octubre de 2022</p>
+                <!-- Carousel showing three different views -->
+                <div id="carouselReviews" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" data-bs-interval="8000">
+                            <p class="review-section-title"><i class="bi bi-quote"></i></p>
+                            <p class="review-section-text">Comida de calidad, servicio rápido y agradable y relación calidad-precio excelente, a mi pareja y a mi nos ha encantado y repetiremos, seguro.</p>
+                            <p class="review-section-author">CARLOS B.</p>
+                            <p class="review-section-date">9 de octubre de 2022 (Trip Advisor)</p>            
+                        </div>
+                        <div class="carousel-item" data-bs-interval="8000">
+                            <p class="review-section-title"><i class="bi bi-quote"></i></p>
+                            <p class="review-section-text">Atención esmerada y profesional... Los productos de primera calidad y elaborados con cariño y cuidando hasta él último detalle.</p>
+                            <p class="review-section-author">JUANPAS60</p>
+                            <p class="review-section-date">2 de noviembre de 2021 (Trip Advisor)</p>            
+                        </div>
+                        <div class="carousel-item" data-bs-interval="8000">
+                            <p class="review-section-title"><i class="bi bi-quote"></i></p>
+                            <p class="review-section-text">Excelente restaurante. menú muy variado con una elaboración cuidadosa de cada plato. Fuimos 10 personas y todos quedemos muy satisfechos.</p>
+                            <p class="review-section-author">RUJETA1</p>
+                            <p class="review-section-date">21 de julio de 2019 (Trip Advisor)</p>            
+                        </div>
+                    </div>
+                    <!-- <button class="carousel-control-prev" type="button" data-bs-target="#carouselReviews" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselReviews" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button> -->
+                </div>
             </div>
         </div>
     </div>
 
+
     <!-- Section Home: CHEF SUGGESTION -->
-    <div class="container-fluid content-section-dark" id="content-section-dark">
+    <div class="container-fluid text-center content-section-dark" id="content-section-dark">
         <div class="row d-flex align-items-center justify-content-center">
             <div class="col col-xl-12">
                 <p class="section-subtitle">sugerencias</p>
                 <p class="section-title">DE NUESTRO CHEF</p>
                 <p class="text-content">Atrevete con los platos de temporada, fuera de carta y las más recientes creaciones de nuestro Chef.</p>
-                <p class="decorator-line"><i class="bi bi-asterisk"></i>&nbsp;<i class="bi bi-asterisk"></i>&nbsp;<i class="bi bi-asterisk"></i></p>
-                <img src="./img/pexels-los-muertos-crew-8279711-640x480.jpg" class="img-fluid border border-2" alt="Empanada de pollo">
-                <p class="text-content"><small>Empanada de queso gorgonzola, nueces y apio</small></p>
+                <p class="decorator-line mt-4 mb-4"><i class="bi bi-asterisk"></i>&nbsp;<i class="bi bi-asterisk"></i>&nbsp;<i class="bi bi-asterisk"></i></p>
+            </div>
+            <div class="row d-flex align-items-start justify-content-center">
+                <div class="col col-xl-12 flex-fill">
+                    <img src="./img/pexels-los-muertos-crew-8279711-640x480.jpg" class="img-fluid border border-2" alt="Empanada de pollo">
+                </div>
+                <div class="col col-xl-12">
+                    <p class="product-name mt-2 mb-2">Empanada de pollo</p>
+                    <p class="product-description m-1">Empanada de pollo, queso gorgonzola, nueces y apio.</p>
+                    <p class="product-price mb-0">€3,30</p>
+                </div>
             </div>
         </div>
     </div>
 
     <!-- Section Home: FROM OUR MENU -->
-    <div class="container-fluid content-section-light" id="content-section-light">
+    <div class="container-fluid text-center content-section-light" id="content-section-light">
         <div class="row d-flex align-items-center justify-content-center">
             <div class="col-12 col-xl-12">
                 <p class="section-subtitle">selección</p>
                 <p class="section-title">DE NUESTRO MENU</p>
                 <p class="text-content">Una pequeña muestra de todo lo que podemos ofrecerte para satisfacer tu paladar.</p>
-                <p class="decorator-line"><i class="bi bi-asterisk"></i>&nbsp;<i class="bi bi-asterisk"></i>&nbsp;<i class="bi bi-asterisk"></i></p>
+                <p class="decorator-line mt-4 mb-4"><i class="bi bi-asterisk"></i>&nbsp;<i class="bi bi-asterisk"></i>&nbsp;<i class="bi bi-asterisk"></i></p>
             </div>
         </div>
         <div class="row gy-5 d-flex align-items-start justify-content-center">
             <div class="col-6 col-xl-12">
-                    <span class="product-name">Pimientos del padrón</span>
-                    <span class="product-description">Pimientos del padrón a la brasa sobre finas tiras de jamón serrano reserva.</span>
-                    <span class="product-price">€ 12,50</span>
+                <p class="product-name mb-2">Pimientos del padrón</p>
+                <p class="product-description m-1">Pimientos del padrón a la brasa sobre finas tiras de jamón serrano reserva.</p>
+                <p class="product-price mb-0">€12,50</p>
             </div>
             <div class="col-6 col-xl-12">
-                <span class="product-name">Provolone tradicional</span>
-                <span class="product-description">Queso provolone fundido al horno con oregano fresco y ají molido.</span>
-                <span class="product-price">€ 10,50</span>
+                <p class="product-name mb-2">Provolone tradicional</p>
+                <p class="product-description mb-1">Queso provolone fundido al horno con oregano fresco y ají molido.</p>
+                <p class="product-price mb-0">€10,50</p>
             </div>
             <div class="col-6 col-xl-12">
-                <span class="product-name">Chorizo criollo</span>
-                <span class="product-description">Chorizo criollo argentino acompañado de salsa chimichurri y pan.</span>
-                <span class="product-price">€ 3,50</span>
+                <p class="product-name mb-2">Chorizo criollo</p>
+                <p class="product-description mb-1">Chorizo criollo argentino acompañado de salsa chimichurri y pan.</p>
+                <p class="product-price mb-0">€3,50</p>
             </div>
             <div class="col-6 col-xl-12">
-                <span class="product-name">Ensalada del barrio</span>
-                <span class="product-description">Mix de brotes tiernos, queso de cabra, mango, jamon de pato, tomates cherry y vinagreta de dijon.</span>
-                <span class="product-price">€ 12,50</span>
+                <p class="product-name mb-2">Ensalada del barrio</p>
+                <p class="product-description mb-1">Mix de brotes tiernos, queso de cabra, mango, jamon de pato, tomates cherry y vinagreta de dijon.</p>
+                <p class="product-price mb-0">€12,50</p>
             </div>
         </div>
         <div class="row d-flex align-items-center justify-content-center">
-            <div class="col-6 col-xl-12">
-                <a href="./pages/menu.html" class="btn btn-outline-light mt-5" role="button">VER CARTA</a>
+            <div class="col col-xl-12">
+                <a href="./pages/menu.html" class="btn btn-outline-light m-5" role="button">VER CARTA</a>
             </div>
         </div>
     </div>
 
     <!-- Section Home: EVENTS -->
-    <div class="container-fluid content-section-dark" id="content-section-dark">
+    <div class="container-fluid text-center content-section-dark" id="content-section-dark">
         <div class="row d-flex align-items-center justify-content-center">
             <div class="col col-xl-12">
                 <p class="section-subtitle">celebra con nosotros</p>
@@ -149,20 +185,27 @@
             </div>
         </div>
         <div class="row d-flex align-items-center justify-content-center">
-            <div class="col-6 col-xl-12">
-                <a href="./pages/contact.html" class="btn btn-outline-light mt-5" role="button">CONTACTAR</a>
+            <div class="col col-xl-12">
+                <a href="./pages/contact.html" class="btn btn-outline-light m-2" role="button">CONTACTAR</a>
             </div>
         </div>
     </div>
 
     <!-- Page Footer -->
-    <div class="container-fluid footer-section text-center" id="footer-section">
+    <div class="container-fluid text-center footer-section" id="footer-section">
         <div class="row d-flex align-items-center justify-content-center">
-            <div class="col-10 col-xl-12">
-                <p class="text-content"><a href="./index.html" class="link-light">Inicio</a> | <a href="./pages/menu.html" class="link-light">La Carta</a> | <a href="./pages/contact.html" class="link-light">Contactanos</a></p>
+            <div class="col-12 col-xl-12 p-2">
+                <ul class="nav justify-content-center">
+                    <li class="nav-item"><a class="nav-link link-light active" aria-current="page" href="./index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link link-light" href="./pages/menu.html">Carta</a></li>
+                    <li class="nav-item"> <a class="nav-link link-light" href="./pages/contact.html">Contacto</a></li>
+                </ul>
             </div>
-            <div class="col-2 col-xl-12">
-                <p class="text-content"><a href="https://www.facebook.com/restauranteviejobarrio" target="_blank" class="link-light"><i class="bi bi-facebook"></i></a>&nbsp;&nbsp;<a href="https://www.instagram.com/viejobarrio_restaurante" target="_blank" class="link-light"><i class="bi bi-instagram"></i></a></p>
+            <div class="col col-xl-12 p-2">
+                <ul class="nav justify-content-center">
+                    <li class="nav-item"><a class="nav-link link-light" href="https://www.facebook.com/restauranteviejobarrio" target="_blank" class="link-light"><i class="bi bi-facebook"></i></a></li>
+                    <li class="nav-item"><a class="nav-link link-light" href="https://www.instagram.com/viejobarrio_restaurante" target="_blank" class="link-light"><i class="bi bi-instagram"></i></a></li>
+                </ul>
             </div>
         </div>
     </div>

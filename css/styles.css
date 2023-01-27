@@ -1,5 +1,6 @@
 /* Setup all variables used in this css */
 :root {
+    --black-bg-color: #000;
     --darkes-bg-color: #404258;
     --dark-bg-color: #474E68;
     --light-bg-color: #50577A;
@@ -17,10 +18,10 @@ body {
 
 /* Header section on the page top */
 .header-section {
-    padding: 10px 10px 10px 10px;
-    background-color: var(--darkes-bg-color);
+    /* padding: 10px 10px 10px 10px; */
+    background-color: var(--black-bg-color);
     color: var(--white-color);
-    font-size: 12px;
+    /* font-size: 1rem; */
 }
 
 /* Navigation bar section */
@@ -31,10 +32,10 @@ body {
 
 /* Footer section on the page bottom */
 .footer-section {
-    padding: 20px 10px 20px 10px;
-    background-color: var(--darkes-bg-color);
+    /* padding: 20px 10px 20px 10px; */
+    background-color: var(--black-bg-color);
     color: var(--almostwhite-color);
-    font-size: 10px;
+    /* font-size: 1rem; */
 }
 
 /* Content section - 100% width and background image */
@@ -45,6 +46,7 @@ body {
     background-repeat: no-repeat;
     background-color: var(--dark-bg-color);
     opacity: 0.9;
+    box-shadow: 0px 10px 10px 0px rgba(255,255,255,0.1);
 }
 
 /* Content section - 100% width and background image */
