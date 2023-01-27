@@ -50,4 +50,6 @@ The third-party assets used in this project and their license terms are credited
 
 5. We use photos from Los Muertos Crew: https://www.pexels.com/es-es/foto/fotografia-de-comida-argentina-empanadas-de-cerca-8279711/
 
+6. We use photos from <a href="https://unsplash.com/@fabmag?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Fabrizio Magoni</a> in <a href="https://unsplash.com/es/fotos/boaDpmC-_Xo?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+
 Additionally I take this opportunity to thank everyone who helped me develop the content found in this repository.

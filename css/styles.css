@@ -75,7 +75,7 @@ body {
 /* Sections breacks with a full with image */
 .section-break-1 {
     padding: 60px 40px 140px 40px;
-    background-image: url(../img/rest-vb-empanadas-criollas-640x480.JPG);
+    background-image: url(../img/rest-vb-empanadas-criollas-640x480.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-color: var(--dark-bg-color);
