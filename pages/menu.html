@@ -5,8 +5,274 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>La Carta : Viejo Barrio - Valencia - Asador Argetino</title>
+    <!-- Link to the BootStrap framework styles -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <!-- Link to the BootStrap icon library -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <!-- Link to Google Fonts used on the project -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Satisfy">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Libre+Baskerville">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab">
+    <!-- Project style sheet  and favico -->
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="shortcut icon" sizes="16x16 24x24 32x32 48x48 64x64" href="../img/viejobarrio.ico">
 </head>
 <body>
+    <!-- Page Header -->
+    <div class="container-fluid header-section" id="header-section">
+        <div class="row d-flex align-items-center justify-content-center">
+            <div class="col-9 col-xl-12 p-2">
+                <span class="align-middle"><i class="bi bi-geo-alt"></i>&nbsp;Rdo. Rafael Tramoyeres 5, Benimaclet. Valencia</span>
+            </div>
+            <div class="col-3 col-xl-12 p-2">
+                <span class="align-middle"><i class="bi bi-telephone-outbound"></i>&nbsp;664 406 771</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="../img/logo-viejo-barrio.png" alt="Restaurante Viejo Barrio Valencia" width="32px">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-link active" href="../index.html">Inicio</a>
+                    <a class="nav-link" aria-current="page"  href="./menu.html">La Carta</a>
+                    <a class="nav-link" href="./contact.html">Contáctanos</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Content top section -->
+    <div class="container-fluid secondarypage-bannertop" id="secondarypage-bannertop">
+        <div class="row d-flex align-items-center justify-content-center">
+            <div class="col col-xl-12">
+                <p class="page-subtitle">viejo barrio</p>
+                <p class="page-title">NUESTRA CARTA</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Section MENU: Starters -->
+    <div class="container-fluid content-section-dark text-center" id="content-section-dark">
+        <div class="row d-flex align-items-center justify-content-center">
+            <div class="col col-xl-12">
+                <div class="container">
+                    <p class="section-subtitle">para comenzar</p>
+                    <p class="section-title">ENRANTES</p>
+                    <p class="decorator-line mt-4 mb-4"><i class="bi bi-asterisk"></i>&nbsp;<i class="bi bi-asterisk"></i>&nbsp;<i class="bi bi-asterisk"></i></p>
+                </div>
+            </div>
+        </div>
+        <div class="row gy-3 d-flex align-items-start justify-content-center">
+            <div class="col-10 col-xl-12">
+                <p class="product-name mb-2">Empanada Humita</p>
+                <p class="product-description mb-1">Empanada tradicional argentina a base de maiz.</p>
+                <p class="product-price">€3,30</p>
+            </div>
+            <div class="col-10 col-xl-12">
+                <p class="product-name mb-2">Empanada Criolla</p>
+                <p class="product-description mb-1">Empanada tradicional argentina a base de carne y especias.</p>
+                <p class="product-price">€3,30</p>
+            </div>
+            <div class="col-10 col-xl-12">
+                <p class="product-name mb-2">Pimientos del padrón</p>
+                <p class="product-description m-1">Pimientos del padrón a la brasa sobre finas tiras de jamón serrano reserva.</p>
+                <p class="product-price">€12,50</p>
+            </div>
+            <div class="col-10 col-xl-12">
+                <p class="product-name mb-2">Provolone tradicional</p>
+                <p class="product-description mb-1">Queso provolone fundido al horno con oregano fresco y ají molido.</p>
+                <p class="product-price">€10,50</p>
+            </div>
+            <div class="col-10 col-xl-12">
+                <p class="product-name mb-2">Provolone funghi porcini</p>
+                <p class="product-description mb-1">Queso provolone fundido al horno con fungi procine y salsa de trufa.</p>
+                <p class="product-price">€10,50</p>
+            </div>
+        </div>
+    </div>
+
+        <!-- Section MENU: Section Break 1 -->
+        <div class="container-fluid section-break-1 text-center" id="section-break-1">
+            <div class="row d-flex align-items-center justify-content-center">
+                <div class="col col-xl-12">&nbsp;</div>
+            </div>
+        </div>
+
+    <!-- Section MENU: salads -->
+    <div class="container-fluid text-center content-section-light" id="content-section-light">
+        <div class="row d-flex align-items-center justify-content-center">
+            <div class="col col-xl-12">
+                <div class="container">
+                    <p class="section-subtitle">fresco y natural</p>
+                    <p class="section-title">ENSALADAS</p>
+                    <p class="decorator-line mt-4 mb-4"><i class="bi bi-asterisk"></i>&nbsp;<i class="bi bi-asterisk"></i>&nbsp;<i class="bi bi-asterisk"></i></p>
+                </div>
+            </div>
+        </div>
+        <div class="row gy-3 d-flex align-items-start justify-content-center">
+            <div class="col-10 col-xl-12">
+                <p class="product-name mb-2">Ensalada de mollejas</p>
+                <p class="product-description mb-1">Mix de hojas, tomates cherry, mollejas a la brasa, frutos secos y brotes de soja, aliñada con vinagreta.</p>
+                <p class="product-price">€14,00</p>
+            </div>
+            <div class="col-10 col-xl-12">
+                <p class="product-name mb-2">Ensalada del barrio</p>
+                <p class="product-description mb-1">Mix de hojas, queso de Cabra, mango, jamon de pato, tomates cherry y vinagreta de dijon.</p>
+                <p class="product-price">€12,50</p>
+            </div>
+            <div class="col-10 col-xl-12">
+                <p class="product-name mb-2">Ensalada del turco</p>
+                <p class="product-description m-1">Canónigos, rúcula, queso parmesano, frutos secos, tomates cherry, virutas de jamon serrano, huevos cocidos y aliño e limón.</p>
+                <p class="product-price">€12,50</p>
+            </div>
+        </div>
+    </div>
+
+        <!-- Section MENU: Section Break 2 -->
+        <div class="container-fluid section-break-2 text-center" id="section-break-2">
+            <div class="row d-flex align-items-center justify-content-center">
+                <div class="col col-xl-12">&nbsp;</div>
+            </div>
+        </div>
+
+    <!-- Section MENU: Main Courses -->
+    <div class="container-fluid text-center content-section-dark" id="content-section-dark">
+        <div class="row d-flex align-items-center justify-content-center">
+            <div class="col col-xl-12">
+                <p class="section-subtitle">especialidades</p>
+                <p class="section-title">CARNES A LA BRASA</p>
+                <p class="decorator-line mt-4 mb-4"><i class="bi bi-asterisk"></i>&nbsp;<i class="bi bi-asterisk"></i>&nbsp;<i class="bi bi-asterisk"></i></p>
+            </div>
+            <div class="row d-flex align-items-start justify-content-center">
+                <div class="col-10 col-xl-12">
+                    <p class="product-name mb-2">Parrillada sur</p>
+                    <p class="product-description mb-1">Parrillada de carne con chorizo, morcilla, molleja, tira de asado (costilla de ternera) y muslo de pollo deshuesado.</p>
+                    <p class="product-price">€18,50 (x persona)</p>
+                </div>
+                <div class="col-10 col-xl-12">
+                    <p class="product-name mb-2">Parrillada viejo barrio</p>
+                    <p class="product-description mb-1">Parrillada de carne con chorizo, molleja, escondido, bife argentino y secreto de cerdo.</p>
+                    <p class="product-price">€23,50 (x persona)</p>
+                </div>
+                <div class="col-10 col-xl-12">
+                    <p class="product-name mb-2">Bife argentino</p>
+                    <p class="product-description m-1">Corte de 350gr de carne (España -> Lomo Alto) que por su precisa infiltración de grasa ofrece una textura, sabor y terneza singular.</p>
+                    <p class="product-price">€22,00</p>
+                </div>
+                <div class="col-10 col-xl-12">
+                    <p class="product-name mb-2">Escondido</p>
+                    <p class="product-description m-1">Corte de carne (España -> Entraña) entre la costilla y el lomo, es muy jugosa y de fuerte sabor.</p>
+                    <p class="product-price">€15,50</p>
+                </div>    
+                <div class="col-10 col-xl-12">
+                    <p class="product-name mb-2">Tira de asado</p>
+                    <p class="product-description m-1">Costilla de ternera con un sabor único gracias a los huesos presentes en el costillar y por la forma en que la cocinamos.</p>
+                    <p class="product-price">€14,50</p>
+                </div>    
+            </div>
+        </div>
+    </div>
+
+    <!-- Section MENU: Section Break 3 -->
+    <div class="container-fluid section-break-3 text-center" id="section-break-2">
+        <div class="row d-flex align-items-center justify-content-center">
+            <div class="col col-xl-12">&nbsp;</div>
+        </div>
+    </div>
+
     
+    <!-- Section MENU: Desserts -->
+    <div class="container-fluid text-center content-section-light" id="content-section-light">
+        <div class="row d-flex align-items-center justify-content-center">
+            <div class="col-12 col-xl-12">
+                <p class="section-subtitle">sueños dulces</p>
+                <p class="section-title">POSTRES</p>
+                <p class="decorator-line mt-4 mb-4"><i class="bi bi-asterisk"></i>&nbsp;<i class="bi bi-asterisk"></i>&nbsp;<i class="bi bi-asterisk"></i></p>
+            </div>
+        </div>
+        <div class="row d-flex align-items-start justify-content-center">
+            <div class="col-10 col-xl-12">
+                <p class="product-name mb-2">Copa del Barrio</p>
+                <p class="product-description mb-1">Merengue, dulce de leche, piña natural, virutas de chocolate negro y helado.</p>
+                <p class="product-price">€7,50</p>
+            </div>
+            <div class="col-10 col-xl-12">
+                <p class="product-name mb-2">Brownie</p>
+                <p class="product-description mb-1">Brownie de chocolate acompañado de Helado de Vainilla.</p>
+                <p class="product-price">€6,50</p>
+            </div>
+            <div class="col-10 col-xl-12">
+                <p class="product-name mb-2">Tarta de yogurt</p>
+                <p class="product-description m-1">Tarta de yogurt griego, con miel y frutos del bosque.</p>
+                <p class="product-price">€6,50</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Section MENU: Section Break 4 -->
+    <div class="container-fluid section-break-4 text-center" id="section-break-2">
+        <div class="row d-flex align-items-center justify-content-center">
+            <div class="col col-xl-12">&nbsp;</div>
+        </div>
+    </div>
+    
+    <!-- Section MENU: Drinks -->
+    <div class="container-fluid text-center content-section-dark" id="content-section-dark">
+        <div class="row d-flex align-items-center justify-content-center">
+            <div class="col col-xl-12">
+                <p class="section-subtitle">que nunca falten</p>
+                <p class="section-title">BEBIDAS</p>    
+                <p class="decorator-line mt-4 mb-4"><i class="bi bi-asterisk"></i>&nbsp;<i class="bi bi-asterisk"></i>&nbsp;<i class="bi bi-asterisk"></i></p>
+            </div>
+        </div>
+        <div class="row d-flex align-items-start justify-content-center">
+            <div class="col-10 col-xl-12">
+                <p class="product-name mb-2">Cervezas</p>
+                <p class="product-description mb-1">Quilmes, Coronita, Mahou 5 estrellas.</p>
+                <p class="product-price">€3,50</p>
+            </div>
+            <div class="col-10 col-xl-12">
+                <p class="product-name mb-2">Refrescos</p>
+                <p class="product-description mb-1">Coca Cola, Fanta, Tonica, Aquarius.</p>
+                <p class="product-price">€2,50</p>
+            </div>
+            <div class="col-10 col-xl-12">
+                <p class="product-name mb-2">Cafes/Infusiones</p>
+                <p class="product-description m-1">Cafe, Cortado, Bombón, Carajillo, Infusiones.</p>
+                <p class="product-price">€2,00</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Page Footer -->
+    <div class="container-fluid text-center footer-section" id="footer-section">
+        <div class="row d-flex align-items-center justify-content-center">
+            <div class="col-12 col-xl-12 p-2">
+                <ul class="nav justify-content-center">
+                    <li class="nav-item"><a class="nav-link link-light active" href="../index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link link-light" aria-current="page" href="./menu.html">Carta</a></li>
+                    <li class="nav-item"> <a class="nav-link link-light" href="./contact.html">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="col col-xl-12 p-2">
+                <ul class="nav justify-content-center">
+                    <li class="nav-item"><a class="nav-link link-light" href="https://www.facebook.com/restauranteviejobarrio" target="_blank" class="link-light"><i class="bi bi-facebook"></i></a></li>
+                    <li class="nav-item"><a class="nav-link link-light" href="https://www.instagram.com/viejobarrio_restaurante" target="_blank" class="link-light"><i class="bi bi-instagram"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap popper and our JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
 </body>
 </html>

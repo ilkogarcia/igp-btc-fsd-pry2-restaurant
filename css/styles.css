@@ -8,7 +8,7 @@
     --white-bg-color: #fff;
     --white-color: #fff;
     --almostwhite-color: #faf9f6;
-    --gold-color: #c9ab81;
+    --gold-color: rgb(201, 171, 129);
 }
 
 html {
@@ -39,8 +39,8 @@ body {
     border-top: 2px solid var(--gold-color);
 }
 
-/* Content section - 100% width and background image */
-.banner-top-section {
+/* Top banner in the main page - 100% width and background image */
+.mainpage-bannertop {
     padding: 140px 40px 140px 40px;
     background-image: url(../img/iulian-aghei-q_xW-2ICvfA-unsplash.jpg);
     background-size: cover;
@@ -48,6 +48,53 @@ body {
     background-color: var(--dark-bg-color);
     opacity: 0.9;
     box-shadow: 0px 10px 10px 0px rgba(255,255,255,0.1);
+}
+
+/* Top banner in the secondary pages - 100% width and background image */
+.secondarypage-bannertop {
+    padding: 80px 40px 140px 40px;
+    background-image: url(../img/fabrizio-magoni-boaDpmC-_Xo-unsplash-640x480.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: var(--dark-bg-color);
+    opacity: 0.9;
+    box-shadow: 0px 10px 10px 0px rgba(255,255,255,0.1);
+}
+
+/* Sections breacks with a full with image */
+.section-break-1 {
+    padding: 60px 40px 140px 40px;
+    background-image: url(../img/rest-vb-empanadas-criollas-640x480.JPG);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: var(--dark-bg-color);
+}
+
+/* Sections breacks with a full with image */
+.section-break-2 {
+    padding: 60px 40px 140px 40px;
+    background-image: url(../img/rest-vb-ensalada-delbarrio-640x480.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: var(--dark-bg-color);
+}
+
+/* Sections breacks with a full with image */
+.section-break-3 {
+    padding: 60px 40px 140px 40px;
+    background-image: url(../img/rest-vb-bife-640x480.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: var(--dark-bg-color);
+}
+
+/* Sections breacks with a full with image */
+.section-break-4 {
+    padding: 60px 40px 140px 40px;
+    background-image: url(../img/rest-vb-copa-delbarrio-640x480.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: var(--dark-bg-color);
 }
 
 /* Content section - 100% width and background image */
@@ -96,13 +143,22 @@ body {
     color: var(--almostwhite-color);
 }
 
+/* Title style for small information blocks  */
+.small-subtitle {
+    font-family: Libre Baskerville;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 200;
+    line-height: 18px;
+    color: var(--gold-color);
+}
 /* Subtitle heading for any content section  */
 .section-subtitle {
     font-family: Satisfy;
     text-align: center;
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 300;
-    line-height: 22px;
+    line-height: 24px;
     color: var(--gold-color);
 }
 
@@ -110,9 +166,9 @@ body {
 .section-title {
     font-family: Libre Baskerville;
     text-align: center;
-    font-size: 25px;
+    font-size: 26px;
     font-weight: 300;
-    line-height: 35px;
+    line-height: 36px;
     letter-spacing: 5px;
     color: var(--almostwhite-color);
 }
@@ -121,9 +177,9 @@ body {
 .decorator-line {
     font-family: Libre Baskerville;
     text-align: center;
-    font-size: 10px;
+    font-size: 12px;
     font-weight: 300;
-    line-height: 20px;
+    line-height: 22px;
     letter-spacing: 5px;
     color: var(--gold-color);
 }
