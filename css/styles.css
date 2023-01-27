@@ -39,7 +39,7 @@ body {
     border-top: 2px solid var(--gold-color);
 }
 
-/* Top banner in the main page - 100% width and background image */
+/* Top banner in the Home page - 100% width and background image */
 .mainpage-bannertop {
     padding: 140px 40px 140px 40px;
     background-image: url(../img/iulian-aghei-q_xW-2ICvfA-unsplash.jpg);
@@ -50,10 +50,21 @@ body {
     box-shadow: 0px 10px 10px 0px rgba(255,255,255,0.1);
 }
 
-/* Top banner in the secondary pages - 100% width and background image */
-.secondarypage-bannertop {
+/* Top banner in the Menu pages - 100% width and background image */
+.menupage-bannertop {
     padding: 80px 40px 140px 40px;
     background-image: url(../img/fabrizio-magoni-boaDpmC-_Xo-unsplash-640x480.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: var(--dark-bg-color);
+    opacity: 0.9;
+    box-shadow: 0px 10px 10px 0px rgba(255,255,255,0.1);
+}
+
+/* Top banner in the Contact pages - 100% width and background image */
+.contactpage-bannertop {
+    padding: 80px 40px 140px 40px;
+    background-image: url(../img/amin-hasani-Bj1BywJp0JM-unsplash-640x480.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-color: var(--dark-bg-color);
@@ -140,6 +151,18 @@ body {
     font-weight: 300;
     line-height: 55px;
     letter-spacing: 10px;
+    color: var(--almostwhite-color);
+}
+
+/* Title heading for any content section */
+.secondarypage-title {
+    font-family: Libre Baskerville;
+    text-align: center;
+    text-shadow: -1px -1px 1px rgba(255,255,255,.1), 1px 1px 1px rgba(0,0,0,.5);
+    font-size: 36px;
+    font-weight: 300;
+    line-height: 50px;
+    letter-spacing: 8px;
     color: var(--almostwhite-color);
 }
 
