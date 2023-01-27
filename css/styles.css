@@ -11,6 +11,10 @@
     --gold-color: #c9ab81;
 }
 
+html {
+    font-size: calc(15px + 0.390625vw);
+}
+
 /* Body styles  */
 body {
     margin: 0;
@@ -18,10 +22,8 @@ body {
 
 /* Header section on the page top */
 .header-section {
-    /* padding: 10px 10px 10px 10px; */
     background-color: var(--black-bg-color);
     color: var(--white-color);
-    /* font-size: 1rem; */
 }
 
 /* Navigation bar section */
@@ -32,10 +34,9 @@ body {
 
 /* Footer section on the page bottom */
 .footer-section {
-    /* padding: 20px 10px 20px 10px; */
     background-color: var(--black-bg-color);
     color: var(--almostwhite-color);
-    /* font-size: 1rem; */
+    border-top: 2px solid var(--gold-color);
 }
 
 /* Content section - 100% width and background image */
@@ -56,14 +57,14 @@ body {
 
 /* Section background dark */
 .content-section-dark {
-    background-color: var(--dark-bg-color);
     padding: 80px 40px 80px 40px;
+    background-color: var(--dark-bg-color);
 }
 
 /* Section background light */
 .content-section-light {
-    background-color: var(--light-bg-color);
     padding: 80px 40px 80px 40px;
+    background-color: var(--light-bg-color);
 
 }
 
