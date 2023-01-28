@@ -1,6 +1,7 @@
 /* Setup all variables used in this css */
 :root {
     --black-bg-color: #000;
+    --almost-bg-color: #2D2D2D;
     --darkes-bg-color: #404258;
     --dark-bg-color: #474E68;
     --light-bg-color: #50577A;
@@ -34,6 +35,8 @@ body {
 
 /* Navigation bar section */
 .navbar-section {
+    background-color: var(--almost-bg-color);
+    color: var(--almostwhite-color);
     font-family: Libre Baskerville;
     text-align: center;
     font-size: 0.9rem;
