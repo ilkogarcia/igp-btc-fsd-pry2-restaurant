@@ -301,9 +301,9 @@ body {
 /* Product description */
 .product-description {
     font-family: Roboto Slab;
-    font-size: calc(0.6rem + 0.7vw);
+    font-size: calc(0.6rem + 0.6vw);
     font-weight: 100;
-    line-height: calc(0.8rem + 0.9vw);
+    line-height: calc(0.7rem + 0.7vw);
     color: var(--almostwhite-color);
     text-align: left;
 }
@@ -327,10 +327,19 @@ body {
     height: 0;
 }
 
+/* Parameters to adjust the iframe that Google gives us */
 .map-responsive iframe {
     left: 0;
     top: 0;
     height: 100%;
     width: 100%;
     position: absolute;
+}
+
+/* Back to top button in the bottom right corner of the screen */
+#btn-back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
 }
