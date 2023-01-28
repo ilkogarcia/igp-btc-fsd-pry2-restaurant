@@ -295,6 +295,7 @@ body {
     font-weight: 100;
     line-height: calc(0.9rem + 0.9vw);
     color: var(--gold-color);
+    text-align: left;
 }
 
 /* Product description */
@@ -304,6 +305,7 @@ body {
     font-weight: 100;
     line-height: calc(0.8rem + 0.9vw);
     color: var(--almostwhite-color);
+    text-align: left;
 }
 
 /* Product price */
@@ -314,6 +316,7 @@ body {
     line-height: calc(0.6rem + 0.9vw);
     letter-spacing: 2px;
     color: var(--gold-color);
+    text-align: left;
 }
 
 /* Class to embbed a responsive Google Map withou API Key */
