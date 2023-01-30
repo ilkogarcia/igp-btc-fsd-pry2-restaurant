@@ -6,10 +6,12 @@ Website of a restaurant establishment created with technologies that allow us to
 <figcaption>Web screenshot in a Nexus5 phone</figcaption>
 </figure>
 
+
 <figure>
-<img src="./img/rest-viejobarrio-screenshot-2.png" alt="Screenshot iPAad Pro" style="float: right; margin-right: 10px; width: 640px;" />
+<img src="./img/rest-viejobarrio-screenshot-2.png" alt="Screenshot iPAad Pro" style="float: left; margin-right: 10px; width: 640px;" />
 <figcaption>Web screenshot in an iPad Pro tablet</figcaption>
 </figure>
+
 
 URL: https://ilkogarcia.github.io/igp-btc-fsd-pry2-restaurant/
 
