@@ -1,8 +1,9 @@
 # Restaurant website responsive design
 Website of a restaurant establishment created with technologies that allow us to create a fully responsive design. The site consists of three hyperlinked html pages: Home, Contact and Menu.
 
-|![Screenshot](./img/rest-viejobarrio-screenshot-1.png "Screenshot Nexus 5")|![Screenshot](./img/rest-viejobarrio-screenshot-2.png "Screenshot iPAad Pro")|
-|Site home page viewed on a Nexus 5|Site home page viewed on an iPad Pro|
+<img src="./img/rest-viejobarrio-screenshot-1.png" alt="Screenshot Nexus5" style="float: left; margin-right: 10px; width: 640px;" />
+
+<img src="./img/rest-viejobarrio-screenshot-2.png" alt="Screenshot iPAad Pro" style="float: left; margin-right: 10px; width: 640px;" />
 
 URL: https://ilkogarcia.github.io/igp-btc-fsd-pry2-restaurant/
 
