@@ -1,4 +1,4 @@
-/* Setup all variables used in this css */
+/* setup all variables used in this css */
 :root {
     --black-bg-color: #000;
     --almost-bg-color: #2D2D2D;
@@ -12,28 +12,42 @@
     --gold-color: rgb(201, 171, 129);
 }
 
-html {
+/* reset body styles  */
+body {
+    margin: 0;
     font-size: calc(15px + 0.390625vw);
 }
 
-/* Body styles  */
-body {
-    margin: 0;
-}
+/**
+ * HEADER & FOOTER 
+ * Styles used on the header and footer.
+ * -------------------------------------------------------------------
+ */
 
-/* Header section on the page top */
-.header-section {
+/* top & bottom line small text content - common styles */
+.smalltext-content {
     background-color: var(--black-bg-color);
     color: var(--white-color);
     font-family: Roboto Slab;
     text-align: center;
     font-size: calc(0.5rem + 0.5vw);
-    line-height: calc(0.8rem + 0.7vw);
+    line-height: calc(0.8rem + 0.8vw);
     font-weight: 100;
     letter-spacing: 1px;
 }
 
-/* Navigation bar section */
+/* header section on the page top */
+.header-section {
+    letter-spacing: 0px;
+}
+
+/* footer section on the page bottom */
+.footer-section {
+    border-top: 3px solid var(--gold-color);
+    letter-spacing: 1px;
+}
+
+/* navigation bar section */
 .navbar-section {
     background-color: var(--almost-bg-color);
     color: var(--almostwhite-color);
@@ -45,284 +59,328 @@ body {
     letter-spacing: 0px;
 }
 
-/* Footer section on the page bottom */
-.footer-section {
-    border-top: 3px solid var(--gold-color);
-    background-color: var(--black-bg-color);
-    color: var(--almostwhite-color);
-    font-family: Roboto Slab;
-    text-align: center;
-    font-size: 0.8rem;
-    font-weight: 100;
-    line-height: 1.2rem;
-    letter-spacing: 0px;
+/**
+ * TOP BANNERS 
+ * Each page starts with a section with a background image.
+ * -------------------------------------------------------------------
+ */
+
+/* top banners section common styles */
+.topbanner-section {
+    padding-top: calc(1.5rem + 15vh);
+    padding-bottom: calc(1.5rem + 15vh);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: var(--dark-bg-color);
+    opacity: 1;
+    box-shadow: 0px 20px 10px 0px rgba(255,255,255,0.2);
 }
 
-/* Top banner in the Home page - 100% width and background image */
+/* top banner in the Home page - 100% width and background image */
 .mainpage-bannertop {
     padding-top: calc(1.5rem + 20vh);
     padding-bottom: calc(1.5rem + 20vh);
-    background-image: url(../img/iulian-aghei-q_xW-2ICvfA-unsplash.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-color: var(--dark-bg-color);
-    opacity: 0.9;
-    box-shadow: 0px 10px 10px 0px rgba(255,255,255,0.1);
+    background-image: url(../img/iulian-aghei-q_xW-2ICvfA-unsplash-640x480.jpg);
 }
 
-/* Top banner in the Menu pages - 100% width and background image */
+/* top banner in the Menu pages - 100% width and background image */
 .menupage-bannertop {
-    padding-top: calc(1.5rem + 15vh);
-    padding-bottom: calc(1.5rem + 15vh);
     background-image: url(../img/fabrizio-magoni-boaDpmC-_Xo-unsplash-640x480.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-color: var(--dark-bg-color);
-    opacity: 0.9;
-    box-shadow: 0px 10px 10px 0px rgba(255,255,255,0.1);
 }
 
-/* Top banner in the Contact pages - 100% width and background image */
+/* top banner in the Contact pages - 100% width and background image */
 .contactpage-bannertop {
-    padding-top: calc(1.5rem + 15vh);
-    padding-bottom: calc(1.5rem + 15vh);
     background-image: url(../img/amin-hasani-Bj1BywJp0JM-unsplash-640x480.jpg);
+}
+
+/* .md > | medium devices and up (tablets) 768px and up */
+@media screen and (min-width: 768px) {
+    .mainpage-bannertop {
+        background-image: url(../img/iulian-aghei-q_xW-2ICvfA-unsplash-2400x1602.jpg);
+    }  
+    .menupage-bannertop {
+        background-image: url(../img/fabrizio-magoni-boaDpmC-_Xo-unsplash-2400x1408.jpg);
+    }  
+    .contactpage-bannertop {
+        background-image: url(../img/amin-hasani-Bj1BywJp0JM-unsplash-2400x1602.jpg);
+    }  
+}
+
+/**
+ * SECTION SEPARATORS
+ * On some pages we use a section separator, using a container 
+ * with a background image.
+ * -------------------------------------------------------------------
+ */
+
+/* section container for section separator */
+.section-break {
+    padding-top: calc(1.5rem + 25vh);
+    padding-bottom: calc(1.5rem + 25vh);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-color: var(--dark-bg-color);
-    opacity: 0.9;
-    box-shadow: 0px 10px 10px 0px rgba(255,255,255,0.1);
 }
 
-/* Sections breacks with a full with image */
-.section-break-1 {
-    padding-top: calc(1.5rem + 25vh);
-    padding-bottom: calc(1.5rem + 25vh);
+/* background for section separator */
+.background-img-1 {
     background-image: url(../img/rest-vb-empanadas-criollas-640x480.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-color: var(--dark-bg-color);
 }
 
-/* Sections breacks with a full with image */
-.section-break-2 {
-    padding-top: calc(1.5rem + 25vh);
-    padding-bottom: calc(1.5rem + 25vh);
+/* background for section separator */
+.background-img-2 {
     background-image: url(../img/rest-vb-ensalada-delbarrio-640x480.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-color: var(--dark-bg-color);
 }
 
-/* Sections breacks with a full with image */
-.section-break-3 {
-    padding-top: calc(1.5rem + 25vh);
-    padding-bottom: calc(1.5rem + 25vh);
+/* background for section separator */
+.background-img-3 {
     background-image: url(../img/rest-vb-bife-640x480.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-color: var(--dark-bg-color);
 }
 
-/* Sections breacks with a full with image */
-.section-break-4 {
-    padding-top: calc(1.5rem + 25vh);
-    padding-bottom: calc(1.5rem + 25vh);
+/* background for section separator */
+.background-img-4 {
     background-image: url(../img/rest-vb-copa-delbarrio-640x480.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-color: var(--dark-bg-color);
 }
 
-/* Content section - 100% width and background image */
+/* .md > | Medium devices and up (tablets) 768px and up */
+@media screen and (min-width: 768px) {
+    .background-img-1 {
+        background-image: url(../img/rest-vb-empanadas-criollas.jpg);
+    }
+    
+    .background-img-2 {
+        background-image: url(../img/rest-vb-ensalada-delbarrio.jpg);
+    }
+    
+    .background-img-3 {
+        background-image: url(../img/rest-vb-bife.jpg);
+    }
+    
+    .background-img-4 {
+        background-image: url(../img/rest-vb-copa-delbarrio.jpg);
+    }
+}
+
+/**
+ * SECTIONS CONTAINERS
+ * Containers we use to create page content sections 
+ * -------------------------------------------------------------------
+ */
+
+/* content section - 100% width and background image */
 .carousel-section {
     background-color: var(--dark-bg-color);
 }
 
-/* Section background dark */
+/* section background dark */
 .content-section-dark {
     padding: 80px 40px 80px 40px;
     background-color: var(--dark-bg-color);
 }
 
-/* Section background light */
+/* section background light */
 .content-section-light {
     padding: 80px 40px 80px 40px;
     background-color: var(--light-bg-color);
 
 }
 
-/* Section with background lighter */
-.content-section-lighter {
-    height: 40vh;
-    background-color: var(--lighter-bg-color);
-}
+/**
+ * MISCELLANEOUS
+ * Decorators and other special elements styles 
+ * -------------------------------------------------------------------
+ */
 
-/* Title heading for any content section */
-.page-title {
-    font-family: Libre Baskerville;
-    text-align: center;
-    font-size: calc(1.525rem + 3.3vw);
-    font-weight: 300;
-    line-height: calc(1.525rem + 5vw);
-    letter-spacing: 10px;
-    text-shadow: -1px -1px 1px rgba(255,255,255,.1), 1px 1px 1px rgba(0,0,0,.5);
-    color: var(--almostwhite-color);
-}
-
-/* Subtitle heading for any content section  */
-.page-subtitle {
-    font-family: Satisfy;
-    text-align: center;
-    font-size: calc(1.525rem + 1.3vw);
-    font-weight: 300;
-    line-height: calc(1.525rem + 3vw);
-    text-shadow: -1px -1px 1px rgba(255,255,255,.1), 1px 1px 1px rgba(0,0,0,.5);
-    color: var(--gold-color);
-}
-
-/* Title heading for any content section */
-.secondarypage-title {
-    font-family: Libre Baskerville;
-    text-align: center;
-    font-size: calc(1.525rem + 2.3vw);
-    font-weight: 300;
-    line-height: calc(1.525rem + 4vw);
-    letter-spacing: 8px;
-    text-shadow: -1px -1px 1px rgba(255,255,255,.1), 1px 1px 1px rgba(0,0,0,.5);
-    color: var(--almostwhite-color);
-}
-
-/* Title style for small information blocks  */
-.small-subtitle {
-    font-family: Libre Baskerville;
-    text-align: center;
-    font-size: calc(0.7rem + 1vw);
-    font-weight: 300;
-    line-height: calc(0.8rem + 2vw);
-    color: var(--gold-color);
-}
-/* Subtitle heading for any content section  */
-.section-subtitle {
-    font-family: Satisfy;
-    text-align: center;
-    font-size: calc(1.1rem + 1vw);
-    font-weight: 300;
-    line-height: calc(1.1rem + 2vw);
-    color: var(--gold-color);
-}
-
-/* Title heading for any content section */
-.section-title {
-    font-family: Libre Baskerville;
-    text-align: center;
-    font-size: calc(1.1rem + 0.3vw);
-    font-weight: 300;
-    line-height: calc(1.1rem + 0.8vw);
-    letter-spacing: 4px;
-    color: var(--almostwhite-color);
-}
-
-/* Paragraph text for any content section */
+/* decorator to separate title and content */
 .decorator-line {
+    color: var(--gold-color);
     font-family: Libre Baskerville;
     text-align: center;
     font-size: calc(0.6rem + 0.3vw);
     font-weight: 100;
     line-height: calc(0.6rem + 0.8vw);
     letter-spacing: 5px;
-    color: var(--gold-color);
 }
 
-/* Paragraph text for any content section */
-.text-content {
-    font-family: Roboto Slab;
-    text-align: center;
-    font-size: calc(0.8rem + 0.3vw);
-    font-weight: 100;
-    line-height: calc(0.9rem + 0.8vw);
+/**
+ * TITLES
+ * Different sizes of titles 
+ * -------------------------------------------------------------------
+ */
+
+/* title common styles */
+.title {
     color: var(--almostwhite-color);
+    font-family: Libre Baskerville;
+    text-align: center;
+    font-weight: 300;
+    letter-spacing: 2px;
+    text-shadow: -1px -1px 1px rgba(255,255,255,.1), 1px 1px 1px rgba(0,0,0,.5);
 }
 
-/* Review section title */
+/* title heading for main page */
+.page-title {
+    font-size: calc(1.525rem + 3.3vw);
+    line-height: calc(1.525rem + 5vw);
+    letter-spacing: 10px;
+}
+
+/* title heading for secondary pages */
+.secondarypage-title {
+    font-size: calc(1.525rem + 2.3vw);
+    line-height: calc(1.525rem + 4vw);
+    letter-spacing: 8px;
+}
+
+/* title heading for any content section */
+.section-title {
+    font-size: calc(1.1rem + 0.3vw);
+    line-height: calc(1.1rem + 0.8vw);
+    letter-spacing: 4px;
+}
+
+/* title heading for the review section */
 .review-section-title {
+    color: var(--gold-color);
+    font-family: Satisfy;
+    font-size: calc(1.525rem + 4vw);
+    line-height: calc(1.525rem + 6vw);
+}
+
+/* title style for small information blocks  */
+.small-block-title {
+    color: var(--gold-color);
+    font-size: calc(0.7rem + 1vw);
+    line-height: calc(0.8rem + 2vw);
+}
+
+/**
+ * SUBTITLES
+ * Different sizes of subtitles 
+ * -------------------------------------------------------------------
+ */
+
+/* subtitle common styles */
+.subtitle {
+    color: var(--gold-color);
     font-family: Satisfy;
     text-align: center;
-    font-size: calc(1.525rem + 4vw);
     font-weight: 300;
-    line-height: calc(1.525rem + 6vw);
-    color: var(--gold-color);
+    text-shadow: -1px -1px 1px rgba(255,255,255,.1), 1px 1px 1px rgba(0,0,0,.5);
 }
 
-/* Review text */
-.review-section-text {
-    font-family: Roboto Slab;
-    text-align: center;
+/* subtitle heading for any content section  */
+.page-subtitle {
+    font-size: calc(1.525rem + 1.3vw);
+    line-height: calc(1.525rem + 3vw);
+}
+
+/* subtitle heading for any content section  */
+.section-subtitle {
     font-size: calc(1.1rem + 1vw);
+    line-height: calc(1.1rem + 2vw);
+}
+
+/**
+ * GENERAL TEXT
+ * Styles used on text contents in differents sections 
+ * -------------------------------------------------------------------
+ */
+
+/* commont text style */
+.text {
+    color: var(--almostwhite-color);
+    font-family: Roboto Slab;
+    text-align: center;
     font-weight: 100;
+}
+
+/* paragraph text for any content section */
+.text-content {
+    font-size: calc(0.8rem + 0.3vw);
+    line-height: calc(0.9rem + 0.8vw);
+}
+
+/**
+ * REVIEW
+ * Styles used on text contents in review sections 
+ * -------------------------------------------------------------------
+ */
+
+/* review text common styles */
+.review-text {
+    color: var(--almostwhite-color);
+    font-family: Roboto Slab;
+    text-align: center;
+    font-weight: 100;
+}
+
+/* review text */
+.review-section-text {
+    font-size: calc(1.1rem + 1vw);
     line-height: calc(1.2rem + 2vw);
-    color: var(--almostwhite-color);
 }
 
-/* Review author */
+/* review author */
 .review-section-author {
-    font-family: Roboto Slab;
-    text-align: center;
-    font-size: calc(0.8rem + 0.8vw);
-    font-weight: 100;
-    line-height: calc(0.9rem + 0.9vw);
     color: var(--gold-color);
+    font-size: calc(0.8rem + 0.8vw);
+    line-height: calc(0.9rem + 0.9vw);
 }
 
-/* Review date */
+/* review date */
 .review-section-date {
+    font-size: calc(0.5rem + 0.8vw);
+    line-height: calc(0.6rem + 0.9vw);
+}
+
+/**
+ * PRODUCT
+ * Styles used on text in product sections 
+ * -------------------------------------------------------------------
+ */
+
+ /* product text commont styles */
+.product-text {
+    color: var(--almostwhite-color);
     font-family: Roboto Slab;
     text-align: center;
-    font-size: calc(0.5rem + 0.8vw);
     font-weight: 100;
-    line-height: calc(0.6rem + 0.9vw);
-    color: var(--almostwhite-color);
+    text-align: left;
+    letter-spacing: 1px;
 }
 
-/* Product name */
+/* product name */
 .product-name {
-    font-family: Roboto Slab;
     font-size: calc(0.8rem + 0.8vw);
-    font-weight: 100;
     line-height: calc(0.9rem + 0.9vw);
     color: var(--gold-color);
-    text-align: left;
 }
 
-/* Product description */
+/* product description */
 .product-description {
-    font-family: Roboto Slab;
     font-size: calc(0.6rem + 0.6vw);
-    font-weight: 100;
     line-height: calc(0.7rem + 0.7vw);
-    color: var(--almostwhite-color);
-    text-align: left;
 }
 
-/* Product price */
+/* product price */
 .product-price {
-    font-family: Roboto Slab;
     font-size: calc(0.4rem + 0.7vw);
     font-weight: 200;
     line-height: calc(0.6rem + 0.9vw);
     letter-spacing: 2px;
     color: var(--gold-color);
-    text-align: left;
 }
 
-/* Class to embbed a responsive Google Map withou API Key */
+/**
+ * GOOGLE MAP
+ * Styles used on google map iframe 
+ * -------------------------------------------------------------------
+ */
+
+/* class to embbed a responsive Google Map withou API Key */
 .map-responsive {
     overflow: hidden;
     padding-bottom: 56.25%;
@@ -330,7 +388,7 @@ body {
     height: 0;
 }
 
-/* Parameters to adjust the iframe that Google gives us */
+/* parameters to adjust the iframe that Google gives us */
 .map-responsive iframe {
     left: 0;
     top: 0;
@@ -339,7 +397,13 @@ body {
     position: absolute;
 }
 
-/* Back to top button in the bottom right corner of the screen */
+/**
+ * BACK TO TOP
+ * Styles used on back to top buttom 
+ * -------------------------------------------------------------------
+ */
+
+/* back to top button in the bottom right corner of the screen */
 #btn-back-to-top {
     position: fixed;
     bottom: 20px;
