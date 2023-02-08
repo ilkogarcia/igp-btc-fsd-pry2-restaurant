@@ -1,10 +1,10 @@
 /* setup all variables used in this css */
 :root {
     --black-bg-color: #000;
-    --almost-bg-color: #2D2D2D;
+    --almost-bg-color: rgb(45, 45, 45);
     --darkes-bg-color: #404258;
-    --dark-bg-color: #474E68;
-    --light-bg-color: #50577A;
+    --dark-bg-color: rgb(71, 79, 105);
+    --light-bg-color: rgb(81, 88, 123);
     --lighter-bg-color: #6B728E;
     --white-bg-color: #fff;
     --white-color: #fff;
@@ -414,4 +414,56 @@ body {
     bottom: 20px;
     right: 20px;
     display: none;
+}
+
+
+/**
+ * POP-UP
+ * Styles used on po-up message 
+ * -------------------------------------------------------------------
+ */
+
+/* Message PopUp */
+.MessagePopUp {
+    position: fixed;
+    z-index: 1;
+    width: 50%;
+    top: 10rem;
+    left: 0; 
+    right: 0; 
+    margin-left: auto; 
+    margin-right: auto; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    vertical-align: middle;
+    row-gap: 20px;
+    padding: 30px 50px 30px 50px;
+    background-color: rgba(81, 88, 123, 0.9);
+    border: 2px solid rgba(71, 79, 105, 0.5);
+    border-radius: 20px;
+    visibility: hidden;
+    transition: 0.1s;
+}
+
+/* Message PopUp header */
+.MessagePopUp-title {
+    color: var(--almostwhite-color);
+    font-family: Libre Baskerville;
+    font-size: calc(1.8rem + 0.390625vw);
+    text-align: center;
+    font-weight: 300;
+    letter-spacing: 2px;
+    text-shadow: -1px -1px 1px rgba(255,255,255,.1), 1px 1px 1px rgba(0,0,0,.5);
+    -webkit-text-stroke: 1px rgba(0, 0, 0, 0.3);
+}
+
+/* Message PopUp paragraph */
+.MessagePopUp-text {
+    color: var(--almostwhite-color);
+    font-family: Roboto Slab;
+    font-size: calc(1.2rem + 0.390625vw);
+    line-height: calc(1.6rem + 0.390625vw);
+    text-align: center;
+    font-weight: 100;
 }
