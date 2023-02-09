@@ -79,16 +79,16 @@
         </div>
         <div class="row d-flex align-items-center justify-content-center">
             <!-- Gallery -->
-            <div class="row">
-            <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+            <div class="row justify-content-center">
+            <div class="col-lg-3 col-md-3 mb-4 mb-lg-0">
                 <img src="./img/rest-vb-salon1.jpg" class="w-100 shadow-1-strong rounded mb-4" alt=""/>
                 <img src="./img/rest-vb-salon6.jpg" class="w-100 shadow-1-strong rounded mb-4" alt=""/>
             </div>
-            <div class="col-lg-4 mb-4 mb-lg-0">
+            <div class="col-lg-3 col-md-3 mb-4 mb-lg-0">
                 <img src="./img/rest-vb-salon5.jpg" class="w-100 shadow-1-strong rounded mb-4" alt=""/>
                 <img src="./img/rest-vb-salon3.jpg" class="w-100 shadow-1-strong rounded mb-4" alt=""/>
             </div>
-            <div class="col-lg-4 mb-4 mb-lg-0">
+            <div class="col-lg-3 col-md-3 mb-4 mb-lg-0">
                 <img src="./img/rest-vb-salon2.jpg" class="w-100 shadow-1-strong rounded mb-4" alt=""/>
                 <img src="./img/rest-vb-salon7.jpg" class="w-100 shadow-1-strong rounded mb-4" alt=""/>
             </div>
@@ -205,24 +205,47 @@
         </div>
     </div>
 
-    <!-- section home: events -->
+    <!-- section home: reserv -->
     <div class="container-fluid text-center content-section-dark" id="content-section-dark">
         <div class="row d-flex align-items-center justify-content-center">
             <div class="col-9 col-md-8 col-lg-8 mb-4">
-                <p class="subtitle section-subtitle">celebra con nosotros</p>
-                <p class="title section-title">TUS EVENTOS</p>    
-                <p class="text text-content">¿Quieres celebrar un bautizo, comunión u otro evento?... Déjanos un teléfono y te llamaremos en breve.</p>
+                <p class="subtitle section-subtitle">pre-reserva</p>
+                <p class="title section-title">TU MESA</p>    
+                <p class="text text-content">Para realiza una pre-reserva con antelación debes indicar a continuación tu nombre y apellidos, un número de contacto, la cantidad de comensales y la fecha.</p>
                 <p class="decorator-line mt-4 mb-4"><i class="bi bi-asterisk"></i>&nbsp;<i class="bi bi-asterisk"></i>&nbsp;<i class="bi bi-asterisk"></i></p>
             </div>
         </div>
-        <div class="row d-flex align-items-center justify-content-center">
-            <div class="col-10 col-md-7 col-lg-7 mb-4 d-md-flex justify-content-md-end">
-                <form>
-                    <input type="phone" class="form-control" id="inputPhone" placeholder="Teléfono">
+        <div class="row d-flex align-items-center justify-content-center gy-3">
+            <div class="col-6 col-md-4 col-lg-3">
+                <input type="text" class="form-control" id="inputName" placeholder="Nombre y apellidos">
             </div>
-            <div class="col-10 col-md-5 col-lg-5 mb-4 d-md-flex justify-content-md-start">
-                    <button type="submit" class="btn btn-outline-light me-md-2">ENVIAR</button>
-                </form>
+            <div class="col-6 col-md-4 col-lg-2">
+                <input type="text" class="form-control" id="inputPhone" placeholder="60X XXX XXX">
+            </div>
+            <div class="col-6 col-md-4 col-lg-1">
+                <input type="number" class="form-control" id="inputPax"  placeholder="2" min="2" max="12" required>
+            </div>
+            <div class="col-6 col-md-4 col-lg-2">
+                <input type="date" class="form-control" id="inputDate" required>
+            </div>
+            <div class="col-6 col-md-4 col-lg-2">
+                <select class="form-select" id="inputTurn" required>
+                    <option>13:30</option>
+                    <option selected>14:00</option>
+                    <option>14:30</option>
+                    <option>15:00</option>
+                    <option>15:30</option>
+                    <option>20:00</option>
+                    <option>20:30</option>
+                    <option>21:00</option>
+                    <option>21:30</option>
+                    <option>22:00</option>
+                    <option>22:30</option>
+                </select>
+            </div>
+            <div class="col-10 col-md-10 col-lg-10">
+                <button type="button" class="btn btn-outline-light mt-4" id="send-button" onclick="valBookingData()">ENVIAR</button>
+                <p class="text text-content mt-5">IMPORTANTE: Tu reserva no está confirmada hasta que nos pongamos en contacto. Para confirmar al momento: 664 406 771.</p>
             </div>
         </div>
     </div>
@@ -249,10 +272,23 @@
         </div>
     </div>
 
+    <!-- Pop-Up Message (initialy hidden) -->
+    <div class="MessagePopUp" id="message-popup">
+        <h2 class="MessagePopUp-title" id="messagepopup-title"></h2>
+        <div class="MessagePopUp-text" id="messagepopup-text"></div>
+        <div>
+            <button type="button" class="btn btn-outline-light mt-4" id="ok-button" onclick="hideElement('message-popup')">OK</button>
+        </div>
+    </div>
+
     <!-- scripts created by me for this project -->
     <script src="./js/scrolltop.js"></script> 
+    <script src="./js/reserv.js"></script>
     
-    <!-- bootstrap js scripts -->
+    <!-- bootstrap and jquery jscripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
 </body>
 </html>
