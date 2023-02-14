@@ -67,25 +67,27 @@ body {
 
 /* top banners section common styles */
 .topbanner-section {
-    padding-top: calc(1.5rem + 15vh);
-    padding-bottom: calc(1.5rem + 15vh);
+    padding-top: calc(1.5rem + 20vh);
+    padding-bottom: calc(1.5rem + 20vh);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    background-color: var(--dark-bg-color);
-    box-shadow: 0px 30px 20px 0px rgba(255, 255, 255,0.4);
+    border-bottom: 10px solid rgba(201, 171, 129, 0.4);
 }
 
 /* top banner in the Home page - 100% width and background image */
 .mainpage-bannertop {
-    padding-top: calc(1.5rem + 20vh);
-    padding-bottom: calc(1.5rem + 20vh);
     background-image: url(../img/iulian-aghei-q_xW-2ICvfA-unsplash-640x480.jpg);
 }
 
 /* top banner in the Menu pages - 100% width and background image */
 .menupage-bannertop {
-    background-image: url(../img/fabrizio-magoni-boaDpmC-_Xo-unsplash-640x480.jpg);
+    background-image: url(../img/pexels-naim-benjelloun-2291591-1280x853px.jpg);
+}
+
+/* top banner in the Tasting pages - 100% width and background image */
+.tastingpage-bannertop {
+    background-image: url(../img/pexels-los-muertos-crew-7613432-1920x1281px.jpg);
 }
 
 /* top banner in the Contact pages - 100% width and background image */
@@ -97,10 +99,13 @@ body {
 @media screen and (min-width: 768px) {
     .mainpage-bannertop {
         background-image: url(../img/iulian-aghei-q_xW-2ICvfA-unsplash-2400x1602.jpg);
-    }  
+    }
     .menupage-bannertop {
-        background-image: url(../img/fabrizio-magoni-boaDpmC-_Xo-unsplash-2400x1408.jpg);
-    }  
+        background-image: url(../img/pexels-naim-benjelloun-2291591-1920x1280px.jpg);
+    }
+    .tastingpage-bannertop {
+        background-image: url(../img/pexels-los-muertos-crew-7613432-1920x1281px.jpg);
+    }    
     .contactpage-bannertop {
         background-image: url(../img/amin-hasani-Bj1BywJp0JM-unsplash-2400x1602.jpg);
     }  
@@ -148,6 +153,14 @@ body {
     background-image: url(../img/rest-vb-mollejas-640x480.jpg);
 }
 
+/* background for section separator */
+.background-img-6 {
+    background-image: url(../img/fabrizio-magoni-boaDpmC-_Xo-unsplash-1920x1126.jpg);
+}
+/* background for section separator */
+.background-img-7 {
+    background-image: url(../img/pexels-caio-59598-1920x1221px.jpg);
+}
 
 /* .md > | Medium devices and up (tablets) 768px and up */
 @media screen and (min-width: 768px) {
@@ -351,7 +364,6 @@ body {
 .product-text {
     color: var(--almostwhite-color);
     font-family: Roboto Slab;
-    text-align: center;
     font-weight: 100;
     text-align: left;
     letter-spacing: 1px;
@@ -378,6 +390,38 @@ body {
     letter-spacing: 2px;
     color: var(--gold-color);
 }
+
+/* product description */
+.product-list {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.product-list li {
+    color: var(--almostwhite-color);
+    font-family: Roboto Slab;
+    text-align: center;
+    font-weight: 100;
+    text-align: left;
+    letter-spacing: 1px;
+}
+
+.product-list li span {
+    font-size: calc(0.4rem + 0.7vw);
+    font-weight: 200;
+    line-height: calc(0.6rem + 0.9vw);
+    letter-spacing: 2px;
+    color: var(--gold-color);
+}
+
+.product-note {
+    color: var(--white-color);
+    font-family: Roboto Slab;
+    font-weight: 100;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
 
 /**
  * GOOGLE MAP
