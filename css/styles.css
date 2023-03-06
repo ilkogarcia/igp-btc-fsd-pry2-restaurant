@@ -270,8 +270,8 @@ body {
 /* title style for small information blocks  */
 .small-block-title {
     color: var(--gold-color);
-    font-size: calc(0.7rem + 1vw);
-    line-height: calc(0.8rem + 2vw);
+    font-size: calc(0.4rem + 0.8vw);
+    line-height: calc(0.5rem + 1.0vw);
 }
 
 /**
@@ -319,6 +319,12 @@ body {
 .text-content {
     font-size: calc(0.8rem + 0.3vw);
     line-height: calc(0.9rem + 0.8vw);
+}
+
+.small-text-content {
+    font-size: calc(0.8rem + 0.3vw);
+    line-height: calc(0.9rem + 0.8vw);
+    text-align: left;
 }
 
 /**
