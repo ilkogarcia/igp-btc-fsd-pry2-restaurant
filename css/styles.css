@@ -133,8 +133,8 @@ body {
 
 /* section container for section separator */
 .section-break {
-    padding-top: calc(1.5rem + 45vh);
-    padding-bottom: calc(1.5rem + 45vh);
+    padding-top: calc(1.5rem + 20vw);
+    padding-bottom: calc(1.5rem + 20vw);
     background-size: cover;
     background-position:bottom;
     background-repeat: no-repeat;
@@ -182,6 +182,11 @@ body {
     background-image: url(../img/pexels-valeria-boltneva-1123260-640x480px.jpg);
 }
 
+/* background for section separator */
+.background-img-9 {
+    background-image: url(../img/pexels-caio-59598-640x407px.jpg);
+}
+
 
 /* .md > | Medium devices and up (tablets) 768px and up */
 @media screen and (min-width: 768px) {
@@ -215,6 +220,10 @@ body {
 
     .background-img-8 {
         background-image: url(../img/pexels-valeria-boltneva-1123260-1920x1280px.jpg);
+    }
+
+    .background-img-9 {
+        background-image: url(../img/pexels-caio-59598-1920x1221px.jpg);
     }
 }
 
@@ -408,7 +417,7 @@ body {
     color: var(--almostwhite-color);
     font-family: Roboto Slab;
     font-weight: 100;
-    text-align: left;
+    text-align: center;
     letter-spacing: 1px;
 }
 
@@ -445,7 +454,7 @@ body {
     font-family: Roboto Slab;
     text-align: center;
     font-weight: 100;
-    text-align: left;
+    text-align: center;
     letter-spacing: 1px;
 }
 
