@@ -33,7 +33,7 @@ body {
     font-size: calc(0.5rem + 0.5vw);
     line-height: calc(0.8rem + 0.8vw);
     font-weight: 100;
-    letter-spacing: 1px;
+    letter-spacing: 0px;
 }
 
 /* header section on the page top */
@@ -561,4 +561,33 @@ body {
     line-height: calc(1.6rem + 0.390625vw);
     text-align: center;
     font-weight: 100;
+}
+
+/**
+ * theFork
+ * Styles used in theFork widget
+ * -------------------------------------------------------------------
+ */
+
+.thefork{
+    width: 100%;
+    border:none;
+    overflow: scroll;
+}
+
+/* Media queries widget */ 
+@media only screen and (max-width : 320px) { 
+    .thefork{
+    min-height: 840px;
+    }
+}
+@media only screen and (min-width : 321px) and (max-width : 516px){
+    .thefork{
+    min-height: 650px; 
+    }
+}
+@media only screen and (min-width : 517px) { 
+    .thefork{
+    min-height: 550px; 
+    }
 }
