@@ -431,7 +431,14 @@ body {
 /* product description */
 .product-description {
     font-size: calc(0.6rem + 0.6vw);
-    line-height: calc(0.7rem + 0.7vw);
+    line-height: calc(0.9rem + 0.9vw);
+}
+
+/* product allergens */
+.product-allergens {
+    font-size: calc(0.3rem + 0.5vw);
+    line-height: calc(0.5rem + 0.7vw);
+    color: var(--almostwhite-color);
 }
 
 /* product price */
@@ -474,6 +481,20 @@ body {
     letter-spacing: 1px;
 }
 
+/* styles applied to allergens sections on each product description */
+.allergen-icons {
+    gap: 5px; /* Espacio entre íconos */
+}
+
+.allergen-icon {
+    width: 20px; /* Ajusta al tamaño que prefieras */
+    height: 20px; /* Ajusta al tamaño que prefieras */
+}
+
+.allergen-icon-big {
+    width: 52px; /* Ajusta al tamaño que prefieras */
+    height: 52px; /* Ajusta al tamaño que prefieras */
+}
 
 /**
  * GOOGLE MAP
