@@ -1,13 +1,3 @@
-// Environment configuration
-let EMAIL_CONFIG = { HOST: '', USERNAME: '', PASSWORD: '' }
-if (typeof process !== 'undefined' && process.env) {
-  EMAIL_CONFIG.HOST = process.env.HOST || ''
-  EMAIL_CONFIG.USERNAME = process.env.USERNAME || ''
-  EMAIL_CONFIG.PASSWORD = process.env.PASSWORD || ''
-} else if (typeof window !== 'undefined' && window.ENV) {
-  EMAIL_CONFIG = window.ENV
-}
-
 // Shows hidden elements in the html @param {string} element Id
 const showElement = (elementId) => {
   document.getElementById(elementId).style.visibility = 'visible'
@@ -55,12 +45,10 @@ const sendEmail = () => {
   let message = getUserMessage()
 
   Email.send({
-    Host: EMAIL_CONFIG.HOST,
-    Username: EMAIL_CONFIG.USERNAME,
-    Password: EMAIL_CONFIG.PASSWORD,
+    SecureToken: 'c0332e7d-ff1b-4c27-b020-ffc829dcfe48',
     To: 'reservas@viejobarrio.es',
-    From: EMAIL_CONFIG.USERNAME,
-    Subject: 'Contact from ' + name + email,
+    From: email,
+    Subject: 'Contact from ' + name,
     Body: message,
   }).then((response) => setSuccessMessage(response))
 }
