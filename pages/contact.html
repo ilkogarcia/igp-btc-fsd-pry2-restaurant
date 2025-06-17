@@ -85,10 +85,12 @@
         <div class="row d-flex align-items-start justify-content-center">
                 <div class="row d-flex justify-content-center aling-items-center">
                     <div class="col-10 col-lg-6">
-                        <input type="text" class="form-control mb-2" id="inputName" placeholder="Nombre y apellidos">
-                        <input type="email" class="form-control mb-2" id="inputEmail"  placeholder="Correo electrónico">
-                        <textarea class="form-control mb-2" id="inputMessage" rows="3" placeholder="Ingrese aquí su mensaje para nosotros."></textarea>
-                        <button type="button" class="btn btn-outline-light mt-4" id="send-button" onclick="sendEmail()">ENVIAR</button>
+                        <form id="contact-form">
+                            <input type="text" class="form-control mb-2"  id="inputName" name="name" placeholder="Nombre y apellidos" required>
+                            <input type="email" class="form-control mb-2" id="inputEmail" name="email" placeholder="Correo electrónico" required>
+                            <textarea class="form-control mb-2" id="inputMessage" rows="3" name="message" placeholder="Ingrese aquí su mensaje para nosotros." required></textarea>
+                            <button type="submit" class="btn btn-outline-light mt-4" id="send-button">ENVIAR</button>
+                        </form>
                     </div>
                 </div>
         </div>
@@ -176,7 +178,31 @@
 
     <!-- scripts created by me for this project -->
     <script src="../js/scrolltop.js"></script> 
-    <script src="../js/sendmail.js"></script>    
+    
+    <!-- Carga del SDK de EmailJS -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+    <!-- Inicialización y envío del formulario -->
+    <script>
+    // 1 - Inicializa EmailJS con tu Public Key
+    emailjs.init('8OmUGgV5ftHGZfLqb');          // ← pon aquí tu Public Key
+
+    // 2 - Intercepta el envío del formulario y envía el correo
+    document.getElementById('contact-form')
+        .addEventListener('submit', function (e) {
+        e.preventDefault();                    // evita la recarga de la página
+
+        emailjs.sendForm(
+            'service_j2llk7s',                   // ← tu Service ID
+            'template_xw9rh3q',                  // ← tu Template ID
+            this                                 // el propio formulario
+        )
+        .then(() => setSuccessMessage('OK'))   // mensaje de éxito
+        .catch(err =>                          // mensaje de error
+            setSuccessMessage(err?.text || 'ERROR')
+        );
+        });
+    </script>  
 
 </body>
 </html>
