@@ -1,3 +1,13 @@
+// Environment configuration
+let EMAIL_CONFIG = { HOST: '', USERNAME: '', PASSWORD: '' }
+if (typeof process !== 'undefined' && process.env) {
+  EMAIL_CONFIG.HOST = process.env.HOST || ''
+  EMAIL_CONFIG.USERNAME = process.env.USERNAME || ''
+  EMAIL_CONFIG.PASSWORD = process.env.PASSWORD || ''
+} else if (typeof window !== 'undefined' && window.ENV) {
+  EMAIL_CONFIG = window.ENV
+}
+
 // Shows hidden elements in the html @param {string} element Id
 const showElement = (elementId) => {
   document.getElementById(elementId).style.visibility = 'visible'
@@ -45,11 +55,11 @@ const sendEmail = () => {
   let message = getUserMessage()
 
   Email.send({
-    Host: 'smtp.ionos.es',
-    Username: 'maximo@4vientos.com',
-    Password: 'Libertad69.,',
+    Host: EMAIL_CONFIG.HOST,
+    Username: EMAIL_CONFIG.USERNAME,
+    Password: EMAIL_CONFIG.PASSWORD,
     To: 'reservas@viejobarrio.es',
-    From: 'maximo@4vientos.com',
+    From: EMAIL_CONFIG.USERNAME,
     Subject: 'Contact from ' + name + email,
     Body: message,
   }).then((response) => setSuccessMessage(response))
