@@ -49,8 +49,8 @@ const sendEmail = () => {
     Username: 'maximo@4vientos.com',
     Password: 'Libertad69.,',
     To: 'reservas@viejobarrio.es',
-    From: email,
-    Subject: 'Contact from ' + name,
+    From: 'maximo@4vientos.com',
+    Subject: 'Contact from ' + name + email,
     Body: message,
   }).then((response) => setSuccessMessage(response))
 }
