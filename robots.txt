@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://viejobarrio.es/sitemap.xml

@@ -1,21 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<meta charset="UTF-8">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Viejo Barrio - Valencia - Asador Argentino</title>
+
+    <title>Viejo Barrio – Asador Argentino en Benimaclet, Valencia</title>
+    <meta name="description" content="Asador argentino en Benimaclet (Valencia). Parrilla a la brasa, empanadas, provolone y cortes como bife y tira de asado. Reserva en TheFork o llámanos." />
+    <link rel="canonical" href="https://viejobarrio.es/" />
+
+    <!-- Open Graph (Facebook / WhatsApp) -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Viejo Barrio – Asador Argentino en Benimaclet, Valencia" />
+    <meta property="og:description" content="Parrilla a la brasa, carnes al punto y ambiente de barrio en Benimaclet. Reserva en TheFork o llámanos." />
+    <meta property="og:url" content="https://viejobarrio.es/" />
+    <meta property="og:image" content="https://viejobarrio.es/img/og-viejo-barrio-fachada-1200x630.jpg" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Viejo Barrio – Asador Argentino en Benimaclet, Valencia" />
+    <meta name="twitter:description" content="Parrilla a la brasa, carnes al punto y ambiente de barrio en Benimaclet. Reserva en TheFork o llámanos." />
+    <meta name="twitter:image" content="https://viejobarrio.es/img/og-viejo-barrio-fachada-1200x630.jpg" />
+
     <!-- Link to the BootStrap framework styles -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
     <!-- Link to the BootStrap icon library -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+
     <!-- Link to Google Fonts used on the project -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Satisfy">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Libre+Baskerville">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab">
-    <!-- Project style sheet  and favico -->
-    <link rel="stylesheet" href="./css/styles.css">
-    <link rel="shortcut icon" sizes="16x16 24x24 32x32 48x48 64x64" href="./img/viejobarrio.ico">
+
+    <!-- Project style sheet and favicon -->
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="icon" type="image/x-icon" href="/img/viejobarrio.ico">
+    <link rel="shortcut icon" href="/img/viejobarrio.ico">
+
+    <!-- LocalBusiness / Restaurant Schema (JSON-LD) -->
+    <script type="application/ld+json">
+        {
+        "@context": "https://schema.org",
+        "@type": "Restaurant",
+        "name": "Viejo Barrio – Asador Argentino",
+        "url": "https://viejobarrio.es/",
+        "image": "https://viejobarrio.es/img/fachada-viejo-barrio-asador-argentino-benimaclet-valencia-noche.jpg",
+        "telephone": "+34664406771",
+        "priceRange": "€€€",
+        "servesCuisine": ["Argentinian", "Grill"],
+        "hasMenu": "https://viejobarrio.es/pages/menu.html",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "C. del Reverend Rafael Tramoyeres, 5, Bajo Izquierda, Benimaclet",
+            "postalCode": "46020",
+            "addressLocality": "València",
+            "addressRegion": "Valencia",
+            "addressCountry": "ES"
+        },
+        "sameAs": [
+            "https://www.instagram.com/viejobarrio.asador",
+            "https://www.facebook.com/restauranteviejobarrio",
+            "https://www.google.com/maps?cid=11418522565425404756",
+            "https://www.google.com/maps/place/?q=place_id:ChIJAZsFXvlFYA0RVJv2e8a9dp4"
+        ],
+        "potentialAction": {
+            "@type": "ReserveAction",
+            "target": {
+            "@type": "EntryPoint",
+            "urlTemplate": "https://widget.thefork.com/es/9989afab-6dfe-4e01-907b-f6156681eea0?step=date&utm_source=viejobarrio.es",
+            "inLanguage": "es-ES",
+            "actionPlatform": [
+                "http://schema.org/DesktopWebPlatform",
+                "http://schema.org/MobileWebPlatform"
+            ]
+            },
+            "result": {
+            "@type": "Reservation",
+            "name": "Reserva en Viejo Barrio – Asador Argentino"
+            }
+        }
+        }
+    </script>
+
+    <!-- Google Analytics -->
     <script src="https://analytics.ahrefs.com/analytics.js" data-key="YTGa9Y/7jnTPxOmi/0lSdQ" async></script>
 </head>
 <body>
@@ -23,16 +92,23 @@
     <!-- page header section -->
     <div class="container-fluid smalltext-content header-section text-center" id="header-section">
         <div class="row p-2 d-flex align-items-center justify-content-space-between">
-            <div class="col-4 ps-2 d-flex justify-content-start">
-                <span class="align-middle"><i class="bi bi-geo-alt"></i>&nbsp;Rdo. Rafael Tramoyeres 5, Valencia</span>
+            <div class="col-6 ps-2 d-flex justify-content-start">
+                <span class="align-middle">
+                    <i class="bi bi-geo-alt"></i>&nbsp;
+                    <a href="https://www.google.com/maps?cid=11418522565425404756" target="_blank" rel="noopener" class="smalltext-content">
+                        C. del Reverend Rafael Tramoyeres, 5, Bajo Izquierda, Benimaclet, 46020 València, Valencia
+                    </a>
+                </span>
             </div>
             <div class="col-4 d-flex justify-content-center">
-                <span class="align-middle"><i class="bi bi-calendar-check"></i>&nbsp;<a href="https://module.lafourchette.com/es_ES/module/674347-7b042" target="_blank" class="smalltext-content">RESERVAS</a></span>
+                <span class="align-middle"><i class="bi bi-calendar-check"></i>&nbsp;<a href="https://widget.thefork.com/es/9989afab-6dfe-4e01-907b-f6156681eea0?step=date&utm_source=viejobarrio.es" target="_blank" class="smalltext-content">RESERVAS</a></span>
             </div>
-            <div class="col-4 pe-2 d-flex justify-content-end">
-                <span class="align-middle"><i class="bi bi-telephone-outbound"></i>&nbsp;664 406 771</span>
+            <div class="col-2 pe-2 d-flex justify-content-end">
+                <span class="align-middle">
+                    <i class="bi bi-telephone-outbound"></i>&nbsp;
+                    <a href="tel:+34664406771" class="smalltext-content">664 40 67 71</a>
+                </span>
             </div>
-
         </div>
     </div>
 
@@ -41,7 +117,7 @@
         <nav class="navbar navbar-expand-lg navbar-dark shadow-5-strong">
             <div class="container-fluid">
                 <a class="navbar-brand" href="./index.html">
-                    <img src="./img/logo-viejo-barrio.png" alt="Restaurante Viejo Barrio Valencia" width="32px">
+                    <img src="/img/logo-viejo-barrio.png" alt="Viejo Barrio – Asador Argentino en Valencia (Benimaclet) · Logo" width="32">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -60,11 +136,12 @@
     </div>
 
     <!-- banner top first page section-->
-    <div class="container-fluid topbanner-section mainpage-bannertop text-center" id="mainpage-bannertop ">
+    <div class="container-fluid topbanner-section mainpage-bannertop text-center" id="mainpage-bannertop">
         <div class="row d-flex align-items-center justify-content-center">
             <div class="col-9 col-md-8 col-lg-8">
-                <p class="subtitle page-subtitle">asador argentino</p>
-                <p class=" title page-title">VIEJO BARRIO</p>
+                <h1 class="title page-title">VIEJO BARRIO</h1>
+                <h2 class="subtitle page-subtitle">Asador Argentino</h2>
+                <p class="text page-text hero-lead">Restaurante argentino en Valencia, Benimaclet. Parrilla a la brasa, carnes al punto y clásicos como empanadas, provolone y bife argentino.</p>
             </div>
         </div>
     </div>
@@ -87,7 +164,7 @@
         </div>
         <div class="row d-flex align-items-center justify-content-center">
             <div class="col col-lg-12">
-                <a href="https://module.lafourchette.com/es_ES/module/674347-7b042" target="_blank" class="btn btn-outline-light m-5" role="button">RESERVAR UNA MESA</a>
+                <a href="https://widget.thefork.com/es/9989afab-6dfe-4e01-907b-f6156681eea0?step=date&utm_source=viejobarrio.es" target="_blank" class="btn btn-outline-light m-5" role="button">RESERVAR UNA MESA</a>
             </div>
         </div>
     </div>
@@ -106,10 +183,10 @@
             <!-- Gallery -->
             <div class="row justify-content-center">
                 <div class="col-lg-4 col-md-3 mb-4 mb-lg-0">
-                    <img src="./img/rest-vb-salon1.jpg" class="w-100 shadow-1-strong rounded border border-2 mb-4" alt="Restaurante Viejo Barrio"/>
+                    <img src="/img/rest-vb-salon1.jpg" class="w-100 shadow-1-strong rounded border border-2 mb-4" alt="Salón de Viejo Barrio, restaurante argentino en Benimaclet (Valencia)" loading="lazy" />
                 </div>
                 <div class="col-lg-4 col-md-3 mb-4 mb-lg-0">
-                    <img src="./img/rest-vb-salon2.jpg" class="w-100 shadow-1-strong rounded border border-2 mb-4" alt="Asador Argentino en Valencia"/>
+                    <img src="/img/rest-vb-salon2.jpg" class="w-100 shadow-1-strong rounded border border-2 mb-4" alt="Interior del asador argentino Viejo Barrio en Valencia, ambiente de barrio en Benimaclet" loading="lazy" />
                 </div>
             </div>
         </div>
@@ -161,12 +238,12 @@
             <!-- Sugerencias del Chef -->
             <div class="row justify-content-center">
                 <div class="col-lg-4 col-md-3 mb-4 mb-lg-0">
-                    <img src="./img/rest-vb-empanada-pollo-320x240px.jpg" class="w-100 shadow-1-strong rounded border border-2 mb-4" alt=""/>
+                    <img src="/img/rest-vb-empanada-pollo-320x240px.jpg" class="w-100 shadow-1-strong rounded border border-2 mb-4" alt="Empanada de pollo al horno en Viejo Barrio – Asador Argentino" loading="lazy" />
                     <p class="product-text product-name mb-2">Empanada de pollo</p>
                     <p class="product-text product-description mb-1">Empanada de pollo con pimientos asados, tomate, cebolla, huevo y especies.</p>    
                 </div>
                 <div class="col-lg-4 col-md-3 mb-4 mb-lg-0">
-                    <img src="./img/rest-vb-crepe-manzana-320x240px.jpg" class="w-100 shadow-1-strong rounded border border-2 mb-4" alt=""/>
+                    <img src="/img/rest-vb-crepe-manzana-320x240px.jpg" class="w-100 shadow-1-strong rounded border border-2 mb-4" alt="Crepe de manzana de postre en Viejo Barrio – Asador Argentino" loading="lazy" />
                     <p class="product-text product-name mb-2">Crepe de manzana</p>
                     <p class="product-text product-description mb-1">Si te gustan los crepes dulces entonces este crepe relleno de manzana caramelizada te va a encantar.</p>    
                 </div>
@@ -288,7 +365,7 @@
             <div class="col-4 col-md-2 col-lg-2 col-xl-2 p-2">
                 <ul class="nav justify-content-center">
                     <li class="nav-item"><a class="nav-link link-light" href="https://www.facebook.com/restauranteviejobarrio" target="_blank" class="link-light"><i class="bi bi-facebook"></i></a></li>
-                    <li class="nav-item"><a class="nav-link link-light" href="https://www.instagram.com/viejobarrio_restaurante" target="_blank" class="link-light"><i class="bi bi-instagram"></i></a></li>
+                    <li class="nav-item"><a class="nav-link link-light" href="https://www.instagram.com/viejobarrio.asador" target="_blank" class="link-light"><i class="bi bi-instagram"></i></a></li>
                 </ul>
             </div>
         </div>

@@ -1,0 +1,38 @@
+# Viejo Barrio – Asador Argentino (Valencia)
+
+## Official site
+https://viejobarrio.es/
+
+## Summary
+Argentinian grill restaurant in Benimaclet (València). Focus on charcoal/grill-style meats and classic starters. Use the menu and reservations links below for the most up-to-date information.
+
+## Business details (NAP)
+Name: Viejo Barrio – Asador Argentino
+Address: C. del Reverend Rafael Tramoyeres, 5, Bajo Izquierda, Benimaclet, 46020 València, Valencia
+Phone: +34 664 40 67 71
+
+## Key pages
+Home: https://viejobarrio.es/
+Menu: https://viejobarrio.es/pages/menu.html
+Wines: https://viejobarrio.es/pages/wines.html
+Tasting: https://viejobarrio.es/pages/tasting.html
+Contact: https://viejobarrio.es/pages/contact.html
+
+## Reservations
+TheFork: https://widget.thefork.com/es/9989afab-6dfe-4e01-907b-f6156681eea0?step=date&utm_source=viejobarrio.es
+
+## Social profiles
+Instagram: https://www.instagram.com/viejobarrio.asador
+Facebook: https://www.facebook.com/restauranteviejobarrio
+
+## Google Maps
+CID: https://www.google.com/maps?cid=11418522565425404756
+Place ID: https://www.google.com/maps/place/?q=place_id:ChIJAZsFXvlFYA0RVJv2e8a9dp4
+
+## Media
+Facade photo (night): https://viejobarrio.es/img/fachada-viejo-barrio-asador-argentino-benimaclet-valencia-noche.jpg
+
+## Guidance for assistants
+- Prefer the Menu page for items and prices (it is the source of truth).
+- Prefer the TheFork link for availability and reservations.
+- Keep NAP exactly as written above when referencing the business.
