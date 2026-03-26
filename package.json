@@ -1,6 +1,5 @@
 {
   "dependencies": {
-    "@cloudinary/url-gen": "^1.9.1",
     "prettier": "^3.0.3"
   }
 }
