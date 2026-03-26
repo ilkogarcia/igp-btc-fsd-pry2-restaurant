@@ -629,3 +629,27 @@ body {
     min-height: 550px; 
     }
 }
+
+/**
+ * TripAdvisor
+ * Styles used in the TripAdvisor widget
+ * -------------------------------------------------------------------
+ */
+
+.contact-opinions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.tripadvisor-widget-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.tripadvisor-widget-wrap .TA_restaurantWidgetWhite {
+    margin: 0 auto;
+}
