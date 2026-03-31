@@ -154,6 +154,16 @@ body {
     object-position: center;
 }
 
+.content-card-media {
+    display: block;
+}
+
+.content-card-media img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
 #mainpage-bannertop .hero-content {
     position: relative;
     z-index: 1;
@@ -219,7 +229,7 @@ body {
 
 /* background for section separator */
 .background-img-9 {
-    background-image: url(../img/pexels-caio-59598-640x407px.jpg);
+    background-image: url(../img/section-break-home-vinos-mobile.webp);
 }
 
 
@@ -258,7 +268,7 @@ body {
     }
 
     .background-img-9 {
-        background-image: url(../img/pexels-caio-59598-1920x1221px.jpg);
+        background-image: url(../img/section-break-home-vinos-desktop.webp);
     }
 }
 
