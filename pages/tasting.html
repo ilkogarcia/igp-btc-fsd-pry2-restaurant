@@ -24,15 +24,15 @@
 
     <!-- Open Graph (Facebook / WhatsApp) -->
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="Viejo Barrio – Asador Argentino en Benimaclet, Valencia" />
-    <meta property="og:description" content="Parrilla a la brasa, carnes al punto y ambiente de barrio en Benimaclet. Reserva en TheFork o llámanos." />
+    <meta property="og:title" content="Menús | Viejo Barrio – Asador Argentino" />
+    <meta property="og:description" content="Menús para grupos y celebraciones, pensados para compartir y disfrutar de la parrilla. Consulta las opciones y elige la tuya." />
     <meta property="og:url" content="https://viejobarrio.es/pages/tasting.html" />
     <meta property="og:image" content="https://viejobarrio.es/img/og-viejo-barrio-fachada-1200x630.jpg" />
 
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Viejo Barrio – Asador Argentino en Benimaclet, Valencia" />
-    <meta name="twitter:description" content="Parrilla a la brasa, carnes al punto y ambiente de barrio en Benimaclet. Reserva en TheFork o llámanos." />
+    <meta name="twitter:title" content="Menús | Viejo Barrio – Asador Argentino" />
+    <meta name="twitter:description" content="Menús para grupos y celebraciones, pensados para compartir y disfrutar de la parrilla. Consulta las opciones y elige la tuya." />
     <meta name="twitter:image" content="https://viejobarrio.es/img/og-viejo-barrio-fachada-1200x630.jpg" />
 
     <!-- Link to the BootStrap framework styles -->
@@ -56,13 +56,17 @@
         {
         "@context": "https://schema.org",
         "@type": "Restaurant",
+        "@id": "https://viejobarrio.es/#restaurant",
         "name": "Viejo Barrio – Asador Argentino",
         "url": "https://viejobarrio.es/",
+        "mainEntityOfPage": "https://viejobarrio.es/pages/tasting.html",
+        "description": "Menús para grupos y celebraciones: opciones pensadas para compartir y disfrutar de la parrilla. Consulta los menús y elige el tuyo.",
         "image": "https://viejobarrio.es/img/fachada-viejo-barrio-asador-argentino-benimaclet-valencia-noche.jpg",
         "telephone": "+34664406771",
         "priceRange": "€€€",
         "servesCuisine": ["Argentinian", "Grill"],
         "hasMenu": "https://viejobarrio.es/pages/menu.html",
+        "acceptsReservations": "True",
         "address": {
             "@type": "PostalAddress",
             "streetAddress": "C. del Reverend Rafael Tramoyeres, 5, Bajo Izquierda, Benimaclet",
@@ -77,6 +81,12 @@
             "https://www.google.com/maps?cid=11418522565425404756",
             "https://www.google.com/maps/place/?q=place_id:ChIJAZsFXvlFYA0RVJv2e8a9dp4"
         ],
+        "subjectOf": {
+            "@type": "WebPage",
+            "url": "https://viejobarrio.es/pages/tasting.html",
+            "name": "Menús | Viejo Barrio – Asador Argentino",
+            "description": "Menús para grupos y celebraciones: opciones pensadas para compartir y disfrutar de la parrilla. Consulta los menús y elige el tuyo."
+        },
         "potentialAction": {
             "@type": "ReserveAction",
             "target": {
@@ -126,7 +136,7 @@
     <div class="container-fluid navbar-section sticky-top">
         <nav class="navbar navbar-expand-lg navbar-dark shadow-5-strong">
             <div class="container-fluid">
-                <a class="navbar-brand" href="../index.html">
+                <a class="navbar-brand" href="/">
                     <img src="../img/logo-viejo-barrio.png" alt="Viejo Barrio – Asador Argentino en Benimaclet, Valencia" width="32px">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -134,7 +144,7 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <div class="navbar-nav">
-                        <a class="nav-link" href="../index.html">Inicio</a>
+                        <a class="nav-link" href="/">Inicio</a>
                         <a class="nav-link" aria-current="page"  href="./menu.html">La Carta</a>
                         <a class="nav-link" aria-current="page"  href="./wines.html">Vinos y Cavas</a>
                         <a class="nav-link active" aria-current="page"  href="./tasting.html">Menus</a>
@@ -566,7 +576,7 @@
             </div>
             <div class="col-12 col-md-5 col-lg-5 col-xl-5 p-2">
                 <ul class="nav justify-content-center">
-                    <li class="nav-item"><a class="nav-link link-light" href="../index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link link-light" href="/">Inicio</a></li>
                     <li class="nav-item"><a class="nav-link link-light" href="./menu.html">La Carta</a></li>
                     <li class="nav-item"><a class="nav-link link-light" href="./wines.html">Vinos y Cavas</a></li>
                     <li class="nav-item"><a class="nav-link link-light" href="./contact.html">Contacto</a></li>

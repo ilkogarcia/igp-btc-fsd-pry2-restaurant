@@ -1,0 +1,15 @@
+Options -MultiViews
+Options -Indexes
+
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+
+    # Canonical home: resolve www/index.html and /index.html in one hop.
+    RewriteCond %{HTTP_HOST} ^www\.viejobarrio\.es$ [NC,OR]
+    RewriteCond %{THE_REQUEST} \s/+index\.html(?:[\s?]|$) [NC]
+    RewriteRule ^index\.html$ https://viejobarrio.es/ [R=301,L]
+
+    # Canonical host for every other public URL.
+    RewriteCond %{HTTP_HOST} ^www\.viejobarrio\.es$ [NC]
+    RewriteRule ^ https://viejobarrio.es%{REQUEST_URI} [R=301,L]
+</IfModule>
