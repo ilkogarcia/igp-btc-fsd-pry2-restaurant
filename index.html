@@ -46,6 +46,18 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Libre+Baskerville">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab">
 
+    <!-- Preload LCP hero image so the browser discovers it from HTML -->
+    <link
+        rel="preload"
+        as="image"
+        href="/img/hero-viejo-barrio-benimaclet-mobile.webp"
+        media="(max-width: 767px)">
+    <link
+        rel="preload"
+        as="image"
+        href="/img/hero-viejo-barrio-benimaclet-desktop.webp"
+        media="(min-width: 768px)">
+
     <!-- Project style sheet and favicon -->
     <link rel="stylesheet" href="/css/styles.css">
     <link rel="icon" type="image/x-icon" href="/img/viejobarrio.ico">
@@ -156,8 +168,31 @@
     </div>
 
     <!-- banner top first page section-->
-    <div class="container-fluid topbanner-section mainpage-bannertop text-center" id="mainpage-bannertop">
-        <div class="row d-flex align-items-center justify-content-center">
+    <div class="container-fluid topbanner-section text-center" id="mainpage-bannertop">
+        <picture class="hero-media">
+            <source
+                media="(min-width: 768px)"
+                type="image/webp"
+                srcset="/img/hero-viejo-barrio-benimaclet-desktop.webp">
+            <source
+                media="(max-width: 767px)"
+                type="image/webp"
+                srcset="/img/hero-viejo-barrio-benimaclet-mobile.webp">
+            <source
+                media="(min-width: 768px)"
+                srcset="/img/iulian-aghei-q_xW-2ICvfA-unsplash-1920x1281.jpg">
+            <img
+                src="/img/iulian-aghei-q_xW-2ICvfA-unsplash-640x480.jpg"
+                srcset="/img/iulian-aghei-q_xW-2ICvfA-unsplash-640x480.jpg 640w, /img/iulian-aghei-q_xW-2ICvfA-unsplash-1920x1281.jpg 1920w"
+                sizes="100vw"
+                width="640"
+                height="427"
+                alt=""
+                fetchpriority="high"
+                loading="eager"
+                decoding="async">
+        </picture>
+        <div class="row d-flex align-items-center justify-content-center hero-content">
             <div class="col-9 col-md-8 col-lg-8">
                 <h1 class="title page-title">VIEJO BARRIO</h1>
                 <h2 class="subtitle page-subtitle">Asador Argentino</h2>

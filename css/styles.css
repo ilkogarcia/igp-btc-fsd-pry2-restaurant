@@ -67,6 +67,8 @@ body {
 
 /* top banners section common styles */
 .topbanner-section {
+    position: relative;
+    overflow: hidden;
     padding-top: calc(1.5rem + 18vw);
     padding-bottom: calc(1.5rem + 18vw);
     background-size: cover;
@@ -92,11 +94,6 @@ body {
     line-height: calc(1.15rem + 0.35vw);
 }
 
-/* top banner in the Home page - 100% width and background image */
-.mainpage-bannertop {
-    background-image: url(../img/iulian-aghei-q_xW-2ICvfA-unsplash-640x480.jpg);
-}
-
 /* top banner in the Menu pages - 100% width and background image */
 .menupage-bannertop {
     background-image: url(../img/pexels-naim-benjelloun-2291591-1280x853px.jpg);
@@ -120,10 +117,6 @@ body {
 /* .md > | medium devices and up (tablets) 768px and up */
 @media screen and (min-width: 768px) {
 
-    .mainpage-bannertop {
-        background-image: url(../img/iulian-aghei-q_xW-2ICvfA-unsplash-1920x1281.jpg);
-    }
-
     .menupage-bannertop {
         background-image: url(../img/pexels-naim-benjelloun-2291591-1280x853px.jpg);
     }
@@ -139,6 +132,31 @@ body {
     .contactpage-bannertop {
         background-image: url(../img/amin-hasani-Bj1BywJp0JM-unsplash-1920x1281.jpg);
     }  
+}
+
+/* Home hero image is loaded from HTML to improve LCP discovery */
+#mainpage-bannertop {
+    isolation: isolate;
+}
+
+.hero-media {
+    position: absolute;
+    inset: 0;
+    display: block;
+    z-index: 0;
+}
+
+.hero-media img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+#mainpage-bannertop .hero-content {
+    position: relative;
+    z-index: 1;
 }
 
 /**
