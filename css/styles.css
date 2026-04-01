@@ -36,6 +36,21 @@ body {
     letter-spacing: 0px;
 }
 
+.svg-sprite {
+    position: absolute;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+}
+
+.icon {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    fill: currentColor;
+    vertical-align: -0.125em;
+}
+
 /* header section on the page top */
 .header-section {
     letter-spacing: 0px;
@@ -143,6 +158,8 @@ body {
     position: absolute;
     inset: 0;
     display: block;
+    width: 100%;
+    height: 100%;
     z-index: 0;
 }
 
@@ -156,9 +173,22 @@ body {
 
 .content-card-media {
     display: block;
+    width: 100%;
 }
 
 .content-card-media img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.navbar-brand picture,
+.navbar-brand picture img {
+    display: block;
+}
+
+#home-about-us img,
+#home_chef img {
     display: block;
     width: 100%;
     height: auto;
