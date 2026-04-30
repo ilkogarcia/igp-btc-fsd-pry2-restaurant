@@ -199,6 +199,598 @@ body {
     z-index: 1;
 }
 
+.landing-hero {
+    isolation: isolate;
+}
+
+.landing-hero::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    background: linear-gradient(180deg, rgba(0,0,0,0.5), rgba(0,0,0,0.35));
+}
+
+.landing-hero .hero-content {
+    position: relative;
+    z-index: 1;
+}
+
+.landing-eyebrow {
+    color: var(--gold-color);
+    font-family: Roboto Slab;
+    font-size: 0.95rem;
+    letter-spacing: 1px;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+}
+
+.landing-cta-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.85rem;
+    justify-content: center;
+    margin-top: 1.5rem;
+}
+
+.landing-cta-group .btn {
+    min-width: 150px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.landing-copy {
+    max-width: 68ch;
+    margin: 1rem auto 0;
+}
+
+.page-asador-argentino .landing-section {
+    padding-top: clamp(8rem, 12vw, 10rem);
+    padding-bottom: clamp(8rem, 12vw, 10rem);
+}
+
+.page-asador-argentino .landing-section-light {
+    background-color: var(--almostwhite-color);
+}
+
+.page-asador-argentino .landing-section-light .section-title {
+    color: var(--darkes-bg-color);
+    text-shadow: none;
+}
+
+.page-asador-argentino .landing-section-light .text,
+.page-asador-argentino .landing-section-light .landing-copy {
+    color: var(--almost-bg-color);
+}
+
+.page-asador-argentino .landing-section-light .btn {
+    color: var(--darkes-bg-color);
+    border-color: var(--darkes-bg-color);
+}
+
+.page-asador-argentino .landing-section-light .btn:hover,
+.page-asador-argentino .landing-section-light .btn:focus {
+    color: var(--almostwhite-color);
+    background-color: var(--darkes-bg-color);
+    border-color: var(--darkes-bg-color);
+}
+
+.page-asador-argentino .landing-section .section-subtitle {
+    margin-bottom: 0.25rem;
+}
+
+.page-asador-argentino .landing-section .section-title {
+    letter-spacing: 2px;
+    margin-bottom: 1rem;
+}
+
+.page-asador-argentino .landing-section .landing-copy {
+    line-height: 1.7;
+}
+
+.landing-card-row {
+    max-width: 1040px;
+    margin-top: 2.25rem;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.landing-card {
+    height: 100%;
+    border: 1px solid rgba(201, 171, 129, 0.35);
+    border-radius: 8px;
+    background: rgba(0, 0, 0, 0.18);
+    padding: 1.2rem;
+}
+
+.landing-card h3 {
+    color: var(--gold-color);
+    font-family: Libre Baskerville;
+    font-size: 1rem;
+    line-height: 1.4;
+    letter-spacing: 0;
+    margin-bottom: 0.75rem;
+}
+
+.landing-card p,
+.landing-related-links a {
+    color: var(--almostwhite-color);
+    font-family: Roboto Slab;
+    font-size: 0.95rem;
+    font-weight: 100;
+    line-height: 1.65;
+    margin-bottom: 0;
+}
+
+.landing-related-links a {
+    color: var(--gold-color);
+}
+
+.landing-trust-layout {
+    display: grid;
+    grid-template-columns: minmax(0, 3fr) minmax(280px, 2fr);
+    gap: clamp(2.5rem, 6vw, 5rem);
+    align-items: center;
+    width: min(100%, 1120px);
+    margin: 0 auto;
+}
+
+.landing-trust-copy,
+.landing-trust-copy .section-title,
+.landing-trust-copy .section-subtitle,
+.landing-trust-copy .text {
+    text-align: left;
+}
+
+.landing-trust-copy .landing-copy {
+    margin-left: 0;
+}
+
+.landing-trust-points {
+    display: grid;
+    gap: 1.6rem;
+}
+
+.landing-trust-point {
+    display: grid;
+    grid-template-columns: auto minmax(0, 1fr);
+    gap: 1rem;
+    align-items: start;
+    text-align: left;
+    padding-bottom: 1.35rem;
+    border-bottom: 1px solid rgba(201, 171, 129, 0.28);
+}
+
+.landing-trust-point:last-child {
+    padding-bottom: 0;
+    border-bottom: 0;
+}
+
+.landing-trust-point i {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.25rem;
+    height: 2.25rem;
+    color: var(--gold-color);
+    font-size: 1.25rem;
+}
+
+.landing-trust-point h3 {
+    color: var(--gold-color);
+    font-family: Libre Baskerville;
+    font-size: 1rem;
+    line-height: 1.35;
+    letter-spacing: 0;
+    text-align: left;
+    margin-bottom: 0.45rem;
+}
+
+.landing-trust-point p {
+    color: var(--almostwhite-color);
+    font-family: Roboto Slab;
+    font-size: 0.94rem;
+    font-weight: 100;
+    line-height: 1.62;
+    text-align: left;
+    margin-bottom: 0;
+}
+
+.landing-dishes-layout {
+    width: min(100%, 1120px);
+    margin: 2.5rem auto 0;
+}
+
+.landing-dish-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1.3rem;
+}
+
+.landing-dish-card {
+    overflow: hidden;
+    text-align: left;
+    border: 1px solid rgba(64, 66, 88, 0.16);
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.64);
+    box-shadow: 0 14px 35px rgba(0, 0, 0, 0.08);
+}
+
+.landing-dish-card img {
+    display: block;
+    width: 100%;
+    height: clamp(180px, 18vw, 230px);
+    object-fit: cover;
+}
+
+.landing-dish-card h3,
+.landing-usecase-card h3 {
+    color: var(--gold-color);
+    font-family: Libre Baskerville;
+    font-size: 1rem;
+    line-height: 1.35;
+    letter-spacing: 0;
+    margin-bottom: 0.7rem;
+}
+
+.landing-dish-card h3,
+.landing-dish-card p {
+    margin-right: 1rem;
+    margin-left: 1rem;
+}
+
+.landing-dish-card h3 {
+    margin-top: 1rem;
+}
+
+.landing-dish-card p,
+.landing-usecase-card p {
+    color: var(--almost-bg-color);
+    font-family: Roboto Slab;
+    font-size: 0.92rem;
+    font-weight: 100;
+    line-height: 1.62;
+    margin-bottom: 1rem;
+}
+
+.landing-dishes-section .landing-cta-group {
+    margin-top: 3.25rem;
+}
+
+.landing-sharing-section .landing-cta-group {
+    margin-top: 3.25rem;
+}
+
+.landing-sharing-close {
+    margin-top: 2.25rem;
+}
+
+.landing-feature-image {
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    border: 2px solid rgba(255, 255, 255, 0.65);
+    border-radius: 8px;
+}
+
+.landing-usecase-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1.2rem;
+    width: min(100%, 980px);
+    margin: 2.25rem auto 0;
+}
+
+.landing-usecase-card {
+    padding: 1.25rem;
+    text-align: left;
+    border-bottom: 1px solid rgba(201, 171, 129, 0.38);
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.landing-usecase-card span {
+    display: block;
+    color: rgba(201, 171, 129, 0.72);
+    font-family: Libre Baskerville;
+    font-size: 0.82rem;
+    letter-spacing: 2px;
+    margin-bottom: 0.75rem;
+}
+
+.landing-usecase-card p {
+    color: var(--almostwhite-color);
+    margin-bottom: 0;
+}
+
+.page-asador-argentino .landing-final-cta {
+    padding-top: clamp(7rem, 16vw, 17rem);
+    padding-bottom: clamp(7rem, 16vw, 17rem);
+}
+
+.page-asador-argentino .landing-final-cta .section-title {
+    font-size: clamp(2rem, 1.45rem + 2.2vw, 3.4rem);
+    line-height: 1.18;
+    letter-spacing: 2px;
+    margin-bottom: 1.35rem;
+}
+
+.page-asador-argentino .landing-final-cta .landing-copy {
+    max-width: 62ch;
+    margin-top: 0;
+    font-size: clamp(1rem, 0.95rem + 0.25vw, 1.15rem);
+    line-height: 1.75;
+}
+
+.page-asador-argentino .landing-final-cta .landing-cta-group {
+    margin-top: 2.25rem;
+}
+
+.page-asador-argentino .landing-final-cta .btn {
+    letter-spacing: 1px;
+}
+
+.page-asador-argentino .landing-story-section {
+    padding-top: clamp(7rem, 14vw, 14rem);
+    padding-bottom: clamp(7rem, 14vw, 14rem);
+    background-color: var(--almostwhite-color);
+}
+
+.page-asador-argentino .landing-story-inner {
+    width: min(100%, 1120px);
+    margin: 0 auto;
+}
+
+.page-asador-argentino .landing-story-row {
+    display: grid;
+    grid-template-columns: minmax(260px, 0.88fr) minmax(0, 1fr);
+    gap: clamp(2rem, 5vw, 4.5rem);
+    align-items: center;
+}
+
+.page-asador-argentino .landing-story-row + .landing-story-row {
+    margin-top: clamp(4rem, 7vw, 6.5rem);
+}
+
+.page-asador-argentino .landing-story-row-reverse {
+    grid-template-columns: minmax(0, 1fr) minmax(260px, 0.88fr);
+}
+
+.page-asador-argentino .landing-story-media {
+    display: flex;
+    justify-content: center;
+}
+
+.page-asador-argentino .landing-story-media .landing-feature-image {
+    max-width: 460px;
+    box-shadow: 0 18px 45px rgba(0, 0, 0, 0.22);
+}
+
+.page-asador-argentino .landing-story-copy .story-eyebrow {
+    margin-bottom: 0.2rem;
+}
+
+.page-asador-argentino .landing-story-copy .section-title {
+    color: var(--darkes-bg-color);
+    text-shadow: none;
+    margin-bottom: 1.3rem;
+}
+
+.page-asador-argentino .landing-story-copy .landing-copy {
+    color: var(--almost-bg-color);
+    margin-top: 1rem;
+}
+
+.page-asador-argentino .landing-story-copy .landing-cta-group {
+    margin-top: 1.8rem;
+}
+
+.page-asador-argentino .landing-story-copy .btn {
+    color: var(--darkes-bg-color);
+    border-color: var(--darkes-bg-color);
+    letter-spacing: 1px;
+}
+
+.page-asador-argentino .landing-story-copy .btn:hover,
+.page-asador-argentino .landing-story-copy .btn:focus {
+    color: var(--almostwhite-color);
+    background-color: var(--darkes-bg-color);
+    border-color: var(--darkes-bg-color);
+}
+
+.page-asador-argentino .landing-story-copy .landing-related-links a {
+    color: var(--darkes-bg-color);
+    font-weight: 200;
+}
+
+.page-asador-argentino .landing-story-copy-right,
+.page-asador-argentino .landing-story-copy-right .section-title,
+.page-asador-argentino .landing-story-copy-right .section-subtitle,
+.page-asador-argentino .landing-story-copy-right .text {
+    text-align: left;
+}
+
+.page-asador-argentino .landing-story-copy-left,
+.page-asador-argentino .landing-story-copy-left .section-title,
+.page-asador-argentino .landing-story-copy-left .section-subtitle,
+.page-asador-argentino .landing-story-copy-left .text {
+    text-align: right;
+}
+
+.page-asador-argentino .landing-story-copy-right .landing-copy {
+    margin-left: 0;
+}
+
+.page-asador-argentino .landing-story-copy-left .landing-copy {
+    margin-right: 0;
+}
+
+.page-asador-argentino .landing-story-copy-right .landing-cta-group {
+    justify-content: flex-start;
+}
+
+.page-asador-argentino .faq-section {
+    text-align: left;
+}
+
+.page-asador-argentino .faq-header {
+    text-align: center;
+}
+
+.page-asador-argentino .faq-eyebrow {
+    margin-bottom: 0.25rem;
+}
+
+.page-asador-argentino .faq-header .section-title {
+    letter-spacing: 2px;
+    margin-bottom: 0;
+}
+
+.page-asador-argentino .faq-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0 2rem;
+    width: min(100%, 1100px);
+    margin: 2rem auto 0;
+    padding: 0 0.75rem;
+}
+
+.page-asador-argentino .faq-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.page-asador-argentino .faq-accordion {
+    border-bottom: 1px solid rgba(201, 171, 129, 0.28);
+    background: rgba(0, 0, 0, 0.08);
+}
+
+.page-asador-argentino .faq-accordion:first-child {
+    border-top: 1px solid rgba(201, 171, 129, 0.28);
+}
+
+.page-asador-argentino .faq-accordion summary {
+    position: relative;
+    display: block;
+    padding: 1.15rem 2.75rem 1.15rem 0.9rem;
+    color: var(--gold-color);
+    cursor: pointer;
+    font-family: Libre Baskerville;
+    font-size: clamp(1.1rem, 1rem + 0.35vw, 1.25rem);
+    line-height: 1.45;
+    letter-spacing: 0;
+}
+
+.page-asador-argentino .faq-accordion summary::-webkit-details-marker {
+    display: none;
+}
+
+.page-asador-argentino .faq-accordion summary::after {
+    content: "+";
+    position: absolute;
+    top: 1.1rem;
+    right: 0.9rem;
+    color: var(--almostwhite-color);
+    font-family: Roboto Slab;
+    font-size: 1.4rem;
+    line-height: 1;
+}
+
+.page-asador-argentino .faq-accordion[open] summary::after {
+    content: "-";
+}
+
+.page-asador-argentino .faq-accordion p {
+    max-width: 62ch;
+    margin: 0;
+    padding: 0 0.9rem 1.25rem;
+    color: var(--almostwhite-color);
+    font-family: Roboto Slab;
+    font-size: 0.98rem;
+    font-weight: 100;
+    line-height: 1.75;
+    text-align: left;
+}
+
+@media screen and (min-width: 768px) {
+    .page-asador-argentino .faq-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .landing-card-row .col-lg-3 {
+        width: 30%;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .landing-dish-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .page-asador-argentino .landing-section {
+        padding-top: 7rem;
+        padding-bottom: 7rem;
+    }
+
+    .page-asador-argentino .landing-section .section-title {
+        letter-spacing: 1px;
+    }
+
+    .landing-dish-grid,
+    .landing-usecase-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .landing-trust-layout {
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+    }
+
+    .landing-dish-card img {
+        height: 210px;
+    }
+
+    .page-asador-argentino .landing-story-row,
+    .page-asador-argentino .landing-story-row-reverse {
+        grid-template-columns: 1fr;
+        gap: 1.65rem;
+    }
+
+    .page-asador-argentino .landing-story-media .landing-feature-image {
+        max-width: 100%;
+    }
+
+    .page-asador-argentino .landing-story-copy-left,
+    .page-asador-argentino .landing-story-copy-left .section-title,
+    .page-asador-argentino .landing-story-copy-left .section-subtitle,
+    .page-asador-argentino .landing-story-copy-left .text {
+        text-align: left;
+    }
+
+    .page-asador-argentino .landing-story-copy-left .landing-copy {
+        margin-left: 0;
+        margin-right: auto;
+    }
+
+    .landing-cta-group {
+        align-items: stretch;
+        flex-direction: column;
+    }
+
+    .landing-cta-group .btn {
+        width: 100%;
+    }
+
+    .landing-hero .secondarypage-title {
+        font-size: 1.85rem;
+        line-height: 2.45rem;
+        letter-spacing: 2px;
+    }
+}
+
 /**
  * SECTION SEPARATORS
  * On some pages we use a section separator, using a container 
