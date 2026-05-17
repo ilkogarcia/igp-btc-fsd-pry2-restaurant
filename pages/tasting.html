@@ -38,16 +38,19 @@
     <!-- Link to the BootStrap framework styles -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
 
-    <!-- Link to the BootStrap icon library -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <!-- Optimize Google Fonts connection and reduce requests -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Roboto+Slab&family=Satisfy&display=swap">
 
-    <!-- Link to Google Fonts used on the project -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Satisfy">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Libre+Baskerville">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab">
+    <!-- Preload LCP hero image so the browser discovers it from HTML -->
+    <link
+        rel="preload"
+        as="image"
+        href="/img/pexels-los-muertos-crew-7613432-1920x1281px.jpg">
 
     <!-- Project style sheet and favicon -->
-    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/styles.css?v=20260517-1">
     <link rel="icon" type="image/x-icon" href="/img/viejobarrio.ico">
     <link rel="shortcut icon" href="/img/viejobarrio.ico">
 
@@ -108,24 +111,35 @@
 
 </head>
 <body>
+    <svg xmlns="http://www.w3.org/2000/svg" class="svg-sprite" aria-hidden="true" focusable="false">
+        <symbol id="icon-geo-alt" viewBox="0 0 16 16"><path d="M8 16s6-5.686 6-10A6 6 0 1 0 2 6c0 4.314 6 10 6 10zm0-7.5A2.5 2.5 0 1 1 8 3.5a2.5 2.5 0 0 1 0 5z"/></symbol>
+        <symbol id="icon-calendar-check" viewBox="0 0 16 16"><path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1A2 2 0 0 1 16 3v10a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 5v8a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V5H1zm10.354 2.146a.5.5 0 0 1 0 .708L7.707 11.5 5.646 9.439a.5.5 0 1 1 .708-.707l1.353 1.353 3.293-3.293a.5.5 0 0 1 .707 0z"/></symbol>
+        <symbol id="icon-telephone-outbound" viewBox="0 0 16 16"><path d="M3.654 1.328a.678.678 0 0 1 .737-.151l2.522 1.01c.329.132.525.476.473.83l-.286 1.97a.678.678 0 0 1-.58.58l-1.37.198a11.745 11.745 0 0 0 5.085 5.085l.198-1.37a.678.678 0 0 1 .58-.58l1.97-.286a.678.678 0 0 1 .83.473l1.01 2.522a.678.678 0 0 1-.15.737l-1.144 1.144a1.745 1.745 0 0 1-1.86.437c-1.687-.562-3.99-1.77-6.325-4.105C3.535 8.427 2.327 6.124 1.765 4.437a1.745 1.745 0 0 1 .437-1.86l1.452-1.25z"/><path d="M11 1.5a.5.5 0 0 1 .5-.5H14a.5.5 0 0 1 .5.5V4a.5.5 0 0 1-1 0V2.707l-3.146 3.147a.5.5 0 0 1-.708-.708L12.793 2H11.5a.5.5 0 0 1-.5-.5z"/></symbol>
+        <symbol id="icon-arrow-up-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16z"/><path d="M8 4.5a.5.5 0 0 1 .354.146l2 2a.5.5 0 0 1-.708.708L8.5 6.207V11.5a.5.5 0 0 1-1 0V6.207L6.354 7.354a.5.5 0 1 1-.708-.708l2-2A.5.5 0 0 1 8 4.5z"/></symbol>
+        <symbol id="icon-asterisk" viewBox="0 0 16 16"><path d="M8 1.5a.5.5 0 0 1 .5.5v4.134l3.58-2.067a.5.5 0 1 1 .5.866L9 7l3.58 2.067a.5.5 0 1 1-.5.866L8.5 7.866V12a.5.5 0 0 1-1 0V7.866L3.92 9.933a.5.5 0 1 1-.5-.866L7 7 3.42 4.933a.5.5 0 1 1 .5-.866L7.5 6.134V2a.5.5 0 0 1 .5-.5z"/></symbol>
+        <symbol id="icon-quote" viewBox="0 0 16 16"><path d="M6.854 5.146C5.936 5.69 5.25 6.81 5.25 8c0 1.657 1.343 3 3 3a.5.5 0 0 1 0 1 4 4 0 1 1 0-8 .5.5 0 0 1 .354.854L6.854 5.146zm6 0C11.936 5.69 11.25 6.81 11.25 8c0 1.657 1.343 3 3 3a.5.5 0 0 1 0 1 4 4 0 1 1 0-8 .5.5 0 0 1 .354.854l-1.75 1.292z"/></symbol>
+        <symbol id="icon-facebook" viewBox="0 0 16 16"><path d="M16 8.049C16 3.603 12.418 0 8 0S0 3.603 0 8.049C0 12.067 2.926 15.397 6.75 16v-5.625H4.719V8.049H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.875 0 1.79.157 1.79.157v1.98h-1.009c-.994 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16C13.074 15.397 16 12.067 16 8.049z"/></symbol>
+        <symbol id="icon-instagram" viewBox="0 0 16 16"><path d="M8 0C5.826 0 5.555.01 4.703.048 3.85.087 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76c-.198.509-.333 1.09-.372 1.943C.01 5.555 0 5.826 0 8c0 2.174.01 2.445.048 3.297.039.853.174 1.434.372 1.943.205.527.478.974.923 1.417.444.445.89.718 1.417.923.509.198 1.09.333 1.943.372C5.555 15.99 5.826 16 8 16c2.174 0 2.445-.01 3.297-.048.853-.039 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.417-.923c.445-.444.718-.89.923-1.417.198-.509.333-1.09.372-1.943C15.99 10.445 16 10.174 16 8c0-2.174-.01-2.445-.048-3.297-.039-.853-.174-1.434-.372-1.943a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.509-.198-1.09-.333-1.943-.372C10.445.01 10.174 0 8 0zm0 1.441c2.138 0 2.39.008 3.231.046.777.035 1.199.165 1.48.274.373.145.64.318.92.598.28.28.453.547.598.92.109.281.239.703.274 1.48.038.841.046 1.093.046 3.231s-.008 2.39-.046 3.231c-.035.777-.165 1.199-.274 1.48a2.46 2.46 0 0 1-.598.92 2.46 2.46 0 0 1-.92.598c-.281.109-.703.239-1.48.274-.841.038-1.093.046-3.231.046s-2.39-.008-3.231-.046c-.777-.035-1.199-.165-1.48-.274a2.46 2.46 0 0 1-.92-.598 2.46 2.46 0 0 1-.598-.92c-.109-.281-.239-.703-.274-1.48C1.449 10.39 1.441 10.138 1.441 8s.008-2.39.046-3.231c.035-.777.165-1.199.274-1.48.145-.373.318-.64.598-.92.28-.28.547-.453.92-.598.281-.109.703-.239 1.48-.274C5.61 1.449 5.862 1.441 8 1.441z"/><path d="M8 4.324A3.676 3.676 0 1 0 8 11.676 3.676 3.676 0 0 0 8 4.324zm0 6.137A2.461 2.461 0 1 1 8 5.539a2.461 2.461 0 0 1 0 4.922zm4.414-6.278a.86.86 0 1 1-1.72 0 .86.86 0 0 1 1.72 0z"/></symbol>
+    </svg>
+
 
     <!-- page header section -->
     <div class="container-fluid smalltext-content header-section text-center" id="header-section">
         <div class="row p-2 d-flex align-items-center justify-content-space-between">
             <div class="col-6 ps-2 d-flex justify-content-start">
                 <span class="align-middle">
-                    <i class="bi bi-geo-alt"></i>&nbsp;
+                    <svg class="icon" aria-hidden="true"><use href="#icon-geo-alt"></use></svg>&nbsp;
                     <a href="https://www.google.com/maps?cid=11418522565425404756" target="_blank" rel="noopener" class="smalltext-content">
                         C. del Reverend Rafael Tramoyeres, 5, Bajo Izquierda, Benimaclet, 46020 València, Valencia
                     </a>
                 </span>
             </div>
             <div class="col-4 d-flex justify-content-center">
-                <span class="align-middle"><i class="bi bi-calendar-check"></i>&nbsp;<a href="https://module.lafourchette.com/es_ES/module/674347-7b042" target="_blank" class="smalltext-content">RESERVAS</a></span>
+                <span class="align-middle"><svg class="icon" aria-hidden="true"><use href="#icon-calendar-check"></use></svg>&nbsp;<a href="https://widget.thefork.com/es/9989afab-6dfe-4e01-907b-f6156681eea0?step=date&utm_source=viejobarrio.es" target="_blank" rel="noopener" class="smalltext-content">RESERVAS</a></span>
             </div>
             <div class="col-2 pe-2 d-flex justify-content-end">
                 <span class="align-middle">
-                    <i class="bi bi-telephone-outbound"></i>&nbsp;
+                    <svg class="icon" aria-hidden="true"><use href="#icon-telephone-outbound"></use></svg>&nbsp;
                     <a href="tel:+34664406771" class="smalltext-content">664 40 67 71</a>
                 </span>
             </div>
@@ -137,7 +151,7 @@
         <nav class="navbar navbar-expand-lg navbar-dark shadow-5-strong">
             <div class="container-fluid">
                 <a class="navbar-brand" href="/">
-                    <img src="../img/logo-viejo-barrio.png" alt="Viejo Barrio – Asador Argentino en Benimaclet, Valencia" width="32px">
+                    <img src="../img/logo-viejo-barrio.png" alt="Viejo Barrio – Asador Argentino en Benimaclet, Valencia" width="32" height="32">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -168,7 +182,7 @@
 
     <!-- back to top button. Start scrolling the page and a "Back to top" button will appear. -->
     <button type="button" class="btn btn-link btn-floating btn-lg text-white" id="btn-back-to-top">
-        <i class="bi bi-arrow-up-circle"></i>
+        <svg class="icon" aria-hidden="true"><use href="#icon-arrow-up-circle"></use></svg>
     </button>
     
 
@@ -179,7 +193,7 @@
                 <div class="container">
                     <p class="subtitle section-subtitle">el más</p>
                     <p class="title section-title">TRADICIONAL</p>
-                    <p class="decorator-line mt-4 mb-4"><i class="bi bi-asterisk"></i>&nbsp;<i class="bi bi-asterisk"></i>&nbsp;<i class="bi bi-asterisk"></i></p>
+                    <p class="decorator-line mt-4 mb-4"><svg class="icon" aria-hidden="true"><use href="#icon-asterisk"></use></svg>&nbsp;<svg class="icon" aria-hidden="true"><use href="#icon-asterisk"></use></svg>&nbsp;<svg class="icon" aria-hidden="true"><use href="#icon-asterisk"></use></svg></p>
                 </div>
             </div>
         </div>
@@ -189,11 +203,11 @@
                 <p class="product-text product-description m-1">Canónigos, rúcula, queso parmesano, frutos secos, tomates cherry, virutas de jamon serrano, huevos cocidos y aliño e limón.</p>
                 <p>
                     <span class="allergen-icons">
-                        <img src="../img/allergens/2/gluten.png" alt="Gluten" class="allergen-icon">
-                        <img src="../img/allergens/2/lupins.png" alt="Altramuces" class="allergen-icon">
-                        <img src="../img/allergens/2/mustard.png" alt="Mostaza" class="allergen-icon">
-                        <img src="../img/allergens/2/egg.png" alt="Huevos" class="allergen-icon">
-                        <img src="../img/allergens/2/peanuts.png" alt="Cacahuetes" class="allergen-icon">
+                        <img src="../img/allergens/2/gluten.png" alt="Gluten" class="allergen-icon" loading="lazy" decoding="async">
+                        <img src="../img/allergens/2/lupins.png" alt="Altramuces" class="allergen-icon" loading="lazy" decoding="async">
+                        <img src="../img/allergens/2/mustard.png" alt="Mostaza" class="allergen-icon" loading="lazy" decoding="async">
+                        <img src="../img/allergens/2/egg.png" alt="Huevos" class="allergen-icon" loading="lazy" decoding="async">
+                        <img src="../img/allergens/2/peanuts.png" alt="Cacahuetes" class="allergen-icon" loading="lazy" decoding="async">
                     </span>
                 </p>
             </div>
@@ -202,8 +216,8 @@
                 <p class="product-text product-description mb-1">Queso provolone fundido al horno con oregano fresco y ají molido.</p>
                 <p>
                     <span class="allergen-icons">
-                        <img src="../img/allergens/2/gluten.png" alt="Gluten" class="allergen-icon">
-                        <img src="../img/allergens/2/milk.png" alt="Lácteos" class="allergen-icon">
+                        <img src="../img/allergens/2/gluten.png" alt="Gluten" class="allergen-icon" loading="lazy" decoding="async">
+                        <img src="../img/allergens/2/milk.png" alt="Lácteos" class="allergen-icon" loading="lazy" decoding="async">
                     </span>
                 </p>
             </div>
@@ -212,9 +226,9 @@
                 <p class="product-text product-description mb-1">Empanadas de diversos sabores: humita, jamón o criolla.</p>
                 <p>
                     <span class="allergen-icons">
-                        <img src="../img/allergens/2/gluten.png" alt="Gluten" class="allergen-icon">
-                        <img src="../img/allergens/2/milk.png" alt="Lácteos" class="allergen-icon">
-                        <img src="../img/allergens/2/egg.png" alt="Huevos" class="allergen-icon">
+                        <img src="../img/allergens/2/gluten.png" alt="Gluten" class="allergen-icon" loading="lazy" decoding="async">
+                        <img src="../img/allergens/2/milk.png" alt="Lácteos" class="allergen-icon" loading="lazy" decoding="async">
+                        <img src="../img/allergens/2/egg.png" alt="Huevos" class="allergen-icon" loading="lazy" decoding="async">
                     </span>
                 </p>
             </div>
@@ -227,12 +241,12 @@
                 <p class="product-text product-description mb-1">Variedad de postres caseros servido al centro para compartir.</p>
                 <p>
                     <span class="allergen-icons">
-                        <img src="../img/allergens/2/gluten.png" alt="Gluten" class="allergen-icon">
-                        <img src="../img/allergens/2/lupins.png" alt="Altramuces" class="allergen-icon">
-                        <img src="../img/allergens/2/celery.png" alt="Apio" class="allergen-icon">
-                        <img src="../img/allergens/2/milk.png" alt="Lácteos" class="allergen-icon">
-                        <img src="../img/allergens/2/nuts.png" alt="Nueces" class="allergen-icon">
-                        <img src="../img/allergens/2/peanuts.png" alt="Cacahuetes" class="allergen-icon">
+                        <img src="../img/allergens/2/gluten.png" alt="Gluten" class="allergen-icon" loading="lazy" decoding="async">
+                        <img src="../img/allergens/2/lupins.png" alt="Altramuces" class="allergen-icon" loading="lazy" decoding="async">
+                        <img src="../img/allergens/2/celery.png" alt="Apio" class="allergen-icon" loading="lazy" decoding="async">
+                        <img src="../img/allergens/2/milk.png" alt="Lácteos" class="allergen-icon" loading="lazy" decoding="async">
+                        <img src="../img/allergens/2/nuts.png" alt="Nueces" class="allergen-icon" loading="lazy" decoding="async">
+                        <img src="../img/allergens/2/peanuts.png" alt="Cacahuetes" class="allergen-icon" loading="lazy" decoding="async">
                     </span>
                 </p>
             </div>
@@ -265,7 +279,7 @@
                 <div class="container">
                     <p class="subtitle section-subtitle">el auténtico</p>
                     <p class="title section-title">VIEJO BARRIO</p>
-                    <p class="decorator-line mt-4 mb-4"><i class="bi bi-asterisk"></i>&nbsp;<i class="bi bi-asterisk"></i>&nbsp;<i class="bi bi-asterisk"></i></p>
+                    <p class="decorator-line mt-4 mb-4"><svg class="icon" aria-hidden="true"><use href="#icon-asterisk"></use></svg>&nbsp;<svg class="icon" aria-hidden="true"><use href="#icon-asterisk"></use></svg>&nbsp;<svg class="icon" aria-hidden="true"><use href="#icon-asterisk"></use></svg></p>
                 </div>
             </div>
         </div>
@@ -275,9 +289,9 @@
                 <p class="product-text product-description mb-1">Mix de hojas, queso de Cabra, mango, jamon de pato, tomates cherry y vinagreta de dijon.</p>
                 <p>
                     <span class="allergen-icons">
-                        <img src="../img/allergens/2/gluten.png" alt="Gluten" class="allergen-icon">
-                        <img src="../img/allergens/2/milk.png" alt="Lácteos" class="allergen-icon">
-                        <img src="../img/allergens/2/soy.png" alt="Soja" class="allergen-icon">
+                        <img src="../img/allergens/2/gluten.png" alt="Gluten" class="allergen-icon" loading="lazy" decoding="async">
+                        <img src="../img/allergens/2/milk.png" alt="Lácteos" class="allergen-icon" loading="lazy" decoding="async">
+                        <img src="../img/allergens/2/soy.png" alt="Soja" class="allergen-icon" loading="lazy" decoding="async">
                     </span>
                 </p>
             </div>
@@ -286,8 +300,8 @@
                 <p class="product-text product-description mb-1">Queso provolone fundido al horno con tomate seco y cebolla caramelizada.</p>
                 <p>
                     <span class="allergen-icons">
-                        <img src="../img/allergens/2/gluten.png" alt="Gluten" class="allergen-icon">
-                        <img src="../img/allergens/2/milk.png" alt="Lácteos" class="allergen-icon">
+                        <img src="../img/allergens/2/gluten.png" alt="Gluten" class="allergen-icon" loading="lazy" decoding="async">
+                        <img src="../img/allergens/2/milk.png" alt="Lácteos" class="allergen-icon" loading="lazy" decoding="async">
                     </span>
                 </p>
             </div>
@@ -296,9 +310,9 @@
                 <p class="product-text product-description mb-1">Empanadas varidas de humita, jamón o criolla.</p>
                 <p>
                     <span class="allergen-icons">
-                        <img src="../img/allergens/2/gluten.png" alt="Gluten" class="allergen-icon">
-                        <img src="../img/allergens/2/milk.png" alt="Lácteos" class="allergen-icon">
-                        <img src="../img/allergens/2/egg.png" alt="Huevos" class="allergen-icon">
+                        <img src="../img/allergens/2/gluten.png" alt="Gluten" class="allergen-icon" loading="lazy" decoding="async">
+                        <img src="../img/allergens/2/milk.png" alt="Lácteos" class="allergen-icon" loading="lazy" decoding="async">
+                        <img src="../img/allergens/2/egg.png" alt="Huevos" class="allergen-icon" loading="lazy" decoding="async">
                     </span>
                 </p>
             </div>
@@ -311,12 +325,12 @@
                 <p class="product-text product-description mb-1">Degustación de postres caseros servido al centro para compartir.</p>
                 <p>
                     <span class="allergen-icons">
-                        <img src="../img/allergens/2/gluten.png" alt="Gluten" class="allergen-icon">
-                        <img src="../img/allergens/2/lupins.png" alt="Altramuces" class="allergen-icon">
-                        <img src="../img/allergens/2/celery.png" alt="Apio" class="allergen-icon">
-                        <img src="../img/allergens/2/milk.png" alt="Lácteos" class="allergen-icon">
-                        <img src="../img/allergens/2/nuts.png" alt="Nueces" class="allergen-icon">
-                        <img src="../img/allergens/2/peanuts.png" alt="Cacahuetes" class="allergen-icon">
+                        <img src="../img/allergens/2/gluten.png" alt="Gluten" class="allergen-icon" loading="lazy" decoding="async">
+                        <img src="../img/allergens/2/lupins.png" alt="Altramuces" class="allergen-icon" loading="lazy" decoding="async">
+                        <img src="../img/allergens/2/celery.png" alt="Apio" class="allergen-icon" loading="lazy" decoding="async">
+                        <img src="../img/allergens/2/milk.png" alt="Lácteos" class="allergen-icon" loading="lazy" decoding="async">
+                        <img src="../img/allergens/2/nuts.png" alt="Nueces" class="allergen-icon" loading="lazy" decoding="async">
+                        <img src="../img/allergens/2/peanuts.png" alt="Cacahuetes" class="allergen-icon" loading="lazy" decoding="async">
                     </span>
                 </p>
             </div>
@@ -349,7 +363,7 @@
                 <div class="container">
                     <p class="subtitle section-subtitle">el protagonista</p>
                     <p class="title section-title">BIFE ARGENTINO</p>
-                    <p class="decorator-line mt-4 mb-4"><i class="bi bi-asterisk"></i>&nbsp;<i class="bi bi-asterisk"></i>&nbsp;<i class="bi bi-asterisk"></i></p>
+                    <p class="decorator-line mt-4 mb-4"><svg class="icon" aria-hidden="true"><use href="#icon-asterisk"></use></svg>&nbsp;<svg class="icon" aria-hidden="true"><use href="#icon-asterisk"></use></svg>&nbsp;<svg class="icon" aria-hidden="true"><use href="#icon-asterisk"></use></svg></p>
                 </div>
             </div>
         </div>
@@ -359,9 +373,9 @@
                 <p class="product-text product-description mb-1">Mix de hojas, queso de Cabra, mango, jamon de pato, tomates cherry y vinagreta de dijon.</p>
                 <p>
                     <span class="allergen-icons">
-                        <img src="../img/allergens/2/gluten.png" alt="Gluten" class="allergen-icon">
-                        <img src="../img/allergens/2/milk.png" alt="Lácteos" class="allergen-icon">
-                        <img src="../img/allergens/2/soy.png" alt="Soja" class="allergen-icon">
+                        <img src="../img/allergens/2/gluten.png" alt="Gluten" class="allergen-icon" loading="lazy" decoding="async">
+                        <img src="../img/allergens/2/milk.png" alt="Lácteos" class="allergen-icon" loading="lazy" decoding="async">
+                        <img src="../img/allergens/2/soy.png" alt="Soja" class="allergen-icon" loading="lazy" decoding="async">
                     </span>
                 </p>
             </div>
@@ -370,8 +384,8 @@
                 <p class="product-text product-description mb-1">Queso provolone fundido al horno con tomate seco y cebolla caramelizada.</p>
                 <p>
                     <span class="allergen-icons">
-                        <img src="../img/allergens/2/gluten.png" alt="Gluten" class="allergen-icon">
-                        <img src="../img/allergens/2/milk.png" alt="Lácteos" class="allergen-icon">
+                        <img src="../img/allergens/2/gluten.png" alt="Gluten" class="allergen-icon" loading="lazy" decoding="async">
+                        <img src="../img/allergens/2/milk.png" alt="Lácteos" class="allergen-icon" loading="lazy" decoding="async">
                     </span>
                 </p>
             </div>
@@ -380,9 +394,9 @@
                 <p class="product-text product-description mb-1">Empanadas varidas de humita, jamón o criolla.</p>
                 <p>
                     <span class="allergen-icons">
-                        <img src="../img/allergens/2/gluten.png" alt="Gluten" class="allergen-icon">
-                        <img src="../img/allergens/2/milk.png" alt="Lácteos" class="allergen-icon">
-                        <img src="../img/allergens/2/egg.png" alt="Huevos" class="allergen-icon">
+                        <img src="../img/allergens/2/gluten.png" alt="Gluten" class="allergen-icon" loading="lazy" decoding="async">
+                        <img src="../img/allergens/2/milk.png" alt="Lácteos" class="allergen-icon" loading="lazy" decoding="async">
+                        <img src="../img/allergens/2/egg.png" alt="Huevos" class="allergen-icon" loading="lazy" decoding="async">
                     </span>
                 </p>
             </div>
@@ -395,12 +409,12 @@
                 <p class="product-text product-description mb-1">Degustación de postres caseros servido al centro para compartir.</p>
                 <p>
                     <span class="allergen-icons">
-                        <img src="../img/allergens/2/gluten.png" alt="Gluten" class="allergen-icon">
-                        <img src="../img/allergens/2/lupins.png" alt="Altramuces" class="allergen-icon">
-                        <img src="../img/allergens/2/celery.png" alt="Apio" class="allergen-icon">
-                        <img src="../img/allergens/2/milk.png" alt="Lácteos" class="allergen-icon">
-                        <img src="../img/allergens/2/nuts.png" alt="Nueces" class="allergen-icon">
-                        <img src="../img/allergens/2/peanuts.png" alt="Cacahuetes" class="allergen-icon">
+                        <img src="../img/allergens/2/gluten.png" alt="Gluten" class="allergen-icon" loading="lazy" decoding="async">
+                        <img src="../img/allergens/2/lupins.png" alt="Altramuces" class="allergen-icon" loading="lazy" decoding="async">
+                        <img src="../img/allergens/2/celery.png" alt="Apio" class="allergen-icon" loading="lazy" decoding="async">
+                        <img src="../img/allergens/2/milk.png" alt="Lácteos" class="allergen-icon" loading="lazy" decoding="async">
+                        <img src="../img/allergens/2/nuts.png" alt="Nueces" class="allergen-icon" loading="lazy" decoding="async">
+                        <img src="../img/allergens/2/peanuts.png" alt="Cacahuetes" class="allergen-icon" loading="lazy" decoding="async">
                     </span>
                 </p>
             </div>
@@ -432,7 +446,7 @@
             <div class="col-9 col-md-8 col-lg-8">
                 <p class="subtitle section-subtitle">para los más</p>
                 <p class="title section-title">PEQUEÑOS</p>
-                <p class="decorator-line mt-4 mb-4"><i class="bi bi-asterisk"></i>&nbsp;<i class="bi bi-asterisk"></i>&nbsp;<i class="bi bi-asterisk"></i></p>
+                <p class="decorator-line mt-4 mb-4"><svg class="icon" aria-hidden="true"><use href="#icon-asterisk"></use></svg>&nbsp;<svg class="icon" aria-hidden="true"><use href="#icon-asterisk"></use></svg>&nbsp;<svg class="icon" aria-hidden="true"><use href="#icon-asterisk"></use></svg></p>
             </div>
             <div class="row gy-3 d-flex align-items-start justify-content-evenly">
                 <div class="col-9 col-md-5 col-lg-5">
@@ -440,8 +454,8 @@
                     <p class="product-text product-description mb-1">Empanada de jamón y mozzarella.</p>
                     <p>
                         <span class="allergen-icons">
-                            <img src="../img/allergens/2/gluten.png" alt="Gluten" class="allergen-icon">
-                            <img src="../img/allergens/2/milk.png" alt="Lácteos" class="allergen-icon">
+                            <img src="../img/allergens/2/gluten.png" alt="Gluten" class="allergen-icon" loading="lazy" decoding="async">
+                            <img src="../img/allergens/2/milk.png" alt="Lácteos" class="allergen-icon" loading="lazy" decoding="async">
                         </span>    
                     </p>
                 </div>
@@ -450,12 +464,12 @@
                     <p class="product-text product-description mb-1">Pechuguitas de pollo empanadas, con patatas fritas y ketchup.</p>
                     <p>
                         <span class="allergen-icons">
-                            <img src="../img/allergens/2/gluten.png" alt="Gluten" class="allergen-icon">
-                            <img src="../img/allergens/2/celery.png" alt="Apio" class="allergen-icon">
-                            <img src="../img/allergens/2/milk.png" alt="Lácteos" class="allergen-icon">
-                            <img src="../img/allergens/2/sesame.png" alt="Sesamo" class="allergen-icon">
-                            <img src="../img/allergens/2/mustard.png" alt="Mostaza" class="allergen-icon">
-                            <img src="../img/allergens/2/egg.png" alt="Huevos" class="allergen-icon">
+                            <img src="../img/allergens/2/gluten.png" alt="Gluten" class="allergen-icon" loading="lazy" decoding="async">
+                            <img src="../img/allergens/2/celery.png" alt="Apio" class="allergen-icon" loading="lazy" decoding="async">
+                            <img src="../img/allergens/2/milk.png" alt="Lácteos" class="allergen-icon" loading="lazy" decoding="async">
+                            <img src="../img/allergens/2/sesame.png" alt="Sesamo" class="allergen-icon" loading="lazy" decoding="async">
+                            <img src="../img/allergens/2/mustard.png" alt="Mostaza" class="allergen-icon" loading="lazy" decoding="async">
+                            <img src="../img/allergens/2/egg.png" alt="Huevos" class="allergen-icon" loading="lazy" decoding="async">
                         </span>    
                     </p>
                 </div>
@@ -464,9 +478,9 @@
                     <p class="product-text product-description m-1">Bola de helado a elegir (chocolate, vainilla, limón).</p>
                     <p>
                         <span class="allergen-icons">
-                            <img src="../img/allergens/2/gluten.png" alt="Gluten" class="allergen-icon">
-                            <img src="../img/allergens/2/celery.png" alt="Apio" class="allergen-icon">
-                            <img src="../img/allergens/2/milk.png" alt="Lácteos" class="allergen-icon">
+                            <img src="../img/allergens/2/gluten.png" alt="Gluten" class="allergen-icon" loading="lazy" decoding="async">
+                            <img src="../img/allergens/2/celery.png" alt="Apio" class="allergen-icon" loading="lazy" decoding="async">
+                            <img src="../img/allergens/2/milk.png" alt="Lácteos" class="allergen-icon" loading="lazy" decoding="async">
                         </span>    
                     </p>
                 </div>
@@ -493,59 +507,59 @@
                     </p>
                     <div class="row justify-content-center allergen-legend">
                         <div class="col-6 col-sm-3 col-md-2">
-                            <img src="../img/allergens/2/gluten.png" alt="Cereales que contengan gluten" class="allergen-icon-big">
+                            <img src="../img/allergens/2/gluten.png" alt="Cereales que contengan gluten" class="allergen-icon-big" loading="lazy" decoding="async">
                             <p class="product-text product-description">Gluten</p>
                         </div>
                         <div class="col-6 col-sm-3 col-md-2">
-                            <img src="../img/allergens/2/crustacean.png" alt="Crustáceos y productos a base de crustáceos" class="allergen-icon-big">
+                            <img src="../img/allergens/2/crustacean.png" alt="Crustáceos y productos a base de crustáceos" class="allergen-icon-big" loading="lazy" decoding="async">
                             <p class="product-text product-description">Crustáceos</p>
                         </div>
                         <div class="col-6 col-sm-3 col-md-2">
-                            <img src="../img/allergens/2/egg.png" alt="Huevos y productos a base de huevo" class="allergen-icon-big">
+                            <img src="../img/allergens/2/egg.png" alt="Huevos y productos a base de huevo" class="allergen-icon-big" loading="lazy" decoding="async">
                             <p class="product-text product-description">Huevos</p>
                         </div>
                         <div class="col-6 col-sm-3 col-md-2">
-                            <img src="../img/allergens/2/fish.png" alt="Pescado y productos a base de pescado" class="allergen-icon-big">
+                            <img src="../img/allergens/2/fish.png" alt="Pescado y productos a base de pescado" class="allergen-icon-big" loading="lazy" decoding="async">
                             <p class="product-text product-description">Pescado</p>
                         </div>
                         <div class="col-6 col-sm-3 col-md-2">
-                            <img src="../img/allergens/2/peanuts.png" alt="Cacahuetes y productos a base de cacahuetes" class="allergen-icon-big">
+                            <img src="../img/allergens/2/peanuts.png" alt="Cacahuetes y productos a base de cacahuetes" class="allergen-icon-big" loading="lazy" decoding="async">
                             <p class="product-text product-description">Cacahuetes</p>
                         </div>
                         <div class="col-6 col-sm-3 col-md-2">
-                            <img src="../img/allergens/2/soy.png" alt="Soja y productos a base de soja" class="allergen-icon-big">
+                            <img src="../img/allergens/2/soy.png" alt="Soja y productos a base de soja" class="allergen-icon-big" loading="lazy" decoding="async">
                             <p class="product-text product-description">Soja</p>
                         </div>
                         <div class="col-6 col-sm-3 col-md-2">
-                            <img src="../img/allergens/2/milk.png" alt="Leche y sus derivados" class="allergen-icon-big">
+                            <img src="../img/allergens/2/milk.png" alt="Leche y sus derivados" class="allergen-icon-big" loading="lazy" decoding="async">
                             <p class="product-text product-description">Lácteos</p>
                         </div>
                         <div class="col-6 col-sm-3 col-md-2">
-                            <img src="../img/allergens/2/nuts.png" alt="Frutos de cáscara" class="allergen-icon-big">
+                            <img src="../img/allergens/2/nuts.png" alt="Frutos de cáscara" class="allergen-icon-big" loading="lazy" decoding="async">
                             <p class="product-text product-description">Frutos de cáscara</p>
                         </div>
                         <div class="col-6 col-sm-3 col-md-2">
-                            <img src="../img/allergens/2/celery.png" alt="Apio y productos derivados" class="allergen-icon-big">
+                            <img src="../img/allergens/2/celery.png" alt="Apio y productos derivados" class="allergen-icon-big" loading="lazy" decoding="async">
                             <p class="product-text product-description">Apio</p>
                         </div>
                         <div class="col-6 col-sm-3 col-md-2">
-                            <img src="../img/allergens/2/mustard.png" alt="Mostaza y productos derivados" class="allergen-icon-big">
+                            <img src="../img/allergens/2/mustard.png" alt="Mostaza y productos derivados" class="allergen-icon-big" loading="lazy" decoding="async">
                             <p class="product-text product-description">Mostaza</p>
                         </div>
                         <div class="col-6 col-sm-3 col-md-2">
-                            <img src="../img/allergens/2/sesame.png" alt="Granos de sésamo y productos a base de granos de sésamo" class="allergen-icon-big">
+                            <img src="../img/allergens/2/sesame.png" alt="Granos de sésamo y productos a base de granos de sésamo" class="allergen-icon-big" loading="lazy" decoding="async">
                             <p class="product-text product-description">Sésamo</p>
                         </div>
                         <div class="col-6 col-sm-3 col-md-2">
-                            <img src="../img/allergens/2/sulfites.png" alt="Dióxido de azufre y sulfitos" class="allergen-icon-big">
+                            <img src="../img/allergens/2/sulfites.png" alt="Dióxido de azufre y sulfitos" class="allergen-icon-big" loading="lazy" decoding="async">
                             <p class="product-text product-description">Sulfitos</p>
                         </div>
                         <div class="col-6 col-sm-3 col-md-2">
-                            <img src="../img/allergens/2/lupins.png" alt="Altramuces y productos a base de altramuces" class="allergen-icon-big">
+                            <img src="../img/allergens/2/lupins.png" alt="Altramuces y productos a base de altramuces" class="allergen-icon-big" loading="lazy" decoding="async">
                             <p class="product-text product-description">Altramuces</p>
                         </div>
                         <div class="col-6 col-sm-3 col-md-2">
-                            <img src="../img/allergens/2/shellfish.png" alt="Moluscos y productos a base de moluscos" class="allergen-icon-big">
+                            <img src="../img/allergens/2/shellfish.png" alt="Moluscos y productos a base de moluscos" class="allergen-icon-big" loading="lazy" decoding="async">
                             <p class="product-text product-description">Moluscos</p>
                         </div>
                     </div>
@@ -561,7 +575,7 @@
                 <p class="title section-title">RESERVA</p>
                 <p class="text text-content">...con antelación y ven con los tuyos a disfrutar de la experiencia Viejo Barrio.</p>
                 <div class="col col-lg-12">
-                    <a href="https://module.lafourchette.com/es_ES/module/674347-7b042" target="_blank" class="btn btn-outline-light m-5" role="button">RESERVA UNA MESA</a>
+                    <a href="https://widget.thefork.com/es/9989afab-6dfe-4e01-907b-f6156681eea0?step=date&utm_source=viejobarrio.es" target="_blank" rel="noopener" class="btn btn-outline-light m-5" role="button">RESERVA UNA MESA</a>
                 </div>
             </div>
         </div>
@@ -580,12 +594,13 @@
                     <li class="nav-item"><a class="nav-link link-light" href="./menu.html">La Carta</a></li>
                     <li class="nav-item"><a class="nav-link link-light" href="./wines.html">Vinos y Cavas</a></li>
                     <li class="nav-item"><a class="nav-link link-light" href="./contact.html">Contacto</a></li>
+                    <li class="nav-item"><a class="nav-link link-light" href="/asador-argentino-valencia/">Asador argentino en Valencia</a></li>
                 </ul>
             </div>
             <div class="col-4 col-md-2 col-lg-2 col-xl-2 p-2">
                 <ul class="nav justify-content-center">
-                    <li class="nav-item"><a class="nav-link link-light" href="https://www.facebook.com/restauranteviejobarrio" target="_blank" class="link-light"><i class="bi bi-facebook"></i></a></li>
-                    <li class="nav-item"><a class="nav-link link-light" href="https://www.instagram.com/viejobarrio.asador" target="_blank" class="link-light"><i class="bi bi-instagram"></i></a></li>
+                    <li class="nav-item"><a class="nav-link link-light" href="https://www.facebook.com/restauranteviejobarrio" target="_blank" rel="noopener" class="link-light"><svg class="icon" aria-hidden="true"><use href="#icon-facebook"></use></svg></a></li>
+                    <li class="nav-item"><a class="nav-link link-light" href="https://www.instagram.com/viejobarrio.asador" target="_blank" rel="noopener" class="link-light"><svg class="icon" aria-hidden="true"><use href="#icon-instagram"></use></svg></a></li>
                 </ul>
             </div>
         </div>

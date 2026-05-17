@@ -366,7 +366,8 @@ body {
     border-bottom: 0;
 }
 
-.landing-trust-point i {
+.landing-trust-point i,
+.landing-trust-point .icon {
     display: inline-flex;
     align-items: center;
     justify-content: center;

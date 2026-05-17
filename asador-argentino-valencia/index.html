@@ -37,9 +37,6 @@
     <!-- Link to the BootStrap framework styles -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
 
-    <!-- Link to the BootStrap icon library -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
-
     <!-- Optimize Google Fonts connection and reduce requests -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -50,7 +47,7 @@
     <link rel="preload" as="image" href="/img/hero-viejo-barrio-benimaclet-desktop.webp" media="(min-width: 768px)">
 
     <!-- Project style sheet and favicon -->
-    <link rel="stylesheet" href="/css/styles.css?v=20260429-1">
+    <link rel="stylesheet" href="/css/styles.css?v=20260517-1">
     <link rel="icon" type="image/x-icon" href="/img/viejobarrio.ico">
     <link rel="shortcut icon" href="/img/viejobarrio.ico">
 
@@ -212,23 +209,35 @@
     </script>
 </head>
 <body class="page-asador-argentino">
+    <svg xmlns="http://www.w3.org/2000/svg" class="svg-sprite" aria-hidden="true" focusable="false">
+        <symbol id="icon-geo-alt" viewBox="0 0 16 16"><path d="M8 16s6-5.686 6-10A6 6 0 1 0 2 6c0 4.314 6 10 6 10zm0-7.5A2.5 2.5 0 1 1 8 3.5a2.5 2.5 0 0 1 0 5z"/></symbol>
+        <symbol id="icon-calendar-check" viewBox="0 0 16 16"><path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1A2 2 0 0 1 16 3v10a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 5v8a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V5H1zm10.354 2.146a.5.5 0 0 1 0 .708L7.707 11.5 5.646 9.439a.5.5 0 1 1 .708-.707l1.353 1.353 3.293-3.293a.5.5 0 0 1 .707 0z"/></symbol>
+        <symbol id="icon-telephone-outbound" viewBox="0 0 16 16"><path d="M3.654 1.328a.678.678 0 0 1 .737-.151l2.522 1.01c.329.132.525.476.473.83l-.286 1.97a.678.678 0 0 1-.58.58l-1.37.198a11.745 11.745 0 0 0 5.085 5.085l.198-1.37a.678.678 0 0 1 .58-.58l1.97-.286a.678.678 0 0 1 .83.473l1.01 2.522a.678.678 0 0 1-.15.737l-1.144 1.144a1.745 1.745 0 0 1-1.86.437c-1.687-.562-3.99-1.77-6.325-4.105C3.535 8.427 2.327 6.124 1.765 4.437a1.745 1.745 0 0 1 .437-1.86l1.452-1.25z"/><path d="M11 1.5a.5.5 0 0 1 .5-.5H14a.5.5 0 0 1 .5.5V4a.5.5 0 0 1-1 0V2.707l-3.146 3.147a.5.5 0 0 1-.708-.708L12.793 2H11.5a.5.5 0 0 1-.5-.5z"/></symbol>
+        <symbol id="icon-arrow-up-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16z"/><path d="M8 4.5a.5.5 0 0 1 .354.146l2 2a.5.5 0 0 1-.708.708L8.5 6.207V11.5a.5.5 0 0 1-1 0V6.207L6.354 7.354a.5.5 0 1 1-.708-.708l2-2A.5.5 0 0 1 8 4.5z"/></symbol>
+        <symbol id="icon-fire" viewBox="0 0 16 16"><path d="M8 16c3.314 0 6-2 6-5.5 0-1.5-.5-4-2.5-6 .25 1.5-1.25 2-1.25 2C11 4 9 .5 6 0c.357 2 .5 4-2 6-1.25 1-2 2.729-2 4.5C2 14 4.686 16 8 16Zm0-1c-1.657 0-3-1-3-2.75 0-.75.25-2 1.25-3C6.125 10 7 10.5 7 10.5c-.375-1.25.5-2.75 1.75-3.5-.179 1 .75 2.25 1.75 3 .5.375.5 1.25.5 2.25C11 14 9.657 15 8 15Z"/></symbol>
+        <symbol id="icon-people" viewBox="0 0 16 16"><path d="M15 14s1 0 1-1-1-4-5-4-5 3-5 4 1 1 1 1h8Zm-7.978-1L7 12.996c.001-.264.167-1.03.76-1.72C8.312 10.629 9.282 10 11 10c1.717 0 2.687.63 3.24 1.276.593.69.758 1.457.76 1.72l-.008.002-.014.002H7.022ZM11 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4Zm3-2a3 3 0 1 1-6 0 3 3 0 0 1 6 0ZM6.936 9.28a5.88 5.88 0 0 0-1.23-.247A7.35 7.35 0 0 0 5 9c-4 0-5 3-5 4 0 .667.333 1 1 1h4.216A2.238 2.238 0 0 1 5 13c0-1.01.377-2.042 1.09-2.904.243-.294.526-.569.846-.816ZM4.92 10A5.493 5.493 0 0 0 4 13H1c0-.26.164-1.03.76-1.724.545-.636 1.492-1.256 3.16-1.275ZM1.5 5.5a3 3 0 1 1 6 0 3 3 0 0 1-6 0Zm3-2a2 2 0 1 0 0 4 2 2 0 0 0 0-4Z"/></symbol>
+        <symbol id="icon-chat-heart" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M2.965 12.695a1 1 0 0 0-.287.801l.291 2.48a.5.5 0 0 0 .813.318l2.02-1.615c.715.153 1.473.321 2.198.321 4.418 0 8-3.134 8-7s-3.582-7-8-7-8 3.134-8 7c0 1.747.73 3.35 1.936 4.584l-.01.011.039-.2ZM8 14c-.628 0-1.245-.128-1.814-.277a.5.5 0 0 0-.44.084l-1.412 1.129-.19-1.625a.5.5 0 0 0-.17-.32C2.743 11.935 2 10.466 2 8c0-3.313 3.134-6 7-6s7 2.687 7 6-3.134 6-7 6Zm0-9.993c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132Z"/></symbol>
+        <symbol id="icon-facebook" viewBox="0 0 16 16"><path d="M16 8.049C16 3.603 12.418 0 8 0S0 3.603 0 8.049C0 12.067 2.926 15.397 6.75 16v-5.625H4.719V8.049H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.875 0 1.79.157 1.79.157v1.98h-1.009c-.994 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16C13.074 15.397 16 12.067 16 8.049z"/></symbol>
+        <symbol id="icon-instagram" viewBox="0 0 16 16"><path d="M8 0C5.826 0 5.555.01 4.703.048 3.85.087 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76c-.198.509-.333 1.09-.372 1.943C.01 5.555 0 5.826 0 8c0 2.174.01 2.445.048 3.297.039.853.174 1.434.372 1.943.205.527.478.974.923 1.417.444.445.89.718 1.417.923.509.198 1.09.333 1.943.372C5.555 15.99 5.826 16 8 16c2.174 0 2.445-.01 3.297-.048.853-.039 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.417-.923c.445-.444.718-.89.923-1.417.198-.509.333-1.09.372-1.943C15.99 10.445 16 10.174 16 8c0-2.174-.01-2.445-.048-3.297-.039-.853-.174-1.434-.372-1.943a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.509-.198-1.09-.333-1.943-.372C10.445.01 10.174 0 8 0zm0 1.441c2.138 0 2.39.008 3.231.046.777.035 1.199.165 1.48.274.373.145.64.318.92.598.28.28.453.547.598.92.109.281.239.703.274 1.48.038.841.046 1.093.046 3.231s-.008 2.39-.046 3.231c-.035.777-.165 1.199-.274 1.48a2.46 2.46 0 0 1-.598.92 2.46 2.46 0 0 1-.92.598c-.281.109-.703.239-1.48.274-.841.038-1.093.046-3.231.046s-2.39-.008-3.231-.046c-.777-.035-1.199-.165-1.48-.274a2.46 2.46 0 0 1-.92-.598 2.46 2.46 0 0 1-.598-.92c-.109-.281-.239-.703-.274-1.48C1.449 10.39 1.441 10.138 1.441 8s.008-2.39.046-3.231c.035-.777.165-1.199.274-1.48.145-.373.318-.64.598-.92.28-.28.547-.453.92-.598.281-.109.703-.239 1.48-.274C5.61 1.449 5.862 1.441 8 1.441z"/><path d="M8 4.324A3.676 3.676 0 1 0 8 11.676 3.676 3.676 0 0 0 8 4.324zm0 6.137A2.461 2.461 0 1 1 8 5.539a2.461 2.461 0 0 1 0 4.922zm4.414-6.278a.86.86 0 1 1-1.72 0 .86.86 0 0 1 1.72 0z"/></symbol>
+    </svg>
+
     <!-- page header section -->
     <div class="container-fluid smalltext-content header-section text-center" id="header-section">
         <div class="row p-2 d-flex align-items-center justify-content-space-between">
             <div class="col-6 ps-2 d-flex justify-content-start">
                 <span class="align-middle">
-                    <i class="bi bi-geo-alt"></i>&nbsp;
+                    <svg class="icon" aria-hidden="true"><use href="#icon-geo-alt"></use></svg>&nbsp;
                     <a href="https://www.google.com/maps?cid=11418522565425404756" target="_blank" rel="noopener" class="smalltext-content">
                         C. del Reverend Rafael Tramoyeres, 5, Bajo Izquierda, Benimaclet, 46020 València, Valencia
                     </a>
                 </span>
             </div>
             <div class="col-4 d-flex justify-content-center">
-                <span class="align-middle"><i class="bi bi-calendar-check"></i>&nbsp;<a href="https://widget.thefork.com/es/9989afab-6dfe-4e01-907b-f6156681eea0?step=date&utm_source=viejobarrio.es" target="_blank" rel="noopener" class="smalltext-content">RESERVAS</a></span>
+                <span class="align-middle"><svg class="icon" aria-hidden="true"><use href="#icon-calendar-check"></use></svg>&nbsp;<a href="https://widget.thefork.com/es/9989afab-6dfe-4e01-907b-f6156681eea0?step=date&utm_source=viejobarrio.es" target="_blank" rel="noopener" class="smalltext-content">RESERVAS</a></span>
             </div>
             <div class="col-2 pe-2 d-flex justify-content-end">
                 <span class="align-middle">
-                    <i class="bi bi-telephone-outbound"></i>&nbsp;
+                    <svg class="icon" aria-hidden="true"><use href="#icon-telephone-outbound"></use></svg>&nbsp;
                     <a href="tel:+34664406771" class="smalltext-content">664 40 67 71</a>
                 </span>
             </div>
@@ -283,7 +292,7 @@
         </section>
 
         <button type="button" class="btn btn-link btn-floating btn-lg text-white" id="btn-back-to-top" aria-label="Volver arriba">
-            <i class="bi bi-arrow-up-circle"></i>
+            <svg class="icon" aria-hidden="true"><use href="#icon-arrow-up-circle"></use></svg>
         </button>
 
         <section class="container-fluid content-section-dark text-center landing-section landing-section-dark landing-trust-section">
@@ -296,21 +305,21 @@
                 </div>
                 <div class="landing-trust-points" aria-label="Detalles de Viejo Barrio">
                     <div class="landing-trust-point">
-                        <i class="bi bi-fire" aria-hidden="true"></i>
+                        <svg class="icon" aria-hidden="true"><use href="#icon-fire"></use></svg>
                         <div>
                             <h3>Brasa y punto</h3>
                             <p>Cortes cocinados a la brasa, con atención al punto y al sabor de cada pieza.</p>
                         </div>
                     </div>
                     <div class="landing-trust-point">
-                        <i class="bi bi-people" aria-hidden="true"></i>
+                        <svg class="icon" aria-hidden="true"><use href="#icon-people"></use></svg>
                         <div>
                             <h3>Parrilladas para compartir</h3>
                             <p>Platos pensados para poner al centro, probar varios cortes y comer sin prisas.</p>
                         </div>
                     </div>
                     <div class="landing-trust-point">
-                        <i class="bi bi-chat-heart" aria-hidden="true"></i>
+                        <svg class="icon" aria-hidden="true"><use href="#icon-chat-heart"></use></svg>
                         <div>
                             <h3>Trato cercano</h3>
                             <p>Un asador argentino de barrio: directo, cómodo y con una atención cercana.</p>
@@ -522,8 +531,8 @@
             </div>
             <div class="col-4 col-md-2 col-lg-2 col-xl-2 p-2">
                 <ul class="nav justify-content-center">
-                    <li class="nav-item"><a class="nav-link link-light" href="https://www.facebook.com/restauranteviejobarrio" target="_blank" rel="noopener"><i class="bi bi-facebook"></i></a></li>
-                    <li class="nav-item"><a class="nav-link link-light" href="https://www.instagram.com/viejobarrio.asador" target="_blank" rel="noopener"><i class="bi bi-instagram"></i></a></li>
+                    <li class="nav-item"><a class="nav-link link-light" href="https://www.facebook.com/restauranteviejobarrio" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#icon-facebook"></use></svg></a></li>
+                    <li class="nav-item"><a class="nav-link link-light" href="https://www.instagram.com/viejobarrio.asador" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#icon-instagram"></use></svg></a></li>
                 </ul>
             </div>
         </div>
