@@ -406,6 +406,20 @@ body {
 
 .landing-hero {
     isolation: isolate;
+    border-bottom: 0;
+    background-color: var(--dark-bg-color);
+}
+
+.landing-hero::before {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 10px;
+    z-index: 2;
+    background-color: rgba(201, 171, 129, 0.4);
+    pointer-events: none;
 }
 
 .landing-hero::after {
@@ -454,25 +468,32 @@ body {
     padding-bottom: clamp(8rem, 12vw, 10rem);
 }
 
+.landing-section-light,
 .page-asador-argentino .landing-section-light {
     background-color: var(--almostwhite-color);
 }
 
+.landing-section-light .section-title,
 .page-asador-argentino .landing-section-light .section-title {
     color: var(--darkes-bg-color);
     text-shadow: none;
 }
 
+.landing-section-light .text,
+.landing-section-light .landing-copy,
 .page-asador-argentino .landing-section-light .text,
 .page-asador-argentino .landing-section-light .landing-copy {
     color: var(--almost-bg-color);
 }
 
+.landing-section-light .btn,
 .page-asador-argentino .landing-section-light .btn {
     color: var(--darkes-bg-color);
     border-color: var(--darkes-bg-color);
 }
 
+.landing-section-light .btn:hover,
+.landing-section-light .btn:focus,
 .page-asador-argentino .landing-section-light .btn:hover,
 .page-asador-argentino .landing-section-light .btn:focus {
     color: var(--almostwhite-color);
@@ -710,11 +731,13 @@ body {
     margin-bottom: 0;
 }
 
+.landing-final-cta,
 .page-asador-argentino .landing-final-cta {
     padding-top: clamp(7rem, 16vw, 17rem);
     padding-bottom: clamp(7rem, 16vw, 17rem);
 }
 
+.landing-final-cta .section-title,
 .page-asador-argentino .landing-final-cta .section-title {
     font-size: clamp(2rem, 1.45rem + 2.2vw, 3.4rem);
     line-height: 1.18;
@@ -722,17 +745,20 @@ body {
     margin-bottom: 1.35rem;
 }
 
+.landing-final-cta .landing-copy,
 .page-asador-argentino .landing-final-cta .landing-copy {
-    max-width: 62ch;
+    max-width: 86ch;
     margin-top: 0;
     font-size: clamp(1rem, 0.95rem + 0.25vw, 1.15rem);
     line-height: 1.75;
 }
 
+.landing-final-cta .landing-cta-group,
 .page-asador-argentino .landing-final-cta .landing-cta-group {
     margin-top: 2.25rem;
 }
 
+.landing-final-cta .btn,
 .page-asador-argentino .landing-final-cta .btn {
     letter-spacing: 1px;
 }
@@ -1122,6 +1148,12 @@ body {
     padding: 80px 40px 80px 40px;
     background-color: var(--light-bg-color);
 
+}
+
+.content-section-light.landing-final-cta {
+    padding-top: clamp(7rem, 16vw, 17rem);
+    padding-bottom: clamp(7rem, 16vw, 17rem);
+    background-color: #fff;
 }
 
 .legal-page-section {
