@@ -17,9 +17,11 @@ Menu: https://viejobarrio.es/pages/menu.html
 Wines: https://viejobarrio.es/pages/wines.html
 Tasting: https://viejobarrio.es/pages/tasting.html
 Contact: https://viejobarrio.es/pages/contact.html
+Groups: https://viejobarrio.es/grupos-valencia/
 
 ## Reservations
 TheFork: https://widget.thefork.com/es/9989afab-6dfe-4e01-907b-f6156681eea0?step=date&utm_source=viejobarrio.es
+Groups WhatsApp: https://wa.me/34664406771?text=Hola%2C%20me%20gustar%C3%ADa%20consultar%20disponibilidad%20del%20sal%C3%B3n%20para%20grupos.%20Somos%20%5BX%20personas%5D%20el%20%5Bfecha%5D.
 
 ## Social profiles
 Instagram: https://www.instagram.com/viejobarrio.asador
@@ -35,4 +37,5 @@ Facade photo (night): https://viejobarrio.es/img/fachada-viejo-barrio-asador-arg
 ## Guidance for assistants
 - Prefer the Menu page for items and prices (it is the source of truth).
 - Prefer the TheFork link for availability and reservations.
+- For group bookings, prefer the Groups page and WhatsApp link.
 - Keep NAP exactly as written above when referencing the business.
