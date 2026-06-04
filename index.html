@@ -56,7 +56,7 @@
         media="(min-width: 768px)">
 
     <!-- Project style sheet and favicon -->
-    <link rel="stylesheet" href="/css/styles.css?v=20260517-8">
+    <link rel="stylesheet" href="/css/styles.css?v=20260604-1">
     <link rel="icon" type="image/x-icon" href="/img/viejobarrio.ico">
     <link rel="shortcut icon" href="/img/viejobarrio.ico">
     <style>
@@ -152,7 +152,7 @@
         }
     </script>
 </head>
-<body>
+<body class="page-home">
     <svg xmlns="http://www.w3.org/2000/svg" class="svg-sprite" aria-hidden="true" focusable="false">
         <symbol id="icon-geo-alt" viewBox="0 0 16 16"><path d="M8 16s6-5.686 6-10A6 6 0 1 0 2 6c0 4.314 6 10 6 10zm0-7.5A2.5 2.5 0 1 1 8 3.5a2.5 2.5 0 0 1 0 5z"/></symbol>
         <symbol id="icon-calendar-check" viewBox="0 0 16 16"><path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1A2 2 0 0 1 16 3v10a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 5v8a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V5H1zm10.354 2.146a.5.5 0 0 1 0 .708L7.707 11.5 5.646 9.439a.5.5 0 1 1 .708-.707l1.353 1.353 3.293-3.293a.5.5 0 0 1 .707 0z"/></symbol>
@@ -200,247 +200,294 @@
     </div>
     </header>
 
-    <!-- banner top first page section-->
-    <div class="container-fluid topbanner-section text-center" id="mainpage-bannertop">
-        <picture class="hero-media">
-            <source
-                media="(min-width: 768px)"
-                type="image/webp"
-                srcset="/img/hero-viejo-barrio-benimaclet-desktop.webp">
-            <source
-                media="(max-width: 767px)"
-                type="image/webp"
-                srcset="/img/hero-viejo-barrio-benimaclet-mobile.webp">
-            <source
-                media="(min-width: 768px)"
-                srcset="/img/iulian-aghei-q_xW-2ICvfA-unsplash-1920x1281.jpg">
-            <img
-                src="/img/iulian-aghei-q_xW-2ICvfA-unsplash-640x480.jpg"
-                srcset="/img/iulian-aghei-q_xW-2ICvfA-unsplash-640x480.jpg 640w, /img/iulian-aghei-q_xW-2ICvfA-unsplash-1920x1281.jpg 1920w"
-                sizes="100vw"
-                width="640"
-                height="427"
-                alt=""
-                fetchpriority="high"
-                loading="eager"
-                decoding="async">
-        </picture>
-        <div class="row d-flex align-items-center justify-content-center hero-content">
-            <div class="col-9 col-md-8 col-lg-8">
-                <h1 class="title page-title">VIEJO BARRIO</h1>
-                <h2 class="subtitle page-subtitle">Asador Argentino</h2>
-                <p class="text page-text hero-lead">Restaurante argentino en Valencia, Benimaclet. Parrilla a la brasa, carnes al punto y clásicos como empanadas, provolone y bife argentino.</p>
-            </div>
-        </div>
-    </div>
-
-    <!-- back to top button. Start scrolling the page and a "Back to top" button will appear. -->
-    <button type="button" class="btn btn-link btn-floating btn-lg text-white" id="btn-back-to-top">
-        <svg class="icon" aria-hidden="true"><use href="#icon-arrow-up-circle"></use></svg>
-    </button>
-
-    <!-- section: thefork widget iframe -->
-    <div class="container-fluid text-center content-section-light" id="thefork">
-        <div class="row d-flex align-items-center justify-content-center">
-            <div class="col-9 col-md-8 col-lg-8 mb-4">
-                <p class="subtitle section-subtitle">haz tu</p>
-                <p class="title section-title">RESERVA</p>
-                <p class="text text-content">...con antelación y ven con los tuyos a disfrutar de la experiencia Viejo Barrio.</p>
-                <div class="col col-lg-12">
+    <main>
+        <!-- home hero section -->
+        <section class="container-fluid topbanner-section text-center landing-hero" id="mainpage-bannertop">
+            <picture class="hero-media">
+                <source
+                    media="(min-width: 768px)"
+                    type="image/webp"
+                    srcset="/img/hero-viejo-barrio-benimaclet-desktop.webp">
+                <source
+                    media="(max-width: 767px)"
+                    type="image/webp"
+                    srcset="/img/hero-viejo-barrio-benimaclet-mobile.webp">
+                <source
+                    media="(min-width: 768px)"
+                    srcset="/img/iulian-aghei-q_xW-2ICvfA-unsplash-1920x1281.jpg">
+                <img
+                    src="/img/iulian-aghei-q_xW-2ICvfA-unsplash-640x480.jpg"
+                    srcset="/img/iulian-aghei-q_xW-2ICvfA-unsplash-640x480.jpg 640w, /img/iulian-aghei-q_xW-2ICvfA-unsplash-1920x1281.jpg 1920w"
+                    sizes="100vw"
+                    width="640"
+                    height="427"
+                    alt=""
+                    fetchpriority="high"
+                    loading="eager"
+                    decoding="async">
+            </picture>
+            <div class="row d-flex align-items-center justify-content-center hero-content">
+                <div class="col-10 col-md-9 col-lg-8">
+                    <p class="landing-eyebrow">Viejo Barrio · Benimaclet</p>
+                    <h1 class="title page-title">VIEJO BARRIO</h1>
+                    <h2 class="subtitle page-subtitle">Asador argentino en Benimaclet</h2>
+                    <p class="text page-text hero-lead">Carne a la brasa, parrilladas para compartir y una mesa tranquila en Valencia.</p>
+                    <div class="landing-cta-group">
+                        <a href="https://widget.thefork.com/es/9989afab-6dfe-4e01-907b-f6156681eea0?step=date&utm_source=viejobarrio.es" target="_blank" rel="noopener" class="btn btn-outline-light" role="button">Reservar mesa</a>
+                        <a href="/pages/menu.html" class="btn btn-outline-light" role="button">Ver carta</a>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="row d-flex align-items-center justify-content-center">
-            <div class="col col-lg-12">
-                <a href="https://widget.thefork.com/es/9989afab-6dfe-4e01-907b-f6156681eea0?step=date&utm_source=viejobarrio.es" target="_blank" rel="noopener" class="btn btn-outline-light m-5" role="button">RESERVAR UNA MESA</a>
-            </div>
-        </div>
-    </div>
-    
-    <!-- section home: about us -->
-    <div class="container-fluid content-section-dark text-center" id="home-about-us">
-        <div class="row d-flex align-items-center justify-content-center">
-            <div class="col-9 col-md-8 col-lg-8 mb-4">
-                <p class="subtitle section-subtitle">algo de historia</p>
-                <p class="title section-title">SOBRE NOSOTROS</p>
-                <p class="text text-content">Llevamos 20 años cuidado cada detalle para ofrecerte una velada acogedora con los mejores vinos, cortes de carne y especialidades de la gastronomía argentina.</p>
-                <p class="decorator-line mt-4 mb-4"><svg class="icon" aria-hidden="true"><use href="#icon-asterisk"></use></svg>&nbsp;<svg class="icon" aria-hidden="true"><use href="#icon-asterisk"></use></svg>&nbsp;<svg class="icon" aria-hidden="true"><use href="#icon-asterisk"></use></svg></p>
-            </div>
-        </div>
-        <div class="row d-flex align-items-center justify-content-center">
-            <!-- Gallery -->
-            <div class="row justify-content-center">
-                <div class="col-lg-4 col-md-3 mb-4 mb-lg-0">
-                    <img src="/img/rest-vb-salon1.jpg" class="w-100 shadow-1-strong rounded border border-2 mb-4" alt="Salón de Viejo Barrio, restaurante argentino en Benimaclet (Valencia)" loading="lazy" width="311" height="271" />
-                </div>
-                <div class="col-lg-4 col-md-3 mb-4 mb-lg-0">
-                    <img src="/img/rest-vb-salon2.jpg" class="w-100 shadow-1-strong rounded border border-2 mb-4" alt="Interior del asador argentino Viejo Barrio en Valencia, ambiente de barrio en Benimaclet" loading="lazy" width="311" height="271" />
-                </div>
-            </div>
-        </div>
-    </div>
+        </section>
 
-    <!-- section home: reviews -->
-    <div class="container-fluid text-center content-section-light" id="home_reviews">
-        <div class="row d-flex align-items-center justify-content-center">
-            <div class="col-9 col-md-8 col-lg-8">
-                <!-- Carousel showing three different views -->
-                <div id="carouselReviews" class="carousel slide" data-bs-ride="carousel">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active" data-bs-interval="8000">
-                            <p class="title review-section-title"><svg class="icon" aria-hidden="true"><use href="#icon-quote"></use></svg></p>
-                            <p class="review-text review-section-text">Comida de calidad, servicio rápido y agradable y relación calidad-precio excelente, a mi pareja y a mi nos ha encantado y repetiremos, seguro.</p>
-                            <p class="review-text review-section-author">CARLOS B.</p>
-                            <p class="review-text review-section-date">9 de octubre de 2022 (Trip Advisor)</p>            
+        <!-- back to top button. Start scrolling the page and a "Back to top" button will appear. -->
+        <button type="button" class="btn btn-link btn-floating btn-lg text-white" id="btn-back-to-top">
+            <svg class="icon" aria-hidden="true"><use href="#icon-arrow-up-circle"></use></svg>
+        </button>
+
+        <!-- section home: intro -->
+        <section class="container-fluid content-section-dark text-center landing-section landing-trust-section" id="home-intro">
+            <div class="landing-trust-layout">
+                <div class="landing-trust-copy">
+                    <p class="subtitle section-subtitle">cocina argentina</p>
+                    <h2 class="title section-title">UN ASADOR ARGENTINO DE BARRIO</h2>
+                    <p class="text landing-copy">Viejo Barrio es un restaurante argentino en Benimaclet para comer carne a la brasa, compartir una parrillada y disfrutar sin complicarse.</p>
+                    <p class="text landing-copy">Aquí importan el punto de la carne, el trato cercano y una carta pensada para venir con hambre.</p>
+                </div>
+                <div class="landing-trust-points">
+                    <div class="landing-trust-point">
+                        <span class="page-home-card-number">01</span>
+                        <div>
+                            <h3>Brasa y cortes argentinos</h3>
+                            <p>Carne cocinada a la brasa, con atención al punto y al sabor.</p>
                         </div>
-                        <div class="carousel-item" data-bs-interval="8000">
-                            <p class="title review-section-title"><svg class="icon" aria-hidden="true"><use href="#icon-quote"></use></svg></p>
-                            <p class="review-text review-section-text">Atención esmerada y profesional... Los productos de primera calidad y elaborados con cariño y cuidando hasta él último detalle.</p>
-                            <p class="review-text review-section-author">JUANPAS60</p>
-                            <p class="review-text review-section-date">2 de noviembre de 2021 (Trip Advisor)</p>            
+                    </div>
+                    <div class="landing-trust-point">
+                        <span class="page-home-card-number">02</span>
+                        <div>
+                            <h3>Parrilladas para compartir</h3>
+                            <p>Platos pensados para poner al centro y comer sin prisas.</p>
                         </div>
-                        <div class="carousel-item" data-bs-interval="8000">
-                            <p class="title review-section-title"><svg class="icon" aria-hidden="true"><use href="#icon-quote"></use></svg></p>
-                            <p class="review-text review-section-text">Excelente restaurante. menú muy variado con una elaboración cuidadosa de cada plato. Fuimos 10 personas y todos quedemos muy satisfechos.</p>
-                            <p class="review-text review-section-author">RUJETA1</p>
-                            <p class="review-text review-section-date">21 de julio de 2019 (Trip Advisor)</p>            
+                    </div>
+                    <div class="landing-trust-point">
+                        <span class="page-home-card-number">03</span>
+                        <div>
+                            <h3>Benimaclet, Valencia</h3>
+                            <p>Un asador de barrio, cerca y cómodo para comer o cenar.</p>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
+        </section>
 
-
-    <!-- Section home: chef suggestion -->
-    <div class="container-fluid text-center content-section-dark" id="home_chef">
-        <div class="row d-flex align-items-center justify-content-center">
-            <div class="col-9 col-md-8 col-lg-8 mb-4">
-                <p class="subtitle section-subtitle">sugerencias</p>
-                <p class="title section-title">DE NUESTRO CHEF</p>
-                <p class="text text-content">Atrevete con los platos de temporada, fuera de carta y las más recientes creaciones de nuestro Chef.</p>
-                <p class="decorator-line mt-4"><svg class="icon" aria-hidden="true"><use href="#icon-asterisk"></use></svg>&nbsp;<svg class="icon" aria-hidden="true"><use href="#icon-asterisk"></use></svg>&nbsp;<svg class="icon" aria-hidden="true"><use href="#icon-asterisk"></use></svg></p>
-            </div>
-        </div>
-        <div class="row d-flex align-items-center justify-content-center">
-            <!-- Sugerencias del Chef -->
-            <div class="row justify-content-center">
-                <div class="col-lg-4 col-md-3 mb-4 mb-lg-0">
-                    <picture class="content-card-media">
-                        <source type="image/webp" srcset="/img/rest-vb-empanada-pollo.webp">
-                        <img src="/img/rest-vb-empanada-pollo-320x240px.jpg" class="w-100 shadow-1-strong rounded border border-2 mb-4" alt="Empanada de pollo al horno en Viejo Barrio – Asador Argentino" loading="lazy" width="320" height="240" />
-                    </picture>
-                    <p class="product-text product-name mb-2">Empanada de pollo</p>
-                    <p class="product-text product-description mb-1">Empanada de pollo con pimientos asados, tomate, cebolla, huevo y especies.</p>    
-                </div>
-                <div class="col-lg-4 col-md-3 mb-4 mb-lg-0">
-                    <picture class="content-card-media">
-                        <source type="image/webp" srcset="/img/rest-vb-crepe-manzana.webp">
-                        <img src="/img/rest-vb-crepe-manzana-320x240px.jpg" class="w-100 shadow-1-strong rounded border border-2 mb-4" alt="Crepe de manzana de postre en Viejo Barrio – Asador Argentino" loading="lazy" width="320" height="240" />
-                    </picture>
-                    <p class="product-text product-name mb-2">Crepe de manzana</p>
-                    <p class="product-text product-description mb-1">Si te gustan los crepes dulces entonces este crepe relleno de manzana caramelizada te va a encantar.</p>    
+        <!-- section home: what to order -->
+        <section class="container-fluid content-section-light text-center landing-section landing-section-light landing-dishes-section" id="home-que-pedir">
+            <div class="row d-flex align-items-center justify-content-center">
+                <div class="col-10 col-md-9 col-lg-8">
+                    <p class="subtitle section-subtitle">selección</p>
+                    <h2 class="title section-title">QUÉ PEDIR</h2>
+                    <p class="text landing-copy">Entrantes argentinos, cortes a la brasa y platos para compartir antes de alargar la mesa con postre.</p>
                 </div>
             </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- section home: from our menu -->
-    <div class="container-fluid text-center content-section-light" id="home_from_menu">
-        <div class="row d-flex align-items-center justify-content-center">
-            <div class="col-9 col-md-8 col-lg-8 mb-4">
-                <p class="subtitle section-subtitle">selección</p>
-                <p class="title section-title">DE NUESTRA CARTA</p>
-                <p class="text text-content">Una pequeña muestra de todo lo que podemos ofrecerte para satisfacer tu paladar.</p>
-                <p class="decorator-line mt-4 mb-4"><svg class="icon" aria-hidden="true"><use href="#icon-asterisk"></use></svg>&nbsp;<svg class="icon" aria-hidden="true"><use href="#icon-asterisk"></use></svg>&nbsp;<svg class="icon" aria-hidden="true"><use href="#icon-asterisk"></use></svg></p>
-            </div>
-        </div>
-        <div class="row gy-5 d-flex align-items-start justify-content-center">
-            <div class="col-lg-5 col-md-3 mb-4 mb-lg-0">
-                <p class="product-text product-name mb-2">Empanada criolla</p>
-                <p class="product-text product-description mb-1">Empanada tradicional argentina a base de carne de ternera y especias.</p>
-            </div>
-            <div class="col-lg-5 col-md-3 mb-4 mb-lg-0">
-                <p class="product-text product-name mb-2">Provolone tradicional</p>
-                <p class="product-text product-description mb-1">Queso provolone fundido al horno con oregano fresco y ají molido.</p>
-            </div>
-            <div class="col-lg-5 col-md-3 mb-4 mb-lg-0">
-                <p class="product-text product-name mb-2">Bife Argentino (Lomo Alto)</p>
-                <p class="product-text product-description m-1">Corte de 350gr de carne que por su precisa infiltración de grasa ofrece una textura, sabor y terneza singular.</p>
-        </div>
-            <div class="col-lg-5 col-md-3 mb-4 mb-lg-0">
-                <p class="product-text product-name mb-2">Crepe de dulce de leche (flambeado)</p>
-                <p class="product-text product-description m-1">Crepe de dulce de leche, flambeado con ron y azucar moreno y acompañado de helado de vainilla.</p>
-            </div>
-        </div>
-        <div class="row d-flex align-items-center justify-content-center">
-            <div class="col col-lg-12">
-                <a href="./pages/menu.html" class="btn btn-outline-light m-5" role="button">VER LA CARTA</a>
-            </div>
-        </div>
-    </div>
-
-    <!-- section: menus degustación -->
-    <div class="container-fluid text-center content-section-dark">
-        <div class="row d-flex align-items-center justify-content-center">
-            <div class="col-9 col-md-8 col-lg-8 mb-4">
-                <p class="subtitle section-subtitle">experiencias completas</p>
-                <p class="title section-title">MENÚS</p>
-                <p class="text text-content">Si te apetece probarlo todo, echa un vistazo a nuestros menús cerrados.</p>
-                <div class="col col-lg-12">
+            <div class="landing-dishes-layout">
+                <div class="landing-dish-grid">
+                    <article class="landing-dish-card">
+                        <img src="/img/rest-vb-empanadas-criollas-640x480.jpg" alt="Empanadas criollas en Viejo Barrio" loading="lazy" width="640" height="480">
+                        <h3>Empanadas</h3>
+                        <p>Un clásico para empezar la mesa con sabor argentino.</p>
+                    </article>
+                    <article class="landing-dish-card">
+                        <img src="/img/rest-vb-provolone-640x427px.jpg" alt="Provolone tradicional al horno en Viejo Barrio" loading="lazy" width="640" height="427">
+                        <h3>Provolone</h3>
+                        <p>Queso provolone fundido al horno con orégano fresco y ají molido.</p>
+                    </article>
+                    <article class="landing-dish-card">
+                        <img src="/img/rest-vb-mollejas-640x480.jpg" alt="Mollejas en Viejo Barrio" loading="lazy" width="640" height="480">
+                        <h3>Mollejas</h3>
+                        <p>Una opción de brasa para quienes disfrutan los sabores intensos.</p>
+                    </article>
+                    <article class="landing-dish-card">
+                        <img src="/img/rest-vb-bife-640x480.jpg" alt="Bife argentino a la brasa en Viejo Barrio" loading="lazy" width="640" height="480">
+                        <h3>Bife argentino</h3>
+                        <p>Corte de carne con textura, sabor y terneza para comer sin prisa.</p>
+                    </article>
+                    <article class="landing-dish-card">
+                        <img src="/img/viejobarrio-parrillada-viejo-barrio-640x427.webp" alt="Parrillada Viejo Barrio para compartir" loading="lazy" width="640" height="427">
+                        <h3>Parrillada Viejo Barrio</h3>
+                        <p>Una forma directa de compartir la brasa en el centro de la mesa.</p>
+                    </article>
+                    <article class="landing-dish-card">
+                        <img src="/img/rest-vb-crepe-manzana.webp" alt="Crepe de postre en Viejo Barrio" loading="lazy" width="640" height="427">
+                        <h3>Crepe de dulce de leche</h3>
+                        <p>Postre dulce para cerrar una comida argentina con calma.</p>
+                    </article>
                 </div>
             </div>
-        </div>
-        <div class="row d-flex align-items-center justify-content-center">
-            <div class="col col-lg-12">
-                <a href="./pages/tasting.html" class="btn btn-outline-light" role="button">VER LOS MENÚS</a>
+            <div class="landing-cta-group">
+                <a href="/pages/menu.html" class="btn btn-outline-light" role="button">Ver carta completa</a>
             </div>
-        </div>
-        </div>
-    </div>
+        </section>
 
-    <!-- section home: section separator 3 -->
-    <div class="container-fluid section-break background-img-9 text-center" id="section-break-9">
-        <div class="row d-flex align-items-center justify-content-center">
-            <div class="col col-xl-12">&nbsp;</div>
-        </div>
-    </div>
+        <!-- section home: plans -->
+        <section class="container-fluid content-section-dark text-center landing-section landing-sharing-section" id="home-planes">
+            <div class="row d-flex align-items-center justify-content-center">
+                <div class="col-10 col-md-9 col-lg-8">
+                    <p class="subtitle section-subtitle">elige el momento</p>
+                    <h2 class="title section-title">VEN SEGÚN EL PLAN</h2>
+                    <p class="text landing-copy">Una cena tranquila, una mesa para compartir o una comida de grupo: la home te lleva al plan que encaja con tu visita.</p>
+                </div>
+            </div>
+            <div class="landing-usecase-grid">
+                <article class="landing-usecase-card">
+                    <span>01</span>
+                    <h3>Para cenar en pareja</h3>
+                    <p>Entrantes, un corte a la brasa y vino para una cena cómoda en Benimaclet.</p>
+                </article>
+                <article class="landing-usecase-card">
+                    <span>02</span>
+                    <h3>Para compartir</h3>
+                    <p>Parrilladas y platos al centro para venir con hambre y comer sin prisas.</p>
+                </article>
+                <article class="landing-usecase-card">
+                    <span>03</span>
+                    <h3>Para grupos</h3>
+                    <p>Una opción práctica para comidas, cenas y celebraciones con mesa amplia.</p>
+                </article>
+            </div>
+            <div class="landing-cta-group">
+                <a href="https://widget.thefork.com/es/9989afab-6dfe-4e01-907b-f6156681eea0?step=date&utm_source=viejobarrio.es" target="_blank" rel="noopener" class="btn btn-outline-light" role="button">Reservar mesa</a>
+                <a href="/grupos-valencia/" class="btn btn-outline-light" role="button">Ver grupos</a>
+            </div>
+        </section>
 
-    <!-- section home: from our wines -->
-    <div class="container-fluid text-center content-section-dark" id="home_from_wines">
-        <div class="row d-flex align-items-center justify-content-center">
-            <div class="col-9 col-md-8 col-lg-8 mb-4">
-                <p class="subtitle section-subtitle">maridaje perfecto</p>
-                <p class="title section-title">VINOS Y CAVAS</p>
-                <p class="text text-content">Cabernet Sauvignon, Merlot, Tempranillo, Bobal, Cabernet Franc, Malbec, Chardonnay, Albariño, Sauvginon Blanc, Verdejo ... y muchos más.</p>
-                <p class="decorator-line mt-4 mb-4"><svg class="icon" aria-hidden="true"><use href="#icon-asterisk"></use></svg>&nbsp;<svg class="icon" aria-hidden="true"><use href="#icon-asterisk"></use></svg>&nbsp;<svg class="icon" aria-hidden="true"><use href="#icon-asterisk"></use></svg></p>
+        <!-- section home: groups -->
+        <section class="container-fluid content-section-light text-center landing-section landing-section-light landing-final-cta page-home-groups-cta" id="home-grupos">
+            <div class="row d-flex align-items-center justify-content-center">
+                <div class="col-10 col-md-9 col-lg-9">
+                    <p class="subtitle section-subtitle">celebraciones y empresa</p>
+                    <h2 class="title section-title">¿VENÍS EN GRUPO?</h2>
+                    <p class="text landing-copy">Si sois de 10 a 26 personas, Viejo Barrio cuenta con un salón reservado para comidas de empresa, celebraciones y cenas de grupo.</p>
+                    <div class="landing-cta-group">
+                        <a href="/grupos-valencia/" class="btn btn-outline-light" role="button">VER GRUPOS</a>
+                    </div>
+                </div>
             </div>
-        </div>
-        <div class="row gy-5 d-flex align-items-start justify-content-center">
-            <div class="col-lg-5 col-md-3 mb-4 mb-lg-0">
-                <p class="product-text product-name mb-2">Nodus Tinto de Autor</p>
-                <p class="product-text product-description mb-1">Merlot, cabernet sauvignon, bobal y syrah. Crianza de cultivo ecológico y más de seis meses en barrica. D.O. Utiel-Requena</p>
+        </section>
+
+        <!-- section home: menus -->
+        <section class="container-fluid content-section-light landing-section landing-section-light landing-story-section" id="home-menus">
+            <div class="landing-story-inner">
+                <div class="landing-story-row">
+                    <div class="landing-story-media">
+                        <img src="/img/salon-grupos-cena-valencia.webp" class="landing-feature-image" alt="Mesa preparada en Viejo Barrio para compartir menús" loading="lazy" width="960" height="640">
+                    </div>
+                    <div class="landing-story-copy landing-story-copy-right">
+                        <p class="subtitle section-subtitle story-eyebrow">experiencias completas</p>
+                        <h2 class="title section-title">MENÚS PARA VENIR CON HAMBRE</h2>
+                        <p class="text landing-copy">Si prefieres ir a tiro hecho, consulta nuestros menús cerrados y elige la experiencia que mejor encaje con tu mesa.</p>
+                        <div class="landing-cta-group">
+                            <a href="/pages/tasting.html" class="btn btn-outline-light" role="button">Ver menús</a>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="col-lg-5 col-md-3 mb-4 mb-lg-0">
-                <p class="product-text product-name mb-2">Luis Cañas Crianza</p>
-                <p class="product-text product-description mb-1">95% Tempranillo, 5% Garnacha. Crianza. Procedente de viñedos con una edad media de 30 años. 12 meses en barrica. D.O. Rioja</p>
+        </section>
+
+        <!-- section home: wines -->
+        <section class="container-fluid content-section-dark landing-section landing-story-section page-home-dark-story" id="home-vinos">
+            <div class="landing-story-inner">
+                <div class="landing-story-row landing-story-row-reverse">
+                    <div class="landing-story-copy landing-story-copy-left">
+                        <p class="subtitle section-subtitle story-eyebrow">maridaje</p>
+                        <h2 class="title section-title">VINOS PARA ACOMPAÑAR LA BRASA</h2>
+                        <p class="text landing-copy">Tintos, blancos, cavas y referencias para acompañar cortes, parrilladas y entrantes.</p>
+                        <div class="landing-cta-group">
+                            <a href="/pages/wines.html" class="btn btn-outline-light" role="button">Ver vinos y cavas</a>
+                        </div>
+                    </div>
+                    <div class="landing-story-media">
+                        <picture>
+                            <source media="(min-width: 768px)" type="image/webp" srcset="/img/vinos-para-la-carne-a-la-brasa.webp">
+                            <img src="/img/vinos-para-la-carne-a-la-brasa-640x427.webp" class="landing-feature-image" alt="Vinos para acompañar la brasa en Viejo Barrio" loading="lazy" width="640" height="427">
+                        </picture>
+                    </div>
+                </div>
             </div>
-            <div class="col-lg-5 col-md-3 mb-4 mb-lg-0">
-                <p class="product-text product-name mb-2">Trumpeter</p>
-                <p class="product-text product-description m-1">Malbec 50 % Syrah 50 %. Crianza 7 meses. Profundos tonos rubí realzados por matices púrpura. Acentos especiados y de frutas maduras, toques de tabaco y bayas silvestres.</p>
+        </section>
+
+        <!-- section home: location -->
+        <section class="container-fluid content-section-light landing-section landing-section-light landing-story-section" id="home-benimaclet">
+            <div class="landing-story-inner">
+                <div class="landing-story-row">
+                    <div class="landing-story-media">
+                        <picture>
+                            <source media="(min-width: 768px)" type="image/webp" srcset="/img/viejo-barrio-en-benimaclet-valencia.webp">
+                            <img src="/img/viejo-barrio-en-benimaclet-valencia-640x427.webp" class="landing-feature-image" alt="Interior de Viejo Barrio en Benimaclet, Valencia" loading="lazy" width="640" height="427">
+                        </picture>
+                    </div>
+                    <div class="landing-story-copy landing-story-copy-right">
+                        <p class="subtitle section-subtitle story-eyebrow">cómo llegar</p>
+                        <h2 class="title section-title">EN BENIMACLET, VALENCIA</h2>
+                        <p class="text landing-copy">Estamos en C. del Reverend Rafael Tramoyeres, 5, Bajo Izquierda, Benimaclet, 46020 València, Valencia.</p>
+                        <div class="landing-cta-group">
+                            <a href="https://www.google.com/maps?cid=11418522565425404756" target="_blank" rel="noopener" class="btn btn-outline-light" role="button">Cómo llegar</a>
+                            <a href="tel:+34664406771" class="btn btn-outline-light" role="button">Llamar ahora</a>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="col-lg-5 col-md-3 mb-4 mb-lg-0">
-                <p class="product-text product-name mb-2">Valtravieso Roble </p>
-                <p class="product-text product-description m-1">Uvas Tinta Fina (90%), Cabernet Sauvignon (5%) y Marlot (5%). Crianza de 6 meses en barricas francesas de menos de 3 años y posterior refinamiento en botella durante 2 meses más. D.O Ribera del Duero.</p>
+        </section>
+
+        <!-- section home: faq -->
+        <section class="container-fluid content-section-dark landing-section faq-section" id="home-faq">
+            <div class="faq-header">
+                <p class="subtitle section-subtitle faq-eyebrow">dudas frecuentes</p>
+                <h2 class="title section-title">ANTES DE VENIR</h2>
             </div>
-        </div>
-        <div class="row d-flex align-items-center justify-content-center">
-            <div class="col col-lg-12">
-                <a href="./pages/wines.html" class="btn btn-outline-light m-5" role="button">VER LOS VINOS Y CAVAS</a>
+            <div class="faq-grid">
+                <div class="faq-column">
+                    <details class="faq-accordion">
+                        <summary>¿Se puede reservar mesa?</summary>
+                        <p>Sí. Puedes reservar online desde TheFork o llamarnos directamente al restaurante.</p>
+                    </details>
+                    <details class="faq-accordion">
+                        <summary>¿Tenéis parrilladas para compartir?</summary>
+                        <p>Sí. La carta incluye opciones pensadas para compartir y disfrutar la brasa en el centro de la mesa.</p>
+                    </details>
+                    <details class="faq-accordion">
+                        <summary>¿Es buena opción para grupos?</summary>
+                        <p>Sí. Para comidas, cenas y celebraciones, puedes consultar la página de grupos y reservar con antelación.</p>
+                    </details>
+                </div>
+                <div class="faq-column">
+                    <details class="faq-accordion">
+                        <summary>¿Dónde está Viejo Barrio?</summary>
+                        <p>Estamos en C. del Reverend Rafael Tramoyeres, 5, Bajo Izquierda, en Benimaclet, Valencia.</p>
+                    </details>
+                    <details class="faq-accordion">
+                        <summary>¿Puedo ver la carta antes de ir?</summary>
+                        <p>Sí. Puedes revisar la carta completa, los menús y los vinos desde la navegación principal de la web.</p>
+                    </details>
+                </div>
             </div>
-        </div>
-    </div>
+        </section>
+
+        <!-- section home: final reservation -->
+        <section class="container-fluid content-section-light text-center landing-section landing-section-light landing-final-cta" id="home-reserva-final">
+            <div class="row d-flex align-items-center justify-content-center">
+                <div class="col-10 col-md-9 col-lg-9">
+                    <p class="subtitle section-subtitle">mesa y brasa</p>
+                    <h2 class="title section-title">Reserva tu mesa en Viejo&nbsp;Barrio</h2>
+                    <p class="text landing-copy">Si te apetece carne a la brasa, parrillada para compartir o una cena tranquila por Benimaclet, aquí tienes la brasa encendida.</p>
+                    <div class="landing-cta-group">
+                        <a href="https://widget.thefork.com/es/9989afab-6dfe-4e01-907b-f6156681eea0?step=date&utm_source=viejobarrio.es" target="_blank" rel="noopener" class="btn btn-outline-light" role="button">Reservar mesa</a>
+                        <a href="/pages/menu.html" class="btn btn-outline-light" role="button">Ver carta</a>
+                        <a href="tel:+34664406771" class="btn btn-outline-light" role="button">Llamar ahora</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 
     <!-- page footer section -->
     <footer class="container-fluid smalltext-content footer-section" id="footer-section">
@@ -468,14 +515,15 @@
                     <p class="footer-contact-line"><span class="footer-contact-label">Dirección</span><a href="https://www.google.com/maps?cid=11418522565425404756" target="_blank" rel="noopener">Calle Reverendo Rafael Tramoyeres 5, Bajo Izquierda, Benimaclet, 46020 Valencia</a></p>
                 </section>
                 <nav class="footer-column" aria-labelledby="footer-links-title">
-                    <h2 class="footer-column-title" id="footer-links-title">Enlaces</h2>
+                    <h2 class="footer-column-title" id="footer-links-title">NAVEGACIÓN</h2>
                     <ul class="footer-links">
                         <li><a href="/pages/menu.html">La Carta</a></li>
+                        <li><a href="/pages/tasting.html">Menús</a></li>
                         <li><a href="/pages/wines.html">Vinos y Cavas</a></li>
-                        <li><a href="/pages/tasting.html">Menus</a></li>
                         <li><a href="/pages/contact.html">Contacto</a></li>
+                        <li aria-hidden="true">&nbsp;</li>
                         <li><a href="/asador-argentino-valencia/">Asador argentino en Valencia</a></li>
-                        <li><a href="/grupos-valencia/">Grupos en Valencia</a></li>
+                        <li><a href="/grupos-valencia/">Restaurante para grupos en Valencia</a></li>
                     </ul>
                 </nav>
             </div>

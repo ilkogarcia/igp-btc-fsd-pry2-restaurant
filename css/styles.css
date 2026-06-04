@@ -945,8 +945,257 @@ body {
     text-align: left;
 }
 
+.page-home .landing-section {
+    padding-top: clamp(7rem, 11vw, 10rem);
+    padding-bottom: clamp(7rem, 11vw, 10rem);
+}
+
+.page-home .landing-section .section-subtitle {
+    margin-bottom: 0.25rem;
+}
+
+.page-home .landing-section .section-title {
+    letter-spacing: 2px;
+    margin-bottom: 1rem;
+}
+
+.page-home .landing-section .landing-copy {
+    line-height: 1.7;
+}
+
+.page-home .page-home-card-number {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.25rem;
+    height: 2.25rem;
+    color: var(--gold-color);
+    font-family: Libre Baskerville;
+    font-size: 0.92rem;
+    letter-spacing: 0;
+}
+
+.page-home #home-que-pedir {
+    background-color: #ffffff;
+}
+
+.page-home #home-que-pedir .landing-dish-card {
+    background: #ffffff;
+}
+
+.page-home .page-home-groups-cta {
+    padding-top: clamp(5rem, 8vw, 7rem);
+    padding-bottom: clamp(5rem, 8vw, 7rem);
+}
+
+.page-home .landing-story-section {
+    padding-top: clamp(7rem, 14vw, 14rem);
+    padding-bottom: clamp(7rem, 14vw, 14rem);
+    background-color: var(--almostwhite-color);
+}
+
+.page-home .landing-story-inner {
+    width: min(100%, 1120px);
+    margin: 0 auto;
+}
+
+.page-home .landing-story-row {
+    display: grid;
+    grid-template-columns: minmax(260px, 0.88fr) minmax(0, 1fr);
+    gap: clamp(2rem, 5vw, 4.5rem);
+    align-items: center;
+}
+
+.page-home .landing-story-row-reverse {
+    grid-template-columns: minmax(0, 1fr) minmax(260px, 0.88fr);
+}
+
+.page-home .landing-story-media {
+    display: flex;
+    justify-content: center;
+}
+
+.page-home .landing-story-media .landing-feature-image {
+    max-width: 460px;
+    box-shadow: 0 18px 45px rgba(0, 0, 0, 0.22);
+}
+
+.page-home .landing-story-copy .story-eyebrow {
+    margin-bottom: 0.2rem;
+}
+
+.page-home .landing-story-copy .section-title {
+    color: var(--darkes-bg-color);
+    text-shadow: none;
+    margin-bottom: 1.3rem;
+}
+
+.page-home .landing-story-copy .landing-copy {
+    color: var(--almost-bg-color);
+    margin-top: 1rem;
+}
+
+.page-home .landing-story-copy .landing-cta-group {
+    margin-top: 1.8rem;
+}
+
+.page-home .landing-story-copy .btn {
+    color: var(--darkes-bg-color);
+    border-color: var(--darkes-bg-color);
+    letter-spacing: 1px;
+}
+
+.page-home .landing-story-copy .btn:hover,
+.page-home .landing-story-copy .btn:focus {
+    color: var(--almostwhite-color);
+    background-color: var(--darkes-bg-color);
+    border-color: var(--darkes-bg-color);
+}
+
+.page-home .landing-story-copy-right,
+.page-home .landing-story-copy-right .section-title,
+.page-home .landing-story-copy-right .section-subtitle,
+.page-home .landing-story-copy-right .text {
+    text-align: left;
+}
+
+.page-home .landing-story-copy-left,
+.page-home .landing-story-copy-left .section-title,
+.page-home .landing-story-copy-left .section-subtitle,
+.page-home .landing-story-copy-left .text {
+    text-align: right;
+}
+
+.page-home .landing-story-copy-right .landing-copy {
+    margin-left: 0;
+}
+
+.page-home .landing-story-copy-left .landing-copy {
+    margin-right: 0;
+}
+
+.page-home .landing-story-copy-right .landing-cta-group {
+    justify-content: flex-start;
+}
+
+.page-home .landing-story-copy-left .landing-cta-group {
+    justify-content: flex-end;
+}
+
+.page-home .page-home-dark-story {
+    background-color: var(--dark-bg-color);
+}
+
+.page-home .page-home-dark-story .landing-story-copy .section-title {
+    color: var(--almostwhite-color);
+    text-shadow: none;
+}
+
+.page-home .page-home-dark-story .landing-story-copy .landing-copy {
+    color: var(--almostwhite-color);
+}
+
+.page-home .page-home-dark-story .landing-story-copy .btn {
+    color: var(--almostwhite-color);
+    border-color: var(--almostwhite-color);
+}
+
+.page-home .page-home-dark-story .landing-story-copy .btn:hover,
+.page-home .page-home-dark-story .landing-story-copy .btn:focus {
+    color: var(--darkes-bg-color);
+    background-color: var(--almostwhite-color);
+    border-color: var(--almostwhite-color);
+}
+
+.page-home .faq-section {
+    text-align: left;
+}
+
+.page-home .faq-header {
+    text-align: center;
+}
+
+.page-home .faq-eyebrow {
+    margin-bottom: 0.25rem;
+}
+
+.page-home .faq-header .section-title {
+    letter-spacing: 2px;
+    margin-bottom: 0;
+}
+
+.page-home .faq-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0 2rem;
+    width: min(100%, 1100px);
+    margin: 2rem auto 0;
+    padding: 0 0.75rem;
+}
+
+.page-home .faq-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.page-home .faq-accordion {
+    border-bottom: 1px solid rgba(201, 171, 129, 0.28);
+    background: rgba(0, 0, 0, 0.08);
+}
+
+.page-home .faq-accordion:first-child {
+    border-top: 1px solid rgba(201, 171, 129, 0.28);
+}
+
+.page-home .faq-accordion summary {
+    position: relative;
+    display: block;
+    padding: 1.15rem 2.75rem 1.15rem 0.9rem;
+    color: var(--gold-color);
+    cursor: pointer;
+    font-family: Libre Baskerville;
+    font-size: clamp(1.1rem, 1rem + 0.35vw, 1.25rem);
+    line-height: 1.45;
+    letter-spacing: 0;
+}
+
+.page-home .faq-accordion summary::-webkit-details-marker {
+    display: none;
+}
+
+.page-home .faq-accordion summary::after {
+    content: "+";
+    position: absolute;
+    top: 1.1rem;
+    right: 0.9rem;
+    color: var(--almostwhite-color);
+    font-family: Roboto Slab;
+    font-size: 1.4rem;
+    line-height: 1;
+}
+
+.page-home .faq-accordion[open] summary::after {
+    content: "-";
+}
+
+.page-home .faq-accordion p {
+    max-width: 62ch;
+    margin: 0;
+    padding: 0 0.9rem 1.25rem;
+    color: var(--almostwhite-color);
+    font-family: Roboto Slab;
+    font-size: 0.98rem;
+    font-weight: 100;
+    line-height: 1.75;
+    text-align: left;
+}
+
 @media screen and (min-width: 768px) {
     .page-asador-argentino .faq-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .page-home .faq-grid {
         grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 
@@ -967,7 +1216,16 @@ body {
         padding-bottom: 7rem;
     }
 
+    .page-home .landing-section {
+        padding-top: 7rem;
+        padding-bottom: 7rem;
+    }
+
     .page-asador-argentino .landing-section .section-title {
+        letter-spacing: 1px;
+    }
+
+    .page-home .landing-section .section-title {
         letter-spacing: 1px;
     }
 
@@ -991,7 +1249,17 @@ body {
         gap: 1.65rem;
     }
 
+    .page-home .landing-story-row,
+    .page-home .landing-story-row-reverse {
+        grid-template-columns: 1fr;
+        gap: 1.65rem;
+    }
+
     .page-asador-argentino .landing-story-media .landing-feature-image {
+        max-width: 100%;
+    }
+
+    .page-home .landing-story-media .landing-feature-image {
         max-width: 100%;
     }
 
@@ -1002,9 +1270,25 @@ body {
         text-align: left;
     }
 
+    .page-home .landing-story-copy-left,
+    .page-home .landing-story-copy-left .section-title,
+    .page-home .landing-story-copy-left .section-subtitle,
+    .page-home .landing-story-copy-left .text {
+        text-align: left;
+    }
+
     .page-asador-argentino .landing-story-copy-left .landing-copy {
         margin-left: 0;
         margin-right: auto;
+    }
+
+    .page-home .landing-story-copy-left .landing-copy {
+        margin-left: 0;
+        margin-right: auto;
+    }
+
+    .page-home .landing-story-copy-left .landing-cta-group {
+        justify-content: flex-start;
     }
 
     .landing-cta-group {
@@ -1601,4 +1885,19 @@ body {
 
 .tripadvisor-widget-wrap .TA_restaurantWidgetWhite {
     margin: 0 auto;
+}
+
+.tripadvisor-widget-wrap img {
+    max-width: 200px;
+    height: auto;
+}
+
+.tripadvisor-widget-wrap .tripadvisor-fallback-logo {
+    display: inline-block;
+    width: 200px;
+    max-width: 100%;
+}
+
+.tripadvisor-widget-wrap #CDSWIDREST {
+    max-width: 200px;
 }
