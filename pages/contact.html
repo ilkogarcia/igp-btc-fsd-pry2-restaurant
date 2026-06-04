@@ -59,6 +59,42 @@
     <link rel="stylesheet" href="/css/styles.css?v=20260517-8">
     <link rel="icon" type="image/x-icon" href="/img/viejobarrio.ico">
     <link rel="shortcut icon" href="/img/viejobarrio.ico">
+    <style>
+        @media screen and (min-width: 992px) {
+            .home-transparent-header {
+                position: fixed;
+                top: 0;
+                right: 0;
+                left: 0;
+                width: 100%;
+                transition: background-color 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+            }
+
+            .home-transparent-header .navbar-section {
+                transition: background-color 0.25s ease;
+            }
+
+            .home-transparent-header.navbar-transparent {
+                background-color: transparent;
+                border-bottom-color: transparent;
+                box-shadow: none;
+            }
+
+            .home-transparent-header.navbar-transparent .navbar-section {
+                background-color: transparent;
+            }
+
+            .home-transparent-header.navbar-scrolled {
+                background-color: var(--almost-bg-color);
+                border-bottom-color: rgba(201, 171, 129, 0.45);
+                box-shadow: 0 0.35rem 1rem rgba(0, 0, 0, 0.28);
+            }
+
+            .home-transparent-header.navbar-scrolled .navbar-section {
+                background-color: var(--almost-bg-color);
+            }
+        }
+    </style>
 
     <!-- LocalBusiness / Restaurant Schema (JSON-LD) -->
     <script type="application/ld+json">
@@ -130,47 +166,35 @@
     </svg>
 
 
-    <header class="site-header sticky-top">
-    <!-- page header section -->
-    <div class="container-fluid smalltext-content header-section text-center" id="header-section">
-        <div class="row p-2 d-flex align-items-center justify-content-space-between">
-            <div class="col-6 ps-2 d-flex justify-content-start">
-                <span class="align-middle">
-                    <svg class="icon" aria-hidden="true"><use href="#icon-geo-alt"></use></svg>&nbsp;
-                    <a href="https://www.google.com/maps?cid=11418522565425404756" target="_blank" rel="noopener" class="smalltext-content">
-                        C. del Reverend Rafael Tramoyeres, 5, Bajo Izquierda, Benimaclet, 46020 València, Valencia
-                    </a>
-                </span>
-            </div>
-            <div class="col-4 d-flex justify-content-center">
-                <span class="align-middle"><svg class="icon" aria-hidden="true"><use href="#icon-calendar-check"></use></svg>&nbsp;<a href="https://widget.thefork.com/es/9989afab-6dfe-4e01-907b-f6156681eea0?step=date&utm_source=viejobarrio.es" target="_blank" rel="noopener" class="smalltext-content">RESERVAS</a></span>
-            </div>
-            <div class="col-2 pe-2 d-flex justify-content-end">
-                <span class="align-middle">
-                    <svg class="icon" aria-hidden="true"><use href="#icon-telephone-outbound"></use></svg>&nbsp;
-                    <a href="tel:+34664406771" class="smalltext-content">664 40 67 71</a>
-                </span>
-            </div>
-        </div>
-    </div>
-
-    <!-- page navbar section-->
+    <header class="site-header sticky-top home-transparent-header navbar-transparent">
+    <!-- page navbar section -->
     <div class="container-fluid navbar-section">
         <nav class="navbar navbar-expand-lg navbar-dark shadow-5-strong">
             <div class="container-fluid">
                 <a class="navbar-brand" href="/">
-                    <img src="../img/logo-viejo-barrio.png" alt="Viejo Barrio – Asador Argentino en Benimaclet, Valencia" width="32" height="32">
+                    <picture>
+                        <source type="image/webp" srcset="/img/logo-viejo-barrio.webp">
+                        <img src="/img/logo-viejo-barrio.png" alt="Viejo Barrio – Asador Argentino en Valencia (Benimaclet) · Logo" width="32" height="32">
+                    </picture>
                 </a>
+                <a href="https://widget.thefork.com/es/9989afab-6dfe-4e01-907b-f6156681eea0?step=date&utm_source=viejobarrio.es" target="_blank" rel="noopener" class="btn btn-outline-light btn-sm ms-auto me-2 d-lg-none" role="button">Reservar</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <div class="navbar-nav">
-                        <a class="nav-link" href="/">Inicio</a>
-                        <a class="nav-link" href="./menu.html">La Carta</a>
-                        <a class="nav-link" href="./wines.html">Vinos y Cavas</a>
-                        <a class="nav-link" href="./tasting.html">Menus</a>
-                        <a class="nav-link active" aria-current="page"  href="./contact.html">Contacto</a>
+                        <a class="nav-link" href="/pages/menu.html">La Carta</a>
+                        <a class="nav-link" href="/pages/tasting.html">Menús</a>
+                        <a class="nav-link" href="/grupos-valencia/">Grupos</a>
+                        <a class="nav-link" href="/pages/wines.html">Vinos y Cavas</a>
+                        <a class="nav-link active" aria-current="page" href="/pages/contact.html">Contacto</a>
+                        <a class="nav-link d-lg-none" href="tel:+34664406771" aria-label="Llamar a Viejo Barrio al 664 40 67 71"><svg class="icon" aria-hidden="true"><use href="#icon-telephone-outbound"></use></svg>&nbsp;Llamar: 664 40 67 71</a>
+                        <a class="nav-link d-lg-none" href="https://www.google.com/maps?cid=11418522565425404756" target="_blank" rel="noopener">Cómo llegar</a>
+                        <a class="nav-link d-lg-none" href="https://www.google.com/maps?cid=11418522565425404756" target="_blank" rel="noopener">C. del Reverend Rafael Tramoyeres, 5, Bajo Izquierda, Benimaclet, 46020 València, Valencia</a>
+                    </div>
+                    <div class="navbar-nav ms-lg-auto d-none d-lg-flex align-items-lg-center">
+                        <a href="https://widget.thefork.com/es/9989afab-6dfe-4e01-907b-f6156681eea0?step=date&utm_source=viejobarrio.es" target="_blank" rel="noopener" class="btn btn-outline-light btn-sm me-lg-3" role="button">Reservar</a>
+                        <a class="nav-link" href="tel:+34664406771" aria-label="Llamar a Viejo Barrio al 664 40 67 71"><svg class="icon" aria-hidden="true"><use href="#icon-telephone-outbound"></use></svg>&nbsp;664 40 67 71</a>
                     </div>
                 </div>
             </div>
@@ -350,6 +374,31 @@
     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 
     <!-- scripts created by me for this project -->
+    <script>
+        (function () {
+            const header = document.querySelector('.home-transparent-header');
+            const desktopQuery = window.matchMedia('(min-width: 992px)');
+
+            if (!header) {
+                return;
+            }
+
+            function updateHeaderState() {
+                if (!desktopQuery.matches) {
+                    header.classList.remove('navbar-transparent', 'navbar-scrolled');
+                    return;
+                }
+
+                const isScrolled = window.scrollY > 20;
+                header.classList.toggle('navbar-transparent', !isScrolled);
+                header.classList.toggle('navbar-scrolled', isScrolled);
+            }
+
+            updateHeaderState();
+            window.addEventListener('scroll', updateHeaderState, { passive: true });
+            desktopQuery.addEventListener('change', updateHeaderState);
+        }());
+    </script>
     <script src="../js/scrolltop.js"></script> 
     <script src="../js/mail.js" defer></script>
 
