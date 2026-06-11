@@ -610,6 +610,33 @@ body {
     text-transform: uppercase;
 }
 
+.landing-cta-group .btn-primary-cta {
+    color: var(--almost-bg-color);
+    background-color: var(--gold-color);
+    border-color: var(--gold-color);
+    box-shadow: 0 0.45rem 1.15rem rgba(0, 0, 0, 0.28);
+}
+
+.landing-cta-group .btn-primary-cta:hover,
+.landing-cta-group .btn-primary-cta:focus {
+    color: var(--almost-bg-color);
+    background-color: var(--almostwhite-color);
+    border-color: var(--almostwhite-color);
+}
+
+.landing-cta-group .btn-secondary-cta {
+    color: var(--almostwhite-color);
+    background-color: rgba(0, 0, 0, 0.16);
+    border-color: rgba(255, 255, 255, 0.78);
+}
+
+.landing-cta-group .btn-secondary-cta:hover,
+.landing-cta-group .btn-secondary-cta:focus {
+    color: var(--almost-bg-color);
+    background-color: var(--almostwhite-color);
+    border-color: var(--almostwhite-color);
+}
+
 .landing-copy {
     max-width: 68ch;
     margin: 1rem auto 0;
