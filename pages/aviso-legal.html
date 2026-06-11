@@ -99,7 +99,6 @@
                         <img src="/img/logo-viejo-barrio.png" alt="Viejo Barrio – Asador Argentino en Valencia (Benimaclet) · Logo" width="32" height="32">
                     </picture>
                 </a>
-                <a href="https://widget.thefork.com/es/9989afab-6dfe-4e01-907b-f6156681eea0?step=date&utm_source=viejobarrio.es" target="_blank" rel="noopener" class="btn btn-outline-light btn-sm ms-auto me-2 d-lg-none" role="button">Reservar</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -110,9 +109,6 @@
                         <a class="nav-link" href="/grupos-valencia/">Grupos</a>
                         <a class="nav-link" href="/pages/wines.html">Vinos y Cavas</a>
                         <a class="nav-link" href="/pages/contact.html">Contacto</a>
-                        <a class="nav-link d-lg-none" href="tel:+34664406771" aria-label="Llamar a Viejo Barrio al 664 40 67 71"><svg class="icon" aria-hidden="true"><use href="#icon-telephone-outbound"></use></svg>&nbsp;Llamar: 664 40 67 71</a>
-                        <a class="nav-link d-lg-none" href="https://www.google.com/maps?cid=11418522565425404756" target="_blank" rel="noopener">Cómo llegar</a>
-                        <a class="nav-link d-lg-none" href="https://www.google.com/maps?cid=11418522565425404756" target="_blank" rel="noopener">C. del Reverend Rafael Tramoyeres, 5, Bajo Izquierda, Benimaclet, 46020 València, Valencia</a>
                     </div>
                     <div class="navbar-nav ms-lg-auto d-none d-lg-flex align-items-lg-center">
                         <a href="https://widget.thefork.com/es/9989afab-6dfe-4e01-907b-f6156681eea0?step=date&utm_source=viejobarrio.es" target="_blank" rel="noopener" class="btn btn-outline-light btn-sm me-lg-3" role="button">Reservar</a>
@@ -121,6 +117,13 @@
                 </div>
             </div>
         </nav>
+    </div>
+    <div class="mobile-quick-actions d-lg-none" aria-label="Acciones rápidas">
+        <a href="tel:+34664406771" aria-label="Llamar a Viejo Barrio al 664 40 67 71">Llamar</a>
+        <span aria-hidden="true">·</span>
+        <a href="https://www.google.com/maps/dir/?api=1&destination=39.48528142228976,-0.3614879265096769" target="_blank" rel="noopener noreferrer" aria-label="Abrir indicaciones para llegar a Viejo Barrio">Cómo llegar</a>
+        <span aria-hidden="true">·</span>
+        <a href="https://widget.thefork.com/es/9989afab-6dfe-4e01-907b-f6156681eea0?step=date&utm_source=viejobarrio.es" target="_blank" rel="noopener noreferrer" aria-label="Reservar mesa en Viejo Barrio">Reservar</a>
     </div>
     </header>
 
@@ -222,26 +225,23 @@
     <script>
         (function () {
             const header = document.querySelector('.home-transparent-header');
-            const desktopQuery = window.matchMedia('(min-width: 992px)');
-
+            const quickActionsQuery = window.matchMedia('(max-width: 991.98px)');
+            const quickActionsThreshold = 240;
             if (!header) {
                 return;
             }
 
             function updateHeaderState() {
-                if (!desktopQuery.matches) {
-                    header.classList.remove('navbar-transparent', 'navbar-scrolled');
-                    return;
-                }
-
                 const isScrolled = window.scrollY > 20;
+                const showQuickActions = quickActionsQuery.matches && window.scrollY > quickActionsThreshold;
                 header.classList.toggle('navbar-transparent', !isScrolled);
                 header.classList.toggle('navbar-scrolled', isScrolled);
+                header.classList.toggle('quick-actions-visible', showQuickActions);
             }
 
             updateHeaderState();
             window.addEventListener('scroll', updateHeaderState, { passive: true });
-            desktopQuery.addEventListener('change', updateHeaderState);
+            quickActionsQuery.addEventListener('change', updateHeaderState);
         }());
     </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
