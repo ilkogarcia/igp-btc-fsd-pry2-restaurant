@@ -13,9 +13,9 @@ Phone: +34 664 40 67 71
 
 ## Key pages
 Home: https://viejobarrio.es/
-Menu: https://viejobarrio.es/pages/menu.html
+Menu: https://viejobarrio.es/carta/
 Wines: https://viejobarrio.es/pages/wines.html
-Tasting: https://viejobarrio.es/pages/tasting.html
+Group menus: https://viejobarrio.es/menus-grupos-valencia/
 Contact: https://viejobarrio.es/pages/contact.html
 Groups: https://viejobarrio.es/grupos-valencia/
 

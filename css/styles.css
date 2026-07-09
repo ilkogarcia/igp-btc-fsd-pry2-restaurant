@@ -910,6 +910,326 @@ body {
     margin-bottom: 0;
 }
 
+.page-menus-grupos .menu-comparison-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1.25rem;
+    width: min(100%, 1120px);
+    margin: 2.5rem auto 0;
+}
+
+.page-menus-grupos .menu-comparison-card,
+.page-menus-grupos .menu-kids-card {
+    text-align: left;
+    border: 1px solid rgba(64, 66, 88, 0.16);
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.78);
+    box-shadow: 0 14px 35px rgba(0, 0, 0, 0.08);
+}
+
+.page-menus-grupos .menu-comparison-card {
+    display: flex;
+    flex-direction: column;
+    padding: clamp(1.1rem, 1rem + 0.7vw, 1.75rem);
+}
+
+.page-menus-grupos .menu-card-kicker {
+    display: block;
+    color: var(--lighter-bg-color);
+    font-family: Libre Baskerville;
+    font-size: 0.82rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 0.55rem;
+}
+
+.page-menus-grupos .menu-comparison-card h3,
+.page-menus-grupos .menu-kids-card h3 {
+    color: var(--gold-color);
+    font-family: Libre Baskerville;
+    font-size: clamp(1.25rem, 1.05rem + 0.8vw, 1.8rem);
+    line-height: 1.24;
+    letter-spacing: 0;
+    margin-bottom: 0.75rem;
+}
+
+.page-menus-grupos .menu-card-price {
+    color: var(--darkes-bg-color);
+    font-family: Libre Baskerville;
+    font-size: clamp(1.45rem, 1.1rem + 1.15vw, 2.1rem);
+    line-height: 1.1;
+    margin-bottom: 1.1rem;
+}
+
+.page-menus-grupos .menu-card-list {
+    display: grid;
+    gap: 0.75rem;
+    padding-left: 1.1rem;
+    margin: 0;
+}
+
+.page-menus-grupos .menu-card-list li {
+    color: var(--almost-bg-color);
+    font-family: Roboto Slab;
+    font-size: 0.94rem;
+    font-weight: 100;
+    line-height: 1.62;
+}
+
+.page-menus-grupos .menu-card-list strong {
+    color: var(--darkes-bg-color);
+    font-weight: 600;
+}
+
+.page-menus-grupos .menu-conditions-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1.2rem;
+    width: min(100%, 980px);
+    margin: 2.25rem auto 0;
+}
+
+.page-menus-grupos .menu-kids-card {
+    display: grid;
+    grid-template-columns: minmax(180px, 0.35fr) minmax(0, 1fr);
+    gap: clamp(1.25rem, 1rem + 1.2vw, 2.25rem);
+    align-items: start;
+    width: min(100%, 880px);
+    margin: 2.25rem auto 0;
+    padding: clamp(1.25rem, 1rem + 1.4vw, 2.25rem);
+}
+
+.page-menus-grupos .menu-kids-card h3 {
+    color: var(--darkes-bg-color);
+    margin-bottom: 0;
+}
+
+.page-menus-grupos #planificar {
+    background-color: #f3f0ea;
+}
+
+.page-menus-grupos #planificar .landing-story-inner {
+    width: min(100%, 1120px);
+    margin: 0 auto;
+}
+
+.page-menus-grupos #planificar .landing-story-row {
+    grid-template-columns: minmax(300px, 0.92fr) minmax(280px, 0.88fr);
+    gap: clamp(2.25rem, 5vw, 4.5rem);
+}
+
+.page-menus-grupos #planificar .landing-story-media {
+    display: flex;
+    justify-content: center;
+}
+
+.page-menus-grupos #planificar .landing-feature-image {
+    max-width: 520px;
+    width: 100%;
+    box-shadow: 0 18px 45px rgba(0, 0, 0, 0.18);
+}
+
+.page-menus-grupos #planificar .section-title {
+    color: var(--darkes-bg-color);
+    text-shadow: none;
+}
+
+.page-menus-grupos #planificar .landing-copy {
+    color: var(--almost-bg-color);
+}
+
+.page-menus-grupos #planificar .landing-cta-group {
+    justify-content: flex-start;
+}
+
+.page-menus-grupos #planificar .btn-outline-light {
+    color: var(--darkes-bg-color);
+    border-color: var(--darkes-bg-color);
+}
+
+.page-menus-grupos #planificar .btn-outline-light:hover,
+.page-menus-grupos #planificar .btn-outline-light:focus {
+    color: var(--almostwhite-color);
+    background-color: var(--darkes-bg-color);
+    border-color: var(--darkes-bg-color);
+}
+
+.page-carta .section-break {
+    display: none;
+}
+
+.page-carta .carta-index-section,
+.page-carta .carta-chef-section {
+    padding-top: clamp(5rem, 8vw, 7rem);
+    padding-bottom: clamp(5rem, 8vw, 7rem);
+}
+
+.page-carta .carta-jump-nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.7rem;
+    width: min(100%, 920px);
+    margin: 2rem auto 0;
+}
+
+.page-carta .carta-jump-nav a {
+    display: inline-flex;
+    align-items: center;
+    min-height: 44px;
+    padding: 0.7rem 1rem;
+    color: var(--darkes-bg-color);
+    font-family: Roboto Slab;
+    font-size: 0.82rem;
+    line-height: 1.2;
+    letter-spacing: 1px;
+    text-decoration: none;
+    text-transform: uppercase;
+    border: 1px solid rgba(64, 66, 88, 0.32);
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.72);
+}
+
+.page-carta .carta-jump-nav a:hover,
+.page-carta .carta-jump-nav a:focus {
+    color: var(--almostwhite-color);
+    background: var(--darkes-bg-color);
+}
+
+.page-carta .carta-feature-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1.2rem;
+    width: min(100%, 1040px);
+    margin: 2.5rem auto 0;
+}
+
+.page-carta .carta-feature-card {
+    display: block;
+    min-height: 100%;
+    padding: 1.25rem;
+    text-align: left;
+    text-decoration: none;
+    border-bottom: 1px solid rgba(201, 171, 129, 0.42);
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.page-carta .carta-feature-card span {
+    display: block;
+    color: rgba(201, 171, 129, 0.72);
+    font-family: Libre Baskerville;
+    font-size: 0.82rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 0.75rem;
+}
+
+.page-carta .carta-feature-card h3 {
+    color: var(--gold-color);
+    font-family: Libre Baskerville;
+    font-size: 1rem;
+    line-height: 1.35;
+    letter-spacing: 0;
+    margin-bottom: 0.7rem;
+}
+
+.page-carta .carta-feature-card p {
+    color: var(--almostwhite-color);
+    font-family: Roboto Slab;
+    font-size: 0.92rem;
+    font-weight: 100;
+    line-height: 1.62;
+    margin-bottom: 0;
+}
+
+.page-carta .carta-menu-section {
+    padding-top: clamp(5.5rem, 9vw, 8rem);
+    padding-bottom: clamp(5.5rem, 9vw, 8rem);
+    scroll-margin-top: 96px;
+}
+
+.page-carta .carta-menu-section .row[class*="gy-"] {
+    width: min(100%, 1120px);
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.page-carta .carta-menu-section .row[class*="gy-"] > [class*="col-"] {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1.15rem;
+    text-align: left;
+    border: 1px solid rgba(64, 66, 88, 0.14);
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.92);
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.08);
+}
+
+.page-carta .carta-menu-section .row[class*="gy-"] > .col-9:has(hr) {
+    display: block;
+    padding: 0;
+    border: 0;
+    background: transparent;
+    box-shadow: none;
+}
+
+.page-carta .carta-menu-section .product-text,
+.page-carta .carta-menu-section .product-list li {
+    color: var(--almost-bg-color);
+    text-align: left;
+    letter-spacing: 0;
+}
+
+.page-carta .carta-menu-section .product-name {
+    color: var(--gold-color);
+    font-family: Libre Baskerville;
+    font-size: clamp(1rem, 0.9rem + 0.35vw, 1.25rem);
+    line-height: 1.35;
+}
+
+.page-carta .carta-menu-section .product-description {
+    font-size: 0.94rem;
+    line-height: 1.62;
+}
+
+.page-carta .carta-menu-section .product-price,
+.page-carta .carta-menu-section .product-list li span {
+    color: var(--darkes-bg-color);
+    font-size: 0.92rem;
+    font-weight: 700;
+    letter-spacing: 0;
+}
+
+.page-carta .carta-menu-section .product-list {
+    display: grid;
+    gap: 0.55rem;
+    width: 100%;
+}
+
+.page-carta .carta-menu-section .allergen-icons {
+    display: inline-flex;
+    flex-wrap: wrap;
+    gap: 0.25rem;
+}
+
+.page-carta .carta-menu-section .allergen-legend {
+    width: min(100%, 980px);
+    margin: 2rem auto 0;
+}
+
+.page-carta .carta-menu-section .allergen-legend > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.45rem;
+    padding: 0.8rem;
+}
+
+.page-carta .carta-menu-section .allergen-legend .product-text {
+    text-align: center;
+}
+
 .landing-final-cta,
 .page-asador-argentino .landing-final-cta {
     padding-top: clamp(7rem, 16vw, 17rem);
@@ -1387,6 +1707,14 @@ body {
     .landing-dish-grid {
         grid-template-columns: repeat(2, minmax(0, 1fr));
     }
+
+    .page-menus-grupos .menu-comparison-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .page-carta .carta-feature-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
 }
 
 @media screen and (max-width: 767px) {
@@ -1411,6 +1739,26 @@ body {
     .landing-dish-grid,
     .landing-usecase-grid {
         grid-template-columns: 1fr;
+    }
+
+    .page-menus-grupos .menu-comparison-grid,
+    .page-menus-grupos .menu-conditions-grid,
+    .page-menus-grupos .menu-kids-card {
+        grid-template-columns: 1fr;
+    }
+
+    .page-carta .carta-feature-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .page-carta .carta-jump-nav {
+        align-items: stretch;
+        flex-direction: column;
+    }
+
+    .page-carta .carta-jump-nav a {
+        justify-content: center;
+        width: 100%;
     }
 
     .landing-trust-layout {

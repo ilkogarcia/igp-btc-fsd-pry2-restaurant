@@ -4,6 +4,12 @@ Options -Indexes
 <IfModule mod_rewrite.c>
     RewriteEngine On
 
+    # Legacy carta URL.
+    RewriteRule ^pages/menu\.html$ https://viejobarrio.es/carta/ [R=301,L]
+
+    # Legacy group menus URL.
+    RewriteRule ^pages/tasting\.html$ https://viejobarrio.es/menus-grupos-valencia/ [R=301,L]
+
     # Canonical home: resolve www/index.html and /index.html in one hop.
     RewriteCond %{HTTP_HOST} ^www\.viejobarrio\.es$ [NC,OR]
     RewriteCond %{THE_REQUEST} \s/+index\.html(?:[\s?]|$) [NC]
