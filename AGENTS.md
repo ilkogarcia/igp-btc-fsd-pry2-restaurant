@@ -117,6 +117,21 @@ Use the `seo` skill when:
 - Auditing local SEO quality.
 - Adding or removing public URLs.
 
+Use the `modern-web-guidance` skill when:
+
+- Implementing or refactoring HTML, CSS, and client-side JavaScript.
+- Using modern browser APIs such as dialogs, popovers, anchor positioning, container queries, view transitions, or scroll-driven animations.
+- Improving responsive layout, performance (CWV, content-visibility, Fetch Priority, image optimization), or accessibility with native UI patterns.
+- Replacing legacy JavaScript dependencies with simpler native platform features.
+
+The `modern-web-guidance` skill complements `frontend-design`, `accessibility`, and `seo` but does not replace them. Consult it early in frontend tasks, especially when evaluating whether a native browser API can replace a library dependency.
+
+Do not use cutting-edge browser features blindly:
+
+- Verify browser compatibility against the project's expected audience using the compatibility data returned by the skill.
+- Preserve graceful fallbacks for features that are not Baseline Widely Available.
+- Avoid unnecessary complexity: prefer simpler, well-supported solutions over novel APIs that add maintenance cost.
+
 Before using a skill, read its `SKILL.md` and follow its instructions.
 
 ## Expected Workflow
