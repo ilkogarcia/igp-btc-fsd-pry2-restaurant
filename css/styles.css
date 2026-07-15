@@ -1645,10 +1645,23 @@ body {
     .page-carta #carnes-a-la-brasa .carta-paper-menu,
     .page-carta #varios .carta-paper-menu,
     .page-carta #postres .carta-paper-menu,
-    .page-carta #bebidas .carta-paper-menu {
+    .page-carta #bebidas .carta-paper-menu,
+    .page-vinos-cavas #mendoza .carta-paper-menu,
+    .page-vinos-cavas #ribera .carta-paper-menu,
+    .page-vinos-cavas #rioja .carta-paper-menu,
+    .page-vinos-cavas #utiel .carta-paper-menu,
+    .page-vinos-cavas #blancos .carta-paper-menu {
         grid-template-columns: minmax(0, 1fr);
         gap: 2rem;
         padding: 0 1.25rem;
+    }
+
+    .page-vinos-cavas #mendoza .carta-paper-menu::before,
+    .page-vinos-cavas #ribera .carta-paper-menu::before,
+    .page-vinos-cavas #rioja .carta-paper-menu::before,
+    .page-vinos-cavas #utiel .carta-paper-menu::before,
+    .page-vinos-cavas #blancos .carta-paper-menu::before {
+        content: none;
     }
 }
 
