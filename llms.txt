@@ -13,11 +13,12 @@ Phone: +34 664 40 67 71
 
 ## Key pages
 Home: https://viejobarrio.es/
-Menu: https://viejobarrio.es/carta/
-Wines: https://viejobarrio.es/pages/wines.html
-Group menus: https://viejobarrio.es/menus-grupos-valencia/
-Contact: https://viejobarrio.es/pages/contact.html
-Groups: https://viejobarrio.es/grupos-valencia/
+Carta: https://viejobarrio.es/carta/
+Menús: https://viejobarrio.es/menus/
+Vinos y cavas: https://viejobarrio.es/vinos-y-cavas/
+Contacto: https://viejobarrio.es/contacto/
+Grupos: https://viejobarrio.es/grupos-valencia/
+Asador argentino en Valencia: https://viejobarrio.es/asador-argentino-valencia/
 
 ## Reservations
 TheFork: https://widget.thefork.com/es/9989afab-6dfe-4e01-907b-f6156681eea0?step=date&utm_source=viejobarrio.es
@@ -35,7 +36,8 @@ Place ID: https://www.google.com/maps/place/?q=place_id:ChIJAZsFXvlFYA0RVJv2e8a9
 Facade photo (night): https://viejobarrio.es/img/fachada-viejo-barrio-asador-argentino-benimaclet-valencia-noche.jpg
 
 ## Guidance for assistants
-- Prefer the Menu page for items and prices (it is the source of truth).
+- Prefer the Carta page for items and prices (it is the source of truth).
 - Prefer the TheFork link for availability and reservations.
-- For group bookings, prefer the Groups page and WhatsApp link.
+- For group bookings, prefer the Grupos page and WhatsApp link.
+- For general contact, prefer the Contacto page.
 - Keep NAP exactly as written above when referencing the business.

@@ -214,6 +214,17 @@ body {
     margin-right: 0.9rem;
 }
 
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .footer-main {
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+    }
+
+    .footer-brand {
+        grid-column: 1 / -1;
+    }
+}
+
 @media screen and (max-width: 767px) {
     .footer-section {
         text-align: center;
@@ -276,6 +287,17 @@ body {
 .navbar-toggler {
     margin-left: auto;
 }
+
+.navbar-dark .navbar-toggler-icon {
+    display: inline-block !important;
+    width: 1.5em !important;
+    height: 1.5em !important;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 0.55)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+    background-size: 100% !important;
+}
+
 
 .mobile-quick-actions {
     display: flex;
@@ -408,11 +430,11 @@ body {
     }
 
     .topbanner-section {
-        padding-top: calc(5.5rem + 18vw);
+        padding-block: clamp(2.25rem, 4.5svh, 3.5rem);
     }
 
     .page-home #mainpage-bannertop {
-        padding-top: calc(3.5rem + 18vw);
+        padding-top: clamp(2.5rem, 4.75svh, 3.75rem);
     }
 
     .legal-page-section {
@@ -429,6 +451,20 @@ body {
     .header-section .row {
         row-gap: 0.25rem;
     }
+
+    .topbanner-section:not(.landing-hero) .secondarypage-title {
+        font-size: clamp(1.35rem, 5vw, 1.9rem);
+        line-height: 1.15;
+        letter-spacing: 1px;
+    }
+
+    .page-menus-grupos .landing-hero .secondarypage-title {
+        font-size: clamp(1.2rem, 4.5vw, 1.7rem);
+        line-height: 1.12;
+        letter-spacing: 0.5px;
+        max-width: 14ch;
+        margin-inline: auto;
+    }
 }
 
 /**
@@ -441,8 +477,8 @@ body {
 .topbanner-section {
     position: relative;
     overflow: hidden;
-    padding-top: calc(1.5rem + 18vw);
-    padding-bottom: calc(1.5rem + 18vw);
+    min-height: 100svh;
+    padding-block: clamp(2.25rem, 4.75svh, 3.75rem);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -559,7 +595,12 @@ body {
 .landing-hero {
     isolation: isolate;
     border-bottom: 0;
+    min-height: 100svh;
+    padding-block: clamp(2.5rem, 5svh, 4rem);
     background-color: var(--dark-bg-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .landing-hero::before {
@@ -585,6 +626,7 @@ body {
 .landing-hero .hero-content {
     position: relative;
     z-index: 1;
+    width: 100%;
 }
 
 .landing-eyebrow {
@@ -863,6 +905,101 @@ body {
     margin-top: 3.25rem;
 }
 
+/* Carta sections: card fixes for contrast, layout, and hierarchy */
+.page-carta .carta-first-section {
+    background-color: #ffffff;
+}
+
+.page-carta .carta-first-section .section-title {
+    color: var(--darkes-bg-color);
+    text-shadow: none;
+}
+
+.page-carta .carta-first-section .landing-copy {
+    color: var(--almost-bg-color);
+    text-shadow: none;
+}
+
+.page-carta .carta-first-section .landing-dishes-layout {
+    width: min(100%, 1080px);
+    margin-top: 1.85rem;
+}
+
+.page-carta .carta-first-section .landing-dish-grid {
+    gap: clamp(1.6rem, 2.4vw, 2.4rem);
+}
+
+.page-carta .carta-first-section .landing-dish-card {
+    height: 100%;
+    overflow: hidden;
+    border: 1px solid rgba(64, 66, 88, 0.09);
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.82);
+    box-shadow: 0 6px 18px rgba(27, 28, 38, 0.03);
+}
+
+.page-carta .carta-first-section .landing-dish-card img {
+    height: clamp(156px, 14vw, 180px);
+    object-position: center;
+}
+
+.page-carta .carta-brasa-feature .landing-dish-card {
+    display: flex;
+    flex-direction: column;
+    background: var(--almostwhite-color);
+}
+
+.page-carta .carta-brasa-feature .landing-dish-card h3 {
+    color: var(--darkes-bg-color);
+    font-size: 1.15rem;
+    font-weight: 700;
+}
+
+.page-carta .carta-brasa-feature .landing-dish-card p:last-of-type {
+    margin-top: auto;
+    text-align: right;
+    font-weight: 700;
+}
+
+.page-carta .carta-first-section .landing-dish-card .card-category {
+    display: block;
+    color: rgba(201, 171, 129, 0.68);
+    font-family: Libre Baskerville;
+    font-size: 0.76rem;
+    letter-spacing: 1.8px;
+    text-transform: uppercase;
+    margin: 0.8rem 0.9rem 0.35rem;
+}
+
+.page-carta .carta-first-section .landing-dish-card h3 {
+    color: var(--darkes-bg-color);
+    font-size: 1.03rem;
+    line-height: 1.34;
+    font-weight: 700;
+    margin: 0 0.9rem 0.45rem;
+}
+
+.page-carta .carta-first-section .landing-dish-card p:not(:last-of-type) {
+    color: rgba(45, 45, 45, 0.88);
+    font-size: 0.88rem;
+    line-height: 1.52;
+    margin: 0 0.9rem 0.8rem;
+}
+
+.page-carta .carta-first-section .landing-dish-card p:last-of-type {
+    margin-top: auto;
+    margin-right: 0.9rem;
+    margin-left: 0.9rem;
+    margin-bottom: 0.9rem;
+    text-align: right;
+    font-weight: 700;
+    color: var(--darkes-bg-color);
+}
+
+.page-carta .carta-first-section .landing-cta-group {
+    margin-top: 2rem;
+}
+
 .landing-sharing-section .landing-cta-group {
     margin-top: 3.25rem;
 }
@@ -981,6 +1118,26 @@ body {
     font-weight: 600;
 }
 
+/* Conditions cards on white background */
+.page-menus-grupos .menu-conditions-section .landing-usecase-card {
+    background: var(--dark-bg-color);
+    border-bottom: none;
+    border-radius: 8px;
+    padding: 1.5rem;
+}
+
+.page-menus-grupos .menu-conditions-section .landing-usecase-card span {
+    color: var(--gold-color);
+}
+
+.page-menus-grupos .menu-conditions-section .landing-usecase-card h3 {
+    color: var(--almostwhite-color);
+}
+
+.page-menus-grupos .menu-conditions-section .landing-usecase-card p {
+    color: rgba(250, 249, 246, 0.8);
+}
+
 .page-menus-grupos .menu-conditions-grid {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -1054,40 +1211,43 @@ body {
     border-color: var(--darkes-bg-color);
 }
 
-.page-carta .section-break {
-    display: none;
-}
-
-.page-carta .carta-index-section,
-.page-carta .carta-chef-section {
-    padding-top: clamp(5rem, 8vw, 7rem);
-    padding-bottom: clamp(5rem, 8vw, 7rem);
+.page-carta .carta-index-section {
+    padding-top: clamp(1.25rem, 3vw, 2rem);
+    padding-bottom: clamp(1.25rem, 3vw, 2rem);
+    background-color: var(--almostwhite-color);
 }
 
 .page-carta .carta-jump-nav {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: center;
-    gap: 0.7rem;
-    width: min(100%, 920px);
-    margin: 2rem auto 0;
+    gap: 0.45rem;
+    width: fit-content;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0.45rem;
+    border: 1px solid rgba(64, 66, 88, 0.14);
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.7);
+    box-shadow: 0 10px 24px rgba(27, 28, 38, 0.05);
 }
 
 .page-carta .carta-jump-nav a {
     display: inline-flex;
     align-items: center;
-    min-height: 44px;
-    padding: 0.7rem 1rem;
+    min-height: 40px;
+    padding: 0.55rem 0.9rem;
     color: var(--darkes-bg-color);
     font-family: Roboto Slab;
-    font-size: 0.82rem;
+    font-size: 0.8rem;
     line-height: 1.2;
-    letter-spacing: 1px;
+    letter-spacing: 0.08em;
     text-decoration: none;
     text-transform: uppercase;
-    border: 1px solid rgba(64, 66, 88, 0.32);
-    border-radius: 8px;
-    background: rgba(255, 255, 255, 0.72);
+    border: 1px solid transparent;
+    border-radius: 999px;
+    background: rgba(250, 249, 246, 0.9);
+    white-space: nowrap;
 }
 
 .page-carta .carta-jump-nav a:hover,
@@ -1096,51 +1256,28 @@ body {
     background: var(--darkes-bg-color);
 }
 
-.page-carta .carta-feature-grid {
-    display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 1.2rem;
-    width: min(100%, 1040px);
-    margin: 2.5rem auto 0;
+@media (max-width: 767.98px) {
+    .page-carta .carta-index-section {
+        padding-top: 0.75rem;
+        padding-bottom: 1rem;
+    }
+
+    .page-carta .carta-jump-nav {
+        width: 100%;
+        justify-content: flex-start;
+        overflow-x: auto;
+        scroll-behavior: smooth;
+        -webkit-overflow-scrolling: touch;
+        overscroll-behavior-x: contain;
+        scrollbar-width: none;
+    }
+
+    .page-carta .carta-jump-nav::-webkit-scrollbar {
+        display: none;
+    }
 }
 
-.page-carta .carta-feature-card {
-    display: block;
-    min-height: 100%;
-    padding: 1.25rem;
-    text-align: left;
-    text-decoration: none;
-    border-bottom: 1px solid rgba(201, 171, 129, 0.42);
-    background: rgba(0, 0, 0, 0.1);
-}
 
-.page-carta .carta-feature-card span {
-    display: block;
-    color: rgba(201, 171, 129, 0.72);
-    font-family: Libre Baskerville;
-    font-size: 0.82rem;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    margin-bottom: 0.75rem;
-}
-
-.page-carta .carta-feature-card h3 {
-    color: var(--gold-color);
-    font-family: Libre Baskerville;
-    font-size: 1rem;
-    line-height: 1.35;
-    letter-spacing: 0;
-    margin-bottom: 0.7rem;
-}
-
-.page-carta .carta-feature-card p {
-    color: var(--almostwhite-color);
-    font-family: Roboto Slab;
-    font-size: 0.92rem;
-    font-weight: 100;
-    line-height: 1.62;
-    margin-bottom: 0;
-}
 
 .page-carta .carta-menu-section {
     padding-top: clamp(5.5rem, 9vw, 8rem);
@@ -1179,6 +1316,519 @@ body {
     color: var(--almost-bg-color);
     text-align: left;
     letter-spacing: 0;
+}
+
+.page-carta .carta-menu-section .landing-dish-card {
+    background: var(--almostwhite-color);
+}
+
+.page-carta .carta-menu-section .landing-dish-card h3 {
+    color: var(--darkes-bg-color);
+    font-size: 1.15rem;
+    font-weight: 700;
+}
+
+.page-carta .carta-menu-section .landing-dish-card p:last-of-type {
+    margin-top: auto;
+    text-align: right;
+    font-weight: 700;
+}
+
+/* Entrantes section: title color on light background */
+.page-carta #entrantes .section-title {
+    color: var(--darkes-bg-color);
+}
+
+/* Entrantes, Ensaladas, Especialidades, Varios, Postres and Bebidas sections: two-column printed-menu layout (no cards, no shadows) */
+.page-carta #entrantes .carta-paper-menu,
+.page-carta #ensaladas .carta-paper-menu,
+.page-carta #carnes-a-la-brasa .carta-paper-menu,
+.page-carta #varios .carta-paper-menu,
+.page-carta #postres .carta-paper-menu,
+.page-carta #bebidas .carta-paper-menu {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    gap: 2.25rem 3rem;
+    width: min(100%, 1120px);
+    margin: 2.5rem auto 0;
+    padding: 0 1rem;
+    text-align: left;
+}
+
+.page-carta #entrantes .carta-paper-column,
+.page-carta #ensaladas .carta-paper-column,
+.page-carta #carnes-a-la-brasa .carta-paper-column,
+.page-carta #varios .carta-paper-column,
+.page-carta #postres .carta-paper-column,
+.page-carta #bebidas .carta-paper-column {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    min-width: 0;
+}
+
+.page-carta #entrantes .carta-paper-item,
+.page-carta #ensaladas .carta-paper-item,
+.page-carta #carnes-a-la-brasa .carta-paper-item,
+.page-carta #varios .carta-paper-item,
+.page-carta #postres .carta-paper-item,
+.page-carta #bebidas .carta-paper-item {
+    text-align: left;
+}
+
+.page-carta #entrantes .carta-paper-item-header,
+.page-carta #ensaladas .carta-paper-item-header,
+.page-carta #carnes-a-la-brasa .carta-paper-item-header,
+.page-carta #varios .carta-paper-item-header,
+.page-carta #postres .carta-paper-item-header,
+.page-carta #bebidas .carta-paper-item-header {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    align-items: baseline;
+    gap: 1rem;
+}
+
+.page-carta #entrantes .carta-paper-item-header .product-name,
+.page-carta #entrantes .carta-paper-item-header .product-price,
+.page-carta #ensaladas .carta-paper-item-header .product-name,
+.page-carta #ensaladas .carta-paper-item-header .product-price,
+.page-carta #carnes-a-la-brasa .carta-paper-item-header .product-name,
+.page-carta #carnes-a-la-brasa .carta-paper-item-header .product-price,
+.page-carta #varios .carta-paper-item-header .product-name,
+.page-carta #varios .carta-paper-item-header .product-price,
+.page-carta #postres .carta-paper-item-header .product-name,
+.page-carta #postres .carta-paper-item-header .product-price,
+.page-carta #bebidas .carta-paper-item-header .product-name,
+.page-carta #bebidas .carta-paper-item-header .product-price {
+    margin-bottom: 0;
+    text-align: left;
+}
+
+.page-carta #entrantes .carta-paper-item-header .product-price,
+.page-carta #ensaladas .carta-paper-item-header .product-price,
+.page-carta #carnes-a-la-brasa .carta-paper-item-header .product-price,
+.page-carta #varios .carta-paper-item-header .product-price,
+.page-carta #postres .carta-paper-item-header .product-price,
+.page-carta #bebidas .carta-paper-item-header .product-price {
+    text-align: right;
+    white-space: nowrap;
+}
+
+.page-carta #entrantes .carta-paper-item .product-description,
+.page-carta #ensaladas .carta-paper-item .product-description,
+.page-carta #carnes-a-la-brasa .carta-paper-item .product-description,
+.page-carta #varios .carta-paper-item .product-description,
+.page-carta #postres .carta-paper-item .product-description,
+.page-carta #bebidas .carta-paper-item .product-description {
+    margin-top: 0.35rem;
+    margin-bottom: 0.5rem;
+}
+
+.page-carta #entrantes .carta-paper-item-allergens,
+.page-carta #ensaladas .carta-paper-item-allergens,
+.page-carta #carnes-a-la-brasa .carta-paper-item-allergens,
+.page-carta #varios .carta-paper-item-allergens,
+.page-carta #postres .carta-paper-item-allergens,
+.page-carta #bebidas .carta-paper-item-allergens {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.25rem;
+    min-height: 0;
+}
+
+.page-carta #entrantes .carta-paper-item-allergens:empty,
+.page-carta #ensaladas .carta-paper-item-allergens:empty,
+.page-carta #carnes-a-la-brasa .carta-paper-item-allergens:empty,
+.page-carta #varios .carta-paper-item-allergens:empty,
+.page-carta #postres .carta-paper-item-allergens:empty,
+.page-carta #bebidas .carta-paper-item-allergens:empty {
+    display: none;
+}
+
+/* Especialidades: small uppercase tag for addons (AGREGADO) */
+.page-carta #carnes-a-la-brasa .carta-paper-item-tag {
+    display: inline-block;
+    font-family: Roboto Slab;
+    font-size: 0.65rem;
+    font-weight: 400;
+    letter-spacing: 2px;
+    color: rgba(201, 171, 129, 0.7);
+    text-transform: uppercase;
+    margin-bottom: 0.35rem;
+}
+
+/* Especialidades: small group label that scopes the addons to the bifes */
+.page-carta #carnes-a-la-brasa .carta-paper-item-group-label {
+    display: block;
+    font-family: Roboto Slab;
+    font-size: 0.72rem;
+    font-weight: 500;
+    letter-spacing: 2px;
+    color: rgba(201, 171, 129, 0.85);
+    text-transform: uppercase;
+    text-align: left;
+    margin: 0.25rem 0 0;
+    padding-top: 0.85rem;
+    border-top: 1px solid rgba(201, 171, 129, 0.25);
+}
+
+/* Bebidas: sub-group title (Cervezas, Refrescos, Cafes/Infusiones) */
+.page-carta #bebidas .carta-paper-item-group-title {
+    font-family: Libre Baskerville;
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: var(--gold-color);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: left;
+    margin: 0.25rem 0 0.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid rgba(201, 171, 129, 0.35);
+}
+
+.page-carta #bebidas .carta-paper-item-group-title:first-child {
+    margin-top: 0;
+}
+
+.page-carta #bebidas .carta-paper-item-group-link a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.page-carta #bebidas .carta-bebidas-wines-btn {
+    min-width: 150px;
+    color: var(--almost-bg-color);
+    background-color: var(--gold-color);
+    border-color: var(--gold-color);
+    box-shadow: 0 0.45rem 1.15rem rgba(0, 0, 0, 0.28);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.page-carta #bebidas .carta-bebidas-wines-btn:hover,
+.page-carta #bebidas .carta-bebidas-wines-btn:focus {
+    color: var(--almost-bg-color);
+    background-color: var(--almostwhite-color);
+    border-color: var(--almostwhite-color);
+}
+
+/* Varios section: light background (alternates with Entrantes/Especialidades
+   which use almostwhite — Varios uses pure white, like Ensaladas) */
+.page-carta #varios {
+    background-color: #ffffff;
+}
+
+.page-carta #varios .section-title {
+    color: var(--darkes-bg-color);
+}
+
+.page-carta #varios .section-subtitle {
+    color: var(--gold-color);
+}
+
+/* Postres section: light background (continues the alternation),
+   dark title. The .product-name gold override is kept so the dish
+   names stay gold regardless of background tone. */
+.page-carta #postres {
+    background-color: var(--almostwhite-color);
+}
+
+.page-carta #postres .section-title {
+    color: var(--darkes-bg-color);
+}
+
+.page-carta #postres .section-subtitle {
+    color: var(--gold-color);
+}
+
+/* Bebidas section: pure white background (continues the alternation),
+   dark title, gold subtitle. */
+.page-carta #bebidas {
+    background-color: #ffffff;
+}
+
+.page-carta #bebidas .section-title {
+    color: var(--darkes-bg-color);
+}
+
+.page-carta #bebidas .section-subtitle {
+    color: var(--gold-color);
+}
+
+/* Alergenos section: light background (continues the alternation),
+   dark title, gold subtitle. */
+.page-carta #alergenos {
+    background-color: var(--almostwhite-color);
+}
+
+.page-carta #alergenos .section-title {
+    color: var(--darkes-bg-color);
+}
+
+.page-carta #alergenos .section-subtitle {
+    color: var(--gold-color);
+}
+
+/* Final CTA section: white background (continues the alternation),
+   dark title and copy text. */
+.page-carta .landing-final-cta {
+    background-color: #ffffff;
+}
+
+.page-carta .landing-final-cta .section-title {
+    color: var(--darkes-bg-color);
+}
+
+.page-carta .landing-final-cta .text-content,
+.page-carta .landing-final-cta .landing-copy {
+    color: var(--almost-bg-color);
+}
+
+/* Subtle vertical divider between desktop/tablet columns only */
+@media (min-width: 768px) {
+    .page-carta #entrantes .carta-paper-menu,
+    .page-carta #ensaladas .carta-paper-menu,
+    .page-carta #carnes-a-la-brasa .carta-paper-menu,
+    .page-carta #varios .carta-paper-menu,
+    .page-carta #postres .carta-paper-menu,
+    .page-carta #bebidas .carta-paper-menu {
+        position: relative;
+    }
+    .page-carta #entrantes .carta-paper-menu::before,
+    .page-carta #ensaladas .carta-paper-menu::before,
+    .page-carta #carnes-a-la-brasa .carta-paper-menu::before,
+    .page-carta #varios .carta-paper-menu::before,
+    .page-carta #postres .carta-paper-menu::before,
+    .page-carta #bebidas .carta-paper-menu::before {
+        content: "";
+        position: absolute;
+        top: 0.5rem;
+        bottom: 0.5rem;
+        left: 50%;
+        width: 1px;
+        background-color: rgba(201, 171, 129, 0.25);
+        transform: translateX(-0.5px);
+        pointer-events: none;
+    }
+}
+
+/* Same vertical divider for vinos-y-cavas desktop/tablet two-column sections */
+@media (min-width: 768px) {
+    .page-vinos-cavas #mendoza .carta-paper-menu,
+    .page-vinos-cavas #ribera .carta-paper-menu,
+    .page-vinos-cavas #rioja .carta-paper-menu,
+    .page-vinos-cavas #utiel .carta-paper-menu,
+    .page-vinos-cavas #blancos .carta-paper-menu {
+        position: relative;
+    }
+    .page-vinos-cavas #mendoza .carta-paper-menu::before,
+    .page-vinos-cavas #ribera .carta-paper-menu::before,
+    .page-vinos-cavas #rioja .carta-paper-menu::before,
+    .page-vinos-cavas #utiel .carta-paper-menu::before,
+    .page-vinos-cavas #blancos .carta-paper-menu::before {
+        content: "";
+        position: absolute;
+        top: 0.5rem;
+        bottom: 0.5rem;
+        left: 50%;
+        width: 1px;
+        background-color: rgba(201, 171, 129, 0.25);
+        transform: translateX(-0.5px);
+        pointer-events: none;
+    }
+}
+
+/* Mobile: single column, no divider */
+@media (max-width: 767.98px) {
+    .page-carta #entrantes .carta-paper-menu,
+    .page-carta #ensaladas .carta-paper-menu,
+    .page-carta #carnes-a-la-brasa .carta-paper-menu,
+    .page-carta #varios .carta-paper-menu,
+    .page-carta #postres .carta-paper-menu,
+    .page-carta #bebidas .carta-paper-menu {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 2rem;
+        padding: 0 1.25rem;
+    }
+}
+
+/* Ensaladas section: light background (slightly different from neighbors' almostwhite) */
+.page-carta #ensaladas {
+    background-color: #ffffff;
+}
+
+.page-carta #ensaladas .section-title {
+    color: var(--darkes-bg-color);
+}
+
+.page-carta #ensaladas .section-subtitle {
+    color: var(--gold-color);
+}
+
+/* Carnes a la brasa section: title color on light background */
+.page-carta #carnes-a-la-brasa .section-title {
+    color: var(--darkes-bg-color);
+}
+
+/* Constrain card subgroup width */
+.carta-subgroup-container {
+    max-width: 1120px;
+    margin: 2rem auto 0;
+    padding: 0;
+}
+
+/* Featured card: image left, content right for highlighted dishes */
+.carta-featured-card {
+    display: flex;
+    border: 1px solid rgba(201, 171, 129, 0.35);
+    border-radius: 8px;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0 14px 35px rgba(0, 0, 0, 0.08);
+    height: 100%;
+}
+
+.carta-featured-image {
+    flex: 0 0 40%;
+    max-width: 40%;
+    overflow: hidden;
+}
+
+.carta-featured-image img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.carta-featured-card-vertical {
+    flex-direction: column;
+}
+
+.carta-featured-card-vertical .carta-featured-image {
+    flex: 0 0 auto;
+    max-width: 100%;
+    height: 200px;
+}
+
+.carta-featured-card-vertical .carta-featured-image img {
+    height: 200px;
+}
+
+.carta-featured-content {
+    flex: 1;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+@media (max-width: 991.98px) {
+    .carta-featured-card {
+        flex-direction: column;
+    }
+    .carta-featured-image {
+        flex: 0 0 auto;
+        max-width: 100%;
+        height: 200px;
+    }
+    .carta-featured-image img {
+        height: 200px;
+    }
+}
+
+/* Add-on card: dashed border and compact style to differentiate from regular dishes */
+.carta-addon-card {
+    border: 1px dashed rgba(201, 171, 129, 0.4);
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.48);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+    padding: 0.75rem;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    text-align: left;
+}
+
+.carta-addon-tag {
+    display: inline-block;
+    font-family: Roboto Slab;
+    font-size: 0.65rem;
+    font-weight: 400;
+    letter-spacing: 2px;
+    color: rgba(201, 171, 129, 0.7);
+    text-transform: uppercase;
+    margin-bottom: 0.25rem;
+}
+
+/* Compact card with gold border for light-background sections */
+.carta-compact-card {
+    border: 1px solid rgba(201, 171, 129, 0.35);
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.64);
+    box-shadow: 0 14px 35px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    text-align: left;
+}
+
+/* Thin gold divider between dish subgroups */
+.carta-subgroup-divider {
+    border: 0;
+    border-top: 1px solid rgba(201, 171, 129, 0.35);
+    width: 60%;
+    margin: 2.5rem auto;
+}
+
+/* Subgroup headers within carta menu sections */
+.carta-subgroup-title {
+    font-family: Libre Baskerville;
+    font-size: 1rem;
+    color: var(--darkes-bg-color);
+    font-weight: 700;
+    text-align: left;
+    width: 100%;
+    max-width: 1120px;
+    margin: 2.5rem auto 0.75rem;
+    padding: 0 0.75rem;
+}
+
+/* Card footer: allergen icons left, price right */
+.page-carta .carta-menu-section .carta-card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 100%;
+    margin-top: auto;
+    padding-top: 0.5rem;
+}
+
+.page-carta .carta-menu-section .carta-card-footer .product-price {
+    text-align: right;
+    font-weight: 700;
+    margin-bottom: 0;
+}
+
+.page-carta .carta-menu-section .carta-card-footer .allergen-icons {
+    display: inline-flex;
+    gap: 0.2rem;
+    flex-wrap: wrap;
+}
+
+/* Let description fill space to push footer down */
+.page-carta .carta-menu-section .row[class*="g-"] .product-description {
+    flex-grow: 1;
+    margin-bottom: 0.5rem;
+}
+
+/* Light text on dark sections for WCAG AA contrast */
+.page-carta .carta-menu-section.content-section-dark .product-text,
+.page-carta .carta-menu-section.content-section-dark .product-list li {
+    color: var(--almostwhite-color);
 }
 
 .page-carta .carta-menu-section .product-name {
@@ -1444,6 +2094,198 @@ body {
     text-align: left;
 }
 
+/* FAQ section on light background */
+.page-menus-grupos .faq-section {
+    text-align: left;
+}
+
+.page-menus-grupos .faq-header {
+    text-align: center;
+}
+
+.page-menus-grupos .faq-eyebrow {
+    margin-bottom: 0.25rem;
+}
+
+.page-menus-grupos .faq-header .section-title {
+    letter-spacing: 2px;
+    margin-bottom: 0;
+}
+
+.page-menus-grupos .faq-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0 2rem;
+    width: min(100%, 1100px);
+    margin: 2rem auto 0;
+    padding: 0 0.75rem;
+}
+
+.page-menus-grupos .faq-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.page-menus-grupos .faq-accordion {
+    border-bottom: 1px solid rgba(201, 171, 129, 0.28);
+    background: rgba(255, 255, 255, 0.6);
+}
+
+.page-menus-grupos .faq-accordion:first-child {
+    border-top: 1px solid rgba(201, 171, 129, 0.28);
+}
+
+.page-menus-grupos .faq-accordion summary {
+    position: relative;
+    display: block;
+    padding: 1.15rem 2.75rem 1.15rem 0.9rem;
+    color: var(--darkes-bg-color);
+    cursor: pointer;
+    font-family: Libre Baskerville;
+    font-size: clamp(1.1rem, 1rem + 0.35vw, 1.25rem);
+    line-height: 1.45;
+    letter-spacing: 0;
+}
+
+.page-menus-grupos .faq-accordion summary::-webkit-details-marker {
+    display: none;
+}
+
+.page-menus-grupos .faq-accordion summary::after {
+    content: "+";
+    position: absolute;
+    top: 1.1rem;
+    right: 0.9rem;
+    color: var(--darkes-bg-color);
+    font-family: Roboto Slab;
+    font-size: 1.4rem;
+    line-height: 1;
+}
+
+.page-menus-grupos .faq-accordion[open] summary::after {
+    content: "-";
+}
+
+.page-menus-grupos .faq-accordion p {
+    max-width: 62ch;
+    margin: 0;
+    padding: 0 0.9rem 1.25rem;
+    color: var(--almost-bg-color);
+    font-family: Roboto Slab;
+    font-size: 0.98rem;
+    font-weight: 100;
+    line-height: 1.75;
+    text-align: left;
+}
+
+/* Story section on light background */
+.page-menus-grupos .landing-story-section {
+    padding-top: clamp(7rem, 14vw, 14rem);
+    padding-bottom: clamp(7rem, 14vw, 14rem);
+}
+
+.page-menus-grupos .landing-story-inner {
+    width: min(100%, 1120px);
+    margin: 0 auto;
+}
+
+.page-menus-grupos .landing-story-row {
+    display: grid;
+    grid-template-columns: minmax(260px, 0.88fr) minmax(0, 1fr);
+    gap: clamp(2rem, 5vw, 4.5rem);
+    align-items: center;
+}
+
+.page-menus-grupos .landing-story-row + .landing-story-row {
+    margin-top: clamp(4rem, 7vw, 6.5rem);
+}
+
+.page-menus-grupos .landing-story-row-reverse {
+    grid-template-columns: minmax(0, 1fr) minmax(260px, 0.88fr);
+}
+
+.page-menus-grupos .landing-story-media {
+    display: flex;
+    justify-content: center;
+}
+
+.page-menus-grupos .landing-story-media .landing-feature-image {
+    max-width: 460px;
+    box-shadow: 0 18px 45px rgba(0, 0, 0, 0.22);
+}
+
+.page-menus-grupos .landing-story-copy .story-eyebrow {
+    margin-bottom: 0.2rem;
+}
+
+.page-menus-grupos .landing-story-copy .section-title {
+    color: var(--darkes-bg-color);
+    text-shadow: none;
+    margin-bottom: 1.3rem;
+}
+
+.page-menus-grupos .landing-story-copy .landing-copy {
+    color: var(--almost-bg-color);
+    margin-top: 1rem;
+}
+
+.page-menus-grupos .landing-story-copy .landing-cta-group {
+    margin-top: 2.5rem;
+}
+
+.page-menus-grupos .landing-story-copy .btn-outline-dark {
+    background-color: transparent;
+    color: var(--almost-bg-color);
+    border-color: var(--almost-bg-color);
+}
+
+.page-menus-grupos .landing-story-copy .btn-outline-dark:hover,
+.page-menus-grupos .landing-story-copy .btn-outline-dark:focus {
+    background-color: var(--almost-bg-color);
+    color: var(--almostwhite-color);
+}
+
+/* Final CTA on white background */
+.page-menus-grupos .landing-final-cta {
+    padding-top: clamp(7rem, 16vw, 17rem);
+    padding-bottom: clamp(7rem, 16vw, 17rem);
+}
+
+.page-menus-grupos .landing-final-cta .section-title {
+    color: var(--darkes-bg-color);
+}
+
+.page-menus-grupos .landing-final-cta .landing-copy {
+    color: var(--almost-bg-color);
+}
+
+.page-menus-grupos .landing-section {
+    padding-top: clamp(5.5rem, 9vw, 8rem);
+    padding-bottom: clamp(5.5rem, 9vw, 8rem);
+}
+
+.page-menus-grupos .landing-section .section-subtitle {
+    margin-bottom: 0.25rem;
+}
+
+.page-menus-grupos .landing-section .section-title {
+    letter-spacing: 2px;
+    margin-bottom: 1rem;
+}
+
+.page-menus-grupos .landing-section .landing-copy {
+    line-height: 1.7;
+}
+
+/* More horizontal breathing room on larger screens */
+@media screen and (min-width: 992px) {
+    .page-menus-grupos .landing-section,
+    .page-menus-grupos .landing-story-section {
+        padding-left: 2.5rem;
+        padding-right: 2.5rem;
+    }
+}
+
 .page-home .landing-section {
     padding-top: clamp(7rem, 11vw, 10rem);
     padding-bottom: clamp(7rem, 11vw, 10rem);
@@ -1689,12 +2531,94 @@ body {
     text-align: left;
 }
 
+/* ==========================================================================
+   Home reviews: Google reviews section
+   ========================================================================== */
+
+.page-home .home-reviews-section .home-reviews-grid,
+.page-contacto .home-reviews-section .home-reviews-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    max-width: 1120px;
+    margin: 2.5rem auto 0;
+    text-align: left;
+}
+
+.page-home .home-reviews-section .home-review-card,
+.page-contacto .home-reviews-section .home-review-card {
+    display: flex;
+    flex-direction: column;
+}
+
+.page-home .home-reviews-section .home-review-card blockquote,
+.page-contacto .home-reviews-section .home-review-card blockquote {
+    margin: 0 0 1rem;
+}
+
+.page-home .home-reviews-section .home-review-card blockquote p,
+.page-contacto .home-reviews-section .home-review-card blockquote p {
+    color: var(--almost-bg-color);
+    font-family: Roboto Slab;
+    font-size: 0.92rem;
+    font-weight: 100;
+    line-height: 1.62;
+    margin: 0;
+}
+
+.page-home .home-reviews-section .home-review-stars,
+.page-contacto .home-reviews-section .home-review-stars {
+    color: var(--gold-color);
+    font-size: 1.1rem;
+    letter-spacing: 2px;
+    margin-bottom: 0.5rem;
+}
+
+.page-home .home-reviews-section .home-review-author,
+.page-contacto .home-reviews-section .home-review-author {
+    color: var(--almost-bg-color);
+    font-family: Roboto Slab;
+    font-size: 0.85rem;
+    font-weight: 100;
+    margin-top: auto;
+}
+
+.page-home .home-reviews-section .home-review-author cite,
+.page-contacto .home-reviews-section .home-review-author cite {
+    color: var(--darkes-bg-color);
+    font-family: Libre Baskerville;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 0.92rem;
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+
+    .page-home .home-reviews-section .home-reviews-grid,
+    .page-contacto .home-reviews-section .home-reviews-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 767px) {
+
+    .page-home .home-reviews-section .home-reviews-grid,
+    .page-contacto .home-reviews-section .home-reviews-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+}
+
 @media screen and (min-width: 768px) {
     .page-asador-argentino .faq-grid {
         grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 
     .page-home .faq-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .page-menus-grupos .faq-grid {
         grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 
@@ -1708,11 +2632,7 @@ body {
         grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 
-    .page-menus-grupos .menu-comparison-grid {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
-
-    .page-carta .carta-feature-grid {
+.page-menus-grupos .menu-comparison-grid {
         grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 }
@@ -1736,18 +2656,25 @@ body {
         letter-spacing: 1px;
     }
 
+    .content-section-dark,
+    .content-section-light {
+        padding-left: 0.75rem;
+        padding-right: 0.75rem;
+    }
+
     .landing-dish-grid,
     .landing-usecase-grid {
         grid-template-columns: 1fr;
     }
 
+    .page-carta .carta-first-section .landing-dish-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
     .page-menus-grupos .menu-comparison-grid,
     .page-menus-grupos .menu-conditions-grid,
     .page-menus-grupos .menu-kids-card {
-        grid-template-columns: 1fr;
-    }
-
-    .page-carta .carta-feature-grid {
         grid-template-columns: 1fr;
     }
 
@@ -1770,6 +2697,10 @@ body {
         height: 210px;
     }
 
+    .page-carta .carta-first-section .landing-dish-card img {
+        height: 170px;
+    }
+
     .page-asador-argentino .landing-story-row,
     .page-asador-argentino .landing-story-row-reverse {
         grid-template-columns: 1fr;
@@ -1782,11 +2713,26 @@ body {
         gap: 1.65rem;
     }
 
+    .page-menus-grupos .landing-story-row,
+    .page-menus-grupos .landing-story-row-reverse {
+        grid-template-columns: 1fr;
+        gap: 1.65rem;
+    }
+
+    .page-menus-grupos #planificar .landing-story-row {
+        grid-template-columns: 1fr;
+        gap: 1.65rem;
+    }
+
     .page-asador-argentino .landing-story-media .landing-feature-image {
         max-width: 100%;
     }
 
     .page-home .landing-story-media .landing-feature-image {
+        max-width: 100%;
+    }
+
+    .page-menus-grupos .landing-story-media .landing-feature-image {
         max-width: 100%;
     }
 
@@ -1831,6 +2777,18 @@ body {
         font-size: 1.85rem;
         line-height: 2.45rem;
         letter-spacing: 2px;
+    }
+}
+
+@media screen and (orientation: landscape) and (max-height: 500px) {
+    .topbanner-section,
+    .landing-hero {
+        min-height: 88svh;
+        padding-block: clamp(2rem, 3.5svh, 3rem);
+    }
+
+    .page-home #mainpage-bannertop {
+        padding-top: clamp(2.25rem, 4svh, 3rem);
     }
 }
 
@@ -2497,4 +3455,50 @@ body {
 
 .tripadvisor-widget-wrap #CDSWIDREST {
     max-width: 200px;
+}
+
+/**
+ * VISUALLY HIDDEN
+ * Screen-reader-only utility.
+ * -------------------------------------------------------------------
+ */
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+/**
+ * SKIP LINK
+ * Accessible skip-to-main-content link.
+ * -------------------------------------------------------------------
+ */
+
+.skip-link {
+    position: absolute;
+    top: -100%;
+    left: 1rem;
+    z-index: 11000;
+    padding: 0.5rem 1rem;
+    background: #fff;
+    color: #000;
+    font-size: 1rem;
+    font-family: Roboto Slab;
+    white-space: nowrap;
+    text-decoration: none;
+    border: 2px solid #000;
+    border-radius: 0 0 4px 4px;
+}
+
+.skip-link:focus {
+    top: 0;
+    outline: 2px solid #005fcc;
+    outline-offset: 2px;
 }

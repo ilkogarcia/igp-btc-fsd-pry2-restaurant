@@ -1,0 +1,1400 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-15",
+  "business": {
+    "name": "Viejo Barrio – Asador Argentino",
+    "location": "Benimaclet, Valencia",
+    "googleBusinessProfileUrl": "https://www.google.com/maps?cid=11418522565425404756"
+  },
+  "source": {
+    "driveFolder": "viejobarrio_GBP-reviews_raw-download-20260215",
+    "driveFolderUrl": "https://drive.google.com/drive/folders/1MS7DV24Bi1ym-LPliM0KKaORXjFKzE_W",
+    "jsonFilesAnalyzed": 25,
+    "reviewRecordsAnalyzed": 493,
+    "reviewsSelected": 50,
+    "selectionCriteria": [
+      "5-star review with written comment",
+      "specific evidence about food, service, atmosphere, groups, wines or return intent",
+      "preference for recent and evergreen wording",
+      "thematic variety across the website",
+      "Google translation boilerplate removed without rewriting the review"
+    ]
+  },
+  "usagePolicy": {
+    "sourceOfTruthPath": "data/reviews/google-reviews-curated.json",
+    "humanReferencePath": "docs/reviews/google-reviews-curated.md",
+    "renderMode": "Static HTML generated from this file; do not fetch it in the browser at runtime.",
+    "quotePolicy": "Keep exact wording. Use text or excerpt without correcting spelling, grammar or claims.",
+    "doNotAdd": [
+      "Review or AggregateRating structured data in this implementation",
+      "an automatically rotating carousel",
+      "a hard-coded aggregate rating or review total",
+      "reviews not present in this file"
+    ],
+    "recommendedMaximumVisible": {
+      "home": 3,
+      "contacto": 2,
+      "asador": 3,
+      "carta": 3,
+      "menus": 3,
+      "grupos": 3,
+      "vinos-y-cavas": 2
+    }
+  },
+  "featuredSets": {
+    "home": [
+      "vb-google-002",
+      "vb-google-001",
+      "vb-google-017"
+    ],
+    "contacto": [
+      "vb-google-001",
+      "vb-google-031"
+    ],
+    "asador": [
+      "vb-google-002",
+      "vb-google-032",
+      "vb-google-018"
+    ],
+    "carta": [
+      "vb-google-018",
+      "vb-google-022",
+      "vb-google-024"
+    ],
+    "menus": [
+      "vb-google-006",
+      "vb-google-033",
+      "vb-google-043"
+    ],
+    "grupos": [
+      "vb-google-025",
+      "vb-google-008",
+      "vb-google-003"
+    ],
+    "vinos-y-cavas": [
+      "vb-google-013",
+      "vb-google-048"
+    ]
+  },
+  "reviews": [
+    {
+      "id": "vb-google-001",
+      "author": "Silvia Valdeo",
+      "rating": 5,
+      "date": "2025-12-22",
+      "language": "es",
+      "text": "Comida espectacular, servicio impecable y local muy acogedor. Totalmente recomendable.\nTomamos plato individual de carne por cabeza, una botella de vino, postres y café.",
+      "excerpt": "Comida espectacular, servicio impecable y local muy acogedor. Totalmente recomendable. Tomamos plato individual de carne por cabeza, una botella de vino, postres y café.",
+      "themes": [
+        "carne-y-brasa",
+        "servicio",
+        "ambiente",
+        "volver",
+        "postres",
+        "vinos"
+      ],
+      "recommendedPlacements": [
+        "asador",
+        "carta",
+        "contacto",
+        "home",
+        "vinos-y-cavas"
+      ],
+      "containsStaffName": false,
+      "source": {
+        "platform": "Google",
+        "businessProfileUrl": "https://www.google.com/maps?cid=11418522565425404756",
+        "reviewResource": "accounts/101185461119021727144/locations/16547783051801026657/reviews/Ci9DQUlRQUNvZENodHljRjlvT2xaVlVVMDVOSFZKYTNGSWNXWldXV3hyZEU1S2EzYxAB"
+      }
+    },
+    {
+      "id": "vb-google-002",
+      "author": "Robledo Durendez",
+      "rating": 5,
+      "date": "2026-02-14",
+      "language": "es",
+      "text": "Fuimos a cenar y salimos encantados. Carne espectacular, hecha al punto perfecto, y el ambiente muy acogedor. El trato fue cercano y profesional. Sin duda, un sitio para repetir en Benimaclet. 🔥",
+      "excerpt": "Fuimos a cenar y salimos encantados. Carne espectacular, hecha al punto perfecto, y el ambiente muy acogedor. El trato fue cercano y profesional. Sin duda, un sitio para repetir en Benimaclet. 🔥",
+      "themes": [
+        "carne-y-brasa",
+        "servicio",
+        "ambiente",
+        "volver",
+        "benimaclet-y-valencia"
+      ],
+      "recommendedPlacements": [
+        "asador",
+        "carta",
+        "contacto",
+        "home"
+      ],
+      "containsStaffName": false,
+      "source": {
+        "platform": "Google",
+        "businessProfileUrl": "https://www.google.com/maps?cid=11418522565425404756",
+        "reviewResource": "accounts/101185461119021727144/locations/16547783051801026657/reviews/Ci9DQUlRQUNvZENodHljRjlvT21kbFRrcHNlbXRTY0RSS2RVWkdTM2RQT0ZocVVXYxAB"
+      }
+    },
+    {
+      "id": "vb-google-003",
+      "author": "mudenitas An",
+      "rating": 5,
+      "date": "2024-05-15",
+      "language": "es",
+      "text": "Reservamos para comer con unos amigos  que vinieron de fuera de Valencia. Y quedaron encantados.\nAmbiente muy agradable. Trato muy amable por parte del personal dl restaurante. Repetiremos seguro. Muchísimas  gracias por todo.",
+      "excerpt": "Reservamos para comer con unos amigos que vinieron de fuera de Valencia. Y quedaron encantados. Ambiente muy agradable. Trato muy amable por parte del personal dl restaurante. Repetiremos seguro. Muchísimas gracias por todo.",
+      "themes": [
+        "servicio",
+        "ambiente",
+        "volver",
+        "grupos-y-familias",
+        "benimaclet-y-valencia"
+      ],
+      "recommendedPlacements": [
+        "contacto",
+        "grupos",
+        "home",
+        "menus"
+      ],
+      "containsStaffName": false,
+      "source": {
+        "platform": "Google",
+        "businessProfileUrl": "https://www.google.com/maps?cid=11418522565425404756",
+        "reviewResource": "accounts/101185461119021727144/locations/16547783051801026657/reviews/ChZDSUhNMG9nS0VJQ0FnSUNUNFpuTmFBEAE"
+      }
+    },
+    {
+      "id": "vb-google-004",
+      "author": "Javier Chordá Díaz",
+      "rating": 5,
+      "date": "2026-02-14",
+      "language": "es",
+      "text": "Excelente comida: de lo mejor que he probado en carnes. Servicio rápido y muy atento. Ambiente muy acogedor y tranquilo, ideal para parejas. 10/10.",
+      "excerpt": "Excelente comida: de lo mejor que he probado en carnes. Servicio rápido y muy atento. Ambiente muy acogedor y tranquilo, ideal para parejas. 10/10.",
+      "themes": [
+        "carne-y-brasa",
+        "servicio",
+        "ambiente",
+        "grupos-y-familias"
+      ],
+      "recommendedPlacements": [
+        "asador",
+        "carta",
+        "contacto",
+        "grupos",
+        "home",
+        "menus"
+      ],
+      "containsStaffName": false,
+      "source": {
+        "platform": "Google",
+        "businessProfileUrl": "https://www.google.com/maps?cid=11418522565425404756",
+        "reviewResource": "accounts/101185461119021727144/locations/16547783051801026657/reviews/Ci9DQUlRQUNvZENodHljRjlvT2paSVMwVkllSFp0WjNveVZGOTJka2R3TTBKdFdVRRAB"
+      }
+    },
+    {
+      "id": "vb-google-005",
+      "author": "Enrique Barbera Alonso",
+      "rating": 5,
+      "date": "2026-01-25",
+      "language": "es",
+      "text": "Muy buena carne, postres muy ricos y una atención de 10. Volveremos !!",
+      "excerpt": "Muy buena carne, postres muy ricos y una atención de 10. Volveremos !!",
+      "themes": [
+        "carne-y-brasa",
+        "servicio",
+        "volver",
+        "postres"
+      ],
+      "recommendedPlacements": [
+        "asador",
+        "carta",
+        "contacto",
+        "home"
+      ],
+      "containsStaffName": false,
+      "source": {
+        "platform": "Google",
+        "businessProfileUrl": "https://www.google.com/maps?cid=11418522565425404756",
+        "reviewResource": "accounts/101185461119021727144/locations/16547783051801026657/reviews/Ci9DQUlRQUNvZENodHljRjlvT2s5NWRVSjBTMEpzZFZoSU5tTnJWa28yUmxsamRWRRAB"
+      }
+    },
+    {
+      "id": "vb-google-006",
+      "author": "Elisa Nakova",
+      "rating": 5,
+      "date": "2023-05-06",
+      "language": "es",
+      "text": "Nos ha encantado la calidad de los platos, la atención recibida por parte del personal y también el ambiente. Muy recomendable la parrillada para 4 y la ensalada del turco. También el brownie. Todo perfecto 👌",
+      "excerpt": "Nos ha encantado la calidad de los platos, la atención recibida por parte del personal y también el ambiente. Muy recomendable la parrillada para 4 y la ensalada del turco. También el brownie. Todo perfecto 👌",
+      "themes": [
+        "carne-y-brasa",
+        "servicio",
+        "ambiente",
+        "volver",
+        "postres"
+      ],
+      "recommendedPlacements": [
+        "asador",
+        "carta",
+        "contacto",
+        "grupos",
+        "home",
+        "menus"
+      ],
+      "containsStaffName": false,
+      "source": {
+        "platform": "Google",
+        "businessProfileUrl": "https://www.google.com/maps?cid=11418522565425404756",
+        "reviewResource": "accounts/101185461119021727144/locations/16547783051801026657/reviews/ChZDSUhNMG9nS0VJQ0FnSURScjlXeFBnEAE"
+      }
+    },
+    {
+      "id": "vb-google-007",
+      "author": "Panda Miguez",
+      "rating": 5,
+      "date": "2025-11-15",
+      "language": "es",
+      "text": "Buenos días , anoche probamos otra de las muchas parrilladas Argentinas que hay en Valencia y realmente nos encantó, muy buena presentación , la carne riquísima y por supuesto el amable trato de las camareras que son un encanto, seguro que repetiremos y recomendaremos, un saludo y enhorabuena",
+      "excerpt": "Buenos días , anoche probamos otra de las muchas parrilladas Argentinas que hay en Valencia y realmente nos encantó, muy buena presentación , la carne riquísima y por supuesto el amable trato de las camareras que son un encanto,…",
+      "themes": [
+        "carne-y-brasa",
+        "servicio",
+        "volver",
+        "benimaclet-y-valencia"
+      ],
+      "recommendedPlacements": [
+        "asador",
+        "carta",
+        "contacto",
+        "home"
+      ],
+      "containsStaffName": false,
+      "source": {
+        "platform": "Google",
+        "businessProfileUrl": "https://www.google.com/maps?cid=11418522565425404756",
+        "reviewResource": "accounts/101185461119021727144/locations/16547783051801026657/reviews/Ci9DQUlRQUNvZENodHljRjlvT25aT1dqZEZSSFJOT1ZSb2QzaDRZVk5ETFhOTE5VRRAB"
+      }
+    },
+    {
+      "id": "vb-google-008",
+      "author": "Emi Anfe",
+      "rating": 5,
+      "date": "2024-05-15",
+      "language": "es",
+      "text": "Reservamos para el 1 de Mayo comida para 6 personas e íbamos sin conocer el local..\nFué una gran sorpresa porque todo estuvo de 10...\nEl personal muy atento y la comida fantástica.No sabíamos que era argentino con lo cual,mayor sorpresa con respecto a la comida.\nPedimos 2 de cada cosa: ensaladas,parrilladas del Sur,empanadas,postre ,vino argentino...\nTodo exquisito ...para repetir!",
+      "excerpt": "Reservamos para el 1 de Mayo comida para 6 personas e íbamos sin conocer el local.. Fué una gran sorpresa porque todo estuvo de 10...",
+      "themes": [
+        "carne-y-brasa",
+        "servicio",
+        "ambiente",
+        "volver",
+        "grupos-y-familias",
+        "postres",
+        "vinos"
+      ],
+      "recommendedPlacements": [
+        "asador",
+        "carta",
+        "contacto",
+        "grupos",
+        "home",
+        "menus",
+        "vinos-y-cavas"
+      ],
+      "containsStaffName": false,
+      "source": {
+        "platform": "Google",
+        "businessProfileUrl": "https://www.google.com/maps?cid=11418522565425404756",
+        "reviewResource": "accounts/101185461119021727144/locations/16547783051801026657/reviews/ChdDSUhNMG9nS0VJQ0FnSUNUNGNYbHJ3RRAB"
+      }
+    },
+    {
+      "id": "vb-google-009",
+      "author": "Juan Locatelli",
+      "rating": 5,
+      "date": "2025-10-12",
+      "language": "es",
+      "text": "Se come realmente bien, la carne es riquísima , el servicio y el ambiente superan el precio que pagas, muy recomendable",
+      "excerpt": "Se come realmente bien, la carne es riquísima , el servicio y el ambiente superan el precio que pagas, muy recomendable",
+      "themes": [
+        "carne-y-brasa",
+        "servicio",
+        "ambiente",
+        "volver",
+        "relacion-calidad-precio"
+      ],
+      "recommendedPlacements": [
+        "asador",
+        "carta",
+        "contacto",
+        "home"
+      ],
+      "containsStaffName": false,
+      "source": {
+        "platform": "Google",
+        "businessProfileUrl": "https://www.google.com/maps?cid=11418522565425404756",
+        "reviewResource": "accounts/101185461119021727144/locations/16547783051801026657/reviews/Ci9DQUlRQUNvZENodHljRjlvT2xGUlgycFRWbVZITlhWS2FXcHRaM0IyZWtSM1dsRRAB"
+      }
+    },
+    {
+      "id": "vb-google-010",
+      "author": "Camelia Godoy Jiménez",
+      "rating": 5,
+      "date": "2025-07-05",
+      "language": "es",
+      "text": "Super recomendado. Rica carne, la ensalada con quedo de cabra exquisita, provolones con cebolla caramelizada increíble.\n\nBuen tinto de verano en para estas altas temperaturas… y el servicio recomendable 100%\n\nVolveremos! En el barrio de Benimaclet.",
+      "excerpt": "Super recomendado. Rica carne, la ensalada con quedo de cabra exquisita, provolones con cebolla caramelizada increíble. Buen tinto de verano en para estas altas temperaturas… y el servicio recomendable 100% Volveremos!",
+      "themes": [
+        "carne-y-brasa",
+        "servicio",
+        "volver",
+        "vinos",
+        "benimaclet-y-valencia"
+      ],
+      "recommendedPlacements": [
+        "asador",
+        "carta",
+        "contacto",
+        "home",
+        "vinos-y-cavas"
+      ],
+      "containsStaffName": false,
+      "source": {
+        "platform": "Google",
+        "businessProfileUrl": "https://www.google.com/maps?cid=11418522565425404756",
+        "reviewResource": "accounts/101185461119021727144/locations/16547783051801026657/reviews/Ci9DQUlRQUNvZENodHljRjlvT2s1TGRsa3RSVXRrWjA5bk1WZGtkWFJMYkRoNlUyYxAB"
+      }
+    },
+    {
+      "id": "vb-google-011",
+      "author": "Toni Alario",
+      "rating": 5,
+      "date": "2024-11-02",
+      "language": "es",
+      "text": "Carnes buenísimas y bien hechas...empanadas exquisitas y resto todo muy bueno...los postres caseros buenísimos...el local muy agradable y el servicio muy bueno...destacar la chica encargada muy amable y profesional...lo recomiendo!",
+      "excerpt": "Carnes buenísimas y bien hechas...empanadas exquisitas y resto todo muy bueno...los postres caseros buenísimos...el local muy agradable y el servicio muy bueno...destacar la chica encargada muy amable y profesional...lo recomiendo!",
+      "themes": [
+        "carne-y-brasa",
+        "servicio",
+        "ambiente",
+        "postres"
+      ],
+      "recommendedPlacements": [
+        "asador",
+        "carta",
+        "contacto",
+        "home"
+      ],
+      "containsStaffName": false,
+      "source": {
+        "platform": "Google",
+        "businessProfileUrl": "https://www.google.com/maps?cid=11418522565425404756",
+        "reviewResource": "accounts/101185461119021727144/locations/16547783051801026657/reviews/ChZDSUhNMG9nS0VJQ0FnSUMzMk5QTVlnEAE"
+      }
+    },
+    {
+      "id": "vb-google-012",
+      "author": "Mariana Carvajal Jimenez",
+      "rating": 5,
+      "date": "2024-08-13",
+      "language": "es",
+      "text": "Fuimos a comer en pareja , el ambiente a la vez que familiar es tranquilo .Lla comida que pedimos ( empanadas y bife arjentino exquisito ) el servicio muy amable y rápido . El sitio bonito .",
+      "excerpt": "Fuimos a comer en pareja , el ambiente a la vez que familiar es tranquilo .Lla comida que pedimos ( empanadas y bife arjentino exquisito ) el servicio muy amable y rápido . El sitio bonito .",
+      "themes": [
+        "carne-y-brasa",
+        "servicio",
+        "ambiente",
+        "grupos-y-familias"
+      ],
+      "recommendedPlacements": [
+        "asador",
+        "carta",
+        "contacto",
+        "grupos",
+        "home",
+        "menus"
+      ],
+      "containsStaffName": false,
+      "source": {
+        "platform": "Google",
+        "businessProfileUrl": "https://www.google.com/maps?cid=11418522565425404756",
+        "reviewResource": "accounts/101185461119021727144/locations/16547783051801026657/reviews/ChZDSUhNMG9nS0VJQ0FnSUM3dkl2UVV3EAE"
+      }
+    },
+    {
+      "id": "vb-google-013",
+      "author": "Pedro Miguel Revilla Melian",
+      "rating": 5,
+      "date": "2023-09-08",
+      "language": "es",
+      "text": "Comimos y nos atendieron muy bien. Ensalada, empanadillas, carne roja, postre y vino tinto argentino que estaba magnifico. Volveremos. Muchas gracias.",
+      "excerpt": "Comimos y nos atendieron muy bien. Ensalada, empanadillas, carne roja, postre y vino tinto argentino que estaba magnifico. Volveremos. Muchas gracias.",
+      "themes": [
+        "carne-y-brasa",
+        "volver",
+        "postres",
+        "vinos"
+      ],
+      "recommendedPlacements": [
+        "asador",
+        "carta",
+        "contacto",
+        "vinos-y-cavas"
+      ],
+      "containsStaffName": false,
+      "source": {
+        "platform": "Google",
+        "businessProfileUrl": "https://www.google.com/maps?cid=11418522565425404756",
+        "reviewResource": "accounts/101185461119021727144/locations/16547783051801026657/reviews/ChZDSUhNMG9nS0VJQ0FnSUNaMnR5V2V3EAE"
+      }
+    },
+    {
+      "id": "vb-google-014",
+      "author": "Sergueix",
+      "rating": 5,
+      "date": "2026-01-22",
+      "language": "es",
+      "text": "Buena calidad en la comida y un servicio excelente, ambiente inmejorable, y una variedad de carne espectacular",
+      "excerpt": "Buena calidad en la comida y un servicio excelente, ambiente inmejorable, y una variedad de carne espectacular",
+      "themes": [
+        "carne-y-brasa",
+        "servicio",
+        "ambiente"
+      ],
+      "recommendedPlacements": [
+        "asador",
+        "carta",
+        "contacto",
+        "home"
+      ],
+      "containsStaffName": false,
+      "source": {
+        "platform": "Google",
+        "businessProfileUrl": "https://www.google.com/maps?cid=11418522565425404756",
+        "reviewResource": "accounts/101185461119021727144/locations/16547783051801026657/reviews/Ci9DQUlRQUNvZENodHljRjlvT2taemJreGpMVzF5WkhaRWQwMXJlalJmTlhwUVozYxAB"
+      }
+    },
+    {
+      "id": "vb-google-015",
+      "author": "Begoña Gausi",
+      "rating": 5,
+      "date": "2025-12-07",
+      "language": "es",
+      "text": "Hemos cenado genial, la carne exquisita, las empanadillas … todo casero! Y los creps hay que probarlos también!!!\nEl servicio rápido y muy amables!!!\nRecomendado 💯%",
+      "excerpt": "Hemos cenado genial, la carne exquisita, las empanadillas … todo casero! Y los creps hay que probarlos también!!! El servicio rápido y muy amables!!! Recomendado 💯%",
+      "themes": [
+        "carne-y-brasa",
+        "servicio",
+        "volver",
+        "postres"
+      ],
+      "recommendedPlacements": [
+        "asador",
+        "carta",
+        "contacto",
+        "home"
+      ],
+      "containsStaffName": false,
+      "source": {
+        "platform": "Google",
+        "businessProfileUrl": "https://www.google.com/maps?cid=11418522565425404756",
+        "reviewResource": "accounts/101185461119021727144/locations/16547783051801026657/reviews/Ci9DQUlRQUNvZENodHljRjlvT2xFd1JFazNlRnBtV0Y5SVdtNUJURTFyZUc1dlEyYxAB"
+      }
+    },
+    {
+      "id": "vb-google-016",
+      "author": "Beni",
+      "rating": 5,
+      "date": "2025-11-23",
+      "language": "es",
+      "text": "Hemos ido a cenar cinco personas. La calidad del producto, instalaciones y servicio han estado a la altura nuestras expectativas. Buena relación calidad-precio. De los asadores más recomendables para comer o cenar por la zona.",
+      "excerpt": "Hemos ido a cenar cinco personas. La calidad del producto, instalaciones y servicio han estado a la altura nuestras expectativas. Buena relación calidad-precio. De los asadores más recomendables para comer o cenar por la zona.",
+      "themes": [
+        "carne-y-brasa",
+        "servicio",
+        "volver",
+        "grupos-y-familias",
+        "relacion-calidad-precio"
+      ],
+      "recommendedPlacements": [
+        "asador",
+        "carta",
+        "contacto",
+        "grupos",
+        "home",
+        "menus"
+      ],
+      "containsStaffName": false,
+      "source": {
+        "platform": "Google",
+        "businessProfileUrl": "https://www.google.com/maps?cid=11418522565425404756",
+        "reviewResource": "accounts/101185461119021727144/locations/16547783051801026657/reviews/Ci9DQUlRQUNvZENodHljRjlvT2xsbVJEaGFhMjlwUTBwaGJrcExPSGh1Ymxoc00zYxAB"
+      }
+    },
+    {
+      "id": "vb-google-017",
+      "author": "Yersi Pérez",
+      "rating": 5,
+      "date": "2025-11-03",
+      "language": "es",
+      "text": "Tenía ganas de venir y ha sido más que un acierto! Servicio súper amable, comida riquísima y ambiente agradable e íntimo. Repetiremos y lo recomendamos al 100%.",
+      "excerpt": "Tenía ganas de venir y ha sido más que un acierto! Servicio súper amable, comida riquísima y ambiente agradable e íntimo. Repetiremos y lo recomendamos al 100%.",
+      "themes": [
+        "servicio",
+        "ambiente",
+        "volver"
+      ],
+      "recommendedPlacements": [
+        "contacto",
+        "home"
+      ],
+      "containsStaffName": false,
+      "source": {
+        "platform": "Google",
+        "businessProfileUrl": "https://www.google.com/maps?cid=11418522565425404756",
+        "reviewResource": "accounts/101185461119021727144/locations/16547783051801026657/reviews/Ci9DQUlRQUNvZENodHljRjlvT2xwNlNIZHpVa05yZVdwRWFXMXdkSGRhZDFwbVgyYxAB"
+      }
+    },
+    {
+      "id": "vb-google-018",
+      "author": "Agustín Castello",
+      "rating": 5,
+      "date": "2025-09-27",
+      "language": "es",
+      "text": "Muy grata sorpresa\nLa empanada criolla excelente\nNo habíamos probado las mollejas y pedimos la media ración,. Buenísimas,\nLa carne perfecta en el punto que nos gustó y el crepe un buen final\nPara repetir",
+      "excerpt": "Muy grata sorpresa La empanada criolla excelente No habíamos probado las mollejas y pedimos la media ración,. Buenísimas, La carne perfecta en el punto que nos gustó y el crepe un buen final Para repetir",
+      "themes": [
+        "carne-y-brasa",
+        "volver",
+        "postres"
+      ],
+      "recommendedPlacements": [
+        "asador",
+        "carta",
+        "contacto"
+      ],
+      "containsStaffName": false,
+      "source": {
+        "platform": "Google",
+        "businessProfileUrl": "https://www.google.com/maps?cid=11418522565425404756",
+        "reviewResource": "accounts/101185461119021727144/locations/16547783051801026657/reviews/Ci9DQUlRQUNvZENodHljRjlvT21SMFRUSktlaTE2UTJ3dFJWZHZORmRvUkhoS1VGRRAB"
+      }
+    },
+    {
+      "id": "vb-google-019",
+      "author": "SILVIA ESCRIBA",
+      "rating": 5,
+      "date": "2025-09-21",
+      "language": "es",
+      "text": "Buena comida, ambiente familiar y muy buen servicio.",
+      "excerpt": "Buena comida, ambiente familiar y muy buen servicio.",
+      "themes": [
+        "servicio",
+        "ambiente",
+        "grupos-y-familias"
+      ],
+      "recommendedPlacements": [
+        "contacto",
+        "grupos",
+        "menus"
+      ],
+      "containsStaffName": false,
+      "source": {
+        "platform": "Google",
+        "businessProfileUrl": "https://www.google.com/maps?cid=11418522565425404756",
+        "reviewResource": "accounts/101185461119021727144/locations/16547783051801026657/reviews/Ci9DQUlRQUNvZENodHljRjlvT2tsRE9XSTFNMHBpYkhWWk4ycHBSSGhtUlRkNlUyYxAB"
+      }
+    },
+    {
+      "id": "vb-google-020",
+      "author": "Paulo Javier Collenz",
+      "rating": 5,
+      "date": "2024-04-01",
+      "language": "es",
+      "text": "Hemos ido con mi esposa a comer. Nos llevamos una grata sorpresa del lugar, de la atención recibida y fundamentalmente de la calidad de la comida. Muy ricas mollejas, la tira de asado impresionante y para rematar, un panqueque con dulce de leche. El precio está relacionado con la calidad de los productos, todo dicho. Si quieres comer bien, un lindo lugar para ir, emplazado en un lindo barrio Valenciano. Volveremos 😀",
+      "excerpt": "Hemos ido con mi esposa a comer. Nos llevamos una grata sorpresa del lugar, de la atención recibida y fundamentalmente de la calidad de la comida.",
+      "themes": [
+        "carne-y-brasa",
+        "servicio",
+        "volver",
+        "postres",
+        "benimaclet-y-valencia",
+        "relacion-calidad-precio"
+      ],
+      "recommendedPlacements": [
+        "asador",
+        "carta",
+        "contacto",
+        "home"
+      ],
+      "containsStaffName": false,
+      "source": {
+        "platform": "Google",
+        "businessProfileUrl": "https://www.google.com/maps?cid=11418522565425404756",
+        "reviewResource": "accounts/101185461119021727144/locations/16547783051801026657/reviews/ChZDSUhNMG9nS0VJQ0FnSUNEeTdQeExnEAE"
+      }
+    },
+    {
+      "id": "vb-google-021",
+      "author": "Jennifer León Pedregosa",
+      "rating": 5,
+      "date": "2023-02-23",
+      "language": "es",
+      "text": "Muy buen trato, y la comida riquísima, las empanadillas y el postre Viejo Barrio una pasada.",
+      "excerpt": "Muy buen trato, y la comida riquísima, las empanadillas y el postre Viejo Barrio una pasada.",
+      "themes": [
+        "carne-y-brasa",
+        "servicio",
+        "postres",
+        "benimaclet-y-valencia"
+      ],
+      "recommendedPlacements": [
+        "asador",
+        "carta",
+        "contacto",
+        "home"
+      ],
+      "containsStaffName": false,
+      "source": {
+        "platform": "Google",
+        "businessProfileUrl": "https://www.google.com/maps?cid=11418522565425404756",
+        "reviewResource": "accounts/101185461119021727144/locations/16547783051801026657/reviews/ChdDSUhNMG9nS0VJQ0FnSUNocDRtby1RRRAB"
+      }
+    },
+    {
+      "id": "vb-google-022",
+      "author": "Julian Abdala",
+      "rating": 5,
+      "date": "2022-07-01",
+      "language": "es",
+      "text": "Excelente restaurante de parrilla argentina. Tienen todo lo que quieras pedir de este estilo de comida: buenas empanadas criollas, chorizo argentino, morcilla, carne de primera y parrillas mixtas para compartir.\nDe los postres deben probar la crepe de dulce de leche y la tarta de yoghurt.\nBuen ambiente y buena atención del personal.",
+      "excerpt": "Excelente restaurante de parrilla argentina. Tienen todo lo que quieras pedir de este estilo de comida: buenas empanadas criollas, chorizo argentino, morcilla, carne de primera y parrillas mixtas para compartir.",
+      "themes": [
+        "carne-y-brasa",
+        "servicio",
+        "ambiente",
+        "postres"
+      ],
+      "recommendedPlacements": [
+        "asador",
+        "carta",
+        "contacto",
+        "grupos",
+        "home",
+        "menus"
+      ],
+      "containsStaffName": false,
+      "source": {
+        "platform": "Google",
+        "businessProfileUrl": "https://www.google.com/maps?cid=11418522565425404756",
+        "reviewResource": "accounts/101185461119021727144/locations/16547783051801026657/reviews/ChZDSUhNMG9nS0VJQ0FnSURPOHVqTExREAE"
+      }
+    },
+    {
+      "id": "vb-google-023",
+      "author": "Cristina Alario",
+      "rating": 5,
+      "date": "2024-11-02",
+      "language": "es",
+      "text": "Local muy agradable. La comida muy buena y buen precio. La atención estupenda. Volveremos si duda.",
+      "excerpt": "Local muy agradable. La comida muy buena y buen precio. La atención estupenda. Volveremos si duda.",
+      "themes": [
+        "servicio",
+        "ambiente",
+        "volver",
+        "relacion-calidad-precio"
+      ],
+      "recommendedPlacements": [
+        "contacto",
+        "home"
+      ],
+      "containsStaffName": false,
+      "source": {
+        "platform": "Google",
+        "businessProfileUrl": "https://www.google.com/maps?cid=11418522565425404756",
+        "reviewResource": "accounts/101185461119021727144/locations/16547783051801026657/reviews/ChdDSUhNMG9nS0VJQ0FnSUMzLUpuODlnRRAB"
+      }
+    },
+    {
+      "id": "vb-google-024",
+      "author": "Isa Jaramillo",
+      "rating": 5,
+      "date": "2024-10-12",
+      "language": "es",
+      "text": "Delicioso todo! Pedimos el chorizo, el provolone y el bife argentino. Las camareras súper amables! Volveré",
+      "excerpt": "Delicioso todo! Pedimos el chorizo, el provolone y el bife argentino. Las camareras súper amables! Volveré",
+      "themes": [
+        "carne-y-brasa",
+        "servicio",
+        "volver"
+      ],
+      "recommendedPlacements": [
+        "asador",
+        "carta",
+        "contacto",
+        "home"
+      ],
+      "containsStaffName": false,
+      "source": {
+        "platform": "Google",
+        "businessProfileUrl": "https://www.google.com/maps?cid=11418522565425404756",
+        "reviewResource": "accounts/101185461119021727144/locations/16547783051801026657/reviews/ChdDSUhNMG9nS0VJQ0FnSUNYcUlXeTBBRRAB"
+      }
+    },
+    {
+      "id": "vb-google-025",
+      "author": "Cristina Mora",
+      "rating": 5,
+      "date": "2024-10-08",
+      "language": "es",
+      "text": "Fuimos un grupo de 16 personas y nos atendieron fenomenal. Tanto la calidad de la comida como el servicio inmejorable. Los camareros nos lo hicieron todo muy fácil para ir con niños. Volveremos!!",
+      "excerpt": "Fuimos un grupo de 16 personas y nos atendieron fenomenal. Tanto la calidad de la comida como el servicio inmejorable. Los camareros nos lo hicieron todo muy fácil para ir con niños. Volveremos!!",
+      "themes": [
+        "servicio",
+        "volver",
+        "grupos-y-familias"
+      ],
+      "recommendedPlacements": [
+        "contacto",
+        "grupos",
+        "menus"
+      ],
+      "containsStaffName": false,
+      "source": {
+        "platform": "Google",
+        "businessProfileUrl": "https://www.google.com/maps?cid=11418522565425404756",
+        "reviewResource": "accounts/101185461119021727144/locations/16547783051801026657/reviews/ChZDSUhNMG9nS0VJQ0FnSURubllMRllBEAE"
+      }
+    },
+    {
+      "id": "vb-google-026",
+      "author": "Alessandro Lorenzi",
+      "rating": 5,
+      "date": "2024-07-11",
+      "language": "es",
+      "text": "Carne de calidad y óptimo servicio.  Es obligatorio probar el bife o compartir una parrillada de la casa. Super recomendable",
+      "excerpt": "Carne de calidad y óptimo servicio. Es obligatorio probar el bife o compartir una parrillada de la casa. Super recomendable",
+      "themes": [
+        "carne-y-brasa",
+        "servicio",
+        "volver"
+      ],
+      "recommendedPlacements": [
+        "asador",
+        "carta",
+        "contacto",
+        "grupos",
+        "home",
+        "menus"
+      ],
+      "containsStaffName": false,
+      "source": {
+        "platform": "Google",
+        "businessProfileUrl": "https://www.google.com/maps?cid=11418522565425404756",
+        "reviewResource": "accounts/101185461119021727144/locations/16547783051801026657/reviews/ChZDSUhNMG9nS0VJQ0FnSUNycDdYeVpnEAE"
+      }
+    },
+    {
+      "id": "vb-google-027",
+      "author": "pablo javier laverdet gutierrez",
+      "rating": 5,
+      "date": "2024-05-19",
+      "language": "es",
+      "text": "Si quieres probar una buena parrillada Argentina no tenes que perderte este lugar,comida y trato excelente, precios están en relación a la calidad de la misma.\nRecomendable 100% volvería a ir.",
+      "excerpt": "Si quieres probar una buena parrillada Argentina no tenes que perderte este lugar,comida y trato excelente, precios están en relación a la calidad de la misma. Recomendable 100% volvería a ir.",
+      "themes": [
+        "carne-y-brasa",
+        "servicio",
+        "volver",
+        "relacion-calidad-precio"
+      ],
+      "recommendedPlacements": [
+        "asador",
+        "carta",
+        "contacto",
+        "grupos",
+        "home",
+        "menus"
+      ],
+      "containsStaffName": false,
+      "source": {
+        "platform": "Google",
+        "businessProfileUrl": "https://www.google.com/maps?cid=11418522565425404756",
+        "reviewResource": "accounts/101185461119021727144/locations/16547783051801026657/reviews/ChZDSUhNMG9nS0VJQ0FnSUNULTZtZUlBEAE"
+      }
+    },
+    {
+      "id": "vb-google-028",
+      "author": "Eduardo Rodriguez",
+      "rating": 5,
+      "date": "2024-05-19",
+      "language": "es",
+      "text": "Reservamos mesa tras ver recomendaciones y un acierto total.\nComida sabrosisima, desde la ensalada turco, pasando por las empanadas, disfrutando su parrilla y como colchón, creo de dulce de leche flambeado!",
+      "excerpt": "Reservamos mesa tras ver recomendaciones y un acierto total. Comida sabrosisima, desde la ensalada turco, pasando por las empanadas, disfrutando su parrilla y como colchón, creo de dulce de leche flambeado!",
+      "themes": [
+        "carne-y-brasa",
+        "volver",
+        "postres"
+      ],
+      "recommendedPlacements": [
+        "asador",
+        "carta",
+        "contacto"
+      ],
+      "containsStaffName": false,
+      "source": {
+        "platform": "Google",
+        "businessProfileUrl": "https://www.google.com/maps?cid=11418522565425404756",
+        "reviewResource": "accounts/101185461119021727144/locations/16547783051801026657/reviews/ChdDSUhNMG9nS0VJQ0FnSUNUMjkyVjBBRRAB"
+      }
+    },
+    {
+      "id": "vb-google-029",
+      "author": "Norma Masenga",
+      "rating": 5,
+      "date": "2024-04-01",
+      "language": "it",
+      "text": "Carne di ottima qualità e cotta al punto giusto. Buonissime le empanadas. Personale gentile e accogliente, locale caratteristico.",
+      "excerpt": "Carne di ottima qualità e cotta al punto giusto. Buonissime le empanadas. Personale gentile e accogliente, locale caratteristico.",
+      "themes": [
+        "carne-y-brasa",
+        "servicio",
+        "ambiente"
+      ],
+      "recommendedPlacements": [
+        "asador",
+        "carta",
+        "contacto",
+        "home"
+      ],
+      "containsStaffName": false,
+      "source": {
+        "platform": "Google",
+        "businessProfileUrl": "https://www.google.com/maps?cid=11418522565425404756",
+        "reviewResource": "accounts/101185461119021727144/locations/16547783051801026657/reviews/ChZDSUhNMG9nS0VJQ0FnSUNEaTRub2J3EAE"
+      }
+    },
+    {
+      "id": "vb-google-030",
+      "author": "Giulio Tanganelli",
+      "rating": 5,
+      "date": "2024-03-29",
+      "language": "es",
+      "text": "Muy buena todo. El camarero muy amable, y además la comida buenísima. Comimos mollejas que nos dejó con piel de gallina. Buenas empanadas que ni falta chimichurri. Nos queda cosas para probar aún, volveremos pronto!",
+      "excerpt": "Muy buena todo. El camarero muy amable, y además la comida buenísima. Comimos mollejas que nos dejó con piel de gallina. Buenas empanadas que ni falta chimichurri. Nos queda cosas para probar aún, volveremos pronto!",
+      "themes": [
+        "carne-y-brasa",
+        "servicio",
+        "volver"
+      ],
+      "recommendedPlacements": [
+        "asador",
+        "carta",
+        "contacto",
+        "home"
+      ],
+      "containsStaffName": false,
+      "source": {
+        "platform": "Google",
+        "businessProfileUrl": "https://www.google.com/maps?cid=11418522565425404756",
+        "reviewResource": "accounts/101185461119021727144/locations/16547783051801026657/reviews/ChZDSUhNMG9nS0VJQ0FnSUNEMGRlbkhREAE"
+      }
+    },
+    {
+      "id": "vb-google-031",
+      "author": "Yilian Ayled González Pérez",
+      "rating": 5,
+      "date": "2024-02-15",
+      "language": "es",
+      "text": "Excelente servicio, con un ambiente acogedor, y la comida muy bien elaborada, lo recomiendo, es un sitio al que volvería sin dudas",
+      "excerpt": "Excelente servicio, con un ambiente acogedor, y la comida muy bien elaborada, lo recomiendo, es un sitio al que volvería sin dudas",
+      "themes": [
+        "servicio",
+        "ambiente",
+        "volver"
+      ],
+      "recommendedPlacements": [
+        "contacto",
+        "home"
+      ],
+      "containsStaffName": false,
+      "source": {
+        "platform": "Google",
+        "businessProfileUrl": "https://www.google.com/maps?cid=11418522565425404756",
+        "reviewResource": "accounts/101185461119021727144/locations/16547783051801026657/reviews/ChdDSUhNMG9nS0VJQ0FnSUNkM3FqLXZnRRAB"
+      }
+    },
+    {
+      "id": "vb-google-032",
+      "author": "Candela Ive",
+      "rating": 5,
+      "date": "2026-01-04",
+      "language": "es",
+      "text": "Gran lugar para comer comida Argentina: chorizo, provoleta y entraña. El punto de la carne era el que pedimos, dato muy importante porque en la mayoria de los lugares no lo respetan. Sumamente recomendable!!",
+      "excerpt": "Gran lugar para comer comida Argentina: chorizo, provoleta y entraña. El punto de la carne era el que pedimos, dato muy importante porque en la mayoria de los lugares no lo respetan. Sumamente recomendable!!",
+      "themes": [
+        "carne-y-brasa",
+        "volver"
+      ],
+      "recommendedPlacements": [
+        "asador",
+        "carta",
+        "contacto"
+      ],
+      "containsStaffName": false,
+      "source": {
+        "platform": "Google",
+        "businessProfileUrl": "https://www.google.com/maps?cid=11418522565425404756",
+        "reviewResource": "accounts/101185461119021727144/locations/16547783051801026657/reviews/Ci9DQUlRQUNvZENodHljRjlvT25GNGFpMUVTbFIxTjJ4YVNEbHFOVTVZY0MxT2MyYxAB"
+      }
+    },
+    {
+      "id": "vb-google-033",
+      "author": "Enrique López Salom",
+      "rating": 5,
+      "date": "2025-12-28",
+      "language": "es",
+      "text": "Muy bueno el provolone y la parrillada. Cortes de carne sabrosos y en su punto. Muy recomendable, volveremos",
+      "excerpt": "Muy bueno el provolone y la parrillada. Cortes de carne sabrosos y en su punto. Muy recomendable, volveremos",
+      "themes": [
+        "carne-y-brasa",
+        "volver"
+      ],
+      "recommendedPlacements": [
+        "asador",
+        "carta",
+        "contacto",
+        "grupos",
+        "menus"
+      ],
+      "containsStaffName": false,
+      "source": {
+        "platform": "Google",
+        "businessProfileUrl": "https://www.google.com/maps?cid=11418522565425404756",
+        "reviewResource": "accounts/101185461119021727144/locations/16547783051801026657/reviews/Ci9DQUlRQUNvZENodHljRjlvT25kM1FqVkhaM0o1UzFsWFUwbHVjVzA0YlU1YVVXYxAB"
+      }
+    },
+    {
+      "id": "vb-google-034",
+      "author": "Jordi Navarro",
+      "rating": 5,
+      "date": "2025-12-20",
+      "language": "es",
+      "text": "Atención de 10. Comida de mucha calidad. Ambiente tranquilo. Un referente, sin duda!",
+      "excerpt": "Atención de 10. Comida de mucha calidad. Ambiente tranquilo. Un referente, sin duda!",
+      "themes": [
+        "servicio",
+        "ambiente"
+      ],
+      "recommendedPlacements": [
+        "contacto",
+        "home"
+      ],
+      "containsStaffName": false,
+      "source": {
+        "platform": "Google",
+        "businessProfileUrl": "https://www.google.com/maps?cid=11418522565425404756",
+        "reviewResource": "accounts/101185461119021727144/locations/16547783051801026657/reviews/Ci9DQUlRQUNvZENodHljRjlvT21GaVJWaHJOelJqWlRSdVZGWkdkR2R6UzBoQ1RGRRAB"
+      }
+    },
+    {
+      "id": "vb-google-035",
+      "author": "Laura AR",
+      "rating": 5,
+      "date": "2025-12-08",
+      "language": "es",
+      "text": "El trato ha sido estupendo y la carne está increíble. Ya he venido un par de veces y seguro que vuelvo!!",
+      "excerpt": "El trato ha sido estupendo y la carne está increíble. Ya he venido un par de veces y seguro que vuelvo!!",
+      "themes": [
+        "carne-y-brasa",
+        "servicio"
+      ],
+      "recommendedPlacements": [
+        "asador",
+        "carta",
+        "contacto",
+        "home"
+      ],
+      "containsStaffName": false,
+      "source": {
+        "platform": "Google",
+        "businessProfileUrl": "https://www.google.com/maps?cid=11418522565425404756",
+        "reviewResource": "accounts/101185461119021727144/locations/16547783051801026657/reviews/Ci9DQUlRQUNvZENodHljRjlvT25KaWRsOURVMWt4TlRKeFlscDFlV040T1MxU1UxRRAB"
+      }
+    },
+    {
+      "id": "vb-google-036",
+      "author": "Nacho Fernandez",
+      "rating": 5,
+      "date": "2025-11-27",
+      "language": "es",
+      "text": "Muy buen ambiente, las camareras muy simpáticas y con buenas referencias. La comida genial. Muchas gracias por la velada.",
+      "excerpt": "Muy buen ambiente, las camareras muy simpáticas y con buenas referencias. La comida genial. Muchas gracias por la velada.",
+      "themes": [
+        "servicio",
+        "ambiente"
+      ],
+      "recommendedPlacements": [
+        "contacto",
+        "home"
+      ],
+      "containsStaffName": false,
+      "source": {
+        "platform": "Google",
+        "businessProfileUrl": "https://www.google.com/maps?cid=11418522565425404756",
+        "reviewResource": "accounts/101185461119021727144/locations/16547783051801026657/reviews/Ci9DQUlRQUNvZENodHljRjlvT2w5VFdVTllUMVZzWlVReFRsQkpOMGg1UnprMFozYxAB"
+      }
+    },
+    {
+      "id": "vb-google-037",
+      "author": "Laura Pousada F.",
+      "rating": 5,
+      "date": "2025-11-08",
+      "language": "es",
+      "text": "Muy buena atención, comida exquisita. Desde luego, volveremos",
+      "excerpt": "Muy buena atención, comida exquisita. Desde luego, volveremos",
+      "themes": [
+        "servicio",
+        "volver"
+      ],
+      "recommendedPlacements": [
+        "contacto"
+      ],
+      "containsStaffName": false,
+      "source": {
+        "platform": "Google",
+        "businessProfileUrl": "https://www.google.com/maps?cid=11418522565425404756",
+        "reviewResource": "accounts/101185461119021727144/locations/16547783051801026657/reviews/Ci9DQUlRQUNvZENodHljRjlvT2xWd09VdHhTVkUxVTIxdE56TTJha2h3WWpoR1RVRRAB"
+      }
+    },
+    {
+      "id": "vb-google-038",
+      "author": "Raquel Muñoz Cresencio",
+      "rating": 5,
+      "date": "2025-09-25",
+      "language": "es",
+      "text": "Fuimos a cenar recomendados por un amigo y fue genial, la carne es buenísima!",
+      "excerpt": "Fuimos a cenar recomendados por un amigo y fue genial, la carne es buenísima!",
+      "themes": [
+        "carne-y-brasa",
+        "volver"
+      ],
+      "recommendedPlacements": [
+        "asador",
+        "carta",
+        "contacto"
+      ],
+      "containsStaffName": false,
+      "source": {
+        "platform": "Google",
+        "businessProfileUrl": "https://www.google.com/maps?cid=11418522565425404756",
+        "reviewResource": "accounts/101185461119021727144/locations/16547783051801026657/reviews/Ci9DQUlRQUNvZENodHljRjlvT25GemRGOURORUphZG04MVJXSkJUMmhYWDNOU09IYxAB"
+      }
+    },
+    {
+      "id": "vb-google-039",
+      "author": "Leonardo Martinez",
+      "rating": 5,
+      "date": "2025-06-11",
+      "language": "es",
+      "text": "Excelente calidad de carne y buen servicio, recomiendo  mejorar el brownie pero por lo demás deliciosa comida.",
+      "excerpt": "Excelente calidad de carne y buen servicio, recomiendo mejorar el brownie pero por lo demás deliciosa comida.",
+      "themes": [
+        "carne-y-brasa",
+        "servicio",
+        "postres"
+      ],
+      "recommendedPlacements": [
+        "asador",
+        "carta",
+        "contacto",
+        "home"
+      ],
+      "containsStaffName": false,
+      "source": {
+        "platform": "Google",
+        "businessProfileUrl": "https://www.google.com/maps?cid=11418522565425404756",
+        "reviewResource": "accounts/101185461119021727144/locations/16547783051801026657/reviews/ChdDSUhNMG9nS0VNMzJtZDMybV9DUTJ3RRAB"
+      }
+    },
+    {
+      "id": "vb-google-040",
+      "author": "Carmen Pineda",
+      "rating": 5,
+      "date": "2025-05-22",
+      "language": "es",
+      "text": "La comida exquisita ,\nLa atención Excelente .\nSin duda alguna volveré .",
+      "excerpt": "La comida exquisita , La atención Excelente . Sin duda alguna volveré .",
+      "themes": [
+        "servicio",
+        "volver"
+      ],
+      "recommendedPlacements": [
+        "contacto"
+      ],
+      "containsStaffName": false,
+      "source": {
+        "platform": "Google",
+        "businessProfileUrl": "https://www.google.com/maps?cid=11418522565425404756",
+        "reviewResource": "accounts/101185461119021727144/locations/16547783051801026657/reviews/ChZDSUhNMG9nS0VQUHdyYWpLbzVQYlRnEAE"
+      }
+    },
+    {
+      "id": "vb-google-041",
+      "author": "Diego Plaza Parra",
+      "rating": 5,
+      "date": "2022-11-08",
+      "language": "es",
+      "text": "Todo espectacular. El ambiente es propicio para disfrutar de una excelente comida o cena, en pareja o con amigos. La decoración me encantó. Si duda vamos a volver. Totalmente recomendable!!",
+      "excerpt": "Todo espectacular. El ambiente es propicio para disfrutar de una excelente comida o cena, en pareja o con amigos. La decoración me encantó. Si duda vamos a volver. Totalmente recomendable!!",
+      "themes": [
+        "ambiente",
+        "volver",
+        "grupos-y-familias"
+      ],
+      "recommendedPlacements": [
+        "contacto",
+        "grupos",
+        "menus"
+      ],
+      "containsStaffName": false,
+      "source": {
+        "platform": "Google",
+        "businessProfileUrl": "https://www.google.com/maps?cid=11418522565425404756",
+        "reviewResource": "accounts/101185461119021727144/locations/16547783051801026657/reviews/ChdDSUhNMG9nS0VJQ0FnSUMtaGZYcnVRRRAB"
+      }
+    },
+    {
+      "id": "vb-google-042",
+      "author": "Patricia HG",
+      "rating": 5,
+      "date": "2022-10-18",
+      "language": "es",
+      "text": "Espectacular!\nPedimos, empanadas de carne, chorizo criollo, mollejas y el escondido.\nPlato a plato iba conquistándonos, cada uno más bueno, las mollejas y el escondido sobresaliente. Especial mención a Yolanda la camarera que nos atendió de lujo. Volveremos!",
+      "excerpt": "Espectacular! Pedimos, empanadas de carne, chorizo criollo, mollejas y el escondido. Plato a plato iba conquistándonos, cada uno más bueno, las mollejas y el escondido sobresaliente.",
+      "themes": [
+        "carne-y-brasa",
+        "servicio",
+        "volver"
+      ],
+      "recommendedPlacements": [
+        "asador",
+        "carta",
+        "contacto"
+      ],
+      "containsStaffName": true,
+      "source": {
+        "platform": "Google",
+        "businessProfileUrl": "https://www.google.com/maps?cid=11418522565425404756",
+        "reviewResource": "accounts/101185461119021727144/locations/16547783051801026657/reviews/ChZDSUhNMG9nS0VJQ0FnSURlMDZuQkt3EAE"
+      }
+    },
+    {
+      "id": "vb-google-043",
+      "author": "Cristina Pardo",
+      "rating": 5,
+      "date": "2022-08-14",
+      "language": "es",
+      "text": "Sitio súper recomendable si te gusta la buena carne! Muy acogedor. Las parrilladas son la mejor opción para cogerle el punto perfecto a la carne. Las empanadillas me dejaron sin palabras!!!",
+      "excerpt": "Sitio súper recomendable si te gusta la buena carne! Muy acogedor. Las parrilladas son la mejor opción para cogerle el punto perfecto a la carne. Las empanadillas me dejaron sin palabras!!!",
+      "themes": [
+        "carne-y-brasa",
+        "ambiente",
+        "volver"
+      ],
+      "recommendedPlacements": [
+        "asador",
+        "carta",
+        "contacto",
+        "home"
+      ],
+      "containsStaffName": false,
+      "source": {
+        "platform": "Google",
+        "businessProfileUrl": "https://www.google.com/maps?cid=11418522565425404756",
+        "reviewResource": "accounts/101185461119021727144/locations/16547783051801026657/reviews/ChdDSUhNMG9nS0VJQ0FnSUR1dE5TU2tBRRAB"
+      }
+    },
+    {
+      "id": "vb-google-044",
+      "author": "Luana Perrone",
+      "rating": 5,
+      "date": "2024-11-11",
+      "language": "es",
+      "text": "Estuve cenando con mi novio y fue una grata experiencia, la comida nos encantó, el servicio excelente, la camarera que nos atendió fue muy amable y atenta en todo momento y el ambiente  muy cálido.",
+      "excerpt": "Estuve cenando con mi novio y fue una grata experiencia, la comida nos encantó, el servicio excelente, la camarera que nos atendió fue muy amable y atenta en todo momento y el ambiente muy cálido.",
+      "themes": [
+        "servicio",
+        "ambiente"
+      ],
+      "recommendedPlacements": [
+        "contacto",
+        "home"
+      ],
+      "containsStaffName": false,
+      "source": {
+        "platform": "Google",
+        "businessProfileUrl": "https://www.google.com/maps?cid=11418522565425404756",
+        "reviewResource": "accounts/101185461119021727144/locations/16547783051801026657/reviews/ChZDSUhNMG9nS0VJQ0FnSUQzbU5EMmRBEAE"
+      }
+    },
+    {
+      "id": "vb-google-045",
+      "author": "Javier Suarez",
+      "rating": 5,
+      "date": "2024-07-18",
+      "language": "es",
+      "text": "Comida muy sabrosa de buena calidad. Y servicio de excelencia. Una vez más puedo confirmar q repetiría",
+      "excerpt": "Comida muy sabrosa de buena calidad. Y servicio de excelencia. Una vez más puedo confirmar q repetiría",
+      "themes": [
+        "servicio",
+        "volver"
+      ],
+      "recommendedPlacements": [
+        "contacto"
+      ],
+      "containsStaffName": false,
+      "source": {
+        "platform": "Google",
+        "businessProfileUrl": "https://www.google.com/maps?cid=11418522565425404756",
+        "reviewResource": "accounts/101185461119021727144/locations/16547783051801026657/reviews/ChdDSUhNMG9nS0VJQ0FnSURycGNXN29nRRAB"
+      }
+    },
+    {
+      "id": "vb-google-046",
+      "author": "CHema Galve Solsona",
+      "rating": 5,
+      "date": "2024-07-11",
+      "language": "es",
+      "text": "Todo un acierto de sitio. Trato y comida de maravilla. Imprescindibles las mollejas y el bife.",
+      "excerpt": "Todo un acierto de sitio. Trato y comida de maravilla. Imprescindibles las mollejas y el bife.",
+      "themes": [
+        "carne-y-brasa",
+        "servicio"
+      ],
+      "recommendedPlacements": [
+        "asador",
+        "carta",
+        "contacto",
+        "home"
+      ],
+      "containsStaffName": false,
+      "source": {
+        "platform": "Google",
+        "businessProfileUrl": "https://www.google.com/maps?cid=11418522565425404756",
+        "reviewResource": "accounts/101185461119021727144/locations/16547783051801026657/reviews/ChdDSUhNMG9nS0VJQ0FnSUNyNS1TSjlRRRAB"
+      }
+    },
+    {
+      "id": "vb-google-047",
+      "author": "ramiro gaete",
+      "rating": 5,
+      "date": "2024-03-07",
+      "language": "es",
+      "text": "La atención de Verónica excelente y la comida buenísima. La parrilla de mesa para mantener la carne caliente un plus que se agradece.",
+      "excerpt": "La atención de Verónica excelente y la comida buenísima. La parrilla de mesa para mantener la carne caliente un plus que se agradece.",
+      "themes": [
+        "carne-y-brasa",
+        "servicio"
+      ],
+      "recommendedPlacements": [
+        "asador",
+        "carta",
+        "contacto"
+      ],
+      "containsStaffName": true,
+      "source": {
+        "platform": "Google",
+        "businessProfileUrl": "https://www.google.com/maps?cid=11418522565425404756",
+        "reviewResource": "accounts/101185461119021727144/locations/16547783051801026657/reviews/ChdDSUhNMG9nS0VJQ0FnSUM5bGE2bjBRRRAB"
+      }
+    },
+    {
+      "id": "vb-google-048",
+      "author": "Jesica Hurtado",
+      "rating": 5,
+      "date": "2023-04-26",
+      "language": "es",
+      "text": "Las mejores mollejas que he probado jamás, buena atención y vinos argentinos fabulosos. Recomendable 100%",
+      "excerpt": "Las mejores mollejas que he probado jamás, buena atención y vinos argentinos fabulosos. Recomendable 100%",
+      "themes": [
+        "carne-y-brasa",
+        "servicio",
+        "volver",
+        "vinos"
+      ],
+      "recommendedPlacements": [
+        "asador",
+        "carta",
+        "contacto",
+        "home",
+        "vinos-y-cavas"
+      ],
+      "containsStaffName": false,
+      "source": {
+        "platform": "Google",
+        "businessProfileUrl": "https://www.google.com/maps?cid=11418522565425404756",
+        "reviewResource": "accounts/101185461119021727144/locations/16547783051801026657/reviews/ChdDSUhNMG9nS0VJQ0FnSURSd2NfZTNRRRAB"
+      }
+    },
+    {
+      "id": "vb-google-049",
+      "author": "Miguelcabregar Cabrejas",
+      "rating": 5,
+      "date": "2023-02-26",
+      "language": "es",
+      "text": "La verdad fue una cena donde descubrí nuevos sabores en vino Argentinos queme gustaron y tipos de carnes muy sabrosas y muy bien cocinadas, el trato muy bueno y camareros y cocineros excelente.\nVolvemos.",
+      "excerpt": "La verdad fue una cena donde descubrí nuevos sabores en vino Argentinos queme gustaron y tipos de carnes muy sabrosas y muy bien cocinadas, el trato muy bueno y camareros y cocineros excelente. Volvemos.",
+      "themes": [
+        "carne-y-brasa",
+        "servicio",
+        "volver",
+        "vinos"
+      ],
+      "recommendedPlacements": [
+        "asador",
+        "carta",
+        "contacto",
+        "home",
+        "vinos-y-cavas"
+      ],
+      "containsStaffName": false,
+      "source": {
+        "platform": "Google",
+        "businessProfileUrl": "https://www.google.com/maps?cid=11418522565425404756",
+        "reviewResource": "accounts/101185461119021727144/locations/16547783051801026657/reviews/ChZDSUhNMG9nS0VJQ0FnSURob05TT2RREAE"
+      }
+    },
+    {
+      "id": "vb-google-050",
+      "author": "Juani Lopez",
+      "rating": 5,
+      "date": "2020-11-04",
+      "language": "es",
+      "text": "Excelente lugar para disfrutar de buena carne , vinos y ricos postres, un ambiente relajado y una atencion muy cuidada!!! Sin duda de lo mejor de Valencia , siempre es un acierto visitarlo .",
+      "excerpt": "Excelente lugar para disfrutar de buena carne , vinos y ricos postres, un ambiente relajado y una atencion muy cuidada!!! Sin duda de lo mejor de Valencia , siempre es un acierto visitarlo .",
+      "themes": [
+        "carne-y-brasa",
+        "servicio",
+        "ambiente",
+        "postres",
+        "vinos",
+        "benimaclet-y-valencia"
+      ],
+      "recommendedPlacements": [
+        "asador",
+        "carta",
+        "contacto",
+        "home",
+        "vinos-y-cavas"
+      ],
+      "containsStaffName": false,
+      "source": {
+        "platform": "Google",
+        "businessProfileUrl": "https://www.google.com/maps?cid=11418522565425404756",
+        "reviewResource": "accounts/101185461119021727144/locations/16547783051801026657/reviews/ChdDSUhNMG9nS0VJQ0FnSUNpX3BUN21nRRAB"
+      }
+    }
+  ]
+}

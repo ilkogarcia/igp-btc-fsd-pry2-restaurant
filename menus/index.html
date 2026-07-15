@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-        <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
 
     <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="22e5d7b0-1dc6-432a-adf1-abb36d5dbf31" data-blockingmode="auto" type="text/javascript"></script>
 
@@ -19,26 +19,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Asador argentino en Valencia | Viejo Barrio</title>
-    <meta name="description" content="Carne a la Brasa, Cortes Argentinos y Parrilladas para compartir en Viejo Barrio, asador argentino de barrio en Benimaclet, Valencia." />
-    <link rel="canonical" href="https://viejobarrio.es/asador-argentino-valencia/" />
+    <title>Menús desde 2 personas en Valencia | Viejo Barrio</title>
+    <meta name="description" content="Menús cerrados desde 2 personas en Viejo Barrio, asador argentino en Benimaclet, Valencia. Ideales para compartir en pareja, con amigos o en grupo. Consulta por WhatsApp." />
+    <link rel="canonical" href="https://viejobarrio.es/menus/" />
 
     <!-- Open Graph (Facebook / WhatsApp) -->
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="Asador argentino en Valencia | Viejo Barrio" />
-    <meta property="og:description" content="Brasa, Cortes Argentinos y Parrilladas para compartir en un asador argentino de barrio en Benimaclet." />
-    <meta property="og:url" content="https://viejobarrio.es/asador-argentino-valencia/" />
+    <meta property="og:title" content="Menús desde 2 personas en Valencia | Viejo Barrio" />
+    <meta property="og:description" content="Menús cerrados desde 2 personas en Viejo Barrio, asador argentino en Benimaclet, Valencia. Ideales para compartir en pareja, con amigos o en grupo." />
+    <meta property="og:url" content="https://viejobarrio.es/menus/" />
     <meta property="og:image" content="https://viejobarrio.es/img/og-viejo-barrio-fachada-1200x630.jpg" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
-    <meta property="og:image:alt" content="Asador argentino en Valencia | Viejo Barrio" />
+    <meta property="og:image:alt" content="Menús desde 2 personas en Valencia | Viejo Barrio" />
     <meta property="og:locale" content="es_ES" />
     <meta property="og:site_name" content="Viejo Barrio Asador Argentino" />
 
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Asador argentino en Valencia | Viejo Barrio" />
-    <meta name="twitter:description" content="Brasa, Cortes Argentinos y Parrilladas para compartir en un asador argentino de barrio en Benimaclet." />
+    <meta name="twitter:title" content="Menús desde 2 personas en Valencia | Viejo Barrio" />
+    <meta name="twitter:description" content="Menús cerrados desde 2 personas en Viejo Barrio, asador argentino en Benimaclet, Valencia. Ideales para compartir en pareja, con amigos o en grupo." />
     <meta name="twitter:image" content="https://viejobarrio.es/img/og-viejo-barrio-fachada-1200x630.jpg" />
 
     <!-- Link to the BootStrap framework styles -->
@@ -50,45 +50,44 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Roboto+Slab&family=Satisfy&display=swap">
 
     <!-- Preload LCP hero image so the browser discovers it from HTML -->
-    <link rel="preload" as="image" href="/img/hero-viejo-barrio-benimaclet-mobile.webp" media="(max-width: 767px)">
-    <link rel="preload" as="image" href="/img/hero-viejo-barrio-benimaclet-desktop.webp" media="(min-width: 768px)">
+    <link rel="preload" as="image" href="/img/pexels-los-muertos-crew-7613432-1920x1281px.jpg">
 
     <!-- Project style sheet and favicon -->
     <link rel="stylesheet" href="/css/styles.css?v=20260715-8">
     <link rel="icon" type="image/x-icon" href="/img/viejobarrio.ico">
     <link rel="shortcut icon" href="/img/viejobarrio.ico">
     <style>
+        .page-menus-grupos .home-transparent-header {
+            position: fixed;
+            top: 0;
+            right: 0;
+            left: 0;
+            width: 100%;
+            transition: background-color 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+        }
+
+        .page-menus-grupos .home-transparent-header .navbar-section {
+            transition: background-color 0.25s ease;
+        }
+
         @media screen and (min-width: 992px) {
-            .home-transparent-header {
-                position: fixed;
-                top: 0;
-                right: 0;
-                left: 0;
-                width: 100%;
-                transition: background-color 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
-            }
-
-            .home-transparent-header .navbar-section {
-                transition: background-color 0.25s ease;
-            }
-
-            .home-transparent-header.navbar-transparent {
+            .page-menus-grupos .home-transparent-header.navbar-transparent {
                 background-color: transparent;
                 border-bottom-color: transparent;
                 box-shadow: none;
             }
 
-            .home-transparent-header.navbar-transparent .navbar-section {
+            .page-menus-grupos .home-transparent-header.navbar-transparent .navbar-section {
                 background-color: transparent;
             }
 
-            .home-transparent-header.navbar-scrolled {
+            .page-menus-grupos .home-transparent-header.navbar-scrolled {
                 background-color: var(--almost-bg-color);
                 border-bottom-color: rgba(201, 171, 129, 0.45);
                 box-shadow: 0 0.35rem 1rem rgba(0, 0, 0, 0.28);
             }
 
-            .home-transparent-header.navbar-scrolled .navbar-section {
+            .page-menus-grupos .home-transparent-header.navbar-scrolled .navbar-section {
                 background-color: var(--almost-bg-color);
             }
         }
@@ -102,13 +101,13 @@
             "@id": "https://viejobarrio.es/#restaurant",
             "name": "Viejo Barrio – Asador Argentino",
             "url": "https://viejobarrio.es/",
-            "mainEntityOfPage": "https://viejobarrio.es/asador-argentino-valencia/",
-            "description": "Carne a la Brasa, Cortes Argentinos y Parrilladas para compartir en Viejo Barrio, asador argentino de barrio en Benimaclet, Valencia.",
+            "mainEntityOfPage": "https://viejobarrio.es/menus/",
+            "description": "Menús cerrados desde 2 personas en Viejo Barrio, asador argentino en Benimaclet, Valencia. Ideales para compartir en pareja, con amigos o en grupo.",
             "image": "https://viejobarrio.es/img/fachada-viejo-barrio-asador-argentino-benimaclet-valencia-noche.jpg",
             "telephone": "+34664406771",
             "priceRange": "€€€",
             "servesCuisine": ["Argentine", "Grill"],
-            "hasMenu": "https://viejobarrio.es/carta/",
+            "hasMenu": "https://viejobarrio.es/menus/",
             "acceptsReservations": "True",
             "address": {
                 "@type": "PostalAddress",
@@ -162,8 +161,8 @@
                 {
                     "@type": "ListItem",
                     "position": 2,
-                    "name": "Asador argentino en Valencia",
-                    "item": "https://viejobarrio.es/asador-argentino-valencia/"
+                    "name": "Menús desde 2 personas en Valencia",
+                    "item": "https://viejobarrio.es/menus/"
                 }
             ]
         }
@@ -175,95 +174,54 @@
             "mainEntity": [
                 {
                     "@type": "Question",
-                    "name": "¿Dónde está Viejo Barrio?",
+                    "name": "¿Todos los comensales tienen que elegir el mismo menú?",
                     "acceptedAnswer": {
                         "@type": "Answer",
-                        "text": "Viejo Barrio está en Carrer del Reverend Rafael Tramoyeres, 5, Bajo Izquierda, en Benimaclet, Valencia. Es una zona de barrio, cerca de Primado Reig y bien conectada con otras partes de la ciudad."
+                        "text": "Sí. Los menús deben ser para todos los comensales de la mesa."
                     }
                 },
                 {
                     "@type": "Question",
-                    "name": "¿Está en el centro de Valencia?",
+                    "name": "¿Qué incluye la bebida?",
                     "acceptedAnswer": {
                         "@type": "Answer",
-                        "text": "No está en pleno centro. Viejo Barrio está en Benimaclet, un barrio con vida propia y buena conexión con otras zonas de Valencia. Si vienes desde el centro, lo más práctico es consultar la ruta en Google Maps según tu punto de salida."
+                        "text": "La bebida incluida es 1 refresco por persona y 1 botella de vino o jarra de cerveza cada 2 personas."
                     }
                 },
                 {
                     "@type": "Question",
-                    "name": "¿Cuál es la parada de metro más cercana?",
+                    "name": "¿Cuánto cuestan los menús de grupo?",
                     "acceptedAnswer": {
                         "@type": "Answer",
-                        "text": "La referencia más práctica es la zona de Benimaclet. Puedes llegar en metro o tranvía hasta el entorno de Benimaclet y caminar desde allí hasta el restaurante. Antes de venir, conviene comprobar la ruta exacta en Google Maps según tu punto de salida."
+                        "text": "El Menú Tradicional cuesta 49,90€ por persona. El Menú Viejo Barrio y el Menú Bife Argentino cuestan 59,90€ por persona. Los precios incluyen IVA."
                     }
                 },
                 {
                     "@type": "Question",
-                    "name": "¿Es un restaurante argentino o un asador?",
+                    "name": "¿Hay menú para niños?",
                     "acceptedAnswer": {
                         "@type": "Answer",
-                        "text": "Es ambas cosas. Viejo Barrio es un asador argentino en Valencia: una parrilla de barrio centrada en Carne a la Brasa, Cortes Argentinos, Empanadas, Mollejas y Parrilladas para compartir."
+                        "text": "Sí. El Menú Pequeños cuesta 17,50€ e incluye empanada de jamón y mozzarella, pechuguitas empanadas con patatas fritas y ketchup, una bola de helado a elegir y una bebida."
                     }
                 },
                 {
                     "@type": "Question",
-                    "name": "¿Qué platos recomendáis si es la primera vez?",
+                    "name": "¿Puedo ver también el salón para grupos?",
                     "acceptedAnswer": {
                         "@type": "Answer",
-                        "text": "Una buena primera visita puede empezar con Empanadas o una Picada Criolla, seguir con una Parrillada para compartir o un Bife Argentino, y terminar con un postre de Dulce de Leche si queda sitio."
-                    }
-                },
-                {
-                    "@type": "Question",
-                    "name": "¿Tenéis Parrilladas para compartir?",
-                    "acceptedAnswer": {
-                        "@type": "Answer",
-                        "text": "Sí. La carta incluye Parrilladas para compartir, como la Parrillada Sur y la Parrillada Viejo Barrio. Son una buena opción para dos o más personas y para quienes quieren probar varios Cortes en la misma mesa."
-                    }
-                },
-                {
-                    "@type": "Question",
-                    "name": "¿Se puede reservar mesa?",
-                    "acceptedAnswer": {
-                        "@type": "Answer",
-                        "text": "Sí. Es recomendable reservar, sobre todo para cenas, fines de semana o grupos. Puedes hacerlo desde la web o llamando directamente al restaurante."
-                    }
-                },
-                {
-                    "@type": "Question",
-                    "name": "¿Es buena opción para grupos o celebraciones?",
-                    "acceptedAnswer": {
-                        "@type": "Answer",
-                        "text": "Sí, especialmente para grupos pequeños o celebraciones informales donde apetece compartir Carne a la Brasa, Entrantes Argentinos y Parrilladas. Para grupos, conviene reservar con antelación y comentar el número de personas."
-                    }
-                },
-                {
-                    "@type": "Question",
-                        "name": "¿Qué hace diferente a Viejo Barrio?",
-                    "acceptedAnswer": {
-                        "@type": "Answer",
-                        "text": "Viejo Barrio tiene un enfoque de barrio: Brasa, Cortes Argentinos, trato cercano y una mesa sin postureo. Es un sitio cómodo en Benimaclet para comer bien, compartir y volver."
-                    }
-                },
-                {
-                    "@type": "Question",
-                    "name": "¿Puedo consultar la carta antes de ir?",
-                    "acceptedAnswer": {
-                        "@type": "Answer",
-                        "text": "Sí. Puedes ver la carta desde la web antes de reservar. Ahí encontrarás Entrantes como Empanadas, Provolone, Chorizo Criollo y Mollejas, además de Carnes a la Brasa, Parrilladas, Postres y Bebidas."
+                        "text": "Sí. La página de grupos explica el salón reservado, los formatos de reserva y la información práctica para comidas de empresa, cenas de grupo y celebraciones."
                     }
                 }
             ]
         }
     </script>
 </head>
-<body class="page-asador-argentino">
+<body class="page-menus-grupos">
     <a href="#main-content" class="skip-link">Saltar al contenido principal</a>
     <svg xmlns="http://www.w3.org/2000/svg" class="svg-sprite" aria-hidden="true" focusable="false">
         <symbol id="icon-geo-alt" viewBox="0 0 16 16"><path d="M8 16s6-5.686 6-10A6 6 0 1 0 2 6c0 4.314 6 10 6 10zm0-7.5A2.5 2.5 0 1 1 8 3.5a2.5 2.5 0 0 1 0 5z"/></symbol>
         <symbol id="icon-calendar-check" viewBox="0 0 16 16"><path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1A2 2 0 0 1 16 3v10a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 5v8a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V5H1zm10.354 2.146a.5.5 0 0 1 0 .708L7.707 11.5 5.646 9.439a.5.5 0 1 1 .708-.707l1.353 1.353 3.293-3.293a.5.5 0 0 1 .707 0z"/></symbol>
         <symbol id="icon-telephone-outbound" viewBox="0 0 16 16"><path d="M3.654 1.328a.678.678 0 0 1 .737-.151l2.522 1.01c.329.132.525.476.473.83l-.286 1.97a.678.678 0 0 1-.58.58l-1.37.198a11.745 11.745 0 0 0 5.085 5.085l.198-1.37a.678.678 0 0 1 .58-.58l1.97-.286a.678.678 0 0 1 .83.473l1.01 2.522a.678.678 0 0 1-.15.737l-1.144 1.144a1.745 1.745 0 0 1-1.86.437c-1.687-.562-3.99-1.77-6.325-4.105C3.535 8.427 2.327 6.124 1.765 4.437a1.745 1.745 0 0 1 .437-1.86l1.452-1.25z"/><path d="M11 1.5a.5.5 0 0 1 .5-.5H14a.5.5 0 0 1 .5.5V4a.5.5 0 0 1-1 0V2.707l-3.146 3.147a.5.5 0 0 1-.708-.708L12.793 2H11.5a.5.5 0 0 1-.5-.5z"/></symbol>
-        <symbol id="icon-arrow-up-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16z"/><path d="M8 4.5a.5.5 0 0 1 .354.146l2 2a.5.5 0 0 1-.708.708L8.5 6.207V11.5a.5.5 0 0 1-1 0V6.207L6.354 7.354a.5.5 0 1 1-.708-.708l2-2A.5.5 0 0 1 8 4.5z"/></symbol>
         <symbol id="icon-fire" viewBox="0 0 16 16"><path d="M8 16c3.314 0 6-2 6-5.5 0-1.5-.5-4-2.5-6 .25 1.5-1.25 2-1.25 2C11 4 9 .5 6 0c.357 2 .5 4-2 6-1.25 1-2 2.729-2 4.5C2 14 4.686 16 8 16Zm0-1c-1.657 0-3-1-3-2.75 0-.75.25-2 1.25-3C6.125 10 7 10.5 7 10.5c-.375-1.25.5-2.75 1.75-3.5-.179 1 .75 2.25 1.75 3 .5.375.5 1.25.5 2.25C11 14 9.657 15 8 15Z"/></symbol>
         <symbol id="icon-people" viewBox="0 0 16 16"><path d="M15 14s1 0 1-1-1-4-5-4-5 3-5 4 1 1 1 1h8Zm-7.978-1L7 12.996c.001-.264.167-1.03.76-1.72C8.312 10.629 9.282 10 11 10c1.717 0 2.687.63 3.24 1.276.593.69.758 1.457.76 1.72l-.008.002-.014.002H7.022ZM11 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4Zm3-2a3 3 0 1 1-6 0 3 3 0 0 1 6 0ZM6.936 9.28a5.88 5.88 0 0 0-1.23-.247A7.35 7.35 0 0 0 5 9c-4 0-5 3-5 4 0 .667.333 1 1 1h4.216A2.238 2.238 0 0 1 5 13c0-1.01.377-2.042 1.09-2.904.243-.294.526-.569.846-.816ZM4.92 10A5.493 5.493 0 0 0 4 13H1c0-.26.164-1.03.76-1.724.545-.636 1.492-1.256 3.16-1.275ZM1.5 5.5a3 3 0 1 1 6 0 3 3 0 0 1-6 0Zm3-2a2 2 0 1 0 0 4 2 2 0 0 0 0-4Z"/></symbol>
         <symbol id="icon-chat-heart" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M2.965 12.695a1 1 0 0 0-.287.801l.291 2.48a.5.5 0 0 0 .813.318l2.02-1.615c.715.153 1.473.321 2.198.321 4.418 0 8-3.134 8-7s-3.582-7-8-7-8 3.134-8 7c0 1.747.73 3.35 1.936 4.584l-.01.011.039-.2ZM8 14c-.628 0-1.245-.128-1.814-.277a.5.5 0 0 0-.44.084l-1.412 1.129-.19-1.625a.5.5 0 0 0-.17-.32C2.743 11.935 2 10.466 2 8c0-3.313 3.134-6 7-6s7 2.687 7 6-3.134 6-7 6Zm0-9.993c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132Z"/></symbol>
@@ -283,12 +241,12 @@
                     </picture>
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Abrir menú de navegación">
-                    <span class="navbar-toggler-icon"></span>
+                    <span class="navbar-toggler-icon" aria-hidden="true" style="background-image: url(&quot;data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 0.55)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e&quot;);"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <div class="navbar-nav">
                         <a class="nav-link" href="/carta/">La Carta</a>
-                        <a class="nav-link" href="/menus/">Menús</a>
+                        <a class="nav-link active" aria-current="page" href="/menus/">Menús</a>
                         <a class="nav-link" href="/grupos-valencia/">Grupos</a>
                         <a class="nav-link" href="/vinos-y-cavas/">Vinos y Cavas</a>
                         <a class="nav-link" href="/contacto/">Contacto</a>
@@ -311,251 +269,230 @@
     </header>
 
     <main id="main-content">
-        <section class="container-fluid topbanner-section text-center landing-hero" id="asador-hero">
+        <section class="container-fluid topbanner-section text-center landing-hero" id="hero">
             <picture class="hero-media">
-                <source media="(min-width: 768px)" type="image/webp" srcset="/img/hero-viejo-barrio-benimaclet-desktop.webp">
-                <source media="(max-width: 767px)" type="image/webp" srcset="/img/hero-viejo-barrio-benimaclet-mobile.webp">
-                <img src="/img/hero-viejo-barrio-benimaclet-mobile.webp" width="640" height="480" alt="Sala de Viejo Barrio, asador argentino en Benimaclet" fetchpriority="high" loading="eager" decoding="async">
+                <source type="image/jpeg" srcset="/img/pexels-los-muertos-crew-7613432-1920x1281px.jpg">
+                <img src="/img/pexels-los-muertos-crew-7613432-1920x1281px.jpg" width="1920" height="1281" alt="Grupo cenando en Viejo Barrio, asador argentino en Valencia" fetchpriority="high" loading="eager" decoding="async">
             </picture>
             <div class="row d-flex align-items-center justify-content-center hero-content">
                 <div class="col-11 col-md-9 col-lg-8">
                     <p class="landing-eyebrow">Viejo Barrio · Benimaclet</p>
-                    <h1 class="title secondarypage-title">Asador Argentino</h1>
-                    <p class="subtitle page-subtitle">... en Valencia, Benimaclet.</p>
-                    <p class="text page-text hero-lead">Brasa, Cortes Argentinos y Parrilladas para compartir.</p>
+                    <h1 class="title secondarypage-title">Menús desde 2 personas</h1>
+                    <p class="subtitle page-subtitle">Menú cerrado para compartir en mesa</p>
+                    <p class="text page-text hero-lead">Tres opciones para compartir entrantes, parrilla, postre y bebida incluida en el asador argentino de Benimaclet.</p>
                     <div class="landing-cta-group">
-                        <a href="https://widget.thefork.com/es/9989afab-6dfe-4e01-907b-f6156681eea0?step=date&utm_source=viejobarrio.es" target="_blank" rel="noopener" class="btn btn-primary-cta" role="button">RESERVAR MESA</a>
-                        <a href="/carta/" class="btn btn-outline-light" role="button">VER CARTA</a>
+                        <a href="https://wa.me/34664406771?text=Hola%2C%20me%20gustar%C3%ADa%20consultar%20disponibilidad%20para%20men%C3%BAs%20desde%202%20personas%20en%20Viejo%20Barrio.%20Somos%20%5BX%20personas%5D%20el%20%5Bfecha%5D." target="_blank" rel="noopener noreferrer" class="btn btn-primary-cta" role="button">Consultar por WhatsApp</a>
+                        <a href="/grupos-valencia/" class="btn btn-outline-light btn-secondary-cta" role="button">Ver salón para grupos</a>
                     </div>
                 </div>
             </div>
         </section>
 
-        <a class="floating-whatsapp" href="https://wa.me/34664406771?text=Hola%2C%20quer%C3%ADa%20reservar%20o%20consultar%20disponibilidad%20en%20Viejo%20Barrio." target="_blank" rel="noopener noreferrer" aria-label="Reservar o consultar disponibilidad por WhatsApp">
+        <a class="floating-whatsapp" href="https://wa.me/34664406771?text=Hola%2C%20me%20gustar%C3%ADa%20consultar%20disponibilidad%20para%20men%C3%BAs%20desde%202%20personas%20en%20Viejo%20Barrio." target="_blank" rel="noopener noreferrer" aria-label="Consultar disponibilidad para menús desde 2 personas por WhatsApp">
             <svg class="floating-whatsapp-icon" viewBox="0 0 32 32" aria-hidden="true" focusable="false">
                 <path d="M16.01 3.2c-7.05 0-12.78 5.73-12.78 12.78 0 2.25.59 4.44 1.7 6.37L3.13 28.8l6.6-1.73a12.72 12.72 0 0 0 6.28 1.6c7.05 0 12.78-5.73 12.78-12.78S23.06 3.2 16.01 3.2Zm0 23.31c-1.97 0-3.9-.53-5.58-1.53l-.4-.24-3.91 1.03 1.04-3.82-.26-.39a10.52 10.52 0 0 1-1.61-5.58c0-5.88 4.84-10.67 10.72-10.67s10.66 4.79 10.66 10.67-4.79 10.53-10.66 10.53Zm5.85-7.98c-.32-.16-1.9-.94-2.2-1.05-.29-.11-.5-.16-.72.16-.21.32-.82 1.05-1.01 1.26-.19.21-.37.24-.69.08-.32-.16-1.35-.5-2.57-1.59-.95-.85-1.59-1.9-1.78-2.22-.19-.32-.02-.49.14-.65.15-.14.32-.37.48-.56.16-.19.21-.32.32-.53.11-.21.05-.4-.03-.56-.08-.16-.72-1.74-.98-2.38-.26-.62-.52-.54-.72-.55h-.61c-.21 0-.56.08-.85.4-.29.32-1.12 1.09-1.12 2.66 0 1.57 1.14 3.08 1.3 3.29.16.21 2.25 3.43 5.45 4.82.76.33 1.36.53 1.82.68.77.24 1.47.21 2.02.13.62-.09 1.9-.78 2.17-1.53.27-.75.27-1.39.19-1.53-.08-.14-.29-.22-.61-.38Z"/>
             </svg>
         </a>
 
-        <section class="container-fluid content-section-dark text-center landing-section landing-section-dark landing-trust-section">
+        <section class="container-fluid content-section-dark text-center landing-section landing-trust-section" id="intro">
             <div class="landing-trust-layout">
                 <div class="landing-trust-copy">
-                    <p class="subtitle section-subtitle">Brasa y barrio</p>
-                    <h2 class="title section-title">UN ASADOR ARGENTINO DE BARRIO</h2>
-                    <p class="text text-content landing-copy">Viejo Barrio es un asador argentino en Benimaclet. Aquí vienes a comer Carne a la Brasa, empezar con unas Empanadas o unas Mollejas, y compartir una Parrillada sin complicarte.</p>
-                    <p class="text text-content landing-copy">Cuidamos cada detalle: desde que se encienden las brasas hasta el punto de la carne y el plato que llega a la mesa. Trato cercano, ambiente cómodo y una carta pensada para venir con hambre.</p>
+                    <p class="subtitle section-subtitle">Menú cerrado</p>
+                    <h2 class="title section-title">MENÚS DESDE 2 PERSONAS</h2>
+                    <p class="text text-content landing-copy">Los menús de Viejo Barrio están pensados para compartir desde dos personas y disfrutar de la parrilla con un ritmo claro de servicio.</p>
+                    <p class="text text-content landing-copy">Cada menú combina entrantes para compartir, un principal a la brasa, postres caseros variados y bebida incluida. Si además necesitáis organizar el espacio, podéis consultar el salón reservado para grupos en la página específica de grupos.</p>
                 </div>
-                <div class="landing-trust-points" aria-label="Detalles de Viejo Barrio">
-                    <div class="landing-trust-point">
-                        <svg class="icon" aria-hidden="true"><use href="#icon-fire"></use></svg>
-                        <div>
-                            <h3>Brasa y punto</h3>
-                            <p>Cortes cocinados a la brasa, con atención al punto y al sabor de cada pieza.</p>
-                        </div>
-                    </div>
+                <div class="landing-trust-points" aria-label="Información clave de los menús">
                     <div class="landing-trust-point">
                         <svg class="icon" aria-hidden="true"><use href="#icon-people"></use></svg>
                         <div>
-                            <h3>Parrilladas para compartir</h3>
-                            <p>Platos pensados para poner al centro, probar varios cortes y comer sin prisas.</p>
+                            <h3>Desde 2 personas</h3>
+                            <p>Una opción práctica para compartir en pareja, con amigos o en mesas pequeñas.</p>
                         </div>
                     </div>
                     <div class="landing-trust-point">
-                        <svg class="icon" aria-hidden="true"><use href="#icon-chat-heart"></use></svg>
+                        <svg class="icon" aria-hidden="true"><use href="#icon-fire"></use></svg>
                         <div>
-                            <h3>Trato cercano</h3>
-                            <p>Un asador argentino de barrio: directo, cómodo y con una atención cercana.</p>
+                            <h3>Parrilla argentina</h3>
+                            <p>Menús con entrantes, parrillada o bife, postre y bebida incluida.</p>
+                        </div>
+                    </div>
+                    <div class="landing-trust-point">
+                        <svg class="icon" aria-hidden="true"><use href="#icon-calendar-check"></use></svg>
+                        <div>
+                            <h3>Consulta directa</h3>
+                            <p>Escríbenos por WhatsApp con fecha, número de personas y comida o cena.</p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="container-fluid content-section-light text-center landing-section landing-section-light landing-dishes-section">
+        <section class="container-fluid text-center landing-section landing-section-light menu-comparison-section" id="menus">
             <div class="row d-flex align-items-center justify-content-center">
                 <div class="col-11 col-md-9 col-lg-8">
-                    <p class="subtitle section-subtitle">Para abrir boca</p>
-                    <h2 class="title section-title">QUÉ PEDIR EN VIEJO BARRIO</h2>
-                    <p class="text text-content landing-copy">Si vienes buscando una Parrilla Argentina en Valencia, esta selección resume bien la casa: Entrantes para abrir mesa, Cortes a la Brasa y un Postre clásico para cerrar.</p>
+                    <p class="subtitle section-subtitle">Comparativa</p>
+                    <h2 class="title section-title">TRES MENÚS CERRADOS</h2>
+                    <p class="text text-content landing-copy">Los precios son por persona e incluyen IVA. Todos los comensales de la mesa deben elegir el mismo menú.</p>
                 </div>
             </div>
-            <div class="landing-dishes-layout">
-                <div class="landing-dish-grid">
-                    <article class="landing-dish-card landing-dish-card-featured">
-                        <img src="/img/rest-vb-empanadas-criollas-640x480.jpg" width="640" height="480" alt="Empanadas Argentinas horneadas en Viejo Barrio" loading="lazy" decoding="async">
-                        <h3>Empanadas Argentinas</h3>
-                        <p>Horneadas, doradas y pensadas para empezar la mesa. La criolla es el clásico: carne, cebolla, pimiento, comino y huevo.</p>
-                    </article>
-                    <article class="landing-dish-card landing-dish-card-featured">
-                        <img src="/img/rest-vb-mollejas-640x480.jpg" width="640" height="480" alt="Mollejas a la Brasa en restaurante argentino" loading="lazy" decoding="async">
-                        <h3>Mollejas a la Brasa</h3>
-                        <p>Mollejas de ternera con limón y sal. Un entrante muy de parrilla, intenso y directo.</p>
-                    </article>
-                    <article class="landing-dish-card landing-dish-card-featured">
-                        <img src="/img/rest-vb-bife-640x480.jpg" width="640" height="480" alt="Bife Argentino a la Brasa con Patatas Provenzal" loading="lazy" decoding="async">
-                        <h3>Bife Argentino</h3>
-                        <p>Corte de 350 gramos con infiltración de grasa, textura jugosa y sabor marcado. Una apuesta segura si vienes buscando carne argentina.</p>
-                    </article>
-                    <article class="landing-dish-card landing-dish-card-featured">
-                        <img src="/img/viejobarrio-parrillada-viejo-barrio-640x427.webp" width="640" height="427" alt="Parrillada Viejo Barrio para compartir en Benimaclet" loading="lazy" decoding="async">
-                        <h3>Parrillada Viejo Barrio</h3>
-                        <p>Chorizo, Molleja, Escondido, Bife Argentino, Secreto de Cerdo y Patatas Fritas Provenzal. Para pedir al centro y probar varios Cortes.</p>
-                    </article>
-                    <article class="landing-dish-card landing-dish-card-featured">
-                        <img src="/img/viejobarrio-tira-asado-640x427.webp" width="640" height="427" alt="Tira de Asado a la Brasa en Viejo Barrio" loading="lazy" decoding="async">
-                        <h3>Tira de Asado</h3>
-                        <p>Costilla de Ternera a la Brasa. Sabor profundo, hueso y una forma muy argentina de entender la Parrilla.</p>
-                    </article>
-                    <article class="landing-dish-card landing-dish-card-featured">
-                        <img src="/img/restaurante-viejobarrio-postre-crepe-de-dulce-de-leche-640x427.webp" srcset="/img/restaurante-viejobarrio-postre-crepe-de-dulce-de-leche-640x427.webp 640w, /img/restaurante-viejobarrio-postre-crepe-de-dulce-de-leche-1920x1280.webp 1920w, /img/restaurante-viejobarrio-postre-crepe-de-dulce-de-leche-4928x3264.webp 4928w" sizes="(min-width: 992px) 20vw, (min-width: 768px) 40vw, 90vw" width="640" height="427" alt="Crepe de Dulce de Leche en Viejo Barrio" loading="lazy" decoding="async">
-                        <h3>Crepe de Dulce de Leche</h3>
-                        <p>Un cierre clásico: Dulce de Leche, Helado de Vainilla y opción flambeada con Ron y Azúcar Moreno.</p>
-                    </article>
-                </div>
-            </div>
-            <div class="landing-cta-group">
-                <a href="/carta/" class="btn btn-outline-light" role="button">VER CARTA</a>
+            <div class="menu-comparison-grid">
+                <article class="menu-comparison-card">
+                    <span class="menu-card-kicker">Menú 1</span>
+                    <h3>Tradicional</h3>
+                    <p class="menu-card-price">49,90 €</p>
+                    <ul class="menu-card-list">
+                        <li><strong>Ensalada del Turco:</strong> canónigos, rúcula, queso parmesano, frutos secos, tomates cherry, virutas de jamón serrano, huevos cocidos y aliño de limón.</li>
+                        <li><strong>Provolone tradicional:</strong> queso provolone fundido al horno con orégano fresco y ají molido.</li>
+                        <li><strong>Variedad de empanadas:</strong> humita, jamón o criolla.</li>
+                        <li><strong>Parrillada Sur:</strong> chorizo, morcilla, molleja, tira de asado (costilla de ternera) y muslo de pollo deshuesado.</li>
+                        <li><strong>Postres caseros variados</strong> servidos al centro para compartir.</li>
+                    </ul>
+                </article>
+                <article class="menu-comparison-card">
+                    <span class="menu-card-kicker">Menú 2</span>
+                    <h3>Viejo Barrio</h3>
+                    <p class="menu-card-price">59,90 €</p>
+                    <ul class="menu-card-list">
+                        <li><strong>Ensalada del Barrio:</strong> mix de hojas, queso de cabra, mango, jamón de pato, tomates cherry y vinagreta de Dijon.</li>
+                        <li><strong>Provolone tomate y cebolla:</strong> queso provolone fundido al horno con tomate seco y cebolla caramelizada.</li>
+                        <li><strong>Variedad de empanadas:</strong> humita, jamón o criolla.</li>
+                        <li><strong>Parrillada Viejo Barrio:</strong> chorizo, molleja, escondido, bife de chorizo (lomo bajo) y secreto de cerdo.</li>
+                        <li><strong>Postres caseros variados</strong> servidos al centro para compartir.</li>
+                    </ul>
+                </article>
+                <article class="menu-comparison-card">
+                    <span class="menu-card-kicker">Menú 3</span>
+                    <h3>Bife Argentino</h3>
+                    <p class="menu-card-price">59,90 €</p>
+                    <ul class="menu-card-list">
+                        <li><strong>Ensalada del Barrio:</strong> mix de hojas, queso de cabra, mango, jamón de pato, tomates cherry y vinagreta de Dijon.</li>
+                        <li><strong>Provolone tomate y cebolla:</strong> queso provolone fundido al horno con tomate seco y cebolla caramelizada.</li>
+                        <li><strong>Variedad de empanadas:</strong> humita, jamón o criolla.</li>
+                        <li><strong>Un Bife Argentino por persona:</strong> lomo alto a la parrilla, jugoso y tierno.</li>
+                        <li><strong>Postres caseros variados</strong> servidos al centro para compartir.</li>
+                    </ul>
+                </article>
             </div>
         </section>
 
-        <section class="container-fluid content-section-dark text-center landing-section landing-section-dark landing-sharing-section">
+        <section class="container-fluid text-center landing-section landing-section-light menu-conditions-section" id="condiciones" style="background-color: #ffffff;">
             <div class="row d-flex align-items-center justify-content-center">
                 <div class="col-11 col-md-9 col-lg-8">
-                    <p class="subtitle section-subtitle">Mesa al centro</p>
-                    <h2 class="title section-title">PARRILLADAS Y PLATOS PARA COMPARTIR</h2>
-                    <p class="text text-content landing-copy">Una forma muy natural de disfrutar Viejo Barrio es pedir al centro. Empanadas, Picada Criolla, Mollejas y una Parrillada para dos o más personas.</p>
+                    <p class="subtitle section-subtitle">Información práctica</p>
+                    <h2 class="title section-title">CONDICIONES DE LOS MENÚS</h2>
                 </div>
             </div>
-            <div class="landing-usecase-grid">
+            <div class="menu-conditions-grid">
                 <article class="landing-usecase-card">
-                    <span>01</span>
-                    <h3>Para dos</h3>
-                    <p>Empanadas o Provolone para empezar, y después un Corte o una Parrillada para compartir.</p>
+                    <span>Bebida incluida</span>
+                    <h3>1 refresco por persona</h3>
+                    <p>También incluye 1 botella de vino o jarra de cerveza cada 2 personas.</p>
                 </article>
                 <article class="landing-usecase-card">
-                    <span>02</span>
-                    <h3>Para grupos</h3>
-                    <p>Las Parrilladas ayudan a organizar la mesa y probar varios Cortes sin complicarse.</p>
+                    <span>Misma elección</span>
+                    <h3>Un menú para toda la mesa</h3>
+                    <p>Los menús deben ser para todos los comensales de la mesa.</p>
                 </article>
                 <article class="landing-usecase-card">
-                    <span>03</span>
-                    <h3>Primera visita</h3>
-                    <p>Empanada, Mollejas, Parrillada y Dulce de Leche resumen bastante bien el espíritu de la casa.</p>
+                    <span>Precio final</span>
+                    <h3>IVA incluido</h3>
+                    <p>Los precios indicados son por persona e incluyen IVA.</p>
                 </article>
             </div>
-            <p class="text text-content landing-copy landing-sharing-close">Fuego, carne, mesa compartida y tiempo para estar a gusto.</p>
+            <p class="text text-content landing-copy landing-sharing-close">La bebida adicional o cualquier plato de la carta fuera del menú elegido se cobra aparte, según la información publicada para estos menús.</p>
             <div class="landing-cta-group">
-                <a href="https://widget.thefork.com/es/9989afab-6dfe-4e01-907b-f6156681eea0?step=date&utm_source=viejobarrio.es" target="_blank" rel="noopener" class="btn btn-primary-cta" role="button">RESERVAR MESA</a>
+                <a href="https://wa.me/34664406771?text=Hola%2C%20me%20gustar%C3%ADa%20consultar%20disponibilidad%20para%20men%C3%BAs%20desde%202%20personas%20en%20Viejo%20Barrio.%20Somos%20%5BX%20personas%5D%20el%20%5Bfecha%5D." target="_blank" rel="noopener noreferrer" class="btn btn-primary-cta" role="button">Consultar disponibilidad</a>
             </div>
         </section>
 
-        <section class="container-fluid content-section-light text-center landing-section landing-section-light landing-final-cta">
+        <section class="container-fluid text-center landing-section landing-section-light" id="pequenos">
             <div class="row d-flex align-items-center justify-content-center">
-                <div class="col-11 col-md-10 col-lg-10 col-xl-9">
-                    <p class="subtitle section-subtitle">Celebraciones y empresa</p>
-                    <h2 class="title section-title">¿VENÍS EN GRUPO?</h2>
-                    <p class="text text-content landing-copy">Si sois de 10 a 26 personas, Viejo Barrio también cuenta con un salón reservado para comidas de empresa, celebraciones y cenas de grupo.</p>
-                    <div class="landing-cta-group">
-                        <a href="/grupos-valencia/" class="btn btn-outline-light" role="button">VER SALÓN PARA GRUPOS</a>
-                    </div>
+                <div class="col-11 col-md-9 col-lg-8">
+                    <p class="subtitle section-subtitle">Para niños</p>
+                    <h2 class="title section-title">MENÚ PEQUEÑOS</h2>
+                    <p class="text text-content landing-copy">Una opción infantil separada de los menús principales.</p>
                 </div>
             </div>
+            <div class="menu-kids-card">
+                <div>
+                    <span class="menu-card-kicker">Menú Pequeños</span>
+                    <h3>17,50 €</h3>
+                </div>
+                <ul class="menu-card-list">
+                    <li><strong>Empanada:</strong> jamón y mozzarella.</li>
+                    <li><strong>Principal:</strong> pechuguitas empanadas con patatas fritas y ketchup.</li>
+                    <li><strong>Postre:</strong> bola de helado a elegir, chocolate, vainilla o limón.</li>
+                    <li><strong>Bebida:</strong> una bebida a elegir incluida.</li>
+                </ul>
+            </div>
         </section>
 
-        <section class="container-fluid content-section-light landing-section landing-section-light landing-story-section">
+        <section class="container-fluid text-center landing-section landing-story-section" id="planificar" style="background-color: #ffffff;">
             <div class="landing-story-inner">
-                <article class="landing-story-row">
-                    <div class="landing-story-media">
-                        <img src="/img/fachada-viejo-barrio-asador-argentino-benimaclet-valencia-noche.jpg" class="landing-feature-image" width="1200" height="900" alt="Fachada de Viejo Barrio, asador argentino en Benimaclet" loading="lazy" decoding="async">
-                    </div>
+                <div class="landing-story-row">
                     <div class="landing-story-copy landing-story-copy-right">
-                        <p class="subtitle section-subtitle story-eyebrow">Cerca de ti</p>
-                        <h2 class="title section-title">UN ASADOR ARGENTINO EN BENIMACLET</h2>
-                        <p class="text text-content landing-copy">Viejo Barrio está en Benimaclet, uno de esos barrios de Valencia que todavía conservan vida de barrio. Aquí la propuesta encaja de forma natural: una parrilla argentina cercana, con brasa, cortes al punto y mesas para venir en pareja, con amigos o en familia.</p>
-                        <p class="text text-content landing-copy">No hace falta irse al centro para encontrar Carne a la Brasa. Si estás por Benimaclet, por la zona universitaria o cerca de Primado Reig, Viejo Barrio es una opción directa para comer o cenar.</p>
-                        <div class="landing-cta-group">
-                            <a href="https://www.google.com/maps?cid=11418522565425404756" target="_blank" rel="noopener" class="btn btn-outline-light" role="button">CÓMO LLEGAR</a>
+                        <p class="subtitle section-subtitle story-eyebrow">Planifica la comida</p>
+                        <h2 class="title section-title">MENÚ, ESPACIO Y CARTA</h2>
+                        <p class="text text-content landing-copy">Confirmad disponibilidad, revisad el salón reservado o consultad la carta general.</p>
+                        <div class="landing-cta-group" style="justify-content: center;">
+                            <a href="/grupos-valencia/" class="btn btn-primary-cta" role="button">Ver grupos</a>
+                            <a href="/asador-argentino-valencia/" class="btn btn-outline-dark btn-secondary-cta" role="button">Ver asador</a>
+                            <a href="/carta/" class="btn btn-outline-dark btn-secondary-cta" role="button">Ver carta</a>
                         </div>
                     </div>
-                </article>
-
-                <article class="landing-story-row landing-story-row-reverse">
-                    <div class="landing-story-copy landing-story-copy-left">
-                        <p class="subtitle section-subtitle story-eyebrow">Fuego lento</p>
-                        <h2 class="title section-title">CARNE ARGENTINA A LA BRASA EN VALENCIA</h2>
-                        <p class="text text-content landing-copy">La parrilla argentina no va de correr. Va de fuego controlado, cortes con carácter y tiempo para que la carne llegue a la mesa como toca.</p>
-                        <p class="text text-content landing-copy">En Viejo Barrio trabajamos esa idea desde una cocina de barrio: Entrantes reconocibles, Parrilladas para compartir, Cortes Argentinos y Postres con Dulce de Leche para cerrar.</p>
-                        <p class="text text-content landing-copy landing-related-links">
-                            También puedes ver nuestros <a href="/menus/">MENÚS</a>, consultar la <a href="/contacto/">DIRECCIÓN Y CONTACTO</a> o volver al <a href="/">INICIO</a>.
-                        </p>
-                    </div>
                     <div class="landing-story-media">
-                        <img src="/img/pexels-caio-59598-1920x1221px.jpg" class="landing-feature-image" width="1920" height="1221" alt="Brasas para Carne a la Brasa en Viejo Barrio, asador argentino en Valencia" loading="lazy" decoding="async">
+                        <img class="landing-feature-image" src="/img/salon-grupos-cena-valencia.webp" width="960" height="640" alt="Salón preparado para una cena de grupo en Viejo Barrio" loading="lazy" decoding="async">
                     </div>
-                </article>
+                </div>
             </div>
         </section>
 
-        <section class="container-fluid content-section-dark landing-section landing-section-dark faq-section">
+        <section class="container-fluid landing-section landing-section-light faq-section" id="faqs" style="background-color: var(--almostwhite-color);">
             <div class="row d-flex align-items-center justify-content-center">
                 <div class="col-11 col-md-9 col-lg-8 faq-header">
-                    <p class="subtitle section-subtitle faq-eyebrow">Dudas habituales</p>
+                    <p class="subtitle section-subtitle faq-eyebrow">Dudas frecuentes</p>
                     <h2 class="title section-title">PREGUNTAS FRECUENTES</h2>
                 </div>
             </div>
             <div class="faq-grid">
                 <div class="faq-column">
                     <details class="faq-accordion">
-                        <summary>¿Dónde está Viejo Barrio?</summary>
-                        <p>Viejo Barrio está en Carrer del Reverend Rafael Tramoyeres, 5, Bajo Izquierda, en Benimaclet, Valencia. Es una zona de barrio, cerca de Primado Reig y bien conectada con otras partes de la ciudad.</p>
+                        <summary>¿Todos los comensales tienen que elegir el mismo menú?</summary>
+                        <p>Sí. Los menús deben ser para todos los comensales de la mesa.</p>
                     </details>
                     <details class="faq-accordion">
-                        <summary>¿Está en el centro de Valencia?</summary>
-                        <p>No está en pleno centro. Viejo Barrio está en Benimaclet, un barrio con vida propia y buena conexión con otras zonas de Valencia. Si vienes desde el centro, lo más práctico es consultar la ruta en Google Maps según tu punto de salida.</p>
+                        <summary>¿Qué incluye la bebida?</summary>
+                        <p>La bebida incluida es 1 refresco por persona y 1 botella de vino o jarra de cerveza cada 2 personas.</p>
                     </details>
                     <details class="faq-accordion">
-                        <summary>¿Cuál es la parada de metro más cercana?</summary>
-                        <p>La referencia más práctica es la zona de Benimaclet. Puedes llegar en metro o tranvía hasta el entorno de Benimaclet y caminar desde allí hasta el restaurante. Antes de venir, conviene comprobar la ruta exacta en Google Maps según tu punto de salida.</p>
-                    </details>
-                    <details class="faq-accordion">
-                        <summary>¿Es un restaurante argentino o un asador?</summary>
-                        <p>Es ambas cosas. Viejo Barrio es un asador argentino en Valencia: una parrilla de barrio centrada en Carne a la Brasa, Cortes Argentinos, Empanadas, Mollejas y Parrilladas para compartir.</p>
-                    </details>
-                    <details class="faq-accordion">
-                        <summary>¿Qué platos recomendáis si es la primera vez?</summary>
-                        <p>Una buena primera visita puede empezar con Empanadas o una Picada Criolla, seguir con una Parrillada para compartir o un Bife Argentino, y terminar con un Postre de Dulce de Leche si queda sitio.</p>
+                        <summary>¿Cuánto cuestan los menús?</summary>
+                        <p>El Menú Tradicional cuesta 49,90€ por persona. El Menú Viejo Barrio y el Menú Bife Argentino cuestan 59,90€ por persona. Los precios incluyen IVA.</p>
                     </details>
                 </div>
                 <div class="faq-column">
                     <details class="faq-accordion">
-                        <summary>¿Tenéis Parrilladas para compartir?</summary>
-                        <p>Sí. La carta incluye Parrilladas para compartir, como la Parrillada Sur y la Parrillada Viejo Barrio. Son una buena opción para dos o más personas y para quienes quieren probar varios Cortes en la misma mesa.</p>
+                        <summary>¿Hay menú para niños?</summary>
+                        <p>Sí. El Menú Pequeños cuesta 17,50€ e incluye empanada de jamón y mozzarella, pechuguitas empanadas con patatas fritas y ketchup, una bola de helado a elegir y una bebida.</p>
                     </details>
                     <details class="faq-accordion">
-                        <summary>¿Se puede reservar mesa?</summary>
-                        <p>Sí. Es recomendable reservar, sobre todo para cenas, fines de semana o grupos. Puedes hacerlo desde la web o llamando directamente al restaurante.</p>
+                        <summary>¿Puedo ver también el salón para grupos?</summary>
+                        <p>Sí. La página de <a href="/grupos-valencia/">restaurante para grupos en Valencia</a> explica el salón reservado, los formatos de reserva y la información práctica para comidas de empresa, cenas de grupo y celebraciones.</p>
                     </details>
                     <details class="faq-accordion">
-                        <summary>¿Es buena opción para grupos o celebraciones?</summary>
-                        <p>Sí, especialmente para grupos pequeños o celebraciones informales donde apetece compartir Carne a la Brasa, Entrantes Argentinos y Parrilladas. Para grupos, conviene reservar con antelación y comentar el número de personas.</p>
-                    </details>
-                    <details class="faq-accordion">
-                        <summary>¿Qué hace diferente a Viejo Barrio?</summary>
-                        <p>Viejo Barrio tiene un enfoque de barrio: Brasa, Cortes Argentinos, trato cercano y una mesa sin postureo. Es un sitio cómodo en Benimaclet para comer bien, compartir y volver.</p>
-                    </details>
-                    <details class="faq-accordion">
-                        <summary>¿Puedo consultar la carta antes de ir?</summary>
-                        <p>Sí. Puedes ver la carta desde la web antes de reservar. Ahí encontrarás Entrantes como Empanadas, Provolone, Chorizo Criollo y Mollejas, además de Carnes a la Brasa, Parrilladas, Postres y Bebidas.</p>
+                        <summary>¿Dónde está Viejo Barrio?</summary>
+                        <p>Viejo Barrio está en Calle Reverendo Rafael Tramoyeres 5, Bajo Izquierda, Benimaclet, 46020 Valencia. Puedes abrir la ruta desde <a href="https://www.google.com/maps?cid=11418522565425404756" target="_blank" rel="noopener">Google Maps</a>.</p>
                     </details>
                 </div>
             </div>
         </section>
 
-        <section class="container-fluid content-section-light text-center landing-section landing-section-light landing-final-cta">
+        <section class="container-fluid text-center landing-section landing-final-cta" id="cta" style="background-color: #ffffff;">
             <div class="row d-flex align-items-center justify-content-center">
                 <div class="col-11 col-md-10 col-lg-10 col-xl-9">
-                    <h2 class="title section-title">RESERVA TU MESA EN VIEJO BARRIO</h2>
-                    <p class="text text-content landing-copy">Si buscas un asador argentino en Valencia para comer Carne a la Brasa, compartir una Parrillada o cenar por Benimaclet, aquí tienes la Brasa encendida.</p>
+                    <p class="subtitle section-subtitle">Mesa y brasa</p>
+                    <h2 class="title section-title">Reserva tu mesa en Viejo&nbsp;Barrio</h2>
+                    <p class="text landing-copy">Si te apetece carne a la brasa, parrillada para compartir<br>o una cena tranquila por Benimaclet, aquí tienes la brasa encendida.</p>
                     <div class="landing-cta-group">
                         <a href="https://widget.thefork.com/es/9989afab-6dfe-4e01-907b-f6156681eea0?step=date&utm_source=viejobarrio.es" target="_blank" rel="noopener" class="btn btn-primary-cta" role="button">RESERVAR MESA</a>
                     </div>
@@ -641,9 +578,25 @@
             window.addEventListener('scroll', updateHeaderState, { passive: true });
             quickActionsQuery.addEventListener('change', updateHeaderState);
         }());
+
+        (function () {
+            var toggler = document.querySelector('.navbar-toggler');
+            if (!toggler) return;
+            var targetId = toggler.getAttribute('data-bs-target');
+            if (!targetId) return;
+            var target = document.querySelector(targetId);
+            if (!target) return;
+
+            toggler.addEventListener('click', function () {
+                setTimeout(function () {
+                    if (!target.classList.contains('show')) {
+                        target.classList.add('show');
+                        toggler.setAttribute('aria-expanded', 'true');
+                    }
+                }, 80);
+            });
+        }());
     </script>
 
-    <!-- bootstrap scripts -->
-    
 </body>
 </html>

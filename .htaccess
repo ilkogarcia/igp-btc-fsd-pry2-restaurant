@@ -7,8 +7,16 @@ Options -Indexes
     # Legacy carta URL.
     RewriteRule ^pages/menu\.html$ https://viejobarrio.es/carta/ [R=301,L]
 
-    # Legacy group menus URL.
-    RewriteRule ^pages/tasting\.html$ https://viejobarrio.es/menus-grupos-valencia/ [R=301,L]
+    # Legacy group menus URLs.
+    RewriteRule ^menu[s]-grupos-valencia/?$ https://viejobarrio.es/menus/ [R=301,L]
+    RewriteRule ^menu[s]-grupos-valencia/index\.html$ https://viejobarrio.es/menus/ [R=301,L]
+    RewriteRule ^pages/tasting\.html$ https://viejobarrio.es/menus/ [R=301,L]
+
+    # Legacy wines URL.
+    RewriteRule ^pages/wines\.html$ https://viejobarrio.es/vinos-y-cavas/ [R=301,L]
+
+    # Legacy contact URL.
+    RewriteRule ^pages/contact\.html$ https://viejobarrio.es/contacto/ [R=301,L]
 
     # Canonical home: resolve www/index.html and /index.html in one hop.
     RewriteCond %{HTTP_HOST} ^www\.viejobarrio\.es$ [NC,OR]
