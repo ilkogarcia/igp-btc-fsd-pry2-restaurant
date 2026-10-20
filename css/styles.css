@@ -2545,6 +2545,65 @@ body {
 }
 
 /* ==========================================================================
+   Grupos Valencia — responsive hero refinements
+   Scoped to .page-grupos-valencia so the shared landing hero used by the
+   asador page (and the rest of the site) keeps its current composition.
+   ========================================================================== */
+
+.page-grupos-valencia #hero .hero-lead {
+    text-wrap: pretty;
+}
+
+@media screen and (max-width: 767.98px) and (orientation: portrait) {
+    /* 4.5rem clears the 54px fixed header and keeps the eyebrow visible. */
+    .page-grupos-valencia #hero {
+        min-height: min(100svh, 36rem);
+        padding-block: 4.5rem;
+    }
+
+    .page-grupos-valencia #hero .landing-eyebrow {
+        font-size: clamp(0.78rem, 3.6vw, 0.95rem);
+        letter-spacing: 0.06em;
+        margin-bottom: 0.5rem;
+    }
+
+    .page-grupos-valencia #hero .secondarypage-title {
+        font-size: clamp(1.55rem, 7vw, 1.85rem);
+        line-height: 1.22;
+        letter-spacing: 1.5px;
+        text-wrap: balance;
+        margin-bottom: 0.35rem;
+    }
+
+    .page-grupos-valencia #hero .page-subtitle {
+        font-size: clamp(1.3rem, 6.4vw, 1.75rem);
+        line-height: 1.15;
+        margin-bottom: 0.65rem;
+    }
+
+    .page-grupos-valencia #hero .hero-lead {
+        margin-top: 0;
+        margin-bottom: 0.8rem;
+        padding: 0.55rem 0.8rem;
+        font-size: clamp(0.88rem, 3.9vw, 1rem);
+        line-height: 1.35;
+    }
+
+    .page-grupos-valencia #hero .landing-cta-group {
+        margin-top: 0.9rem;
+    }
+
+    /* The label is unchanged: 15px plus reduced tracking keeps
+       "CONSULTAR DISPONIBILIDAD" on one line inside the 320px column. */
+    .page-grupos-valencia #hero .landing-cta-group .btn {
+        min-height: 48px;
+        padding: 0.7rem 0.65rem;
+        font-size: clamp(0.9375rem, 4.2vw, 1rem);
+        letter-spacing: 0.02em;
+    }
+}
+
+/* ==========================================================================
    Home reviews: Google reviews section
    ========================================================================== */
 
