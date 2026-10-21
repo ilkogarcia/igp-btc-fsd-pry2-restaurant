@@ -2642,6 +2642,55 @@ body {
 }
 
 /* ==========================================================================
+   Grupos Valencia — light section rhythm
+   ========================================================================== */
+
+/* Gold eyebrows keep the brand tone on light surfaces but need a darker
+   value there to stay legible (AA). Dark sections keep the original gold. */
+.page-grupos-valencia .landing-section-light .section-subtitle {
+    color: #8a6636;
+    text-shadow: none;
+}
+
+/* #story and #features share the light surface; a hairline keeps the two
+   content blocks visually separate without changing their backgrounds. */
+.page-grupos-valencia #features {
+    box-shadow: inset 0 1px 0 rgba(201, 171, 129, 0.55);
+}
+
+/* Gold text on the white cards needs the darker brand gold to clear AA
+   while keeping the established palette and typography. */
+.page-grupos-valencia #features .landing-dish-card h3 {
+    color: #8a6636;
+}
+
+/* Testimonial attribution carries an inline gold colour; the page-scoped
+   rule raises it to the darker gold without touching the card markup. */
+.page-grupos-valencia #proof cite {
+    color: #8a6636 !important;
+}
+
+/* Small gold text on the dark surfaces needs a lighter tint of the same
+   brand gold to clear AA at normal sizes. */
+.page-grupos-valencia .landing-eyebrow,
+.page-grupos-valencia .landing-trust-point h3,
+.page-grupos-valencia .faq-accordion summary {
+    color: #ddc6a3;
+}
+
+/* FAQ answer links used Bootstrap's blue on a dark card (1.99:1). The
+   lighter gold keeps the palette and the underline keeps links distinct. */
+.page-grupos-valencia .faq-accordion p a {
+    color: #ddc6a3;
+    text-decoration: underline;
+}
+
+.page-grupos-valencia .faq-accordion p a:hover,
+.page-grupos-valencia .faq-accordion p a:focus {
+    color: var(--almostwhite-color);
+}
+
+/* ==========================================================================
    Home reviews: Google reviews section
    ========================================================================== */
 
