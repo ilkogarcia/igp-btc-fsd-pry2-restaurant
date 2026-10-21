@@ -2555,9 +2555,9 @@ body {
 }
 
 @media screen and (max-width: 767.98px) and (orientation: portrait) {
-    /* 4.5rem clears the 54px fixed header and keeps the eyebrow visible. */
+    /* Height is inherited from the shared .landing-hero (100svh).
+       4.5rem clears the 54px fixed header when content grows. */
     .page-grupos-valencia #hero {
-        min-height: min(100svh, 36rem);
         padding-block: 4.5rem;
     }
 
@@ -2593,8 +2593,8 @@ body {
         margin-top: 0.9rem;
     }
 
-    /* The label is unchanged: 15px plus reduced tracking keeps
-       "CONSULTAR DISPONIBILIDAD" on one line inside the 320px column. */
+    /* 15px plus reduced tracking keeps both hero labels on one line
+       at 320px and preserves the 48px touch target. */
     .page-grupos-valencia #hero .landing-cta-group .btn {
         min-height: 48px;
         padding: 0.7rem 0.65rem;
