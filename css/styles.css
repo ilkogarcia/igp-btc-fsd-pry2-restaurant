@@ -2593,13 +2593,51 @@ body {
         margin-top: 0.9rem;
     }
 
-    /* 15px plus reduced tracking keeps both hero labels on one line
+    /* 15px plus reduced tracking keeps hero and menu labels on one line
        at 320px and preserves the 48px touch target. */
-    .page-grupos-valencia #hero .landing-cta-group .btn {
+    .page-grupos-valencia #hero .landing-cta-group .btn,
+    .page-grupos-valencia .landing-sharing-section > .landing-cta-group .btn {
         min-height: 48px;
         padding: 0.7rem 0.65rem;
         font-size: clamp(0.9375rem, 4.2vw, 1rem);
         letter-spacing: 0.02em;
+    }
+}
+
+/* ==========================================================================
+   Grupos Valencia — menu comparison cards
+   ========================================================================== */
+
+.page-grupos-valencia .landing-sharing-section .landing-usecase-card {
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.page-grupos-valencia .landing-sharing-section .landing-usecase-card span {
+    color: var(--gold-color);
+}
+
+.page-grupos-valencia .landing-sharing-section .landing-usecase-card p + p {
+    margin-top: 0.55rem;
+}
+
+/* ==========================================================================
+   Grupos Valencia — supporting conditions note
+   ========================================================================== */
+
+.page-grupos-valencia #menus > .landing-copy {
+    max-width: min(100%, 900px);
+    font-size: 0.9375rem;
+    font-style: italic;
+    line-height: 1.55;
+}
+
+/* ==========================================================================
+   Grupos Valencia — desktop menu presentation
+   ========================================================================== */
+
+@media screen and (min-width: 992px) {
+    .page-grupos-valencia #menus .landing-usecase-grid {
+        width: min(100%, 1120px);
     }
 }
 
